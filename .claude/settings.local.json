@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/Users/aglpr/Hacker-News-Daily-Digest log --oneline -5)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(gh issue create --title '[ETL] Fetch top 10 HN posts and top 5 comments via HN Firebase API' --body ':*)",
+      "Bash(gh issue create --title '[ETL] Transform and clean raw JSON into gold digest format and commit to public/data/digest.json' --body ':*)",
+      "Bash(gh issue create --title '[ETL] GitHub Actions cron workflow — runs daily at 8am UTC, commits digest using PAT' --body ':*)",
+      "Bash(gh issue create --title '[API] /api/digest route — reads and returns public/data/digest.json' --body ':*)",
+      "Bash(gh issue create --title '[API] /api/ask route — accepts a question, calls Gemini with full digest context, returns answer' --body ':*)",
+      "Bash(gh issue create --title '[UI] Digest feed — displays top 10 posts with title, score, author, comment count, and expandable comments' --body ':*)",
+      "Bash(gh issue create --title '[UI] Chat-style Q&A interface — message history, input box, send button, auto-scroll' --body ':*)",
+      "Bash(gh issue create --title '[UI] Refresh button — re-fetches digest from HN API directly in the browser' --body ':*)",
+      "Bash(gh issue create --title '[TEST] Jest unit tests for ETL transform function' --body ':*)",
+      "Bash(gh issue create --title '[TEST] Playwright e2e tests — digest loads, Q&A returns an answer' --body ':*)",
+      "Bash(gh issue create --title '[DEPLOY] Vercel deploy — connect repo, set GEMINI_API_KEY env var, confirm live URL works' --body ':*)"
+    ]
+  }
+}

@@ -1,23 +1,2 @@
-export interface Comment {
-  id: number;
-  by: string;
-  text: string;
-  time: number;
-}
-
-export interface Post {
-  id: number;
-  title: string;
-  url: string;
-  score: number;
-  by: string;
-  time: number;
-  descendants: number;
-  comments: Comment[];
-}
-
-export interface Digest {
-  date: string;
-  fetchedAt: string;
-  posts: Post[];
-}
+// Re-export from the canonical location so existing imports keep working.
+export type { DigestComment as Comment, DigestPost as Post, Digest } from '@/lib/types';
