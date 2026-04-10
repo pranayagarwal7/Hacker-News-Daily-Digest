@@ -4,13 +4,22 @@
 import { POST } from '@/app/api/ask/route';
 import { NextRequest } from 'next/server';
 
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function makeStreamingMock(text: string) {
+  async function* gen() {
+    yield { text: () => text };
+  }
+  return { stream: gen() };
+}
+
 // Mock the Gemini SDK — no real API calls in tests
 jest.mock('@google/generative-ai', () => ({
   GoogleGenerativeAI: jest.fn().mockImplementation(() => ({
     getGenerativeModel: jest.fn().mockReturnValue({
-      generateContent: jest.fn().mockResolvedValue({
-        response: { text: () => 'Mocked Gemini answer.' },
-      }),
+      generateContentStream: jest
+        .fn()
+        .mockResolvedValue(makeStreamingMock('Mocked Gemini answer.')),
     }),
   })),
 }));
@@ -27,9 +36,7 @@ const mockDigest = {
       by: 'hacker',
       time: 1700000000,
       descendants: 80,
-      comments: [
-        { id: 10, by: 'commenter', text: 'Great post!', time: 1700000001 },
-      ],
+      comments: [{ id: 10, by: 'commenter', text: 'Great post!', time: 1700000001 }],
     },
   ],
 };
@@ -41,6 +48,20 @@ function makeRequest(body: unknown): NextRequest {
     body: JSON.stringify(body),
   });
 }
+
+async function readStream(res: Response): Promise<string> {
+  const reader = res.body!.getReader();
+  const decoder = new TextDecoder();
+  let result = '';
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    result += decoder.decode(value, { stream: true });
+  }
+  return result;
+}
+
+// ─── Tests ────────────────────────────────────────────────────────────────────
 
 describe('POST /api/ask', () => {
   const originalEnv = process.env;
@@ -54,23 +75,21 @@ describe('POST /api/ask', () => {
     process.env = originalEnv;
   });
 
-  it('returns 200 with an answer field for a valid question', async () => {
+  it('returns 200 with streamed answer text for a valid question', async () => {
     const req = makeRequest({ question: 'What is the top post?', digest: mockDigest });
     const res = await POST(req);
-    const body = await res.json();
 
     expect(res.status).toBe(200);
-    expect(body).toHaveProperty('answer');
-    expect(typeof body.answer).toBe('string');
-    expect(body.answer.length).toBeGreaterThan(0);
+    const text = await readStream(res);
+    expect(text.length).toBeGreaterThan(0);
   });
 
-  it('passes the question to Gemini and returns its response', async () => {
+  it('streams the Gemini response text', async () => {
     const req = makeRequest({ question: 'Summarize the AI discussions.', digest: mockDigest });
     const res = await POST(req);
-    const body = await res.json();
 
-    expect(body.answer).toBe('Mocked Gemini answer.');
+    const text = await readStream(res);
+    expect(text).toBe('Mocked Gemini answer.');
   });
 
   it('returns 400 when question is missing', async () => {
@@ -91,8 +110,30 @@ describe('POST /api/ask', () => {
     expect(body).toHaveProperty('error');
   });
 
+  it('returns 400 when body is not valid JSON', async () => {
+    const req = new NextRequest('http://localhost/api/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: 'not json {{{',
+    });
+    const res = await POST(req);
+    const body = await res.json();
+
+    expect(res.status).toBe(400);
+    expect(body).toHaveProperty('error');
+  });
+
   it('returns 400 when digest is missing', async () => {
     const req = makeRequest({ question: 'What is trending?' });
+    const res = await POST(req);
+    const body = await res.json();
+
+    expect(res.status).toBe(400);
+    expect(body).toHaveProperty('error');
+  });
+
+  it('returns 400 when digest has no posts array', async () => {
+    const req = makeRequest({ question: 'Any?', digest: { date: '2025-04-09' } });
     const res = await POST(req);
     const body = await res.json();
 
@@ -109,15 +150,6 @@ describe('POST /api/ask', () => {
 
     expect(res.status).toBe(500);
     expect(body).toHaveProperty('error');
-    // API key must never appear in the response
     expect(JSON.stringify(body)).not.toContain('test-key');
-  });
-
-  it('does not expose the API key in any error response', async () => {
-    const req = makeRequest({ question: 'Any question?', digest: mockDigest });
-    const res = await POST(req);
-    const bodyText = await res.text();
-
-    expect(bodyText).not.toContain('test-key');
   });
 });
