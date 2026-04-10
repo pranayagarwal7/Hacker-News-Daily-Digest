@@ -15,7 +15,7 @@
 
 ## Key decisions captured
 - ETL: Node.js script, GH Actions cron 0 8 * * *, single overwritten digest.json
-- AI: Gemini 1.5 Flash, server-side, no caching, full context
+- AI: Gemini 2.5 Flash Lite, server-side, no caching, full context
 - UI: Tailwind only, chat-style Q&A, browser-only refresh
 - Deployment: Vercel + GH_PAT for Actions commit-back
 

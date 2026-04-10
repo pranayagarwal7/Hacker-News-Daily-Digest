@@ -11,7 +11,7 @@ A record of every architectural and product decision made during the initial des
 | Frontend framework | Next.js 14, App Router | Supports server components, static rendering, and API routes in one deployment unit |
 | Deployment | Vercel | Zero-config GitHub integration; auto-deploys on every push |
 | Styling | Tailwind CSS only | Minimalist aesthetic, no component library overhead |
-| AI model | Gemini 1.5 Flash | Fast, cost-efficient for Q&A; no paid tier needed for low traffic |
+| AI model | Gemini 2.5 Flash Lite | Fast, cost-efficient for Q&A; no paid tier needed for low traffic |
 | Data storage | JSON file committed to repo | No database required; Vercel rebuild on every commit delivers fresh data |
 
 ---
@@ -70,10 +70,10 @@ The previous Gemini answers are about the old digest snapshot. Retaining them af
 Pre-generating in Actions couples the ETL to the AI API, adds Gemini latency to the cron job, and produces static answers. On-demand generation lets users ask any question and always reflects the current digest state (including after a browser Refresh).
 
 **Q: Why pass the full digest context on every `/api/ask` call instead of maintaining a session?**
-Stateless requests are simpler to implement, easier to debug, and avoid session management complexity. Gemini 1.5 Flash has a large context window; the full digest (10 posts × 5 comments) is well within limits.
+Stateless requests are simpler to implement, easier to debug, and avoid session management complexity. Gemini 2.5 Flash Lite has a large context window; the full digest (10 posts × 5 comments) is well within limits.
 
 **Q: Why no response caching?**
-Different users ask different questions; the cache hit rate would be low. Caching adds infrastructure (Redis, in-memory store) that contradicts the zero-infrastructure goal. Gemini 1.5 Flash is cheap enough that per-request calls are acceptable.
+Different users ask different questions; the cache hit rate would be low. Caching adds infrastructure (Redis, in-memory store) that contradicts the zero-infrastructure goal. Gemini 2.5 Flash Lite is cheap enough that per-request calls are acceptable.
 
 **Q: Why server-side Gemini calls instead of client-side?**
 The `GEMINI_API_KEY` must never be exposed to the browser. Server-side API routes keep the key in Vercel's environment variables only.

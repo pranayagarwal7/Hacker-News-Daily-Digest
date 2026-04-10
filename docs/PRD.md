@@ -6,7 +6,7 @@ Keeping up with Hacker News is valuable for engineers and tech-curious readers, 
 
 ## Solution
 
-A statically-deployed web app that automatically fetches the top 10 Hacker News stories every morning, commits a structured JSON digest to the repository, and serves it through a clean Next.js UI. Users can read post titles, scores, and top comments at a glance, ask Gemini 1.5 Flash questions about the day's content via a chat-style interface, and manually re-fetch the latest HN data from the browser at any time — all with no accounts, no database, and no infrastructure beyond Vercel and GitHub Actions.
+A statically-deployed web app that automatically fetches the top 10 Hacker News stories every morning, commits a structured JSON digest to the repository, and serves it through a clean Next.js UI. Users can read post titles, scores, and top comments at a glance, ask Gemini 2.5 Flash Lite questions about the day's content via a chat-style interface, and manually re-fetch the latest HN data from the browser at any time — all with no accounts, no database, and no infrastructure beyond Vercel and GitHub Actions.
 
 ---
 
@@ -76,7 +76,7 @@ A statically-deployed web app that automatically fetches the top 10 Hacker News 
                                     │                     │
                              GET /api/refresh      POST /api/ask
                                     │                     │
-                             live HN fetch        Gemini 1.5 Flash
+                             live HN fetch        Gemini 2.5 Flash Lite
                              (no commit)          (server-side, no cache)
 ```
 
@@ -241,7 +241,7 @@ Comment {
 - [ ] Add GitHub Actions workflow (`daily-digest.yml`) with cron + manual trigger
 - [ ] Commit placeholder `public/data/digest.json` for first-build safety
 - [ ] Implement `GET /api/refresh` route (live HN fetch, returns `Digest`)
-- [ ] Implement `POST /api/ask` route (Gemini 1.5 Flash Q&A with full digest context)
+- [ ] Implement `POST /api/ask` route (Gemini 2.5 Flash Lite Q&A with full digest context)
 - [ ] Build `page.tsx` server component (reads digest via `fs` at build time)
 - [ ] Build `DigestClient` component (post list, expandable comments, chat panel)
 - [ ] Style with Tailwind: header, numbered posts, metadata row, comment expander, chat bubbles

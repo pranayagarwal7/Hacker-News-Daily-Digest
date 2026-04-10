@@ -17,7 +17,7 @@
 | ETL trigger | GitHub Actions cron, 0 8 * * * UTC |
 | Data storage | Single overwritten `public/data/digest.json` committed to repo |
 | HN data | /topstories endpoint, top 10 posts, top 5 comments each |
-| AI model | Gemini 1.5 Flash, server-side only |
+| AI model | Gemini 2.5 Flash Lite, server-side only |
 | Summaries | On-demand per question, not pre-generated in Actions |
 | Context | Full titles + scores + authors + comment counts + top comments |
 | Caching | No caching on AI responses |

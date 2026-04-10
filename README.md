@@ -12,7 +12,7 @@ A web app that fetches the top 10 Hacker News posts every morning, commits a cle
 
 - Reads today's top 10 Hacker News posts with scores, authors, and comment counts
 - Expandable top 5 comments per post — no need to open the HN thread
-- Chat-style Q&A powered by Gemini 1.5 Flash ("What's the most controversial post?")
+- Chat-style Q&A powered by Gemini 2.5 Flash Lite ("What's the most controversial post?")
 - Persistent chat history for follow-up questions within the session
 - Refresh button re-fetches live HN data directly in the browser
 - Zero sign-in, zero database, zero infrastructure beyond Vercel + GitHub Actions
@@ -54,7 +54,7 @@ A web app that fetches the top 10 Hacker News posts every morning, commits a cle
                          │                                 │
                   GET /api/refresh              POST /api/ask
                   (live HN fetch,                    │
-                   no commit)               Gemini 1.5 Flash
+                   no commit)               Gemini 2.5 Flash Lite
                                             (server-side,
                                              no caching)
 ```
@@ -67,7 +67,7 @@ A web app that fetches the top 10 Hacker News posts every morning, commits a cle
 |---|---|
 | Frontend | Next.js 14 (App Router), React 18 |
 | Styling | Tailwind CSS |
-| AI | Gemini 1.5 Flash via `@google/generative-ai` |
+| AI | Gemini 2.5 Flash Lite via `@google/generative-ai` |
 | ETL | Node.js script (`scripts/fetch-digest.mjs`) |
 | Pipeline | GitHub Actions (`daily-digest.yml`) |
 | Data source | HN Firebase REST API (free, no key) |
