@@ -118,7 +118,7 @@ export async function POST(req: NextRequest) {
   // 6. Stream response
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
     const streamResult = await model.generateContentStream(prompt);
 
     const stream = new ReadableStream({
