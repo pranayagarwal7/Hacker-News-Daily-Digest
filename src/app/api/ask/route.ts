@@ -118,7 +118,7 @@ export async function POST(req: NextRequest) {
   // 6. Stream response
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-3-flash-preview' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
     const streamResult = await model.generateContentStream(prompt);
 
     const stream = new ReadableStream({
@@ -143,7 +143,8 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (err) {
-    console.error('[ask] Gemini error:', err);
-    return NextResponse.json({ error: 'Failed to generate answer.' }, { status: 500 });
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('[ask] Gemini error:', message);
+    return NextResponse.json({ error: `Failed to generate answer: ${message}` }, { status: 500 });
   }
 }
