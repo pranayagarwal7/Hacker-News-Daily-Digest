@@ -1,408 +1,372 @@
 {
-  "date": "2026-04-10",
-  "fetchedAt": "2026-04-10T12:12:06.953Z",
+  "date": "2026-04-11",
+  "fetchedAt": "2026-04-11T08:55:31.562Z",
   "posts": [
     {
-      "id": 47716043,
-      "title": "France Launches Government Linux Desktop Plan as Windows Exit Begins",
-      "url": "https://www.numerique.gouv.fr/sinformer/espace-presse/souverainete-numerique-reduction-dependances-extra-europeennes/",
-      "score": 425,
-      "by": "embedding-shape",
-      "time": 1775817453,
-      "descendants": 150,
-      "comments": [
-        {
-          "id": 47716191,
-          "by": "esskay",
-          "text": "Yeah good on them, everyone needs to do this. It&#x27;s nuts Windows is still the go-to for anything these days despite everyone knowing what a parasitic, buggy mess it is. &quot;Easy&quot; shouldn&#x27;t be the excuse in this day and age. Big orgs and especially government entities should be hiring the people that know what they&#x27;re doing and get off that crummy platform.",
-          "time": 1775818663
-        },
-        {
-          "id": 47716655,
-          "by": "sylens",
-          "text": "Many government orgs have spent the last decade and a half slowly transitioning old legacy applications and platforms to browser-based alternatives. That old ERP software that used to require a thick client? Now it runs in Chrome. Microsoft recognized this and smartly moved to keep these customers locked in via an ever growing Microsoft Office bundle - subscription based, with Teams for their chat and then building up additional capabilities to extend the dependency, like InTune.Where we are at now is that the pain of moving away from Windows is acceptable for many larger organizations and governments, especially those with flat or decreasing budgets. You can just swap out the OS layer and keep other processes the same - keep using Office with just the browser versions if you want, or move to an alternative (like EU-based). Teams works on Linux. There is no moat on Windows anymore",
-          "time": 1775821556
-        },
-        {
-          "id": 47716143,
-          "by": "Latitude7973",
-          "text": "France has been making good moves to achieve software independence from the US. It would be an even better move to allow those in Europe or indeed the rest of the world to also benefit.",
-          "time": 1775818309
-        },
-        {
-          "id": 47716494,
-          "by": "morog",
-          "text": "I used Linux 10 years ago, but then due to job or corp. and needing Teams and Outlook I was forced to uses Windows. Now with corp job over I was finally able to switch to Linux this week (Fedora + KDE). Loving improvements made in the last 10 years, KDE will always have its quirks, but it is fast and smooth with no crashes yet.  I got Claude to make me a migration script which worked brilliantly, haven&#x27;t needed to boot Windows yet. Browser sessions and everything worked like nothing had changed. All my various ssh &#x2F; putty configs migrated to Konsole, Thunderbird carries on like nothing has changed. Ahhhh freedom!",
-          "time": 1775820558
-        },
-        {
-          "id": 47716401,
-          "by": "faccacta",
-          "text": "It seems like what Europe really needs to do this is a viable mobile OS. It&#x27;s been true for a while that Linux + LibreOffice is plenty to handle most government workers&#x27; needs on the desktop, but that&#x27;s only good for when they are at their desks. Are there any viable alternatives to iOS and Android that are totally free of &quot;dépendances extra-européennes&quot;? What&#x27;s the plan?",
-          "time": 1775819978
-        }
-      ]
-    },
-    {
-      "id": 47716412,
-      "title": "Microsoft suspends dev accounts for high-profile open source projects",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
-      "score": 97,
-      "by": "N19PEDL2",
-      "time": 1775820051,
-      "descendants": 25,
-      "comments": [
-        {
-          "id": 47716725,
-          "by": "tacker2000",
-          "text": "In the tech world, security is mostly just a theater , it is used to push though unwanted and unpopular things, like access control, privacy invasion, etc...All this signing business, leads to one party having the final say, and guess what, they are going to abuse that power...",
-          "time": 1775822134
-        },
-        {
-          "id": 47716656,
-          "by": "mellosouls",
-          "text": "Discussed here yesterday:Microsoft terminates VeraCrypt account, halting Windows updates (575 points, 239 comments)https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47690977",
-          "time": 1775821561
-        },
-        {
-          "id": 47716830,
-          "by": "rixthefox",
-          "text": "lol, Microslop shooting themselves in the foot once again.At this point people will move to MacOS or Linux because so much damage to their brand can’t simply be ignored anymore.",
-          "time": 1775822720
-        },
-        {
-          "id": 47716589,
-          "by": "rob74",
-          "text": "Also: https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;04&#x2F;08&#x2F;wireguard-vpn-developer-ca... (https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47702161)",
-          "time": 1775821141
-        },
-        {
-          "id": 47716647,
-          "by": "mittermayr",
-          "text": "Just got a Wireguard update on Windows a minute ago, so seems resolved?",
-          "time": 1775821499
-        }
-      ]
-    },
-    {
-      "id": 47704804,
-      "title": "How NASA built Artemis II’s fault-tolerant computer",
-      "url": "https://cacm.acm.org/news/how-nasa-built-artemis-iis-fault-tolerant-computer/",
-      "score": 437,
-      "by": "speckx",
-      "time": 1775747560,
-      "descendants": 169,
-      "comments": [
-        {
-          "id": 47711967,
-          "by": "dmk",
-          "text": "The quote from the CMU guy about modern Agile and DevOps approaches challenging architectural discipline is a nice way of saying most of us have completely forgotten how to build deterministic systems. Time-triggered Ethernet with strict frame scheduling feels like it&#x27;s from a parallel universe compared to how we ship software now.",
-          "time": 1775779816
-        },
-        {
-          "id": 47713548,
-          "by": "georgehm",
-          "text": "&gt;Effectively, eight CPUs run the flight software in parallel. The engineering philosophy hinges on a \n&gt;“fail-silent” design. The self-checking pairs ensure that if a CPU performs an erroneous calculation \n&gt;due to a radiation event, the error is detected immediately and the system responds.&gt;“A faulty computer will fail silent, rather than transmit the ‘wrong answer,’” Uitenbroek explained. \n&gt;This approach simplifies the complex task of the triplex “voting” mechanism that compares results. &gt;\n&gt;Instead of comparing three answers to find a majority, the system uses a priority-ordered source \n&gt;selection algorithm among healthy channels that haven’t failed-silent. It picks the output from the \n&gt;first available FCM in the priority list; if that module has gone silent due to a fault, it moves to \n&gt;the second, third, or fourth.One part that seems omitted in the explanation is what happens if both CPUs in a pair for whatever reason performs an erroneous calculation and they both match, how will that source be silenced without comparing its results with other sources.",
-          "time": 1775794306
-        },
-        {
-          "id": 47712888,
-          "by": "__d",
-          "text": "Does anyone have pointers to some real information about this system?  CPUs, RAM, storage, the networking, what OS, what language used for the software, etc etc?I’d love to know how often one of the FCMs has “failed silent”, and where they were in the route and so on too, but it’s probably a little soon for that.",
-          "time": 1775788093
-        },
-        {
-          "id": 47716475,
-          "by": "dojopico",
-          "text": "I did VOS and database performance stuff at Stratus from 1989-95. Stratus was the hardware fault tolerant company. Tandem, our arch rivals, did software fault tolerance. Our architecture was “pair and spare”. Each board had redundant everything and was paired with a second board. Every pin out was compared on every tick. Boards that could not reset called home. The switch from Motorola 68K to Intel was a nightmare for the hardware group because some instructions had unused pins that could float.",
-          "time": 1775820492
-        },
-        {
-          "id": 47716366,
-          "by": "dom111",
-          "text": "I always wondered if the &quot;radiation hardening&quot; approaches of the challenges like this https:&#x2F;&#x2F;codegolf.stackexchange.com&#x2F;questions&#x2F;57257&#x2F;radiation... (see the tag for more https:&#x2F;&#x2F;codegolf.stackexchange.com&#x2F;questions&#x2F;tagged&#x2F;radiatio...) would be of any practical use... I assume not, as the problem is on too many levels, but still, seems at least tangentially relevant!",
-          "time": 1775819788
-        }
-      ]
-    },
-    {
-      "id": 47713495,
-      "title": "ETH Zurich demonstrates 17,000 qubit array with 99.91% fidelity",
-      "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/04/a-new-trick-brings-stability-to-quantum-operations.html",
-      "score": 131,
-      "by": "joko42",
-      "time": 1775793897,
-      "descendants": 29,
-      "comments": [
-        {
-          "id": 47715370,
-          "by": "fsh",
-          "text": "I find the editorialized title misleading. They trapped 17000 atom pairs in an optical lattice and demonstrated a high-fidelity quantum gate between the atoms of each pair in parallel. There is no interaction between the atoms of different pairs and no individual control. The experiment demonstrates a very robust gate scheme, but is a long way from a programmable computer.",
-          "time": 1775811477
-        },
-        {
-          "id": 47716885,
-          "by": "dathinab",
-          "text": "things are speeding up dangerouslysure this isn&#x27;t a 17k qubit quantum computer, but it&#x27;s a step in that direction.and this isn&#x27;t the only new falling under  &quot;this is moving faster then expected&quot;just one in many which scream &quot;time to take it serious, deadline 2029 try earlier&quot;---a year or so(?) ago some investments happened, which made only sense if there had been some unpublished break through in quantum computer hardware (through you never can exclude foolish absurd high Risiko investments). (Sadly I didn&#x27;t bookmark&#x2F;safe the relevant articles&#x2F;analysis, so take with a grain of salt.)then more recently, google researchers had some break through wrt. quantum algorithms. It can now be generally assumed that 10k qubits (in the right setup) are enough to break 256 elliptic curve cryptography (or 2048bit RSA) _in minutes_!There where also other hardware breakthrough published, and error correction break throughs etc.The general consensus of people more knowledgeable in this field  then me seems to be going in the direction that you must  _finish fully migrate to post quantum cryptography by 2029_.Note that this isn&#x27;t a &quot;100% guarantee there are cable quantum computers in 2030&quot;, but a &quot;the chance of this happening is too high to not be prepared by then&quot;.Also that is mainly true for webpki, TLS, cloud infrastructure&#x2F;deployment systems, code signing, etc.Overall:- from a academic&#x2F;paper background 2029 seems to be the deadline to finish migrating to post quantum cryptography- claudflare agrees and has moved up it&#x27;s internal deadline to 2029- same for Google, Google also seem to have prioritized quantum secure authentication over harvest now&#x2F;decrypt later protections, Which IMHO implies they take that quite serious- IBM expect some &quot;moonshot&quot; attacks against high value targets already in 2029 (i.e. ~one year earlier) instead of 2030___Through overall what does that mean for most people?- If you run some small low security service then probably for now nothing much. But make sure you can move to pq if the tooling (webpki, TLS, etc.) starts supporting it and keep an eye on the topic.- For webpki, TLS and co having well working and by default supported pq cryptography is paramount. This tech isn&#x27;t just powering the secure web, it&#x27;s used far beyond and if broken might be enough to take over large parts of whole cloud providers.- If you have some very sensitive material, where it&#x27;s a big problem if it leaks even years later, then you have a problem. Because you probably should have already migrated to post quantum cryptography 1-2 years ago ... Note that symmetric encryption is mostly unaffected. Sure there are a lot of people saying it&#x27;s &quot;slashed in half&quot; (e.g. 128bit =&gt; 64bit) but luckily that isn&#x27;t fully true. I personally still would go with 256bit where viable, as often there is little reason not to do so. BUT a lot of the ways of sharing&#x2F;accessing&#x2F;deriving that secure symmetric key use cryptography which should be assumed to be broken soon.- for VPNs if they allow complementing the asym. crypto with a symmetric key do that now (e.g. wireguard pre-shared key). But that is for many use cases a hen&#x2F;egg issue as how do you securely exchange the pre-shared key? So look out for changes in the tooling&#x2F;ecosystem.- for DevOps, look out for changes in the ecosystem especially webpki&#x2F;TLS&#x2F;certs and look out for tools which have a high chance to not mitigate in time- for Devs post quantum cryptography often looks like it could &quot;just slot in&quot; but that often isn&#x27;t fully the case due to very different key sizes and performance characteristics. Look out for it. Also making you system ready to migrate to pq-safety was a recommendation by NSA and pretty much any other national cyber security agency for years by now. Furthermore with the standardization of ML-KEM the recommendation shifted to using that where viable (potentially in a hybrid KEM). So if you now notice that you never bother to check&#x2F;plane ahead you probably should give it some priority now as you may be found to have acted in neglect which could in unlucky cases turn into legal liabilities.",
-          "time": 1775823049
-        },
-        {
-          "id": 47715811,
-          "by": "nottorp",
-          "text": "Judging by the other comments on here, they learned to title their articles from OpenAI and Anthropic.",
-          "time": 1775815337
-        },
-        {
-          "id": 47716136,
-          "by": "ForgotMyUUID",
-          "text": "“Demonstrates“ vs. “can be applied to 17,000 qubits simultaneously.“ - too completely different things, you know ...",
-          "time": 1775818262
-        }
-      ]
-    },
-    {
-      "id": 47715339,
-      "title": "Show HN: Keeper – embedded secret store for Go (help me break it)",
-      "url": "https://github.com/agberohq/keeper",
-      "score": 29,
-      "by": "babawere",
-      "time": 1775811213,
-      "descendants": 17,
-      "comments": [
-        {
-          "id": 47716597,
-          "by": "Retr0id",
-          "text": "Mmmm vibecrypto, my favourite. I don&#x27;t see anything obviously broken (at a glance) but as a perf improvement, there&#x27;s little reason to use Argon2id for the &quot;verification hash&quot; step, might as well use sha256 there. There is also no need to use ConstantTimeCompare because the value being compared against is not secret, although it doesn&#x27;t hurt.The &quot;Crash-safe rotation WAL&quot; feature sounds sketchy and it&#x27;s what I&#x27;d audit closely, if I was auditing closely.",
-          "time": 1775821183
-        },
-        {
-          "id": 47716616,
-          "by": "RALaBarge",
-          "text": "Hey I ran this request through my AI harness (beigeboxoss.com), first with a smaller local model and then validated with Trinity Large via OR.  https:&#x2F;&#x2F;github.com&#x2F;agberohq&#x2F;keeper&#x2F;issues&#x2F;2  -- YMMV but wanted something to do with my coffee, thanks!",
-          "time": 1775821289
-        },
-        {
-          "id": 47716369,
-          "by": "modelorona",
-          "text": "Name could conflict with Keeper Security",
-          "time": 1775819807
-        },
-        {
-          "id": 47716586,
-          "by": "emanuele-em",
-          "text": "Per-bucket DEKs with HKDF, hashed policy keys to kill enumeration, HMAC audit chain. This is the kind of boring-correct crypto design I rarely see in Go libraries. memguard for the master key is a nice touch too.",
-          "time": 1775821130
-        },
-        {
-          "id": 47716354,
-          "by": "n0n",
-          "text": "Genuine question: what&#x27;s your thread model?Vault gives time limited Tokens with Network Boundary.\nInstead of Keeper, i would just use age:# writeecho &quot;my secret&quot; | age -r &lt;recipient-pubkey&gt; &gt; secret.age# readage -d -i key.txt secret.age",
-          "time": 1775819739
-        }
-      ]
-    },
-    {
-      "id": 47674894,
-      "title": "Model-Based Testing for Dungeons & Dragons",
-      "url": "https://www.loskutoff.com/blog/model-based-testing-dnd/",
-      "score": 45,
-      "by": "Firfi",
-      "time": 1775567741,
-      "descendants": 6,
-      "comments": [
-        {
-          "id": 47674895,
-          "by": "Firfi",
-          "text": "Dungeons &amp; Dragons rules are a spec spanning thousands of pages, not formalized, but thoroughly tested by the community. Moving them to a formal specification language (Quint) was an obvious next step. It worked and proved to also be a great LLM self-checker.",
-          "time": 1775567741
-        },
-        {
-          "id": 47716289,
-          "by": "bugarela",
-          "text": "This is so cool, I&#x27;ll definitely be playing with in over the weekend. I meant to put Quint and D&amp;D together in some similar ideas before but never found the time, so I love to see this coming alive from someone else &lt;3",
-          "time": 1775819301
-        },
-        {
-          "id": 47716209,
-          "by": "randallsquared",
-          "text": "The &quot;Grapple Leapfrog&quot; is like the peasant railgun, and I think the &quot;real&quot; solution would be a recognition that order of conflict resolution in real time is not the same as ordering linear activities in game time.",
-          "time": 1775818782
-        },
-        {
-          "id": 47674907,
-          "by": "CSP_LIBRARY",
-          "text": "Great",
-          "time": 1775567776
-        },
-        {
-          "id": 47716483,
-          "by": "weregiraffe",
-          "text": "Shit like this results from a severe misunderstanding of what&#x27;s enjoyable in a table-top RPG. It&#x27;s not a fucking video game.",
-          "time": 1775820519
-        }
-      ]
-    },
-    {
-      "id": 47712718,
-      "title": "I still prefer MCP over skills",
-      "url": "https://david.coffee/i-still-prefer-mcp-over-skills/",
-      "score": 248,
-      "by": "gmays",
-      "time": 1775786508,
-      "descendants": 202,
-      "comments": [
-        {
-          "id": 47715000,
-          "by": "antirez",
-          "text": "Don&#x27;t focus on what you prefer: it does not matter. Focus on what tool the LLM requires to do its work in the best way. MCP adds friction, imagine doing yourself the work using the average MCP server. However, skills alone are not sufficient if you want, for instance, creating the ability for LLMs to instrument a complicated system. Work in two steps:1. Ask the LLM to build a tool, under your guide and specification, in order do a specific task. For instance, if you are working with embedded systems, build some monitoring interface that allows, with a simple CLI, to do the debugging of the app as it is working, breakpoints, to spawn the emulator, to restart the program from scratch in a second by re-uploading the live image and resetting the microcontroller. This is just an example, I bet you got what I mean.2. Then write a skill file where the usage of the tool at &quot;1&quot; is explained.Of course, for simple tasks, you don&#x27;t need the first step at all. For instance it does not make sense to have an MCP to use git. The agent knows how to use git: git is comfortable for you, to use manually. It is, likewise, good for the LLM. Similarly if you always estimante the price of running something with AWS, instead of an MCP with services discovery and pricing that needs to be queried in JSON (would you ever use something like that?) write a simple .md file (using the LLM itself) with the prices of the things you use most commonly. This is what you would love to have. And, this is what the LLM wants. For complicated problems, instead, build the dream tool you would build for yourself, then document it in a .md file.",
-          "time": 1775808218
-        },
-        {
-          "id": 47715032,
-          "by": "tow21",
-          "text": "This argument always sounds like two crowds shouting past each other.Are you a solo developer, are you fully in control of your environment, are you focused on productivity and extremely tight feedback loops, do you have a high tolerance for risk: you should probably use CLIs. MCPs will just irritate you.Are you trying to work together with multiple people at organizational scale and alignment is a problem; are you working in a range of environments which need controls and management, do you have a more defensive risk tolerance ... then by the time you wrap CLIs into a form that are suitable you will have reinvented a version of the MCP protocol. You might as well just use MCP in the first place.Aside - yes, MCP in its current iteration is fairly greedy in its context usage, but that&#x27;s very obviously going to be fixed with various progressive-disclosure approaches as the spec develops.",
-          "time": 1775808423
-        },
-        {
-          "id": 47713089,
-          "by": "plandis",
-          "text": "I could not agree any less with the author. I don’t want APIs, I want agents to use the same CLI tooling I already use that is locally available. If my agents are using CLI tooling anyways there is no need to add an extra layer via MCP.I don’t want remote MCP calls, I don’t even want remote models but that’s cost prohibitive.If I need to call an API, a skill with existing CLI tooling is more than capable.",
-          "time": 1775789926
-        },
-        {
-          "id": 47716771,
-          "by": "losvedir",
-          "text": "For my use I prefer just a raw CLI. As long as it&#x27;s built following conventions (e.g. using cobra for a Go app) then the agent will just natively know how to use it, by which I mean how to progressively learn what it needs by reading the `help` output. In that case you don&#x27;t need a skill or anything. Just say &quot;I want this information, use the xyz app&quot;. It will then try `xyz --help` or `xyz help` or a variant, just like a human would, see the subcommands, do `xyz help subcommand` and eventually find what it needs to do the job. Good tools provide an OAuth flow like `xyz login`, which will open a browser window where you can determine which resources you want to give the CLI (and thereby the agent) access to.This only works for people using agents themselves on computers they control, rather than, e.g., the Claude web app, but is a good chunk of my usage.I think people are either over or under thinking the auth piece, though. The agent should have access to their own token. Both CLIs and MCPs and even raw API requests work this way. I don&#x27;t think MCPs provide any further security. You should assume the agent can access anything in its environment and do everything up to what the credential permits. You don&#x27;t want to give your more powerful credential to the MCP server and hope that the MCP server somehow restricts the agent to doing less (it can probably find the credential and make out-of-band calls if it wants). The only way I think it could work like that is how... is it Sprite does it?... where you give use a fake token and have an off-machine proxy that it goes through where it MitMs the request and injects the real credential.",
-          "time": 1775822401
-        },
-        {
-          "id": 47716837,
-          "by": "briznad",
-          "text": "Skills are static; MCP servers is dynamic. Skills codify info and workflows, help decrease redundant instructions, and increase consistent outcomes. MCP servers allow access to changing resources across systems.You may dislike MCP, and there are certainly valid arguments to be made there, but that doesn&#x27;t mean you can replace it with skills. If you could replace a given MCP server with a skill it would only indicate that someone misunderstood the assignment and chose the wrong tool in the first place. It wouldn&#x27;t indicate the superiority of one thing over the other.This whole article, and it&#x27;s current rank on HN (#5), is making me feel like I took crazy pills this morning. A colleague suggests this Skills vs MCP discourse is big on Twitter, so maybe I lack the necessary background to appreciate this, but aren&#x27;t these different tools, solving for different things, in different ways? Is this parody? Am I falling into a bot engagement trap by even responding to this? The article certainly reads like LinkedIn drivel, with vague, emphatic opinions about nothing.",
-          "time": 1775822785
-        }
-      ]
-    },
-    {
-      "id": 47708818,
-      "title": "Native Instant Space Switching on macOS",
-      "url": "https://arhan.sh/blog/native-instant-space-switching-on-macos/",
-      "score": 546,
-      "by": "PaulHoule",
-      "time": 1775764106,
-      "descendants": 254,
-      "comments": [
-        {
-          "id": 47710293,
-          "by": "aylmao",
-          "text": "I grew up with this animation so I didn&#x27;t consider it annoying until I bought a new Macbook a couple years ago.I noticed sometimes I would press keyboard shortcuts before my system&#x27;s focus had switched. Just little stumbles here and there, some inoffensive, some annoying, but who knows maybe I didn&#x27;t catch enough sleep.Over time it happened often enough that I decided to google it, and it turns out my muscle memory wasn&#x27;t failing me; the animation speed did change ever so slightly and was slower in new Macs with 120Hz displays [1][2] (newer MacBooks, 2021+). If you switch your screen to 60Hz it goes back to the faster animation.Why is this animation slower now, and why does it depend on screen refresh rate? I have some technical theories but can&#x27;t think of an organizational reason it happened and hasn&#x27;t been fixed 5 years later at a 3.82 trillion market cap company. If you Google it there&#x27;s plenty of discussions online about this. It&#x27;s noticeable and annoying to people who have used the feature often enough.[1]: https:&#x2F;&#x2F;discussions.apple.com&#x2F;thread&#x2F;256124324?sortBy=rank[2]: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=gNBWt4NvqHg",
-          "time": 1775769566
-        },
-        {
-          "id": 47712299,
-          "by": "godelski",
-          "text": "I think Apple is making a really fatal flaw. Tbh Microsoft is doing it too.Design good interfaces, with sane defaults but do not handcuff power users!!!I often hear people say no one should care because there aren&#x27;t many power users. They&#x27;re a small portion, but that&#x27;s absurd framing. They matter a lot because they&#x27;re the ones that push your design language, develop new ideas, influence the general community, build new programs, find your bugs, and all of that. Apple and Microsoft are closing the ecosystems to get more control not only to exploit the users more (scrape their data) but to reduce bugs and things. But more and more people are trying these random programs because they can&#x27;t figure out how to do things the right way. It&#x27;s exactly why people are getting more frustrated with computers. The general public still doesn&#x27;t care about data harvesting but they do care that the restrictions are handcuffing them now.Funny enough this is also why Linux is becoming more popular. You&#x27;ve always had complete control but in the last 5 years the barrier to entry has plummeted. It&#x27;s still not right for the average joe but it&#x27;s on its way and a few more specialty distros are already there (e.g. steamos). The irony is Apple had the right idea before, even if not as modifiable as Linux, it used to be easier. But now it&#x27;s more like a power trip. Consolidating control because they don&#x27;t know what else to do",
-          "time": 1775782929
-        },
-        {
-          "id": 47716827,
-          "by": "gejose",
-          "text": "⬆ Huge upvote for this find as I&#x27;ve been looking for a way to do this recently.I tried the yabai + skhd recently, but I didn&#x27;t like that I had to disable System Integrity Protection.",
-          "time": 1775822714
-        },
-        {
-          "id": 47710172,
-          "by": "xz18r",
-          "text": "I see yabai mentioned, definitely check out Aerospace. Ive tried multiple WMs after years of i3 on Linux and this is the best one I found (for me) with quite a margin. It just works (tm)https:&#x2F;&#x2F;github.com&#x2F;nikitabobko&#x2F;AeroSpace",
-          "time": 1775769014
-        },
-        {
-          "id": 47716372,
-          "by": "jjcosgrove",
-          "text": "[video]just sharing for sh*ts n&#x27; giggles... inspired by this post and a previous annoyance i had around spaces in general... i just &#x27;vibe coded&#x27; (don&#x27;t start) this using codex this morning (built upon InstantSpaceSwitcher&#x27;s UI)https:&#x2F;&#x2F;www.jjcosgrove.com&#x2F;assets&#x2F;videos&#x2F;spaced.mp4basically:- you can set custom names per space- you can hotkey-navigate to each space&#x2F;any space- it has a visual indicator in menubar (active&#x2F;vs inactive in case you use mission control)- you can show a nice grid overlay (to click or arrow-nav to a space)- it has unified shortcut&#x2F;name management via UI (rather than needing a seperate util)names are retained on restarts, spaces are synced if mission control creates any (as best as you can with mac&#x27;s private apis).for personal utilities like this, it works quite well and sometimes its good to just have &#x27;fun&#x27;oh and the &#x27;jank&#x27; relates to how spaces works (i think), but can be removed&#x2F;avoided by enabling &#x27;reduce motion&#x27; which i think the original post mentions.",
-          "time": 1775819821
-        }
-      ]
-    },
-    {
-      "id": 47716490,
-      "title": "FBI used iPhone notification data to retrieve deleted Signal messages",
-      "url": "https://9to5mac.com/2026/04/09/fbi-used-iphone-notification-data-to-retrieve-deleted-signal-messages/",
-      "score": 34,
-      "by": "01-_-",
-      "time": 1775820544,
-      "descendants": 9,
-      "comments": [
-        {
-          "id": 47716774,
-          "by": "chasil",
-          "text": "First, a critical setting for Signal users:&quot;Signal’s settings include an option that prevents the actual message content from being previewed in notifications. However, it appears the defendant did not have that setting enabled, which, in turn, seemingly allowed the system to store the content in the database.&quot;Second, how can I see this notification history?",
-          "time": 1775822407
-        },
-        {
-          "id": 47716677,
-          "by": "frizlab",
-          "text": "Aren’t notifications supposed to be encrypted for Signal?",
-          "time": 1775821726
-        },
-        {
-          "id": 47716753,
-          "by": "etiam",
-          "text": "Prior discussion in https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47703573",
-          "time": 1775822281
-        },
-        {
-          "id": 47716852,
-          "by": "lenerdenator",
-          "text": "There needs to be a bit more &quot;group chat&quot; control in Signal messages, wherein you could enforce certain settings for certain chats regardless of the phone settings. You could have group chats that would enforce not showing more information in the notifications, while others would still allow it.",
-          "time": 1775822873
-        },
-        {
-          "id": 47716853,
-          "by": "i_am_proteus",
-          "text": "Reminder that no end-to-end encryption arrangement can do anything before encryption, or after decryption, at the endpoints.",
-          "time": 1775822877
-        }
-      ]
-    },
-    {
-      "id": 47712656,
-      "title": "We've raised $17M to build what comes after Git",
-      "url": "https://blog.gitbutler.com/series-a",
-      "score": 175,
-      "by": "ellieh",
-      "time": 1775785978,
+      "id": 47724352,
+      "title": "Filing the corners off my MacBooks",
+      "url": "https://kentwalters.com/posts/corners/",
+      "score": 759,
+      "by": "normanvalentine",
+      "time": 1775859400,
       "descendants": 382,
       "comments": [
         {
-          "id": 47713454,
-          "by": "fxtentacle",
-          "text": "I feel like I really need to learn how to raise money. For $17M, one could probably build a vacuum robot prototype that’ll also clean up all of the kids toys and sort LEGO bricks by colour and size. Parents worldwide would love it.But instead, we get a replacement for Git. And I didn’t even bother to click the link because I’m fine with how Git works. On the list of pain points in my life, “what comes after Git” has roughly the same priority as “try out a more exciting shower gel”. But did you ever step on a LEGO brick while walking to the bathroom at night? That pain is immediately obvious.Why is nobody solving actual problems anymore?",
-          "time": 1775793625
+          "id": 47726595,
+          "by": "jasoneckert",
+          "text": "Thanks for this interesting post - I&#x27;ve been showing it to co-workers to get their reactions, which was incredibly entertaining for me!Co-worker 1: Interesting. I wonder if that voids the warranty. It&#x27;s Apple you know.Co-worker 2: May Jobs have mercy on their soul...Co-worker 3: Not a bad idea. But not sure if that would cause problems with structural integrity of the laptop, like if you drop it or something.Co-worker 4: The only downside I see is that you can no longer say &quot;Hey, that&#x27;s a sharp-looking laptop!&quot;",
+          "time": 1775873756
         },
         {
-          "id": 47714653,
-          "by": "tmountain",
-          "text": "I personally feel that:1) Git is fine2) I would not want to replace critical open source tooling with something backed by investor capital from its inception.Sure, it will be “open source “, but with people throwing money behind it, there’s a plan to extract value from the user base from day one.I’m tired of being “the product”.Critical open source tooltips by should spring from the community, not from corporate sponsorship.",
-          "time": 1775805171
+          "id": 47725701,
+          "by": "yreg",
+          "text": "The takeaway from this article should be to consider modifying your tools to your needs even in unconventional and controversial ways. I love it.The flame war on whether the original chassis design sucks or rocks is not that interesting.",
+          "time": 1775867080
         },
         {
-          "id": 47715084,
-          "by": "znnajdla",
-          "text": "I continue to be amazed at American capital allocation. $17M for an idea to improve Git? For a fraction of that money Ukrainian housewives build anti-drone air defence systems in their garage that protect their country. For that kind of money you could build an apartment block to ease the housing shortage. You could invest in electricity resilience and build mini nuclear power plants or a small wind farm. Soviet capital allocation:  while they were pouring money into their space program and building the &quot;biggest baddest military helicopters&quot; there wasn&#x27;t enough bread in grocery stores.",
-          "time": 1775808776
+          "id": 47727641,
+          "by": "wraptile",
+          "text": "I used a macbook for almost 2 years and genuinely don&#x27;t understand how people can tolerate these machines. My wrists would be cut up all the time to the point where I looked like I was self harming myself and the glary screen is entirely unsuable anywhere but a darkest basement. Not to mention the terrible keyboard. To this day I&#x27;m perplexed how macbooks have such high desirability by full time developers when they&#x27;re almost unusable.",
+          "time": 1775884725
         },
         {
-          "id": 47713641,
-          "by": "tiffanyh",
-          "text": "A lot of people seem confused about how they raised the money, but it’s actually a pretty easy VC pitch.- It’s from one of GitHub’s cofounders.- GitHub had a $7.5B exit.- And the story is: AI is completely changing how software gets built, with plenty of proof points already showing up in the billions in revenue being made from things like Claude Code, Cusor, Codex, etc.So the pitch is basically: back the team that can build the universal infrastructure for AI and agentic coding.",
-          "time": 1775795223
+          "id": 47725725,
+          "by": "420official",
+          "text": "I just did this to my MacBook not because of the sharp edge but because the pitting turns a sharp edge into a sawblade. Something about the grounding on on the frame when plugged in mixed with my sweaty hands leads to damage along this sharp edge on every MacBook I&#x27;ve ever owned.See https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;macbook&#x2F;s&#x2F;hbyVh5SJhw for another poor soul with the same caustic skin",
+          "time": 1775867235
         },
         {
-          "id": 47715810,
-          "by": "qwery",
-          "text": "First off, I&#x27;m of course interested to see what the future infrastructure of software building next looks like.&gt; The hard problem is not generating change, it’s organizing, reviewing, and integrating change without creating chaos.Sure, writing some code isn&#x27;t the bottleneck. Glossed over is the part where the developer determines what changes to make, which in my experience is the most significant cost during development and it dwarfs anything to do with version control. You can spend a lot of energy on the organising, reviewing, patching, etc. stuff -- and you should be doing some amount of this, in most situations -- but if you&#x27;re spending more of your development budget on metaprojects than you think you should be, I don&#x27;t think optimising the metatooling is going to magically resolve that. Address the organisational issues first.&gt; This is what we’re doing at GitButler, this is why we’ve raised the funding to help build all of this, faster.The time constraint (&quot;faster&quot;) is, of course, entirely self-imposed for business reasons. There&#x27;s no reason to expect that &#x27;high cost + high speed&#x27; is the best or even a good way to build this sort of tooling, or anything else, for that matter.Git&#x27;s UI has become increasingly friendly over a very long time of gradual improvements.\nYes, Mercurial was pretty much ideal out of the gate, but the development process in that case was (AFAIK) a world away from burning money and rushing to the finish.Maybe going slow is better?",
-          "time": 1775815318
+          "id": 47728768,
+          "by": "cassianoleal",
+          "text": "A few weeks ago I accidentally dropped my space grey MBP. It had the lip open and fell on its right corner, inner&#x2F;keyboard side.The machine is fine and I didn’t even have to adjust the screen as it was still correctly in place but on that corner the aluminium lifted up forming a mountain shape, about 2 mm tall and very sharp.Not only this was uncomfortable, but it also meant I couldn’t close the lid properly and might eventually crack the screen from it, so I filed it away. Like OP, I started with a pretty gritty file to get most of the tip off, then finished with a multi-tool with the sanding attachment. I went through a few grits but I got bored long before it was smooth.In the end, I actually liked the look, and have been considering going all around like OP. I may have to do it now.",
+          "time": 1775897040
+        }
+      ]
+    },
+    {
+      "id": 47698455,
+      "title": "Starfling: A one-tap endless orbital slingshot game in a single HTML file",
+      "url": "https://playstarfling.com",
+      "score": 139,
+      "by": "iceberger2001",
+      "time": 1775699567,
+      "descendants": 42,
+      "comments": [
+        {
+          "id": 47698456,
+          "by": "iceberger2001",
+          "text": "Hey HN,\nI built STARFLING, a simple hyper-casual space game you can play right in your browser.You orbit a star with a ball. Tap anywhere to release and sling it through space. Catch the next star to lock in orbit and keep going. Miss and it&#x27;s game over.The whole thing is just one HTML file with vanilla JS, Canvas, and Web Audio. No frameworks, no build step. Loads in under 2 seconds on phone or desktop.There&#x27;s a combo system if you release quick, a skip bonus for jumping over stars, and it gets harder the longer you last. When you die you get a cool trail art picture of your whole run that you can share.Audio is all generated on the fly and it has haptics too. Pretty satisfying once you get the timing down.Play it here: https:&#x2F;&#x2F;playstarfling.com?utm_source=hn&amp;utm_medium=showhnWould love your thoughts on the feel, difficulty, and whether the trail art is fun or not.Thanks!",
+          "time": 1775699567
+        },
+        {
+          "id": 47728726,
+          "by": "cpcallen",
+          "text": "I am completely confused about the orbital mechanics in this game.  They seem completely broken; at any rate they do not work remotely like any other simulation I&#x27;ve played with (e.g. Gravitation or Kerbal Space Program).  The bodies other than the first body appear to actively deflect the spacecraft away!",
+          "time": 1775896544
+        },
+        {
+          "id": 47727625,
+          "by": "muti",
+          "text": "Fun. Not sure if this applies on desktop, but on mobile the quick&#x2F;fast&#x2F;blazing&#x2F;skip text often blocks vision of the ball making it harder than it should be to make combos",
+          "time": 1775884548
+        },
+        {
+          "id": 47728812,
+          "by": "dawie",
+          "text": "Super cool, super addictive :-)",
+          "time": 1775897490
+        },
+        {
+          "id": 47728615,
+          "by": "modinfo",
+          "text": "Cool game!  \nI scored 7581 (120 stars) on STARFLING :Phttps:&#x2F;&#x2F;pod.sekor.eu.org&#x2F;@modinfo&#x2F;statuses&#x2F;01KNXT3ZQDTHZBDYF...",
+          "time": 1775895583
+        }
+      ]
+    },
+    {
+      "id": 47719740,
+      "title": "1D Chess",
+      "url": "https://rowan441.github.io/1dchess/chess.html",
+      "score": 796,
+      "by": "burnt-resistor",
+      "time": 1775835448,
+      "descendants": 142,
+      "comments": [
+        {
+          "id": 47721597,
+          "by": "hackyhacky",
+          "text": "If you enjoyed this, you might like Mind Chess, which can be played without a board and pieces [1]:Consider Mind Chess. Two players face each other. One says &quot;Check.&quot; The other says &quot;Check.&quot; The first says &quot;Check.&quot; This continues until one of them says, instead, &quot;Checkmate.&quot; That player wins -- superficially. In fact, the challenge is to put off checkmate for as long as possible, while still winning. This may be better stated: you truly win Mind Chess if you call &quot;Checkmate&quot; just before your opponent was about to.[1] http:&#x2F;&#x2F;www.eblong.com&#x2F;zarf&#x2F;essays&#x2F;mindgame.html",
+          "time": 1775844036
+        },
+        {
+          "id": 47720716,
+          "by": "quuxplusone",
+          "text": "Mentioned in TFA: This version of chess is given by Martin Gardner in his &quot;Mathematical Games&quot; column of July 1980 (pages 27 and 31) — https:&#x2F;&#x2F;www.jstor.org&#x2F;stable&#x2F;24966361 — and the analysis of White&#x27;s mate is given in the column of August 1980 (page 18) — https:&#x2F;&#x2F;www.jstor.org&#x2F;stable&#x2F;24966383.I do wonder how things would change if the board were 9 cells long; 10 cells long; etc. Also, it seems &quot;in the spirit&quot; to permit castling if neither K nor R has moved yet: i.e., from the positionK _ R N r _ n kWhite ought to be permitted to_ R K N r _ n k(Or maybe there&#x27;s a stronger argument for R K _ N r _ n k, actually. The former was conceptually &quot;rook moves halfway toward king, then king moves to the other side of rook&quot;; but the latter is &quot;rook moves two steps in king&#x27;s direction while king moves to the other side of rook.&quot;)I&#x27;m pretty sure this wouldn&#x27;t change the analysis on the 8-cell board at all, though. I wonder if it would change the analysis on any size of board.",
+          "time": 1775839532
+        },
+        {
+          "id": 47722508,
+          "by": "tromp",
+          "text": "1D Go is also interesting and doesn&#x27;t require any change in rules or starting position. TIL that it is known as Alak [1].\nOne of the open problems in our Combinatorics of Go paper [2] is whether you can play a game that goes through all possible legal 1xn positions for any n&gt;2, which we were only able to verify up to n=7.[1] https:&#x2F;&#x2F;senseis.xmp.net&#x2F;?Alak[2] https:&#x2F;&#x2F;tromp.github.io&#x2F;go&#x2F;gostate.pdf",
+          "time": 1775849040
+        },
+        {
+          "id": 47721829,
+          "by": "aktenlage",
+          "text": "Very cool. Reminds me of 1D Pacman: https:&#x2F;&#x2F;abagames.itch.io&#x2F;paku-paku",
+          "time": 1775845442
+        },
+        {
+          "id": 47720357,
+          "by": "asibahi",
+          "text": "This is really nice.Incidentally, there is an actual 1D game that is one of the most popular games on the planet: Backgammon.",
+          "time": 1775837892
+        }
+      ]
+    },
+    {
+      "id": 47725583,
+      "title": "Artemis II safely splashes down",
+      "url": "https://www.cbsnews.com/live-updates/artemis-ii-splashdown-return/",
+      "score": 856,
+      "by": "areoform",
+      "time": 1775866251,
+      "descendants": 273,
+      "comments": [
+        {
+          "id": 47725663,
+          "by": "areoform",
+          "text": "Glad that they&#x27;re safe and sound.It&#x27;s worth pointing out that this is the first extremely public, widely acknowledged high risk mission NASA has done in over 50 years. The Shuttle was risky, but it wasn&#x27;t thought of or acknowledged by NASA as being risky until very late in its lifecycle.According to NASA&#x27;s OIG, Artemis acceptable crew mortality rate is 1 in 30. Roughly 3x riskier than the shuttle. There genuinely is a world where they don&#x27;t make it back home.I am grateful that they did. And I&#x27;m grateful that we&#x27;re going to go even further. I can&#x27;t wait to see what Jared&#x27;s cooking up (for those who don&#x27;t know, he made his own version of the Gemini program in Polaris and funded it out of pocket).",
+          "time": 1775866801
+        },
+        {
+          "id": 47726166,
+          "by": "brianjlogan",
+          "text": "As an American I feel like I&#x27;ve been going through a bit of an identity crisis from what I remember growing up.Probably the rose tinted glasses of being a child but being from Florida I always had a sense of amazement and wonder as I heard the sonic boom of the shuttle returning to earth.Really felt like I was coexisting in this incredible scientific powerhouse of a country full of bright and enabled peoples that knew how to prioritize curiosity and innovation.Feeling like a bit of a &quot;vibe&quot; post which is everything wrong lately but I can&#x27;t help but feel some satisfaction that we&#x27;re still able to accomplish something like this in our space endeavors.",
+          "time": 1775870002
+        },
+        {
+          "id": 47726338,
+          "by": "atonse",
+          "text": "I had to explain to my wife and kids (not that I&#x27;m in this field, but I also have to remind myself) that we are able to pinpoint where the craft will land, when it will land down to the minute, because of ... just ... math. And we&#x27;re able to get them there and back because of science.It all boils down to equations that describe the world accurately, and a way of experimentation, iteration, thinking that gets us all the way to do something this unbelievably complex.",
+          "time": 1775871207
+        },
+        {
+          "id": 47728576,
+          "by": "small_model",
+          "text": "Impressive mission but I feel it&#x27;s not capturing the public attention because it&#x27;s actually a step back from the mission 50 years ago when they actually landed men on the moon with tech that was orders or magnitude simpler and less powerful.",
+          "time": 1775895170
+        },
+        {
+          "id": 47725721,
+          "by": "echoangle",
+          "text": "Wild that they manage to fly to the moon but still seem to be having those comms problems. Asking the astronauts if they’re really pressing the PTT button is wild.",
+          "time": 1775867215
+        }
+      ]
+    },
+    {
+      "id": 47724118,
+      "title": "Installing every* Firefox extension",
+      "url": "https://jack.cab/blog/every-firefox-extension",
+      "score": 370,
+      "by": "RohanAdwankar",
+      "time": 1775858193,
+      "descendants": 45,
+      "comments": [
+        {
+          "id": 47728062,
+          "by": "ArneVogel",
+          "text": "I won the &quot;Middle Finger Emoji Sticker&quot; Award! (https:&#x2F;&#x2F;jack.cab&#x2F;blog&#x2F;every-firefox-extension#the-middle-fin...)I quickly wrote up how: https:&#x2F;&#x2F;www.arnevogel.com&#x2F;firefox-permissions&#x2F;",
+          "time": 1775889358
+        },
+        {
+          "id": 47728798,
+          "by": "cachius",
+          "text": "Reminds me of the NPM package that depended es on all other NPM packages https:&#x2F;&#x2F;uncenter.dev&#x2F;posts&#x2F;npm-install-everything&#x2F;",
+          "time": 1775897406
+        },
+        {
+          "id": 47726171,
+          "by": "BoppreH",
+          "text": "Sad that no real pages can load successfully, but I thoroughly enjoyed the writing.&gt; We turned on crash reporting on the way.I haven&#x27;t burst out laughing like this in a while! You&#x27;ll probably make for some horror stories to a poor Mozilla team.",
+          "time": 1775870035
+        },
+        {
+          "id": 47724874,
+          "by": "xnorswap",
+          "text": "This article is wonderful crazy.The icing on the cake is the discovery of a potential performance bug in one or more of the about: pages, that&#x27;s definitely worthy of following up.",
+          "time": 1775862070
+        },
+        {
+          "id": 47728782,
+          "by": "curioussquirrel",
+          "text": "Absolutely unhinged and very entertaining. Thanks for sharing!",
+          "time": 1775897225
+        }
+      ]
+    },
+    {
+      "id": 47722333,
+      "title": "Chimpanzees in Uganda locked in eight-year 'civil war', say researchers",
+      "url": "https://www.bbc.com/news/articles/cr71lkzv49po",
+      "score": 324,
+      "by": "neversaydie",
+      "time": 1775848222,
+      "descendants": 181,
+      "comments": [
+        {
+          "id": 47723365,
+          "by": "OgsyedIE",
+          "text": "The primatologist Richard Wrangam once advanced the theory that tribe vs. tribe conspecific homicides - what he called coalitionary killing - are an evolved trait that was selected for in primates by some kind of pro-homicide selection pressures in the ancestral environment (where homicide reliably grants an advantage to the expected relative gene frequency of the perpetrator&#x27;s genes).I haven&#x27;t kept up with biology for years and don&#x27;t know what the current consensus on the topic is but it&#x27;s interesting to consider if some environments naturally promote the unlucky inhabitants to harm each other.",
+          "time": 1775853325
+        },
+        {
+          "id": 47722837,
+          "by": "neom",
+          "text": "Here is the paper: https:&#x2F;&#x2F;www.science.org&#x2F;doi&#x2F;10.1126&#x2F;science.adz4944 - it&#x27;s interesting.I noticed there was a respiratory epidemic that killed 25 chimps naturally quickly, one would imagine that would have quite a societal destabilizing impact?",
+          "time": 1775850675
+        },
+        {
+          "id": 47728099,
+          "by": "rurban",
+          "text": "What they don&#x27;t tell here, but a german researcher told yesterday on radio, was that the initial conflict arose in the 90ies, when one large group of Ngogo chimpanzees raided a nearby group and killed all males. Thus they came later to that insanely large number of 200 members, which a decade later lead to this conflict with the two groups already seperated. Similar to the https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Gombe_Chimpanzee_War observed by Jane Godall.Also missing is the Killer Ape theory of the sixties which led to the research that chimpanzees have much higher lethal conflict numbers than humans.Also, this Ngogo group is highly researched, and many many films where made about them.",
+          "time": 1775889762
+        },
+        {
+          "id": 47728636,
+          "by": "frakrx",
+          "text": "Funny how many people presume collective conflicts and violence are uniquely a human thing. Chimpanzees, lions, and wolves are some of the species where this kind of behavior is best known and documented.",
+          "time": 1775895755
+        },
+        {
+          "id": 47722830,
+          "by": "delichon",
+          "text": "I hope nobody decides to violate the prime directive and take sides in the chimp war.To the extent that they have good memory, they live in a world of finite resources, and their behavior was shaped by the forces of game theory as applied to tribes, this is more or less inevitable. You can read that as defeatism or just math. We can&#x27;t overcome the force of game theory, but we can make it work for us by making our transactions increasingly transparent and repeatable, so that cooperation is more successful than defection.",
+          "time": 1775850631
+        }
+      ]
+    },
+    {
+      "id": 47687443,
+      "title": "Volunteers turn a fan's recordings of 10K concerts into an online treasure trove",
+      "url": "https://apnews.com/article/aadam-jacobs-collection-concerts-internet-archive-chicago-b1c9c4466a2db409a83523ad84b79d62",
+      "score": 40,
+      "by": "geox",
+      "time": 1775639470,
+      "descendants": 1,
+      "comments": [
+        {
+          "id": 47728669,
+          "by": "rwmj",
+          "text": "https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;@aadam_jacobs_collectionThe Nirvana gig mentioned is https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;ajc00795_nirvana-1989-07-08  The quality is surprisingly good for a bootleg and the band are super-tight!Donate to the IA here: https:&#x2F;&#x2F;archive.org&#x2F;donate",
+          "time": 1775896091
+        }
+      ]
+    },
+    {
+      "id": 47727575,
+      "title": "Great at gaming? US air traffic control wants you to apply",
+      "url": "https://www.bbc.com/news/articles/ce84rvx0e6do",
+      "score": 30,
+      "by": "1659447091",
+      "time": 1775883857,
+      "descendants": 36,
+      "comments": [
+        {
+          "id": 47728223,
+          "by": "phoe-krk",
+          "text": "Please correct me I&#x27;m wrong:&gt; The ad also highlights the salary on offer to controllers, saying it is $155,000 (£115,000) after three years of work.Unless the US government shuts down again, at which point you stop being paid, you are required to keep working, you have no right to strike[0], and the competences you&#x27;ve built across this job are largely hard to directly make use of elsewhere so the incentive to job-hop is low.[0] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Professional_Air_Traffic_Contr...",
+          "time": 1775891030
+        },
+        {
+          "id": 47728766,
+          "by": "red_admiral",
+          "text": "I know this is culture-war stuff, but on the balance I think it&#x27;s true that the FAA deprioritised applicants from the AT&#x2F;CTI programmes, that is training courses speficically to become ATCs.My main source is https:&#x2F;&#x2F;www.tracingwoodgrains.com&#x2F;p&#x2F;the-full-story-of-the-fa..., and I&#x27;m assuming in particular that the screenshot of the letter in footnote 1 is genuine. In the section ended by footnote 16, there is a claim than in 2014 the FAA sent out just short of 3k job offer letters whereas in 2019  that had dropped to below 1k.That sounds like cutting off your own recruitment pipeline.It&#x27;s also evidence that the FAA did not drop the standards for qualification and certification, which is reassuring.",
+          "time": 1775897022
+        },
+        {
+          "id": 47728284,
+          "by": "altairprime",
+          "text": "What video game on Steam allows me to practice air traffic control? How can I determine if I have a skill at the logistics of managing planes on a radar screen? Where can I join a multiplayer lobby where at game start we&#x27;re assigned to either give radio commands to planes, or interpret radio commands and respond on behalf of planes, with at least two players for each? How does anti-griefing work in that environment?If that game existed, I would try it.Does it?",
+          "time": 1775891678
+        },
+        {
+          "id": 47728811,
+          "by": "vinni2",
+          "text": "Where is the mighty AI when you need one.",
+          "time": 1775897486
+        },
+        {
+          "id": 47728108,
+          "by": "flibbityflob",
+          "text": "Have they tried paying them consistently?",
+          "time": 1775889984
+        }
+      ]
+    },
+    {
+      "id": 47695213,
+      "title": "Optimal Strategy for Connect 4",
+      "url": "https://2swap.github.io/WeakC4/explanation/",
+      "score": 6,
+      "by": "marvinborner",
+      "time": 1775677070,
+      "descendants": 2,
+      "comments": [
+        {
+          "id": 47728789,
+          "by": "cachius",
+          "text": "This guy’s videos are awesome. He also has one on Klotski and the double pendulum. Beautiful graph animations.",
+          "time": 1775897330
+        },
+        {
+          "id": 47695427,
+          "by": "Someone",
+          "text": "FTA: “As a motivating example: player 1 (hereafter dubbed &quot;Red&quot;) can win by playing in the center column on the first move and then following the weak solution&#x27;s suggestions, but would not be guaranteed to win if the first disc is played elsewhere. The weak solution contains no information about what would happen in the other columns- As far as Red cares, it would be redundant to learn those branches, since they are not good.”I don’t think that “since they are not good” is necessary for a weak solution. Even if every first move were winning, it still would be redundant to learn how to win for every possible opening move.A weak solution gives you a guaranteed way to move from START to a win, whatever counterplay, not all ways to go from START to a win, whatever counterplay.",
+          "time": 1775677993
+        }
+      ]
+    },
+    {
+      "id": 47719942,
+      "title": "WireGuard makes new Windows release following Microsoft signing resolution",
+      "url": "https://lists.zx2c4.com/pipermail/wireguard/2026-April/009561.html",
+      "score": 466,
+      "by": "zx2c4",
+      "time": 1775836192,
+      "descendants": 135,
+      "comments": [
+        {
+          "id": 47720228,
+          "by": "zx2c4",
+          "text": "As I mentioned in the mailing list post, the Microsoft paperwork shuffling matter got dealt with rather quickly, following all the attention the HN thread from the other day got. And now we&#x27;re finally out with an update!NT programming is a lot of fun, though this release was quite challenging, because of all of the toolchain updates. On the plus side, we got to remove pre-Win10 support -- https:&#x2F;&#x2F;lists.zx2c4.com&#x2F;pipermail&#x2F;wireguard&#x2F;2026-March&#x2F;00954... . But did you know that Microsoft removed support for compiling x86 drivers in their latest driver SDK? So that was interesting to work around. There was also a fun change to the Go runtime included in this release: https:&#x2F;&#x2F;github.com&#x2F;golang&#x2F;go&#x2F;commit&#x2F;341b5e2c0261cc059b157f1c...All and all, a fun release, and I&#x27;m happy to have the Windows release train cooking again.",
+          "time": 1775837344
+        },
+        {
+          "id": 47720391,
+          "by": "c0l0",
+          "text": "As a wireguard user myself (even on the lone Windows machine that I still begrundingly have), I am happy that this problem could have been resolved. I am just wondering - if there had not been this kind of public outcry and outrage that Mr. Donenfeld discounts in his announcement message, would the issue have been fixed by now?What are individual developers of &quot;lesser&quot; (less important, less visible, less used) software with a Windows presence to do? Wait and pray for Goliath to make the first benevolent move, like all the folks who got locked out forever from their Google accounts on a whim? Ha!The fact of the matter is, the code signing requirements on Windows are a serious threat to Free and Open Source Software on the platform. Code signing requirements are a threat to FOSS on all platforms that support this technique, and infinitely more so where it&#x27;s effectively mandatory. I firmly believe that these days, THIS is the preferred angle&#x2F;vector for Microsoft to kill the software variety their C-levels once publicly bad-mouthed as &quot;cancer&quot;, and zx2c4 is one of the poor frogs being slowly boiled alive. Just not this time - yet.",
+          "time": 1775838032
+        },
+        {
+          "id": 47727064,
+          "by": "Nevermark",
+          "text": "Individual-level ethics and respect are being dispensed with en masse. The excuse being that these companies operate &quot;at scale&quot;.But last time I checked, they are taking money from individuals. Or otherwise encouraging individuals to use their services.So this lack of respect for individuals by specific large companies, is predicated on their encouraging users to trust them, and depend on them, without taking on any of the implied responsibility to not capriciously ruin someone&#x27;s day or year. And then hard or soft stone wall them.As someone who nearly lost everything due to the automated bureaucracy of a financial firm, I cannot stress: We are not safe. And we will not be safe until these companies are legally required to treat customer investment and dependency on their services, as valuable and necessarily recoverable, via prompt recourse and response, in cases where the automated bureaucratic systems fail.Otherwise, this is going to keep getting worse.When I hear how Microsoft helps someone who got attention, what I hear is that it takes extraordinary circumstances for Microsoft to care about the significant harm that there systems are causing many other people, today, who did not have the luck of this person.And that they are very very aware of this.I think we need to start using the word evil for this. Because it is. It is gross irresponsibility. Gross abuse of a power situation, of a strong dependency, that the company quite knowingly creates.",
+          "time": 1775878221
+        },
+        {
+          "id": 47723669,
+          "by": "golem14",
+          "text": "Since the impact of the account is presumably known to Microsoft (through telemetry etc), they probably know when these accounts get turned off, and can mark them in case the owner comes back and tries recovery.Microsoft would not have to automatically and 100% correctly reinstate the account. The goal would be to get high level cases like this one in front of a knowledgable human before the locked account posts angry owner posts complaints in public (If Joe Bloe&#x27;s defragmentation utility noone has ever heard of and only having 10 installs goes bad, noone would care.)Here, they don&#x27;t have to be perfect - you just need to have enough signal-to-voice ratio that employing a very small number of people outweighs the cost to PR and execs to deal with these cases, and to not let accounts get hacked through recovery.The response from Microsoft [1] is not great, or makes me hopeful.```\nPavan Davuluri, Microsoft&#x27;s President of Windows and Devices, said both Idrassi and Donenfeld should have their accounts restored &quot;soon.&quot;&quot;We&#x27;ve seen these reports and are actively working to resolve this as quickly as possible,&quot; Davuluri Xeeted. &quot;We&#x27;ve reached out to VeraCrypt and have spoken to Jason at WireGuard, they should be back up and running soon.&quot;He explained that both deactivations were executed as part of the Windows Hardware Program&#x27;s account verification procedures.The company published a blog in October, giving devs a two-week warning that if their accounts had not been verified since April 2024, Microsoft would issue mandatory account verification notifications.&quot;We worked hard to make sure partners understood this was coming, from emails, banners, reminders,&quot; said Davuluri.&quot;And we know that sometimes things still get missed. We&#x27;re taking this as an opportunity to review how we communicate changes like this and make sure we&#x27;re doing it better.&quot;```[1] https:&#x2F;&#x2F;www.theregister.com&#x2F;2026&#x2F;04&#x2F;09&#x2F;microsoft_dev_account...",
+          "time": 1775855167
+        },
+        {
+          "id": 47727820,
+          "by": "kuzivaai",
+          "text": "The &quot;minimum supported Windows version&quot; ratchet is underrated as a maintenance strategy. I&#x27;ve watched codebases drown in compatibility shims that nobody remembers why they exist. Curious how much of the driver size reduction came from dropping pre-Win10 support versus the toolchain updates.",
+          "time": 1775886594
         }
       ]
     }
