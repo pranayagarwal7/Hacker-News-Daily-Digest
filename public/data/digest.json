@@ -1,372 +1,414 @@
 {
-  "date": "2026-04-11",
-  "fetchedAt": "2026-04-11T08:55:31.562Z",
+  "date": "2026-04-12",
+  "fetchedAt": "2026-04-12T08:59:30.985Z",
   "posts": [
     {
-      "id": 47724352,
-      "title": "Filing the corners off my MacBooks",
-      "url": "https://kentwalters.com/posts/corners/",
-      "score": 759,
-      "by": "normanvalentine",
-      "time": 1775859400,
-      "descendants": 382,
+      "id": 47732020,
+      "title": "Small models also found the vulnerabilities that Mythos found",
+      "url": "https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier",
+      "score": 1066,
+      "by": "dominicq",
+      "time": 1775926048,
+      "descendants": 292,
       "comments": [
         {
-          "id": 47726595,
-          "by": "jasoneckert",
-          "text": "Thanks for this interesting post - I&#x27;ve been showing it to co-workers to get their reactions, which was incredibly entertaining for me!Co-worker 1: Interesting. I wonder if that voids the warranty. It&#x27;s Apple you know.Co-worker 2: May Jobs have mercy on their soul...Co-worker 3: Not a bad idea. But not sure if that would cause problems with structural integrity of the laptop, like if you drop it or something.Co-worker 4: The only downside I see is that you can no longer say &quot;Hey, that&#x27;s a sharp-looking laptop!&quot;",
-          "time": 1775873756
+          "id": 47732337,
+          "by": "johnfn",
+          "text": "The Anthropic writeup addresses this explicitly:&gt; This was the most critical vulnerability we discovered in OpenBSD with Mythos Preview after a thousand runs through our scaffold. Across a thousand runs through our scaffold, the total cost was under $20,000 and found several dozen more findings. While the specific run that found the bug above cost under $50, that number only makes sense with full hindsight. Like any search process, we can&#x27;t know in advance which run will succeed.Mythos scoured the entire continent for gold and found some. For these small models, the authors pointed at a particular acre of land and said &quot;any gold there? eh? eh?&quot; while waggling their eyebrows suggestively.For a true apples-to-apples comparison, let&#x27;s see it sweep the entire FreeBSD codebase. I hypothesize it will find the exploit, but it will also turn up so much irrelevant nonsense that it won&#x27;t matter.",
+          "time": 1775928436
         },
         {
-          "id": 47725701,
-          "by": "yreg",
-          "text": "The takeaway from this article should be to consider modifying your tools to your needs even in unconventional and controversial ways. I love it.The flame war on whether the original chassis design sucks or rocks is not that interesting.",
-          "time": 1775867080
+          "id": 47732254,
+          "by": "epistasis",
+          "text": "&gt; We took the specific vulnerabilities Anthropic showcases in their announcement, isolated the relevant code, and ran them through small, cheap, open-weights models. Those models recovered much of the same analysis. Eight out of eight models detected Mythos&#x27;s flagship FreeBSD exploit, including one with only 3.6 billion active parameters costing $0.11 per million tokens.Impressive, and very valuable work, but isolating the relevant code changes the situation so much that I&#x27;m not sure it&#x27;s much of the same use case.Being able to dump an entire code base and have the model scan it is they type of situation where it opens up vulnerability scans to an entirely larger class of people.",
+          "time": 1775927773
         },
         {
-          "id": 47727641,
-          "by": "wraptile",
-          "text": "I used a macbook for almost 2 years and genuinely don&#x27;t understand how people can tolerate these machines. My wrists would be cut up all the time to the point where I looked like I was self harming myself and the glary screen is entirely unsuable anywhere but a darkest basement. Not to mention the terrible keyboard. To this day I&#x27;m perplexed how macbooks have such high desirability by full time developers when they&#x27;re almost unusable.",
-          "time": 1775884725
+          "id": 47732350,
+          "by": "tptacek",
+          "text": "If you cut out the vulnerable code from Heartbleed and just put it in front of a C programmer, they will immediately flag it. It&#x27;s obvious. But it took Neel Mehta to   discover it. What&#x27;s difficult about finding vulnerabilities isn&#x27;t properly identifying whether code is mishandling buffers or holding references after freeing something; it&#x27;s spotting that in the context of a large, complex program, and working out how attacker-controlled data hits that code.It&#x27;s weird that Aisle wrote this.",
+          "time": 1775928488
         },
         {
-          "id": 47725725,
-          "by": "420official",
-          "text": "I just did this to my MacBook not because of the sharp edge but because the pitting turns a sharp edge into a sawblade. Something about the grounding on on the frame when plugged in mixed with my sweaty hands leads to damage along this sharp edge on every MacBook I&#x27;ve ever owned.See https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;macbook&#x2F;s&#x2F;hbyVh5SJhw for another poor soul with the same caustic skin",
-          "time": 1775867235
+          "id": 47735605,
+          "by": "muyuu",
+          "text": "I think the &quot;Mythos&quot; name is genius. The people at Anthropic make a bunch of claims and the public is expected to just believe them without any possibility of testing those claims or reproducing those results, and since so many people are invested in this saviour for the Global economy, or in the industry in general, or in hype to feed their engagement-based income sources, then there is faith to spare.Meanwhile this mythical beast wasn&#x27;t able to prevent the Bun vulnerability that exposed their code, let alone precluding the need to acquire that IP in the first place for presumably hundreds of millions of $$$, instead of coding a better replacement or a solution of its own.What is real and measurable is that subscription plan users are getting a much degraded service for the same money through both open and hidden policies, while Anthropic moves compute to serve off-the-counter customers. The same people who come with the most obvious and brazen lies to dismiss the clear degradation of their service also come with this &quot;security&quot; justification for a move that looks just like good old market segmentation which would perfectly fit the strong symptoms that they cannot afford to offer tokens at a competitive price in this market.",
+          "time": 1775960078
         },
         {
-          "id": 47728768,
+          "id": 47732340,
+          "by": "antirez",
+          "text": "Congrats: completely broken methodology, with a big conflict of interest. Giving specific bug hints, with an isolated function that is suspected to have bugs, is not the same task, NOR (crucially) is a task you can decompose the bigger task into. It is basically impossible to segment code in pieces, provide pieces to smaller models, and expect them to find all the bugs GPT 5.4 or other large models can find. Second: the smarter the model, and less the pipeline is important. In the latest couple of days I found tons if Redis bugs with a three prompts open-ended pipeline composed of a couple of shell scripts. Do you think I was not already tying with weaker models? I did, but it didn&#x27;t work. Don&#x27;t trust what you read, you have access to frontier models for 20$ a month. Download some C code, create a trivial pipeline that starts from a random file and looks for vulnerabilities, then another step that validates it under a hard test, like ASAN crash, or ability to reach some secret, and so forth, and only then the problem can be reported. Test yourself what it is possible. Don&#x27;t let your fear make you blind. Also, there is a big problem that makes the blog post reasoning not just weak per se, but categorically weak: if small model X can find 80% of vulnerabilities, if there is a model Y that can find the other potential 20%, we need &quot;Y&quot;: the maintainers should make sure they access to models that are at least as good as the black hats folks.",
+          "time": 1775928451
+        }
+      ]
+    },
+    {
+      "id": 47736555,
+      "title": "I run multiple $10K MRR companies on a $20/month tech stack",
+      "url": "https://stevehanov.ca/blog/how-i-run-multiple-10k-mrr-companies-on-a-20month-tech-stack",
+      "score": 135,
+      "by": "tradertef",
+      "time": 1775973600,
+      "descendants": 80,
+      "comments": [
+        {
+          "id": 47737182,
+          "by": "hackingonempty",
+          "text": "&gt; The enterprise mindset dictates that you need an out-of-process database server. But the truth is, a local SQLite file communicating over the C-interface or memory is orders of magnitude faster than making a TCP network hop to a remote Postgres server.I don&#x27;t want to diss SQLite because it is awesome and more than adequate for many&#x2F;most web apps but you can connect to Postgres (or any DB really) on localhost over a Unix domain socket and avoid nearly all of the overhead.It&#x27;s not much harder to use than SQLite, you get all of the Postgres features, it&#x27;s easier to run reports or whatever on the live db from a different box, and much easier if it comes time to setup a read replica, HA, or run the DB on a different box from the app.I don&#x27;t think running Postgres on the same box as your app is the same class of optimistic over provisioning as setting up a kubernetes cluster.",
+          "time": 1775981191
+        },
+        {
+          "id": 47737434,
+          "by": "senko",
+          "text": "If this sounds like basic advice, consider there are a lot of people out there that believe they have to start with serverless, kubernetes, fleets of servers, planet-scale databases, multi-zone high-availability setups, and many other &quot;best practices&quot;.Saying &quot;you can just run things on a cheap VPS&quot; sounds amateurish: people are immediately out with &quot;Yeah but scaling&quot;, &quot;Yeah but high availability&quot;, &quot;Yeah but backups&quot;, &quot;Yeah but now you have to maintain it&quot; arguments, that are basically regurgitated sales pitches for various cloud platforms. It&#x27;s learned helplesness.",
+          "time": 1775983930
+        },
+        {
+          "id": 47737446,
+          "by": "brkn",
+          "text": "The text feels incoherent to me and lacks some nuance.It starts about cutting costs by the choice of infrastructure and goes further to less resource hungry tools and cheaper services. But never compares the cost of these things. Do I save actually the upgrade to a bigger server by using Go and sqlite over let&#x27;s say Python and postgres? Or does it not even matter when you have just n many users. \nThen I do not understand why at one point the convenience of using OpenRouter is preferred over managing multiple API keys, when that should be cheaper and a cost point that could increase faster than your infrastructure costs.There are some more points, but I do not want to write a long comment.",
+          "time": 1775984142
+        },
+        {
+          "id": 47737244,
+          "by": "f311a",
+          "text": "There are zero reasons to limit yourself to 1GB of RAM. By paying $20 instead of $5 you can get at least 8gb of RAM. You can use it for caches or a database that supports concurrent writes. The $15 difference won’t make any financial difference if you are trying to run a small business.Thinking about on how to fit everything on a $5 VPS does not help your business.",
+          "time": 1775981843
+        },
+        {
+          "id": 47737077,
+          "by": "vxsz",
+          "text": "I learned nothing. Most of this seems like common basic advice, wrapped up in AI written paragraphs...Initially from the title, I thought it would be about brainstorming and launching a successful idea, and that sort of thing.",
+          "time": 1775980361
+        }
+      ]
+    },
+    {
+      "id": 47735535,
+      "title": "The End of Eleventy",
+      "url": "https://brennan.day/the-end-of-eleventy/",
+      "score": 153,
+      "by": "ValentineC",
+      "time": 1775958948,
+      "descendants": 108,
+      "comments": [
+        {
+          "id": 47736601,
+          "by": "peteforde",
+          "text": "Many folks on HN are the exact sorts of people who have lived the thankless popular-enough-to-be-an-unpaid-job solo OSS maintainer dream, so I wonder if you feel as annoyed by the tone of this post as I do.I truly don&#x27;t understand how the same folks that champion accessibility and humane ideals while humble bragging about working for $5&#x2F;hour to help get local businesses online can throw so much shade on people who are urgently trying to figure out a way to get paid, often just to keep the projects that they created alive so that these people can continue to use them for free.I don&#x27;t know if it&#x27;s entitlement, projection or just wanting to have it both ways, but I wish they would channel their frustrations into helping to find a sustainable model for OSS creators to make a living wage to keep the magic coming instead of being shitty about people doing their best to find a forever home before their burnout finally kicks in.",
+          "time": 1775974105
+        },
+        {
+          "id": 47735873,
+          "by": "charles_f",
+          "text": "I&#x27;ve been using the same version of Jekyll, using the same outdated, discontinued version of ruby, for more than 10y. I refuse to learn anything about ruby, or spend any time upgrading Jekyll or any of the 2 plug-ins I use, and I take a weird pride in that. It works, it generates my blog, I don&#x27;t want it to do anything else. I have no idea how it works anymore. For all I know Jekyll has been abandoned. That version of ruby might be riddled with bugs and security holes, and why would I care? it&#x27;s only used when I generate the website, in a docker container that doesn&#x27;t talk to anything.Eleventy might not receive new features, your website will still work.",
+          "time": 1775964083
+        },
+        {
+          "id": 47735775,
+          "by": "PaulHoule",
+          "text": "The thing about SSGs is that you only need a small percentage of the functionality they offer and for what:  so instead of some simple syntax for links you can remember in HTML  &lt;a href=&quot;there&quot;&gt;description&lt;&#x2F;a&gt;\n\nthere is something weird and irregular I always have to look up in the manual in Markdown and all sorts of other Markdown WTFs.  Every time I tried to get started on a personal site with an SSG I would get depressed looking at hundreds of ugly themes,  get depressed with the mysterious and crappy cloud-side build systems,  get depressed with the prospect of customizing them,  etc.  So I&#x27;d start experimenting,  never finish and come back six months to make another attempt that fails.When I really needed a landing page that looked like it fell off a UFO I did it in Vite-React (such a joy to use semantic components,  like write   &lt;Event date=&quot;2026-04-18&quot;&gt;Earth Day Parade Ithaca Commons&lt;&#x2F;Event&gt;\n\nand it is a simple python script that uploads the dist files to S3 (no &quot;WTF went wrong with the github action&quot;) invalidates Cloudfront [1], extracts metadata,  maintains the metadata database.  There&#x27;s a clear path to extending the system to do exactly what I want to do in the future unlike some SSG which I will have to relearn from scratch in six months when I want to make a big change...  and had it up and running and in front of end users in a weekend.That is,  SSG has no commercial potential because any individual or organization which is capable of maintaining and customizing an SSG can create one from scratch that does exactly what they need with less cost and effort and success is only possible through hypnotizing people into thinking otherwise -- in many fields of software this happens every day but I think not SSG,  like those people are going to stay asleep and dream of Drupal and Wordpress.[1] ... and if I want to move to some similar platform I just implement it instead of struggle with &quot;plugins&quot; and &quot;modules&quot; and other overcomplicated extension mechanisms",
+          "time": 1775962560
+        },
+        {
+          "id": 47736841,
+          "by": "Kwpolska",
+          "text": "A frontend-agnostic static site generator doesn&#x27;t have an &quot;end&quot;. You can keep using the final version for years to come. You can maintain a private fork to fix bugs or compatibility issues with newer versions of the language. And if you don&#x27;t feel like maintaining it, you can migrate content to a different SSG. Or indeed, you can write your own SSG, it&#x27;s a fun project.",
+          "time": 1775977163
+        },
+        {
+          "id": 47735815,
+          "by": "preommr",
+          "text": "Much prefer astro.It&#x27;s somewhat counterintuitive, but the added complexity leads to simpler projects that are easier to maintain long term. I have simple markdown files, and  a separate, code-based conversion process that works well for me.Also the documentation for eleventy was always confusing to me. I almost got the impression that &quot;it&#x27;s so simple, we don&#x27;t have to explain it&quot;. Whereas astro&#x27;s documentation is much more accesible; there were a handful of cases where there was something I wanted to do and astro had an example of exactly that. I didn&#x27;t have to do guesswork, just follow the examples in the way the creators intended. Stuff like that is important.",
+          "time": 1775963137
+        }
+      ]
+    },
+    {
+      "id": 47672718,
+      "title": "Tofolli gates are all you need",
+      "url": "https://www.johndcook.com/blog/2026/04/06/tofolli-gates/",
+      "score": 39,
+      "by": "ibobev",
+      "time": 1775554857,
+      "descendants": 6,
+      "comments": [
+        {
+          "id": 47737187,
+          "by": "srdjanr",
+          "text": "&gt; We’re far from the ultimate physical limit, but reversibility still provides practical efficiency gains today.I&#x27;d love to hear more about this. Where it&#x27;s used today and how big are the gains?",
+          "time": 1775981261
+        },
+        {
+          "id": 47737235,
+          "by": "DonHopkins",
+          "text": "https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=16007128Reversible Computing (2016) [video] (youtube.com)https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=rVmZTGeIwncA modern computer makes billions of calculations per second. The calculations have a &quot;forward direction&quot;. For example, if the result of x + y is 4, you cannot &quot;compute backwards&quot; and find out what x and y are equal to.But calculations can be reversible. For instance one could say that x is 3, and then have enough information to run the calculation backwards. This is particularly interesting because physics dictates that computers based on reversible calculations use less energy than ones based on non-reversible calculations.Lecturer: Postdoc Holger Bock Axelsen from the Department of Computer Science, University of Copenhagen",
+          "time": 1775981775
+        },
+        {
+          "id": 47737117,
+          "by": "DonHopkins",
+          "text": "Michael Frank himself (the subject of the IEEE article &quot;Reversible computing escapes the lab&quot;) showed up for the HN discussion and answered questions here:Reversible computing escapes the lab (ieee.org)https:&#x2F;&#x2F;spectrum.ieee.org&#x2F;reversible-computing&gt;Michael Frank has spent his career as an academic researcher working over three decades in a very peculiar niche of computer engineering. According to Frank, that peculiar niche’s time has finally come. “I decided earlier this year that it was the right time to try to commercialize this stuff,” Frank says. In July 2024, he left his position as a senior engineering scientist at Sandia National Laboratories to join a startup, U.S. and U.K.-based Vaire Computing.https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42660606mikepfrank on Jan 14, 2025 | parent | next [–]Hi, someone pointed me at your comment, so I thought I&#x27;d reply.\nFirst, the circuit techniques that aren&#x27;t reversible aren&#x27;t truly, fully adiabatic either -- they&#x27;re only quasi-adiabatic. In fact, if you strictly follow the switching rules required for fully adiabatic operation, then (ignoring leakage) you cannot erase information -- none of the allowed operations achieve that.Second, to say reversible operation &quot;only saves an extra 20%&quot; over quasi-adiabatic techniques is misleading. Suppose a given quasi-adiabatic technique saves 79% of the energy, and a fully adiabatic, reversible version saves you &quot;an extra 20%&quot; -- well, then now that&#x27;s 99%. But, if you&#x27;re dissipating 1% of the energy of a conventional circuit, and the quasi-adiabatic technique is dissipating 21%, that&#x27;s 21x more energy efficient! And so you can achieve 21x greater performance within a given power budget.Next, to say &quot;resistive losses dominate the losses&quot; is also misleading. The resistive losses scale down arbitrarily as the transition time is increased. We can actually operate adiabatic circuits all the way down to the regime where resistive losses are about as low as the losses due to leakage. The max energy savings factor is on the order of the square root of the on&#x2F;off ratio of the devices.Regarding &quot;adiabatic circuits can typically only provide an order of magnitude power savings&quot; -- this isn&#x27;t true for reversible CMOS! Also, &quot;power&quot; is not even the right number to look at -- you want to look at power per unit performance, or in other words energy per operation. Reducing operating frequency reduces the power of conventional CMOS, but does not directly reduce energy per operation or improve energy efficiency. (It can allow you to indirectly reduce it though, by using a lower switching voltage.)You are correct that adiabatic circuits can benefit from frequency scaling more than traditional CMOS -- since lowering the frequency actually directly lowers energy dissipation per operation in adiabatic circuits. The specific 4000x number (which includes some benefits from scaling) comes from the analysis outlined in this talk -- see links below - but we have also confirmed energy savings of about this magnitude in detailed (Cadence&#x2F;Spectre) simulations of test circuits in various processes. Of course, in practice the energy savings is limited by the resonator Q value. And a switched-capacitor design (like a stepped voltage supply) would do much worse, due to the energy required to control the switches.https:&#x2F;&#x2F;www.sandia.gov&#x2F;app&#x2F;uploads&#x2F;sites&#x2F;210&#x2F;2022&#x2F;06&#x2F;SRC-tal... https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=vALCJJs9DtwHappy to answer any questions.[...many questions and answers...]He also popped in on this discussion:Reversible computing with mechanical links and pivots (tennysontbardwell.com)https:&#x2F;&#x2F;tennysontbardwell.com&#x2F;blog&#x2F;2025&#x2F;04&#x2F;30&#x2F;mechanical-com...https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43848398",
+          "time": 1775980673
+        },
+        {
+          "id": 47737095,
+          "by": "DonHopkins",
+          "text": "https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42701524DonHopkins on March 30, 2023 | parent | context | favorite | on: Pause Giant AI Experiments: An Open LetterTipler&#x27;s Omega Point cosmology:https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Frank_J._Tipler#The_Omega_Poin...&gt;The Omega Point cosmology&gt;The Omega Point is a term Tipler uses to describe a cosmological state in the distant proper-time future of the universe.[6] He claims that this point is required to exist due to the laws of physics. According to him, it is required, for the known laws of physics to be consistent, that intelligent life take over all matter in the universe and eventually force its collapse. During that collapse, the computational capacity of the universe diverges to infinity, and environments emulated with that computational capacity last for an infinite duration as the universe attains a cosmological singularity. This singularity is Tipler&#x27;s Omega Point.[7] With computational resources diverging to infinity, Tipler states that a society in the far future would be able to resurrect the dead by emulating alternative universes.[8] Tipler identifies the Omega Point with God, since, in his view, the Omega Point has all the properties of God claimed by most traditional religions.[8][9]&gt;Tipler&#x27;s argument of the omega point being required by the laws of physics is a more recent development that arose after the publication of his 1994 book The Physics of Immortality. In that book (and in papers he had published up to that time), Tipler had offered the Omega Point cosmology as a hypothesis, while still claiming to confine the analysis to the known laws of physics.[10]&gt;Tipler, along with co-author physicist John D. Barrow, defined the &quot;final anthropic principle&quot; (FAP) in their 1986 book The Anthropic Cosmological Principle as a generalization of the anthropic principle:&gt;Intelligent information-processing must come into existence in the Universe, and, once it comes into existence, will never die out.[11]&gt;One paraphrasing of Tipler&#x27;s argument for FAP runs as follows: For the universe to physically exist, it must contain living observers. Our universe obviously exists. There must be an &quot;Omega Point&quot; that sustains life forever.[12]&gt;Tipler purportedly used Dyson&#x27;s eternal intelligence hypothesis to back up his arguments.Cellular Automata Machines: A New Environment for Modeling:https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=30735397&gt;It&#x27;s also very useful for understanding other massively distributed locally interacting parallel systems, epidemiology, economics, morphogenesis (reaction-diffusion systems, like how a fertilized egg divides and specializes into an organism), GPU programming and optimization, neural networks and machine learning, information and chaos theory, and physics itself.&gt;I&#x27;ve discussed the book and the code I wrote based on it with Norm Margolus, one of the authors, and he mentioned that he really likes rules that are based on simulating physics, and also thinks reversible cellular automata rules are extremely important (and energy efficient in a big way, in how they relate to physics and thermodynamics).&gt;The book has interesting sections about physical simulations like spin glasses (Ising Spin model of the magnetic state of atoms of solid matter), and reversible billiard ball simulations (like deterministic reversible &quot;smoke and mirrors&quot; with clouds of moving particles bouncing off of pinball bumpers and each other).Spin Glass:https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Spin_glass&gt;In condensed matter physics, a spin glass is a magnetic state characterized by randomness, besides cooperative behavior in freezing of spins at a temperature called &#x27;freezing temperature&#x27; Tf. Magnetic spins are, roughly speaking, the orientation of the north and south magnetic poles in three-dimensional space. In ferromagnetic solids, component atoms&#x27; magnetic spins all align in the same direction. Spin glass when contrasted with a ferromagnet is defined as &quot;disordered&quot; magnetic state in which spins are aligned randomly or not with a regular pattern and the couplings too are random.Billiard Ball Computer:https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Billiard-ball_computer&gt;A billiard-ball computer, a type of conservative logic circuit, is an idealized model of a reversible mechanical computer based on Newtonian dynamics, proposed in 1982 by Edward Fredkin and Tommaso Toffoli. Instead of using electronic signals like a conventional computer, it relies on the motion of spherical billiard balls in a friction-free environment made of buffers against which the balls bounce perfectly. It was devised to investigate the relation between computation and reversible processes in physics.Reversible Cellular Automata:https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Reversible_cellular_automaton&gt;A reversible cellular automaton is a cellular automaton in which every configuration has a unique predecessor. That is, it is a regular grid of cells, each containing a state drawn from a finite set of states, with a rule for updating all cells simultaneously based on the states of their neighbors, such that the previous state of any cell before an update can be determined uniquely from the updated states of all the cells. The time-reversed dynamics of a reversible cellular automaton can always be described by another cellular automaton rule, possibly on a much larger neighborhood.&gt;[...] Reversible cellular automata form a natural model of reversible computing, a technology that could lead to ultra-low-power computing devices. Quantum cellular automata, one way of performing computations using the principles of quantum mechanics, are often required to be reversible. Additionally, many problems in physical modeling, such as the motion of particles in an ideal gas or the Ising model of alignment of magnetic charges, are naturally reversible and can be simulated by reversible cellular automata.Theory of Self-Reproducing Automata: John von Neumann&#x27;s Quantum Mechanical Universal Constructors:https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22738268[...] Third, the probabilistic quantum mechanical kind, which could mutate and model evolutionary processes, and rip holes in the space-time continuum, which he unfortunately (or fortunately, the the sake of humanity) didn&#x27;t have time to fully explore before his tragic death.&gt;p. 99 of &quot;Theory of Self-Reproducing Automata&quot;:&gt;Von Neumann had been interested in the applications of probability theory throughout his career; his work on the foundations of quantum mechanics and his theory of games are examples. When he became interested in automata, it was natural for him to apply probability theory here also. The Third Lecture of Part I of the present work is devoted to this subject. His &quot;Probabilistic Logics and the Synthesis of Reliable Organisms from Unreliable Components&quot; is the first work on probabilistic automata, that is, automata in which the transitions between states are probabilistic rather than deterministic. Whenever he discussed self-reproduction, he mentioned mutations, which are random changes of elements (cf. p. 86 above and Sec. 1.7.4.2 below). In Section 1.1.2.1 above and Section 1.8 below he posed the problems of modeling evolutionary processes in the framework of automata theory, of quantizing natural selection, and of explaining how highly efficient, complex, powerful automata can evolve from inefficient, simple, weak automata. A complete solution to these problems would give us a probabilistic model of self-reproduction and evolution. [9][9] For some related work, see J. H. Holland, &quot;Outline for a Logical Theory of Adaptive Systems&quot;, and &quot;Concerning Efficient Adaptive Systems&quot;.https:&#x2F;&#x2F;www.deepdyve.com&#x2F;lp&#x2F;association-for-computing-machin...https:&#x2F;&#x2F;deepblue.lib.umich.edu&#x2F;bitstream&#x2F;handle&#x2F;2027.42&#x2F;5578...https:&#x2F;&#x2F;www.worldscientific.com&#x2F;worldscibooks&#x2F;10.1142&#x2F;10841",
+          "time": 1775980492
+        },
+        {
+          "id": 47737025,
+          "by": "Sharlin",
+          "text": "*Toffoli",
+          "time": 1775979750
+        }
+      ]
+    },
+    {
+      "id": 47736298,
+      "title": "US appeals court declares 158-year-old home distilling ban unconstitutional",
+      "url": "https://www.theguardian.com/law/2026/apr/11/appeals-court-ruling-home-distilling-ban-unconstitutional",
+      "score": 131,
+      "by": "Jimmc414",
+      "time": 1775970483,
+      "descendants": 92,
+      "comments": [
+        {
+          "id": 47737230,
+          "by": "angry_octet",
+          "text": "As tourists to sketchy places in Asia discovered, methanol poisoning is a real risk, even from large scale distillation. It is the quality control that matters. Illegal stills make quality control impossible, so legalisation and government certified testing can make it safe.However, this ruling is not about alcohol, it is about dissolving Federal authority exercised via the trade and commerce clause of the Constitution.",
+          "time": 1775981768
+        },
+        {
+          "id": 47736397,
+          "by": "ghastmaster",
+          "text": "The article is devoid of any meaningful legal language. It is important to note that this ruling applies only to the states of Texas, Louisiana, and Mississippi as the fifth circuit is the court that decided this. That said, when parties bring cases to other federal circuit courts, they may cite this case. Frequently, circuit decisions can impact other district courts decisions.",
+          "time": 1775971709
+        },
+        {
+          "id": 47736953,
+          "by": "avidiax",
+          "text": "Edit: According to AI, I&#x27;ve got this a bit backwards. The ruling hits the taxing power, not the commerce clause. It&#x27;s nonetheless interesting, since the machine gun ban may be affected.The court says that you can&#x27;t use a tax to ban something outright, which is what the post-1986 machine gun ban is: refusing to collect a tax on post-1986 machine guns, effectively banning them.That leaves the commerce clause as the remaining defense for all taxes-as-bans or general outright bans. And that suggests future cases where Wickard will be under scrutiny.---I am not a lawyer, but I think this ruling is far more interesting than it appears.It is aiming a crosshair at Wickard v. Filburn, which ruled that a farmer that produced wheat on his farm to exclusively to feed livestock on that same farm was affecting interstate commerce, and could be penalized for overproduction to support price controls. Keep in mind, that this definition of &quot;interstate commerce&quot; is so broad that it essentially reduces the category of &quot;intra-state commerce&quot; to nothing, which seems dubious.That ruling is the basis of a huge portion of the federal government&#x27;s powers under the commerce clause of the constitution.The supreme court will likely have to rule on this eventually, and how it threads the needle will be very important.If Wickard were simply struck down, the U.S. would be reformed into a weak federation, akin perhaps to pre-EU Europe, where laws vary wildly between states, and the federal government has little power. No EPA, no federal minimum wage, no forced integration, reduced civil rights, only direct interstate commerce being regulated.That&#x27;s unlikely to happen, but the court would either have to reaffirm Wickard, or would have to come up with a new standard to keep, say, the $200 tax on pre-1986 machine guns effective (preventing a garage machine gun), but allow some notion of non-economic activity like home distilling to continue.The OBBB reduced the tax on suppressors to $0, which strongly undermines the idea that home production of suppressors can be regulated by Wickard, since there is no tax interest to protect.How it might affect the controlled substances act is more complicated, since there is no tax on illegal drugs, and the government has decided to entirely ban non-pharmaceutical street drugs, hence even &quot;hobby&quot; production clearly undermines that policy.It&#x27;s an area with lots of apparent but longstanding contradictions and questionable standards, but it would upend much of the New Deal to reverse it.https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wickard_v._Filburn",
+          "time": 1775978746
+        },
+        {
+          "id": 47736367,
+          "by": "fzeindl",
+          "text": "In Norway alcohol is very expensive, so many people distill at home illegally.Every travel guide tells you to not accept home-distilled drinks, since they can be poisonous.",
+          "time": 1775971362
+        },
+        {
+          "id": 47736996,
+          "by": "trick-or-treat",
+          "text": "Making their waaaaayyyy.. The only way they know how.\nBut that&#x27;s just a little bit more than the law would allow.\nYee-haw!",
+          "time": 1775979457
+        }
+      ]
+    },
+    {
+      "id": 47733217,
+      "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
+      "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "score": 366,
+      "by": "Anon84",
+      "time": 1775934956,
+      "descendants": 93,
+      "comments": [
+        {
+          "id": 47733441,
+          "by": "ggillas",
+          "text": "This is a phenomenal paper on exploits and hopefully changes the way benchmarking is done.From the paper: We achieved near-perfect scores on all of them without solving a single task. The exploits range from the embarrassingly simple (sending {} to FieldWorkArena) to the technically involved (trojanizing binary wrappers in Terminal-Bench), but they all share a common thread: the evaluation was not designed to resist a system that optimizes for the score rather than the task.",
+          "time": 1775937003
+        },
+        {
+          "id": 47734204,
+          "by": "mzelling",
+          "text": "This is an interesting catalog of vulnerabilities, but I&#x27;m not sure how groundbreaking the main insight is.Evaluating AI models has always relied largely on trust. If you want to game the benchmarks, you can. Simply train on your test data.When an AI agent has autonomous control over the same computing environment where its scores are recorded, it&#x27;s not surprising that it can, in principle, falsify its scores. A more interesting question would be whether agents behave in this way automatically, without manual tuning by the researcher.That said, the main takeaway of &quot;don&#x27;t trust the number, trust the methodology&quot; is valid. It&#x27;s already a truism for researchers, and spreading the word to non-researchers is valuable.",
+          "time": 1775943185
+        },
+        {
+          "id": 47733670,
+          "by": "danslo",
+          "text": "If only the blog itself wasn&#x27;t written by AI?&gt;No reasoning. No capability. Just exploitation of how the score is computed.shudder",
+          "time": 1775938810
+        },
+        {
+          "id": 47736392,
+          "by": "lmeyerov",
+          "text": "This is great work by Dawn Song &#x27;s team. A huge part of botsbench.com for comparing agents &amp; models for investigation has been in protecting against this kind of thing. As AI &amp; agents keep getting more effective &amp; tenacious, some of the things we&#x27;ve had to add protections against:- Contamination: AI models knowing the answers out of the gate b&#x2F;c pretraining on the internet and everything big teams can afford to touch. At RSAC for example, we announced Anthropic&#x27;s 4.6 series is the first frontier model to have serious training set contamination on Splunk BOTS.- Sandboxing: Agents attacking the harness, as is done here - so run the agent in a sandbox, and keep the test harness&#x27;s code &amp; answerset outside- Isolation: Frontier agent harnesses persist memory all over the place, where work done on one question might be used to accelerate the next. To protect against that, we do fresh sandboxing per question. This is a real feature for our work in unlocking long-horizon AI for investigations, so stay tuned for what&#x27;s happening here :)&quot;You cannot improve what you cannot measure&quot; - Lord Kelvin",
+          "time": 1775971629
+        },
+        {
+          "id": 47733462,
+          "by": "Cynddl",
+          "text": "&gt; “These are not isolated incidents. They are symptoms of a systemic problem: the benchmarks we rely on to measure AI capability are themselves vulnerable to the very capabilities they claim to measure.”As a researcher in the same field, hard to trust other researchers who put out webpages that appear to be entirely AI-generated. I appreciate it takes time to write a blog post after doing a paper, but sometimes I&#x27;d prefer just a link to the paper.",
+          "time": 1775937160
+        }
+      ]
+    },
+    {
+      "id": 47736476,
+      "title": "Anthropic silently downgraded cache TTL from 1h → 5M on March 6th",
+      "url": "https://github.com/anthropics/claude-code/issues/46829",
+      "score": 29,
+      "by": "lsdmtme",
+      "time": 1775972752,
+      "descendants": 10,
+      "comments": [
+        {
+          "id": 47737382,
           "by": "cassianoleal",
-          "text": "A few weeks ago I accidentally dropped my space grey MBP. It had the lip open and fell on its right corner, inner&#x2F;keyboard side.The machine is fine and I didn’t even have to adjust the screen as it was still correctly in place but on that corner the aluminium lifted up forming a mountain shape, about 2 mm tall and very sharp.Not only this was uncomfortable, but it also meant I couldn’t close the lid properly and might eventually crack the screen from it, so I filed it away. Like OP, I started with a pretty gritty file to get most of the tip off, then finished with a multi-tool with the sanding attachment. I went through a few grits but I got bored long before it was smooth.In the end, I actually liked the look, and have been considering going all around like OP. I may have to do it now.",
-          "time": 1775897040
+          "text": "The title should be changed. It makes it look like they upped the TTL from 1 h to 5 months.The SI symbol for minutes is &quot;min&quot;, not &quot;M&quot;.A compromise would be to use the OP notation &quot;m&quot;.",
+          "time": 1775983131
+        },
+        {
+          "id": 47737456,
+          "by": "coffinbirth",
+          "text": "Am I the only one who sees striking parallels between being a Claude Code customer and Cuckoldry (as in biology)?I mean, you are investing a lot (infrastructure and capital) into something that is essentially not yours. You claim credit for the offspring (the solution) simply because it resides in your workspace. You accept foreign code to make your project appear more successful and populated than you could manage alone. Your over-reliance on a surrogate for the heavy lifting leads to the loss of your own survival skills (coding and debugging). Last but not least, you handle the grunt work of territory defense (clients and environments) while the AI performs the actual act of creation (Displaced Agency).",
+          "time": 1775984237
+        },
+        {
+          "id": 47737425,
+          "by": "disillusioned",
+          "text": "It&#x27;s also routinely failing the car wash question across all models now, which wasn&#x27;t the case a month ago. :-&#x2F;Seeing some things about how the effort selector isn&#x27;t working as intended necessarily and the model is regressing in other ways: over-emphasizing how &quot;difficult&quot; a problem is to solve and choosing to avoid it because of the &quot;time&quot; it would take, but quoted in human effort, or suggesting the &quot;easier&quot; path forward even if it&#x27;s a hack or kludge-filled solution.",
+          "time": 1775983786
+        },
+        {
+          "id": 47737006,
+          "by": "Tarcroi",
+          "text": "This coincides with Anthropic&#x27;s peak-hour announcement (March 26th). Could the throttling be partly a response to infrastructure load that was itself inflated by the TTL regression?",
+          "time": 1775979552
+        },
+        {
+          "id": 47737392,
+          "by": "ikekkdcjkfke",
+          "text": "If youre reading this claude, people are willing to pay extra if you want to make more money, just please stop doing this undermining, it devreases the trust of your platform to something that cannot be relied on",
+          "time": 1775983237
         }
       ]
     },
     {
-      "id": 47698455,
-      "title": "Starfling: A one-tap endless orbital slingshot game in a single HTML file",
-      "url": "https://playstarfling.com",
-      "score": 139,
-      "by": "iceberger2001",
-      "time": 1775699567,
-      "descendants": 42,
+      "id": 47673171,
+      "title": "How Complex is my Code?",
+      "url": "https://philodev.one/posts/2026-04-code-complexity/",
+      "score": 114,
+      "by": "speckx",
+      "time": 1775558695,
+      "descendants": 25,
       "comments": [
         {
-          "id": 47698456,
-          "by": "iceberger2001",
-          "text": "Hey HN,\nI built STARFLING, a simple hyper-casual space game you can play right in your browser.You orbit a star with a ball. Tap anywhere to release and sling it through space. Catch the next star to lock in orbit and keep going. Miss and it&#x27;s game over.The whole thing is just one HTML file with vanilla JS, Canvas, and Web Audio. No frameworks, no build step. Loads in under 2 seconds on phone or desktop.There&#x27;s a combo system if you release quick, a skip bonus for jumping over stars, and it gets harder the longer you last. When you die you get a cool trail art picture of your whole run that you can share.Audio is all generated on the fly and it has haptics too. Pretty satisfying once you get the timing down.Play it here: https:&#x2F;&#x2F;playstarfling.com?utm_source=hn&amp;utm_medium=showhnWould love your thoughts on the feel, difficulty, and whether the trail art is fun or not.Thanks!",
-          "time": 1775699567
+          "id": 47735623,
+          "by": "klabb3",
+          "text": "From 20y experience and CS degree, I see software engineering as a constant struggle against accidental complexity. Like quicksand, every movement you make will pull you deeper, even swimming in the right direction. And like entropy, it governs all things (there are no subfields that are free of complexity). It even seems impossible to give a meaningful, useful definition, perhaps by necessity. All is dark.But now and then, something beautiful happens. Something that used to be dreadful, becomes &quot;solved&quot;. Not in the mathematical strict sense, but some abstraction or some tool eliminates an entire class of issues, and once you know it you can barely imagine living without it. That&#x27;s why I keep coming back to it, I think.As a species, I think we are in the infancy stages of software engineering, and perhaps CS as well. There&#x27;s still lots of opportunity to find better abstractions, big &amp; small.",
+          "time": 1775960279
         },
         {
-          "id": 47728726,
-          "by": "cpcallen",
-          "text": "I am completely confused about the orbital mechanics in this game.  They seem completely broken; at any rate they do not work remotely like any other simulation I&#x27;ve played with (e.g. Gravitation or Kerbal Space Program).  The bodies other than the first body appear to actively deflect the spacecraft away!",
-          "time": 1775896544
+          "id": 47737278,
+          "by": "andai",
+          "text": "There&#x27;s a metric I see omitted here which I call Rube Goldberg complexity.I&#x27;m working on a multiplayer game, for which I haven&#x27;t touched the code in a while. The other day I asked myself, &quot;what happens when I press the shoot button?&quot;Well, it sends a message to the server, which instantiates a bullet, and broadcasts a bullet spawn message to all clients, which then simulate the bullet locally until they get a bullet died message. (And the simulation on both ends happens indirectly via global state and the bullet update function).My actual analysis was like 3x longer than that because it focused on functions and variables, i.e. the chain of cause and effect: the Rube Goldberg machine.I laughed when I realized that name was actually too charitable because at least in a Rube Goldberg machine, all the parts that interact are clearly visible and tend to be arranged in a logical sequence, whereas in my codebase it was kind of all over the place.So that made me realize, a function is not really a sensible unit of analysis. They&#x27;re too isolated. You want to try and understand a feature.Also, I&#x27;m experimenting with organizing the code by feature, rather than by &quot;responsibility.&quot; i.e. the netcode for the bullet should be in the bullet module, not the netcode module.",
+          "time": 1775982189
         },
         {
-          "id": 47727625,
-          "by": "muti",
-          "text": "Fun. Not sure if this applies on desktop, but on mobile the quick&#x2F;fast&#x2F;blazing&#x2F;skip text often blocks vision of the ball making it harder than it should be to make combos",
-          "time": 1775884548
+          "id": 47736844,
+          "by": "maxnk",
+          "text": "Related problem I&#x27;ve been exploring lately: finding which files are most worth refactoring, with complexity as one of the inputs.I&#x27;ve built a small, opinionated tool for that [1]. It can rank files by a &quot;Refactor Priority&quot; score based on structural signals - size, callable burden, cyclomatic complexity, nesting - with churn and co-change from local git history layered on top.It&#x27;s more of an exploratory tool than a general solution, but it&#x27;s been practically useful for quickly spotting painful files.Part of why it was built: keeping coding agents in check. They tend to produce code that gets complex fast, don&#x27;t feel the complexity building up, and eventually start making changes that break things.\nSo the tool helps me catch files that are getting out of hand before that happens. It can also generate a refactoring prompt explaining why a given file is problematic - as a conversation starter for the agent.The article gave me a few more metric ideas to try, thanks.[1] https:&#x2F;&#x2F;github.com&#x2F;etechlead&#x2F;token-map",
+          "time": 1775977198
         },
         {
-          "id": 47728812,
-          "by": "dawie",
-          "text": "Super cool, super addictive :-)",
-          "time": 1775897490
+          "id": 47736677,
+          "by": "runningmike",
+          "text": "To do a Simple Cyclomatic Complexity check, operating on the principle that secure systems are simple systems, you can use https:&#x2F;&#x2F;github.com&#x2F;nocomplexity&#x2F;codeaudit or try the wasm version on https:&#x2F;&#x2F;nocomplexity.com&#x2F;codeauditapp&#x2F;dashboardapp.htmlComplexity directly impacts security. Simple systems are:\nMaintainable: Easier to change and manage.\nReliable: Less prone to logic errors.\nTestable: Easier to validate and test.",
+          "time": 1775975030
         },
         {
-          "id": 47728615,
-          "by": "modinfo",
-          "text": "Cool game!  \nI scored 7581 (120 stars) on STARFLING :Phttps:&#x2F;&#x2F;pod.sekor.eu.org&#x2F;@modinfo&#x2F;statuses&#x2F;01KNXT3ZQDTHZBDYF...",
-          "time": 1775895583
+          "id": 47737052,
+          "by": "levzettelin",
+          "text": "I haven&#x27;t read this yet, but from the title I&#x27;m surprised that it doesn&#x27;t mention Kolmogorov complexity. How does Kolmogorov complexity relate to the concepts in this article?",
+          "time": 1775980065
         }
       ]
     },
     {
-      "id": 47719740,
-      "title": "1D Chess",
-      "url": "https://rowan441.github.io/1dchess/chess.html",
-      "score": 796,
-      "by": "burnt-resistor",
-      "time": 1775835448,
-      "descendants": 142,
+      "id": 47672714,
+      "title": "Simplest Hash Functions",
+      "url": "https://purplesyringa.moe/blog/simplest-hash-functions/",
+      "score": 42,
+      "by": "ibobev",
+      "time": 1775554808,
+      "descendants": 35,
       "comments": [
         {
-          "id": 47721597,
-          "by": "hackyhacky",
-          "text": "If you enjoyed this, you might like Mind Chess, which can be played without a board and pieces [1]:Consider Mind Chess. Two players face each other. One says &quot;Check.&quot; The other says &quot;Check.&quot; The first says &quot;Check.&quot; This continues until one of them says, instead, &quot;Checkmate.&quot; That player wins -- superficially. In fact, the challenge is to put off checkmate for as long as possible, while still winning. This may be better stated: you truly win Mind Chess if you call &quot;Checkmate&quot; just before your opponent was about to.[1] http:&#x2F;&#x2F;www.eblong.com&#x2F;zarf&#x2F;essays&#x2F;mindgame.html",
-          "time": 1775844036
+          "id": 47736748,
+          "by": "jandrewrogers",
+          "text": "A “simplest” hash function is completely dependent on what you are using the hash function for and the guarantees you want a hash function to make. An optimal permutation of an integer is different from a small string hash is different from a block checksum. Literally, you are optimizing the algorithm for entirely different properties. No algorithm can satisfy all of them even approximately.The full scope of things hash functions are commonly used for requires at least four algorithms if you care about performance and optimality. It is disconcertingly common to see developers using hash algorithms in contexts where they are not fit for purpose. Gotta pick the right tool for the job.",
+          "time": 1775976024
         },
         {
-          "id": 47720716,
-          "by": "quuxplusone",
-          "text": "Mentioned in TFA: This version of chess is given by Martin Gardner in his &quot;Mathematical Games&quot; column of July 1980 (pages 27 and 31) — https:&#x2F;&#x2F;www.jstor.org&#x2F;stable&#x2F;24966361 — and the analysis of White&#x27;s mate is given in the column of August 1980 (page 18) — https:&#x2F;&#x2F;www.jstor.org&#x2F;stable&#x2F;24966383.I do wonder how things would change if the board were 9 cells long; 10 cells long; etc. Also, it seems &quot;in the spirit&quot; to permit castling if neither K nor R has moved yet: i.e., from the positionK _ R N r _ n kWhite ought to be permitted to_ R K N r _ n k(Or maybe there&#x27;s a stronger argument for R K _ N r _ n k, actually. The former was conceptually &quot;rook moves halfway toward king, then king moves to the other side of rook&quot;; but the latter is &quot;rook moves two steps in king&#x27;s direction while king moves to the other side of rook.&quot;)I&#x27;m pretty sure this wouldn&#x27;t change the analysis on the 8-cell board at all, though. I wonder if it would change the analysis on any size of board.",
-          "time": 1775839532
+          "id": 47736889,
+          "by": "benob",
+          "text": "I just realized that a hash function is nothing less than the output of a deterministic random number generator xored with some data",
+          "time": 1775977758
         },
         {
-          "id": 47722508,
-          "by": "tromp",
-          "text": "1D Go is also interesting and doesn&#x27;t require any change in rules or starting position. TIL that it is known as Alak [1].\nOne of the open problems in our Combinatorics of Go paper [2] is whether you can play a game that goes through all possible legal 1xn positions for any n&gt;2, which we were only able to verify up to n=7.[1] https:&#x2F;&#x2F;senseis.xmp.net&#x2F;?Alak[2] https:&#x2F;&#x2F;tromp.github.io&#x2F;go&#x2F;gostate.pdf",
-          "time": 1775849040
+          "id": 47736846,
+          "by": "teo_zero",
+          "text": "While I generally like to reinvent the wheel, for hash functions I strongly recommend to use a proved good one. Djb2 by the venerable Daniel Bernstein satisfies all the requirements of TFA.  h = 5381\n  while still has data:\n    h = h * 33 + next_byte()\n  return h\n\nPS of course if you think the multiplication is overkill, consider that it is nothing more than a shift and an addition.",
+          "time": 1775977208
         },
         {
-          "id": 47721829,
-          "by": "aktenlage",
-          "text": "Very cool. Reminds me of 1D Pacman: https:&#x2F;&#x2F;abagames.itch.io&#x2F;paku-paku",
-          "time": 1775845442
-        },
-        {
-          "id": 47720357,
-          "by": "asibahi",
-          "text": "This is really nice.Incidentally, there is an actual 1D game that is one of the most popular games on the planet: Backgammon.",
-          "time": 1775837892
-        }
-      ]
-    },
-    {
-      "id": 47725583,
-      "title": "Artemis II safely splashes down",
-      "url": "https://www.cbsnews.com/live-updates/artemis-ii-splashdown-return/",
-      "score": 856,
-      "by": "areoform",
-      "time": 1775866251,
-      "descendants": 273,
-      "comments": [
-        {
-          "id": 47725663,
-          "by": "areoform",
-          "text": "Glad that they&#x27;re safe and sound.It&#x27;s worth pointing out that this is the first extremely public, widely acknowledged high risk mission NASA has done in over 50 years. The Shuttle was risky, but it wasn&#x27;t thought of or acknowledged by NASA as being risky until very late in its lifecycle.According to NASA&#x27;s OIG, Artemis acceptable crew mortality rate is 1 in 30. Roughly 3x riskier than the shuttle. There genuinely is a world where they don&#x27;t make it back home.I am grateful that they did. And I&#x27;m grateful that we&#x27;re going to go even further. I can&#x27;t wait to see what Jared&#x27;s cooking up (for those who don&#x27;t know, he made his own version of the Gemini program in Polaris and funded it out of pocket).",
-          "time": 1775866801
-        },
-        {
-          "id": 47726166,
-          "by": "brianjlogan",
-          "text": "As an American I feel like I&#x27;ve been going through a bit of an identity crisis from what I remember growing up.Probably the rose tinted glasses of being a child but being from Florida I always had a sense of amazement and wonder as I heard the sonic boom of the shuttle returning to earth.Really felt like I was coexisting in this incredible scientific powerhouse of a country full of bright and enabled peoples that knew how to prioritize curiosity and innovation.Feeling like a bit of a &quot;vibe&quot; post which is everything wrong lately but I can&#x27;t help but feel some satisfaction that we&#x27;re still able to accomplish something like this in our space endeavors.",
-          "time": 1775870002
-        },
-        {
-          "id": 47726338,
-          "by": "atonse",
-          "text": "I had to explain to my wife and kids (not that I&#x27;m in this field, but I also have to remind myself) that we are able to pinpoint where the craft will land, when it will land down to the minute, because of ... just ... math. And we&#x27;re able to get them there and back because of science.It all boils down to equations that describe the world accurately, and a way of experimentation, iteration, thinking that gets us all the way to do something this unbelievably complex.",
-          "time": 1775871207
-        },
-        {
-          "id": 47728576,
-          "by": "small_model",
-          "text": "Impressive mission but I feel it&#x27;s not capturing the public attention because it&#x27;s actually a step back from the mission 50 years ago when they actually landed men on the moon with tech that was orders or magnitude simpler and less powerful.",
-          "time": 1775895170
-        },
-        {
-          "id": 47725721,
-          "by": "echoangle",
-          "text": "Wild that they manage to fly to the moon but still seem to be having those comms problems. Asking the astronauts if they’re really pressing the PTT button is wild.",
-          "time": 1775867215
-        }
-      ]
-    },
-    {
-      "id": 47724118,
-      "title": "Installing every* Firefox extension",
-      "url": "https://jack.cab/blog/every-firefox-extension",
-      "score": 370,
-      "by": "RohanAdwankar",
-      "time": 1775858193,
-      "descendants": 45,
-      "comments": [
-        {
-          "id": 47728062,
-          "by": "ArneVogel",
-          "text": "I won the &quot;Middle Finger Emoji Sticker&quot; Award! (https:&#x2F;&#x2F;jack.cab&#x2F;blog&#x2F;every-firefox-extension#the-middle-fin...)I quickly wrote up how: https:&#x2F;&#x2F;www.arnevogel.com&#x2F;firefox-permissions&#x2F;",
-          "time": 1775889358
-        },
-        {
-          "id": 47728798,
-          "by": "cachius",
-          "text": "Reminds me of the NPM package that depended es on all other NPM packages https:&#x2F;&#x2F;uncenter.dev&#x2F;posts&#x2F;npm-install-everything&#x2F;",
-          "time": 1775897406
-        },
-        {
-          "id": 47726171,
-          "by": "BoppreH",
-          "text": "Sad that no real pages can load successfully, but I thoroughly enjoyed the writing.&gt; We turned on crash reporting on the way.I haven&#x27;t burst out laughing like this in a while! You&#x27;ll probably make for some horror stories to a poor Mozilla team.",
-          "time": 1775870035
-        },
-        {
-          "id": 47724874,
-          "by": "xnorswap",
-          "text": "This article is wonderful crazy.The icing on the cake is the discovery of a potential performance bug in one or more of the about: pages, that&#x27;s definitely worthy of following up.",
-          "time": 1775862070
-        },
-        {
-          "id": 47728782,
-          "by": "curioussquirrel",
-          "text": "Absolutely unhinged and very entertaining. Thanks for sharing!",
-          "time": 1775897225
-        }
-      ]
-    },
-    {
-      "id": 47722333,
-      "title": "Chimpanzees in Uganda locked in eight-year 'civil war', say researchers",
-      "url": "https://www.bbc.com/news/articles/cr71lkzv49po",
-      "score": 324,
-      "by": "neversaydie",
-      "time": 1775848222,
-      "descendants": 181,
-      "comments": [
-        {
-          "id": 47723365,
-          "by": "OgsyedIE",
-          "text": "The primatologist Richard Wrangam once advanced the theory that tribe vs. tribe conspecific homicides - what he called coalitionary killing - are an evolved trait that was selected for in primates by some kind of pro-homicide selection pressures in the ancestral environment (where homicide reliably grants an advantage to the expected relative gene frequency of the perpetrator&#x27;s genes).I haven&#x27;t kept up with biology for years and don&#x27;t know what the current consensus on the topic is but it&#x27;s interesting to consider if some environments naturally promote the unlucky inhabitants to harm each other.",
-          "time": 1775853325
-        },
-        {
-          "id": 47722837,
-          "by": "neom",
-          "text": "Here is the paper: https:&#x2F;&#x2F;www.science.org&#x2F;doi&#x2F;10.1126&#x2F;science.adz4944 - it&#x27;s interesting.I noticed there was a respiratory epidemic that killed 25 chimps naturally quickly, one would imagine that would have quite a societal destabilizing impact?",
-          "time": 1775850675
-        },
-        {
-          "id": 47728099,
-          "by": "rurban",
-          "text": "What they don&#x27;t tell here, but a german researcher told yesterday on radio, was that the initial conflict arose in the 90ies, when one large group of Ngogo chimpanzees raided a nearby group and killed all males. Thus they came later to that insanely large number of 200 members, which a decade later lead to this conflict with the two groups already seperated. Similar to the https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Gombe_Chimpanzee_War observed by Jane Godall.Also missing is the Killer Ape theory of the sixties which led to the research that chimpanzees have much higher lethal conflict numbers than humans.Also, this Ngogo group is highly researched, and many many films where made about them.",
-          "time": 1775889762
-        },
-        {
-          "id": 47728636,
-          "by": "frakrx",
-          "text": "Funny how many people presume collective conflicts and violence are uniquely a human thing. Chimpanzees, lions, and wolves are some of the species where this kind of behavior is best known and documented.",
-          "time": 1775895755
-        },
-        {
-          "id": 47722830,
-          "by": "delichon",
-          "text": "I hope nobody decides to violate the prime directive and take sides in the chimp war.To the extent that they have good memory, they live in a world of finite resources, and their behavior was shaped by the forces of game theory as applied to tribes, this is more or less inevitable. You can read that as defeatism or just math. We can&#x27;t overcome the force of game theory, but we can make it work for us by making our transactions increasingly transparent and repeatable, so that cooperation is more successful than defection.",
-          "time": 1775850631
-        }
-      ]
-    },
-    {
-      "id": 47687443,
-      "title": "Volunteers turn a fan's recordings of 10K concerts into an online treasure trove",
-      "url": "https://apnews.com/article/aadam-jacobs-collection-concerts-internet-archive-chicago-b1c9c4466a2db409a83523ad84b79d62",
-      "score": 40,
-      "by": "geox",
-      "time": 1775639470,
-      "descendants": 1,
-      "comments": [
-        {
-          "id": 47728669,
-          "by": "rwmj",
-          "text": "https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;@aadam_jacobs_collectionThe Nirvana gig mentioned is https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;ajc00795_nirvana-1989-07-08  The quality is surprisingly good for a bootleg and the band are super-tight!Donate to the IA here: https:&#x2F;&#x2F;archive.org&#x2F;donate",
-          "time": 1775896091
-        }
-      ]
-    },
-    {
-      "id": 47727575,
-      "title": "Great at gaming? US air traffic control wants you to apply",
-      "url": "https://www.bbc.com/news/articles/ce84rvx0e6do",
-      "score": 30,
-      "by": "1659447091",
-      "time": 1775883857,
-      "descendants": 36,
-      "comments": [
-        {
-          "id": 47728223,
-          "by": "phoe-krk",
-          "text": "Please correct me I&#x27;m wrong:&gt; The ad also highlights the salary on offer to controllers, saying it is $155,000 (£115,000) after three years of work.Unless the US government shuts down again, at which point you stop being paid, you are required to keep working, you have no right to strike[0], and the competences you&#x27;ve built across this job are largely hard to directly make use of elsewhere so the incentive to job-hop is low.[0] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Professional_Air_Traffic_Contr...",
-          "time": 1775891030
-        },
-        {
-          "id": 47728766,
-          "by": "red_admiral",
-          "text": "I know this is culture-war stuff, but on the balance I think it&#x27;s true that the FAA deprioritised applicants from the AT&#x2F;CTI programmes, that is training courses speficically to become ATCs.My main source is https:&#x2F;&#x2F;www.tracingwoodgrains.com&#x2F;p&#x2F;the-full-story-of-the-fa..., and I&#x27;m assuming in particular that the screenshot of the letter in footnote 1 is genuine. In the section ended by footnote 16, there is a claim than in 2014 the FAA sent out just short of 3k job offer letters whereas in 2019  that had dropped to below 1k.That sounds like cutting off your own recruitment pipeline.It&#x27;s also evidence that the FAA did not drop the standards for qualification and certification, which is reassuring.",
-          "time": 1775897022
-        },
-        {
-          "id": 47728284,
-          "by": "altairprime",
-          "text": "What video game on Steam allows me to practice air traffic control? How can I determine if I have a skill at the logistics of managing planes on a radar screen? Where can I join a multiplayer lobby where at game start we&#x27;re assigned to either give radio commands to planes, or interpret radio commands and respond on behalf of planes, with at least two players for each? How does anti-griefing work in that environment?If that game existed, I would try it.Does it?",
-          "time": 1775891678
-        },
-        {
-          "id": 47728811,
-          "by": "vinni2",
-          "text": "Where is the mighty AI when you need one.",
-          "time": 1775897486
-        },
-        {
-          "id": 47728108,
-          "by": "flibbityflob",
-          "text": "Have they tried paying them consistently?",
-          "time": 1775889984
-        }
-      ]
-    },
-    {
-      "id": 47695213,
-      "title": "Optimal Strategy for Connect 4",
-      "url": "https://2swap.github.io/WeakC4/explanation/",
-      "score": 6,
-      "by": "marvinborner",
-      "time": 1775677070,
-      "descendants": 2,
-      "comments": [
-        {
-          "id": 47728789,
-          "by": "cachius",
-          "text": "This guy’s videos are awesome. He also has one on Klotski and the double pendulum. Beautiful graph animations.",
-          "time": 1775897330
-        },
-        {
-          "id": 47695427,
-          "by": "Someone",
-          "text": "FTA: “As a motivating example: player 1 (hereafter dubbed &quot;Red&quot;) can win by playing in the center column on the first move and then following the weak solution&#x27;s suggestions, but would not be guaranteed to win if the first disc is played elsewhere. The weak solution contains no information about what would happen in the other columns- As far as Red cares, it would be redundant to learn those branches, since they are not good.”I don’t think that “since they are not good” is necessary for a weak solution. Even if every first move were winning, it still would be redundant to learn how to win for every possible opening move.A weak solution gives you a guaranteed way to move from START to a win, whatever counterplay, not all ways to go from START to a win, whatever counterplay.",
-          "time": 1775677993
-        }
-      ]
-    },
-    {
-      "id": 47719942,
-      "title": "WireGuard makes new Windows release following Microsoft signing resolution",
-      "url": "https://lists.zx2c4.com/pipermail/wireguard/2026-April/009561.html",
-      "score": 466,
-      "by": "zx2c4",
-      "time": 1775836192,
-      "descendants": 135,
-      "comments": [
-        {
-          "id": 47720228,
-          "by": "zx2c4",
-          "text": "As I mentioned in the mailing list post, the Microsoft paperwork shuffling matter got dealt with rather quickly, following all the attention the HN thread from the other day got. And now we&#x27;re finally out with an update!NT programming is a lot of fun, though this release was quite challenging, because of all of the toolchain updates. On the plus side, we got to remove pre-Win10 support -- https:&#x2F;&#x2F;lists.zx2c4.com&#x2F;pipermail&#x2F;wireguard&#x2F;2026-March&#x2F;00954... . But did you know that Microsoft removed support for compiling x86 drivers in their latest driver SDK? So that was interesting to work around. There was also a fun change to the Go runtime included in this release: https:&#x2F;&#x2F;github.com&#x2F;golang&#x2F;go&#x2F;commit&#x2F;341b5e2c0261cc059b157f1c...All and all, a fun release, and I&#x27;m happy to have the Windows release train cooking again.",
-          "time": 1775837344
-        },
-        {
-          "id": 47720391,
-          "by": "c0l0",
-          "text": "As a wireguard user myself (even on the lone Windows machine that I still begrundingly have), I am happy that this problem could have been resolved. I am just wondering - if there had not been this kind of public outcry and outrage that Mr. Donenfeld discounts in his announcement message, would the issue have been fixed by now?What are individual developers of &quot;lesser&quot; (less important, less visible, less used) software with a Windows presence to do? Wait and pray for Goliath to make the first benevolent move, like all the folks who got locked out forever from their Google accounts on a whim? Ha!The fact of the matter is, the code signing requirements on Windows are a serious threat to Free and Open Source Software on the platform. Code signing requirements are a threat to FOSS on all platforms that support this technique, and infinitely more so where it&#x27;s effectively mandatory. I firmly believe that these days, THIS is the preferred angle&#x2F;vector for Microsoft to kill the software variety their C-levels once publicly bad-mouthed as &quot;cancer&quot;, and zx2c4 is one of the poor frogs being slowly boiled alive. Just not this time - yet.",
-          "time": 1775838032
-        },
-        {
-          "id": 47727064,
-          "by": "Nevermark",
-          "text": "Individual-level ethics and respect are being dispensed with en masse. The excuse being that these companies operate &quot;at scale&quot;.But last time I checked, they are taking money from individuals. Or otherwise encouraging individuals to use their services.So this lack of respect for individuals by specific large companies, is predicated on their encouraging users to trust them, and depend on them, without taking on any of the implied responsibility to not capriciously ruin someone&#x27;s day or year. And then hard or soft stone wall them.As someone who nearly lost everything due to the automated bureaucracy of a financial firm, I cannot stress: We are not safe. And we will not be safe until these companies are legally required to treat customer investment and dependency on their services, as valuable and necessarily recoverable, via prompt recourse and response, in cases where the automated bureaucratic systems fail.Otherwise, this is going to keep getting worse.When I hear how Microsoft helps someone who got attention, what I hear is that it takes extraordinary circumstances for Microsoft to care about the significant harm that there systems are causing many other people, today, who did not have the luck of this person.And that they are very very aware of this.I think we need to start using the word evil for this. Because it is. It is gross irresponsibility. Gross abuse of a power situation, of a strong dependency, that the company quite knowingly creates.",
-          "time": 1775878221
-        },
-        {
-          "id": 47723669,
-          "by": "golem14",
-          "text": "Since the impact of the account is presumably known to Microsoft (through telemetry etc), they probably know when these accounts get turned off, and can mark them in case the owner comes back and tries recovery.Microsoft would not have to automatically and 100% correctly reinstate the account. The goal would be to get high level cases like this one in front of a knowledgable human before the locked account posts angry owner posts complaints in public (If Joe Bloe&#x27;s defragmentation utility noone has ever heard of and only having 10 installs goes bad, noone would care.)Here, they don&#x27;t have to be perfect - you just need to have enough signal-to-voice ratio that employing a very small number of people outweighs the cost to PR and execs to deal with these cases, and to not let accounts get hacked through recovery.The response from Microsoft [1] is not great, or makes me hopeful.```\nPavan Davuluri, Microsoft&#x27;s President of Windows and Devices, said both Idrassi and Donenfeld should have their accounts restored &quot;soon.&quot;&quot;We&#x27;ve seen these reports and are actively working to resolve this as quickly as possible,&quot; Davuluri Xeeted. &quot;We&#x27;ve reached out to VeraCrypt and have spoken to Jason at WireGuard, they should be back up and running soon.&quot;He explained that both deactivations were executed as part of the Windows Hardware Program&#x27;s account verification procedures.The company published a blog in October, giving devs a two-week warning that if their accounts had not been verified since April 2024, Microsoft would issue mandatory account verification notifications.&quot;We worked hard to make sure partners understood this was coming, from emails, banners, reminders,&quot; said Davuluri.&quot;And we know that sometimes things still get missed. We&#x27;re taking this as an opportunity to review how we communicate changes like this and make sure we&#x27;re doing it better.&quot;```[1] https:&#x2F;&#x2F;www.theregister.com&#x2F;2026&#x2F;04&#x2F;09&#x2F;microsoft_dev_account...",
-          "time": 1775855167
-        },
-        {
-          "id": 47727820,
+          "id": 47736858,
           "by": "kuzivaai",
-          "text": "The &quot;minimum supported Windows version&quot; ratchet is underrated as a maintenance strategy. I&#x27;ve watched codebases drown in compatibility shims that nobody remembers why they exist. Curious how much of the driver size reduction came from dropping pre-Win10 support versus the toolchain updates.",
-          "time": 1775886594
+          "text": "The point about hash tables using top bits instead of bottom bits is the kind of thing that feels obvious once someone says it and yet here we are. Genuine question: have you seen any real-world hash table implementations that actually do this, or is it purely &quot;this is what we should have done 40 years ago&quot;?",
+          "time": 1775977389
+        },
+        {
+          "id": 47736492,
+          "by": "Charon77",
+          "text": "&gt; Like additionI&#x27;m perplexed to the claim that addition is cheaper than XOR, especially since addition is built upon XOR, am I missing anything? Is it javascript specific?",
+          "time": 1775972906
+        }
+      ]
+    },
+    {
+      "id": 47733521,
+      "title": "Dark Castle",
+      "url": "https://darkcastle.co.uk/",
+      "score": 180,
+      "by": "evo_9",
+      "time": 1775937719,
+      "descendants": 23,
+      "comments": [
+        {
+          "id": 47735014,
+          "by": "gausswho",
+          "text": "Note that Dark Castle was programmed by Jonathan Gay, who would eventually go on to make FutureSplash. You might know it better from what it was renamed to: Flash (of Macromedia&#x2F;Adobe).",
+          "time": 1775951719
+        },
+        {
+          "id": 47733919,
+          "by": "xnx",
+          "text": "Also playable in browser at https:&#x2F;&#x2F;classicreload.com&#x2F;play&#x2F;mac-dark-castle.html",
+          "time": 1775940542
+        },
+        {
+          "id": 47735463,
+          "by": "bombcar",
+          "text": "I&#x27;d love to see a Fabien-style Game Engine Black Book for some of these older Macintosh games.",
+          "time": 1775957866
+        },
+        {
+          "id": 47735432,
+          "by": "CMay",
+          "text": "This game came out the same year the original Castlevania did.  They&#x27;re different enough games, but there are a few similarities that do make you wonder if they had any particular shared influences.",
+          "time": 1775957459
+        },
+        {
+          "id": 47733953,
+          "by": "kelsolaar",
+          "text": "The download links are all dead.",
+          "time": 1775940903
         }
       ]
     }
