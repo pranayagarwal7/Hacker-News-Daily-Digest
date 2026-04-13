@@ -5,6 +5,7 @@ A web app that fetches the top 10 Hacker News posts every morning, commits a cle
 **Live demo:** [https://your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)
 
 ![HN Daily Digest screenshot](docs/screenshot.png)
+**NOTE:** This is the platform's interface. It updates daily at 8:00 AM UTC
 
 ---
 
