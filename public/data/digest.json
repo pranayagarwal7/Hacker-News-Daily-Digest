@@ -1,414 +1,384 @@
 {
-  "date": "2026-04-13",
-  "fetchedAt": "2026-04-13T10:03:04.742Z",
+  "date": "2026-04-14",
+  "fetchedAt": "2026-04-14T09:27:29.357Z",
   "posts": [
     {
-      "id": 47746610,
-      "title": "All elementary functions from a single binary operator",
-      "url": "https://arxiv.org/abs/2603.21852",
-      "score": 393,
-      "by": "pizza",
-      "time": 1776044972,
-      "descendants": 108,
+      "id": 47760529,
+      "title": "DaVinci Resolve – Photo",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve/photo",
+      "score": 542,
+      "by": "thebiblelover7",
+      "time": 1776133515,
+      "descendants": 129,
       "comments": [
         {
-          "id": 47749917,
-          "by": "theanonymousone",
-          "text": "Zero will also be handy in definitions: `0=eml(1,eml(eml(1,1),1))`.And i is obviously `sqrt(-1)`",
-          "time": 1776074525
+          "id": 47761254,
+          "by": "arecsu",
+          "text": "This is incredible. There are soooo many features that Davinci already handles so damn well when it comes to color editing, that I only wish they existed in photo editors. To the point there were people posting videos on Youtube about hacky workflows to edit RAW photo files on Resolve and export each one as JPG files haha.Only Darktable seemed to push the technical capabilities of photo editing forward (AgX, parametric masks, tone equalizer, etc), while rest of &quot;industry standard&quot; software lagged behind for quite so long, stagnant. Even more so when it comes to &quot;creative&quot; ways of editing, which Video Editing software have adopted for years but photo editors didn&#x27;t (relight, actual LUT usage without complications, film emulation, halation, other aesthetic effects like VHS film damage, etc).There&#x27;s so much we can do. To me, it seems like these sort of conservative culture (photography) vs progressive (video editing). I&#x27;ve been into both worlds, and for some reason video editing software and professionals were much eager to try new stuff and celebrate new ways to shape visuals, compared to photographers.",
+          "time": 1776140950
         },
         {
-          "id": 47747537,
-          "by": "DoctorOetker",
-          "text": "EDIT: please change the article link to the most recent version (as of now still v2), it is currently pointing to the v1 version which misses the figures.I&#x27;m still reading this, but if this checks out, this is one of the most significant discoveries in years.Why use splines or polynomials or haphazardly chosen basis functions if you can just fit (gradient descent) your data or wave functions to the proper computational EML tree?Got a multidimensional and multivariate function to model (with random samples or a full map)? Just do gradient descent and convert it to approximant EML trees.Perform gradient descent on EML function tree &quot;phi&quot; so that the derivatives in the Schroedinger equation match.But as I said, still reading, this sounds too good to be true, but I have witnessed such things before :)",
-          "time": 1776053899
+          "id": 47762973,
+          "by": "googie",
+          "text": "I wish they (authors of DaVinci Resolve and the Photo Editor) paid more attention to Linux platform. Theoretically DaVinci Resolve runs on Linux, but getting it run is a very bad experience on Ubuntu&#x2F;Kubuntu 24.04. I even paid for the DaVinci license, as I read somewhere that for Linux it&#x27;s necessary in order to have all codecs supported. It did not help. Fortunately there were no problems with refund.There are whole guides online how to walk around these issues and even then I could not get the audio working. Somehow it relies on some old ALSA API, which is no longer maintained&#x2F;supported on Ubuntu&#x2F;Kubuntu, or I&#x27;m just too stupid to make it work. AI assistants could not provide working solution for me either.I&#x27;ve moved back to Linux a year ago after around 10 years of Windows (and I used to use Linux Slackware for ~15 years beforehand). I am amazed how big progress the KDE made and whole Linux ecosystem. Gaming these days is just as easy as on Windows, which was my primary reason to switch to Windows. My printer just works now. Even music production is excellent on Linux now. There is plenty of great software options to choose from and they just work - as I would expect from the mature ecosystem.This all feels so good, given how Linux is not pushing trash into my computer (OS-bound spyware&#x2F;bloatware), has excellent, customizable UI. Full freedom. I do feel that I own my hardware.Yet I miss DaVinci Resolve. For now I use Kdenlive, which is nice for simple editing, but feels unfinished, or I just don&#x27;t know how to use it correctly.",
+          "time": 1776156542
         },
         {
-          "id": 47747467,
-          "by": "entaloneralie",
-          "text": "This is amazing! I love seeing FRACTRAN-shaped things on the homepage :) This reminds me of how 1-bit stacks are encoded in binary:A stack of zeros and ones can be encoded in a single number by keeping with bit-shifting and incrementing.    Pushing a 0 onto the stack is equivalent to doubling the number.\n    Pushing a 1 is equivalent to doubling and adding 1.\n    Popping is equivalent to dividing by 2, where the remainder is the number.\n\nI use something not too far off for my daily a programming based on a similar idea:Rejoice is a concatenative programming language in which data is encoded as multisets that compose by multiplication. Think Fractran, without the rule-searching, or Forth without a stack.https:&#x2F;&#x2F;wiki.xxiivv.com&#x2F;site&#x2F;rejoice",
-          "time": 1776053132
+          "id": 47762055,
+          "by": "amatecha",
+          "text": "It took me a damn long time to find this information, so I&#x27;m pasting it here:&gt; It includes native RAW support for Canon, Fujifilm, Nikon, Sony and even iPhone ProRAW.I looked all over for a more technical page that just lists these kind of specs in bullet-point form, but apparently they refuse to communicate information about their product in this way?  The &quot;Tech Specs&quot; page only seems to show information about hardware products.   &#x2F;shrugWould be cool to have something I can use to edit my Fujifilm-shot photos without any sort of subscription.  Capture One Express (or whatever it&#x27;s called now) is super light on features, but processes Fujifilm .RAF&#x27;s very well (oh, or it used to, apparently it&#x27;s permanently discontinued now, great).  I&#x27;d love to use Lightroom but I refuse to pay for a subscription to use software, so... options are limited :\\",
+          "time": 1776148814
         },
         {
-          "id": 47747965,
-          "by": "eugene3306",
-          "text": "This makes a good benchmark LLMs:```\nlook at this paper: https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2603.21852now please produce 2x+y as a composition on EMLs\n```Opus(paid) - claimed that &quot;2&quot; is circular. Once I told it that ChatGPT have already done this, finished successfully.ChatGPT(free) - did it from the first try.Grok - produced estimation of the depth of the formula.Gemini - successDeepseek - Assumed some pre-existing knowledge on what EML is. Unable to fetch the pdf from the link, unable to consume pdf from &quot;Attach file&quot;Kimi - produced long output, stopped and asked to upgradeGLM - looks ok",
-          "time": 1776058111
+          "id": 47763256,
+          "by": "agos",
+          "text": "if the camera profiles are good (or they support third party profiling) this could easily become my go to, but that&#x27;s a big if",
+          "time": 1776158802
         },
         {
-          "id": 47747539,
-          "by": "lioeters",
-          "text": "&gt;  A calculator with just two buttons, EML and the digit 1, can compute\neverything a full scientific calculator doesReminds me of the Iota combinator, one of the smallest formal systems that can be combined to produce a universal Turing machine, meaning it can express all of computation.",
-          "time": 1776053906
+          "id": 47761226,
+          "by": "mikae1",
+          "text": "This was bound to happen. I&#x27;ve edited stills in Resolve for years thinking this day would come. Resolve has supported DNG raw files (as long as they&#x27;re not converted from funky sensors such as Fujifilm X-trans). But, it was always a bit of a hack.Kind of stoked to see this release even though I&#x27;ve transitioned to a 100% open source photo workflow on Linux now.IMO, most exciting developments in photo editing today happens in open source. But this is really something.",
+          "time": 1776140676
         }
       ]
     },
     {
-      "id": 47748064,
-      "title": "The Economics of Software Teams: Why Most Engineering Orgs Are Flying Blind",
-      "url": "https://www.viktorcessan.com/the-economics-of-software-teams/",
-      "score": 138,
-      "by": "kiyanwang",
-      "time": 1776059132,
-      "descendants": 67,
+      "id": 47760764,
+      "title": "A new spam policy for “back button hijacking”",
+      "url": "https://developers.google.com/search/blog/2026/04/back-button-hijacking",
+      "score": 334,
+      "by": "zdw",
+      "time": 1776135987,
+      "descendants": 202,
       "comments": [
         {
-          "id": 47748634,
-          "by": "leokennis",
-          "text": "&gt; The obvious objection is that code produced at that speed becomes unmanageable, a liability in itself. That is a reasonable concern, but it largely applies when agents produce code that humans then maintain. Agentic platforms are being iterated upon quickly, and for established patterns and non-business-critical code, which is the majority of what most engineering organizations actually maintain, detailed human familiarity with the codebase matters less than it once did. A messy codebase is still cheaper to send ten agents through than to staff a team around. And even if the agents need ten days to reason through an unfamiliar system, that is still faster and cheaper than most development teams operating today. The liability argument holds in a human-to-human or agent-to-human world. In an agent-to-agent world, it largely dissolves.Then I&#x27;d wager it&#x27;s the same for the courses and workshop this guy is selling...an LLM can probably give me at least 75% of the financial insights for not even .1% of what this &quot;agile coach&quot; is asking for his workshops and courses.Maybe the &quot;agile coach LLM&quot; can explain to the &quot;coding LLM&#x27;s&quot; why they&#x27;re too expensive, and then the &quot;coding LLM&#x27;s&quot; can tell the &quot;agile coach LLM&quot; to take the next standby shift then, if he knows so much about code?And then we actual humans can have a day off and relax at the pool.",
-          "time": 1776063695
+          "id": 47762203,
+          "by": "firefoxd",
+          "text": "Ok, you can start with LinkedIn, I&#x27;ll wait...If you are wondering how it works. You get a link from LinkedIn, it&#x27;s from an email or just a post someone shared. You click on it, the URL loads, and you read the post. When you click the back button, you aren&#x27;t taken back to wherever you came from. Instead, your LinkedIn feed loads.How did it happen? When you landed on the first link, the URL is replaced with the homepage first (location.replace(...) doesn&#x27;t change the browser history). Then the browser history state is pushed to the original link. So it seems like you landed on the home page first then you clicked on a link. When you click the back button, you are taken back to the homepage where your feed entices you to stay longer on LinkedIn.",
+          "time": 1776150109
         },
         {
-          "id": 47748834,
-          "by": "boron1006",
-          "text": "&gt; A messy codebase is still cheaper to send ten agents through than to staff a team around. And even if the agents need ten days to reason through an unfamiliar system, that is still faster and cheaper than most development teams operating today.I’ve been on 2 failed projects that have been entirely AI generated and it’s not that agents slow down and you can just send more agents to work on projects for longer, it’s that they becoming completely unable to make any progress whatsoever, and whatever progress they do make is wrong.",
-          "time": 1776065088
+          "id": 47761535,
+          "by": "andreareina",
+          "text": "&gt; Notably, some instances of back button hijacking may originate from the site&#x27;s ... advertising platformI feel like anything loaded from a third party domain shouldn&#x27;t be allowed to fiddle with the history stack.",
+          "time": 1776143921
         },
         {
-          "id": 47749768,
-          "by": "jwpapi",
-          "text": "I thought it was a good article, till I saw the Slack example.The copy doesn’t even remotely grasp the scale of what the actual Slack sofware does in terms of scale, relaiability, observability, monitorability, maintability and pretty sure also functionality.Author only writes about the non-dev work as difference, which seems like he doesn’t know what he’s talking about in all, and what running an application at that scale actually means.This &quot;clone&quot; doesn’t get you any closer to an actualy Slack copy than a white piece of paper",
-          "time": 1776073197
+          "id": 47761026,
+          "by": "musicale",
+          "text": "The iron law of web encrapification: every web feature will (if possible) be employed to abuse the user, usually to push advertising.",
+          "time": 1776138515
         },
         {
-          "id": 47748744,
-          "by": "InfinityByTen",
-          "text": "When I see someone just throwing a lot of numbers and graphs at me, I see that there are in to win an argument, and not propose an idea.Of late, I&#x27;ve come across a lot of ideas from Rory Sutherland and my conclusion from listening to his ideas is that there are some people, who&#x27;re obsessed with numbers, because to them it&#x27;s a way to find certainty and win arguments. He calls them &quot;Finance People&quot; (him being a Marketing one). Here&#x27;s an example&quot;Finance people don’t really want to make the company money over time. They just thrive on certainty and predictability. They try to make the world resemble their fantasy of perfect certainty, perfect quantification, perfect measurement.Here’s the problem. A cost is really quantifiable and really visible. And if you cut a cost, it delivers predictable gains almost instantaneously.&quot;&gt;  Choosing to spend three weeks on a feature that serves 2% of users is a €60,000 decision.I&#x27;d really want to hire the Oracle of a PM&#x2F; Analyst that can give me that 2% accurately even 75% of the time, and promise nothing non-linear can come from an exercise.",
-          "time": 1776064445
+          "id": 47761736,
+          "by": "p4bl0",
+          "text": "That&#x27;s cool if they can make it work.I don&#x27;t understand how Google&#x27;s indexing work anymore. I&#x27;ve had some website very well indexed for years and years which suddenly disappeared from the index with no explanation, even on the Search Console (&quot;visited, not indexed&quot;). Simple blog entries, lightweight pages, no JavaScript, no ads, no bad practices, https enabled, informative content that is linked from elsewhere including well indexed websites (some entries even performed well on Reddit).\nAt the same time, for the past few years I&#x27;ve found Google search to be a less and less reliable tool because the results are less often what I need.Anyway, let&#x27;s hope this new policy can improve things a little.",
+          "time": 1776145765
         },
         {
-          "id": 47748773,
-          "by": "jaccola",
-          "text": "I think the only thing that matters is whether the people on the team care deeply about the product; whether they care more about the product than their own careers (in the short term). Without that, any metric or way of thinking can and will be gamed.Unfortunately, even with all the management techniques in the world, there are just some projects that are impossible to care about. There’s simply a significantly lower cap on productivity on these projects.",
-          "time": 1776064665
+          "id": 47761003,
+          "by": "al_borland",
+          "text": "Some Microsoft sites have been very guilty of this. They are the ones that stick in my head in recent memory.",
+          "time": 1776138327
         }
       ]
     },
     {
-      "id": 47745284,
-      "title": "Taking on CUDA with ROCm: 'One Step After Another'",
-      "url": "https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/",
-      "score": 168,
-      "by": "mindcrime",
-      "time": 1776033525,
-      "descendants": 127,
+      "id": 47762901,
+      "title": "An AI Vibe Coding Horror Story",
+      "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story/",
+      "score": 63,
+      "by": "teichmann",
+      "time": 1776155745,
+      "descendants": 41,
       "comments": [
         {
-          "id": 47745792,
-          "by": "lrvick",
-          "text": "Just spent the last week or so porting TheRock to stagex in an effort to get ROCm built with a native musl&#x2F;mimalloc toolchain and get it deterministic for high security&#x2F;privacy workloads that cannot trust binaries only built with a single compiler.It has been a bit of a nightmare and had to package like 30+ deps and their heavily customized LLVM, but got the runtime to build this morning finally.Things are looking bright for high security workloads on AMD hardware due to them working fully in the open however much of a mess it may be.",
-          "time": 1776037787
+          "id": 47763075,
+          "by": "spaniard89277",
+          "text": "I did something similar to a local company here in Spain. Not medical, but a small insurance company. Believe it or not, yes, they vibecoded their CRM.I sent them an email and they threatened to sue me. I was a bit in shock from such dumb response, but I guess some people only learn the hard way, so I filed a report to the AEPD (Data protection agency in Spain) for starters, known to be brutal.I&#x27;ve also sent them a burofax demanding the removal of my data on their systems just last friday.",
+          "time": 1776157379
         },
         {
-          "id": 47746653,
-          "by": "0xbadcafebee",
-          "text": "AMD has years of catching up to do with ROCm just to get their devices to work well. They don&#x27;t support all their own graphics cards that can do AI, and when it is supported, it&#x27;s buggy. The AMDGPU graphics driver for Linux has had continued instability since 6.6. I don&#x27;t understand why they can&#x27;t hire better software engineers.",
-          "time": 1776045435
+          "id": 47763198,
+          "by": "EdNutting",
+          "text": "Software engineering is looking more and more like it needs a professional body in each country, and accreditation and standards. Ie it needs to grow up and become like every other strand of engineering.Gone should be the days of “I taught myself so now I can [design software in a professional setting &#x2F; design a bridge in a professional setting].” I’m not advocating gatekeeping - if you want to build a small bridge at the end of your garden for personal use, go for it. If you want to build a bridge in your local town over a river, you’re gonna need professional accreditation. Same should be true for software engineering now.",
+          "time": 1776158392
         },
         {
-          "id": 47748555,
-          "by": "mstaoru",
-          "text": "I&#x27;m team &quot;taking on CUDA with OpenVINO&quot; (and SYCL*), Intel seems really upped their game on iGPU and dGPU lately, with sane prices and fairly good software support and APIs.I&#x27;m not talking gaming CUDA, but CV and data science workloads seem to scale well on Arc and work well on Edge on Core Ultra 2&#x2F;3.",
-          "time": 1776063140
+          "id": 47763069,
+          "by": "delis-thumbs-7e",
+          "text": "Meanwhile on Linkedin… Every sales bozo with zero technical understanding is screaming top of their virtual lungs that evrything must be done with AI and it is solution to every layoff, economic problem, everything.It is just a matter of time when something really really bad happens.",
+          "time": 1776157339
         },
         {
-          "id": 47749703,
-          "by": "adev_",
-          "text": "A little feedback to AMD executives about the current status of ROCm here:(1) - Supporting only Server grade hardware and ignoring laptop&#x2F;consumer grade GPU&#x2F;APU for ROCm was a terrible strategical mistake.A lot of developers experiments first and foremost on their personal laptop first  and scale on expensive, professional grade hardware later. In addition: some developers simply do not have the money to buy server grade hardware.By locking ROCm only to server grade GPUs, you restrict the potential list of contributors  to your OSS ROCm ecosystem to few large AI users and few HPC centers... Meaning virtually nobody.A much more sensible strategy would be to provide degraded performance for ROCm on top of consummer GPUs, and this is exactly what Nvidia with CUDA is doing.This is changing but you need to send a clear message there. EVERY new released device should be properly supported by ROCm.- (2) Supporting only the two last generations of architecture is not what customers want to see.https:&#x2F;&#x2F;rocm.docs.amd.com&#x2F;projects&#x2F;install-on-linux&#x2F;en&#x2F;docs-...People with existing GPU codebase invests significant amount of effort to support ROCm.Saying them two years later: &quot;Sorry you are out of update now!&quot; when the ecosystem is still unstable is unacceptable.CUDA excels to backward compatibility. The fact you ignore it entirely plays against you.(3) - Focusing exclusively on Triton and making HIP a second class citizen is non-sensical.AI might get all the buzz and the money right now, we go it.It might look sensible on the surface to focus on Python-base, AI focused, tools like Triton and supporting them is definitively necessary.But there is a tremendous amount of code that is relying on C++ and C to run over GPU (HPC, simulation, scientific, imaging, ....) and that will remain there for the multiple decades to come.Ignoring that is loosing, again, custumers to CUDA.It is currently pretty ironic to see such a move like that considering that AMD GPUs currently tend to be highly competitive over FP64, meaning good for these kind of applications. You are throwing away one of your own competitive advantage...(4) - Last but not least: Please focus a bit on the packaging of your software solution.There has been complained on this for the last 5 years and not much changed.Working with distributions packagers and integrating with them does not cost much... This would currently give you a competitive advantage over Nvidia..",
-          "time": 1776072634
+          "id": 47763237,
+          "by": "aledevv",
+          "text": "&gt; All &quot;access control&quot; logic lived in the JavaScript on the client side, meaning the data was literally one command away from anyone who lookedThis is the top!This is a typical example of someone using Coding Agents without being a developer: AI that isn&#x27;t used knowingly can be a huge risk if you don&#x27;t know what you&#x27;re doing.AI used for professional purposes (not experiments) should NOT be used haphazardly.And this also opens up a serious liability issue: the developer has the perception of being exempt from responsibility and this also leads to enormous risks for the business.",
+          "time": 1776158677
         },
         {
-          "id": 47746481,
-          "by": "rdevilla",
-          "text": "ROCm is not supported on some very common consumer GPUs, e.g. the RX 580. Vulkan backends work just fine.",
-          "time": 1776043670
+          "id": 47763136,
+          "by": "BrissyCoder",
+          "text": "This reads like internet fiction to me. Very vague and short.",
+          "time": 1776157886
         }
       ]
     },
     {
-      "id": 47741701,
-      "title": "DIY Soft Drinks",
-      "url": "https://blinry.org/diy-soft-drinks/",
-      "score": 448,
-      "by": "_Microft",
-      "time": 1776011923,
-      "descendants": 128,
+      "id": 47762641,
+      "title": "Introspective Diffusion Language Models",
+      "url": "https://introspective-diffusion.github.io/",
+      "score": 25,
+      "by": "zagwdt",
+      "time": 1776153453,
+      "descendants": 6,
       "comments": [
         {
-          "id": 47744268,
-          "by": "mattmaroon",
-          "text": "One pro-tip as I now somehow have a commercial bottling license these days: get pre-hydrated gum Arabic. Much easier to work with. Almost everybody who messes this up will make the mistake at the hydrating the gum Arabic stage. Blend it with any dry ingredients like sugar before using.If you can’t source it, I’m not going to tell you that you SHOULD pretend to be a bottling company and ask a gum provider to send you some free samples, but you could and the amount they send you will last the rest of your life. TIC gums is pretty awesome and if you’re into frozen desserts has some incredible gum mixtures for ice creams, sorbets, etc.Also, consider just using water soluble flavor concentrates and skipping emulsification all together. That’s what most pros do and it’s why Sprite isn’t cloudy like it would be if you used oils. My favorite suppliers that sell in consumer and pro-sumer qtys are Apex Flavors and Nature’s Flavors.This probably won’t work for Cola as I think some of those ingredients have all of their flavor molecules in the oils, but as a general rule, if you can buy it at the store and it is clear, it is made using water soluble. If it is brown it probably isn’t, hence the caramel color additive.",
-          "time": 1776026668
-        },
-        {
-          "id": 47744471,
-          "by": "peaxkl",
-          "text": "I recently started getting into homemade ClubMate production. The goal was to create a drink that has caffeine, less sugar than regular mate and is still tasty.It took me 4-5 tries to get to a recipe that tastes good. Earlier tries involved cooking the mate, which led to a bitter taste. Cold brewing led to way better results.Here is my current recipe for 5 bottles (á 0,5l):  - 60g mate tea leaves (coarse) [1]\n  - 500ml water\n  - 65g cane sugar\n  - 1 squeezed lemon\n  - soda water\n\n  1. Add 60g of mate to a 500ml bottle and fill up the rest with water\n  2. Let it sit in the fridge for 12-24h\n  3. Then strain the mate from the liquid\n  4. Use a filter cloth or a tea towel (soak with water first)   to filter out the remaining suspended solids\n  5. Put sugar and the lemon juice together into a pot and start caramelizing the sugar\n  6. Then add the filtered mate tea and take the pot from the stove\n  7. Now distribute it equally on the 5 bottles and fill up the rest with soda\n\nThe mate tastes less sweet than the original mate, but is still a great drink to keep you awake.[1] Mate tea that I&#x27;m using: https:&#x2F;&#x2F;www.amazon.com&#x2F;Playadito-Traditional-Colonia-Liebig-...",
-          "time": 1776027895
-        },
-        {
-          "id": 47745498,
-          "by": "foresto",
-          "text": "If you want to carbonate water but don&#x27;t want to buy a countertop carbonator or its overpriced CO2 refills, you can get a ball lock valve cap that screws onto 1L or 2L soda bottles for around $8-16.That valve will attach to a standard female fitting, which you can put on the end of a hose coming from a pressure regulator, which will attach to a full-size CO2 cylinder available from a brewing or gas supply shop. CO2 refills are a lot cheaper this way.Put cold water in the bottle with some extra space at the top. Squeeze out the air and attach the valve cap. Set the pressure regulator, connect it to the bottle, open the regulator&#x27;s output valve, and watch the bottle that was slightly crushed by your squeezing expand back to its normal shape. Slosh the water around with pressure applied for maybe 10-30 seconds. Close the output valve and disconnect.Voilà. Carbonated water.IIRC, PETE soda bottles are pressurized to about 50 psi for retail shelves. I don&#x27;t think they&#x27;re likely to burst until well beyond 100 psi, and they&#x27;ll deform before they burst, so if you&#x27;re careful, you can go a little higher than 50 and make fizzier water than what you can buy in the store. I have used 70 psi many times.Read up on precautions for handling pressurized gas before doing any of this. Wear eye protection. Don&#x27;t turn your bottle or gas cylinder into an unguided missile. :)Sadly, I don&#x27;t have any info on microplastics released by this process. (Nor by countertop carbonators and their rigid plastic flasks.)  I wish I knew of a suitable steel bottle to use instead.",
-          "time": 1776035611
-        },
-        {
-          "id": 47743906,
-          "by": "tareqak",
-          "text": "Perfectly Replicating Coca Cola (It Took Me A Year) - LabCoatz : https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=TDkH3EbWTYcThis content creator used a mass spectrometer to find the flavoring used in Coca-Cola.",
-          "time": 1776024533
-        },
-        {
-          "id": 47747915,
-          "by": "tdeck",
-          "text": "I enjoy the flavor of kvass - a Russian &#x2F; eastern European malt flavored soda - but it&#x27;s hard to find where I live. The process involves really aggressively toasting some rye bread, boiling it with eaisans and sugar, straining it, and then brewing it with ordinary baking yeast in 2-liter bottles until it reaches your desired carbonation level. The end result is really refreshing.",
-          "time": 1776057789
+          "id": 47762765,
+          "by": "andsoitis",
+          "text": "Is anyone here experimenting seriously with Diffusion for text generation? I’d love to learn about your experiences!",
+          "time": 1776154335
         }
       ]
     },
     {
-      "id": 47738827,
-      "title": "Bring Back Idiomatic Design (2023)",
-      "url": "https://essays.johnloeber.com/p/4-bring-back-idiomatic-design",
-      "score": 559,
-      "by": "phil294",
-      "time": 1775996486,
-      "descendants": 320,
+      "id": 47755629,
+      "title": "Someone bought 30 WordPress plugins and planted a backdoor in all of them",
+      "url": "https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/",
+      "score": 935,
+      "by": "speckx",
+      "time": 1776102879,
+      "descendants": 264,
       "comments": [
         {
-          "id": 47749914,
-          "by": "rho4",
-          "text": "A few of my favorites:- &quot;Not-Boxes&quot;: Negatively formulated text (disable... &#x2F; don&#x27;t...)- &quot;Button-Checkboxes&quot;: Checkboxes with verbs that trigger actions- &quot;Radio-Checkboxes&quot;: Radios that are actually checkboxes (not mutually exclusive)- &quot;Toggle-Checkboxes&quot;: Checkboxes that are actually toggle buttons and can&#x27;t decided wheter the text should show the current state or the state that will happen when you click.",
-          "time": 1776074515
+          "id": 47763246,
+          "by": "RandomGerm4n",
+          "text": "This is probably a controversial opinion but this case is yet another example of why it should be prohibited to sell repositories and storefronts. If you want to take over someone else’s user base you should be forced to display a message to the users and actively ask them whether they trust the new owner as well. Simply passing the whole thing on to someone else in secret who could then compromise the WordPress plugin, a browser extension or something similar should not be allowed.",
+          "time": 1776158760
         },
         {
-          "id": 47741481,
-          "by": "uhoh-itsmaciek",
-          "text": "In text boxes in some applications, enter submits the entered text, and ctrl-enter forces a newline  (not at my computer, but I think Slack does this). In others, it&#x27;s the other way around (pretty sure GitHub does this for comments).I don&#x27;t know how we got here and I don&#x27;t know how to fix it, but &quot;bring back idiomatic design&quot; doesn&#x27;t help when we don&#x27;t have enough idioms. I&#x27;m not even sure if those two behaviors are wrong to be inconsistent: you&#x27;re probably more likely to want fancier formatting in a PR review comment than a chat message. But as a user, it&#x27;s frustrating to have to keep track of which is which.",
-          "time": 1776010779
+          "id": 47756259,
+          "by": "chromacity",
+          "text": "This is a perfect illustration of what cracks me up about the hyperbolic reactions to Mythos. Yes, increased automation of cutting-edge vulnerability discovery will shake things up a bit. No, it&#x27;s nowhere near the top of what should be keeping you awake at night if you&#x27;re working in infosec.We&#x27;ve built our existing tech stacks and corporate governance structures for a different era. If you want to credit one specific development for making things dramatically worse, it&#x27;s cryptocurrencies, not AI. They&#x27;ve turned the cottage industry of malicious hacking into a multi-billion-dollar enterprise that&#x27;s attractive even to rogue nations such as North Korea. And with this much at stake, they can afford to simply buy your software dependencies, or to offer one of your employees some retirement money in exchange for making a &quot;mistake&quot;.We know how to write software with very few bugs (although we often choose not to). We have no good plan for keeping big enterprises secure in this reality. Autonomous LLM agents will be used by ransomware gangs and similar operations, but they don&#x27;t need FreeBSD exploit-writing capabilities for that.",
+          "time": 1776105864
         },
         {
-          "id": 47748971,
-          "by": "paulmooreparks",
-          "text": "Thank you so much for writing this. I&#x27;m also from the desktop era and I can&#x27;t STAND all the reinvention going on, or the fact that I have to move the mouse all over the screen or randomly stab my phone with my finger to find out what I can interact with.I&#x27;m working on a GUI app and a web app in concert right now. They work in the same niche, but at different levels (one is desktop-level management, the other is enterprise-level management). I stepped back and developed a unified design language (Tela Design Language, or TDL) which has saved my sanity and made the apps actually usable again.https:&#x2F;&#x2F;parkscomputing.com&#x2F;content&#x2F;tdl-reference.htmlhttps:&#x2F;&#x2F;github.com&#x2F;paulmooreparks&#x2F;tela&#x2F;blob&#x2F;main&#x2F;TELA-DESIGN...",
-          "time": 1776066175
+          "id": 47755991,
+          "by": "bradley13",
+          "text": "Whenever I look at a web project, it starts with &quot;npm install&quot; and literally dozens of libraries get downloaded.The project authors probably don&#x27;t even know what libraries their project requires, because many of them are transitive dependencies. There is zero chance that they have checked those libraries for supply chain attacks.",
+          "time": 1776104627
         },
         {
-          "id": 47740455,
-          "by": "JojoFatsani",
-          "text": "Most software is not designed by intelligent and thoughtful people anymore. It is designed by hastily promoted middle manager PM&#x2F;Product type people who, as has been mentioned elsewhere, simply were not around when thoughtful human interface design was borderline mandatory for efficiency’s sake.There is incompetence and there is also malevolence in the encouragement of dark patterns by the revenue side of the business.",
-          "time": 1776005682
+          "id": 47756498,
+          "by": "toniantunovi",
+          "text": "The supply chain attack surface in WordPress plugins has always been particularly dangerous because the ecosystem encourages users to install many small single-purpose plugins from individual developers, most of whom aren&#x27;t security-focused organizations. Buying out an established plugin with a large install base is a clever approach because you inherit years of user trust that took the original developer a long time to build.The deeper structural issue is that plugin update notifications function as an implicit trust signal. Users see &quot;update available&quot; and click without questioning whether the author is still the same person. A package signing and transfer transparency system similar to what npm has been working toward would help here, but the WordPress ecosystem has historically moved slowly on security infrastructure.",
+          "time": 1776107054
         },
         {
-          "id": 47740863,
-          "by": "iamcalledrob",
-          "text": "As the author identifies, the idioms come from the use of system frameworks that steer you towards idiomatic implementations.The system UI frameworks are tremendously detailed and handle so many corner cases you&#x27;d never think of. They allow you to graduate into being a power user over time.Windows has Win32, and it was easier to use its controls than rolling your own custom ones. (Shame they left the UI side of win32 to rot)macOS has AppKit, which enforces a ton. You can&#x27;t change the height of a native button, for example.iOS has UIKit, similar deal.The web has nothing. You gotta roll your own, and it&#x27;ll be half-baked at best.  And since building for modern desktop platforms is horrible, the framework-less web is being used there too.",
-          "time": 1776007722
+          "id": 47756219,
+          "by": "spankalee",
+          "text": "I really wish that the FAIR package manager project had been successful, but they recently gave up after the WordPress drama died down.https:&#x2F;&#x2F;fair.pm&#x2F;FAIR has a very interesting architecture, inspired by atproto, that I think has the potential to mitigate some of the supply-chain attacks we&#x27;ve seen recently.In FAIR, there&#x27;s no central package repository. Anyone can run one, like an atproto PDS. Packages have DIDs, routable across all repositories. There are aggregators that provide search, front-ends, etc. And like Bluesky, there are &quot;labelers&quot;, separate from repositories and front-ends. So organizations like Socket, etc can label packages with their analysis in a first class way, visible to the whole ecosystem.So you could set up your installer to ban packages flagged by Socket, or ones that recently published by a new DID, etc. You could run your own labeler with AI security analysis on the packages you care about. A specific community could build their own lint rules and label based on that (like e18e in the npm ecosystem.Not perfect, but far better than centralized package managers that only get the features their owner decides to pay for.",
+          "time": 1776105660
         }
       ]
     },
     {
-      "id": 47742200,
-      "title": "Show HN: boringBar – a taskbar-style dock replacement for macOS",
-      "url": "https://boringbar.app/",
-      "score": 370,
-      "by": "a-ve",
-      "time": 1776014744,
-      "descendants": 206,
+      "id": 47757495,
+      "title": "GitHub Stacked PRs",
+      "url": "https://github.github.com/gh-stack/",
+      "score": 708,
+      "by": "ezekg",
+      "time": 1776112609,
+      "descendants": 374,
       "comments": [
         {
-          "id": 47749913,
-          "by": "nagisa12321",
-          "text": "Just make an open source version using 3 hours:https:&#x2F;&#x2F;github.com&#x2F;nagisa77&#x2F;OpenBoringBar",
-          "time": 1776074514
+          "id": 47757695,
+          "by": "adamwk",
+          "text": "As someone who used phabricator and mercurial, using GitHub and git again feels like going back to the stone ages. Hopefully this and jujutsu can recreate stacked-diff flow of phabricator.It’s not just nice for monorepos. It makes both reviewing and working on long-running feature projects so much nicer. It encourages smaller PRs or diffs so that reviews are quick and easy to do in between builds (whereas long pull requests take a big chunk of time).",
+          "time": 1776113713
         },
         {
-          "id": 47742559,
-          "by": "sonofhans",
-          "text": "I am the target audience for this, from a UX and tech perspective. It addresses a problem I have and for which I periodically audition solutions.A subscription for a menu bar, though, kills it for me. I have apps on Macs that are over 20 years old. Some of those companies don’t exist anymore. I’m not going to risk paying $100 for a decade of your app and hope that your company, or your goodwill, stays around that long.",
-          "time": 1776017182
+          "id": 47757981,
+          "by": "jenadine",
+          "text": "I might be missing something, but what I need is not &quot;stacked PR&quot; but a proper UI and interface to manage single commit:- merge some commits independently when partial work is ready.- mark some commit as reviewed.- UI to do interactive rebase and and squash and edit individual commits. (I can do that well from the command line, but not when using the GitHub interface, and somehow not everyone from my team is familiar with that)- ability to attach a comment to a specific commit, or to the commit message.- better way to visualize what change over time in each forced push&#x2F;revision (diff of diff)Git itself already has the concept of commit. Why put this &quot;stacked PR&quot; abstraction on top of it?Or is there a difference I don&#x27;t see?",
+          "time": 1776115313
         },
         {
-          "id": 47742616,
-          "by": "SyneRyder",
-          "text": "While I don&#x27;t use a Mac as my primary anymore, I&#x27;m surprised I like the look of this! It actually looks quite Mac-like as well.Subscription is a big nope here, though. Especially for Mac software, I&#x27;d expect something where you pay for one major version, that is guaranteed to works on specific macOS versions, and gets minor bugfix updates too. But maybe the next macOS version requires a newer major version update to run, in which case you pay an upgrade fee to buy the next major version - or maybe the next major version has new features you might want to upgrade to as well.My old Macs are stuck on 10.13, and I see Ubar mentioned elsewhere in this thread and that it&#x27;s still compatible with 10.13. I might consider the $30 one off price to buy Ubar and keep it forever, but I wouldn&#x27;t do a $10 subscription.",
-          "time": 1776017595
+          "id": 47757617,
+          "by": "bsimpson",
+          "text": "Finally!I never understood the PR=branch model GitHub defaulted to.  Stacked commits (ala Phabricator&#x2F;Gerrit) always jived more with how my brain reasons about changes.Glad to see this option.  I guess I&#x27;ll have to install their CLI thing now.",
+          "time": 1776113280
         },
         {
-          "id": 47749730,
-          "by": "wjakob",
-          "text": "I am running the trial and it seems great except for two crucial deviations from Dock behavior. Clicking on a button (&quot;chip&quot;) does not bring the associated window to the foreground. It does work when I hover over a chip and then click the preview of a specific window. But nothing happens when I directly click the button in the bar. The issue occurs regardless of whether an app has 1 or &gt;1 windows open. In the latter case, I would prefer if clicking the button brings the most recently used window to the top.Another observation: many macOS apps (e.g. pages, mail, keynote, etc.) like to stay open even without having any active windows. This is completely hidden by boringBar, which leads to tons of apps being open without the user being aware of it (-&gt; memory waste). Furthermore, actually using such an app then requires me to awkwardly type the name of the app even though it&#x27;s already open.I think it would be better if such passive apps without windows still have chips, perhaps smaller ones without a window title.Regarding the foreground issue, in case it&#x27;s relevant: The app has all the permissions it requested. This is on a macOS 26.2 on a M4 MBP.",
-          "time": 1776072910
+          "id": 47758067,
+          "by": "akersten",
+          "text": "Does it fix the current UX issue with Squash &amp; Merge?Right now I manually do &quot;stacked PRs&quot; like this:main &lt;- PR A &lt;- PR B (PR B&#x27;s merge target branch is PR A) &lt;- PR C, etc.If PR B merges first, PR A can merge to main no problems. If PR A merges to main first, fixing PR B is a nightmare. The GitHub UI automatically changes the &quot;target&quot; branch of the PR to main, but instantly conflicts spawn from nowhere. Try to rebase it and you&#x27;re going to be manually looking at every non-conflicting change that ever happened on that branch, for no apparent reason (yes, the reason is that PR A merging to main created a new merge commit at the head of main, and git just can&#x27;t handle that or whatever).So I don&#x27;t really need a new UI for this, I need the tool to Just Work in a way that makes sense to anyone who wasn&#x27;t Linus in 1998 when the gospel of rebase was delivered from On High to us unwashed Gentry through his fingertips..",
+          "time": 1776115827
         },
         {
-          "id": 47747824,
-          "by": "nagonago",
-          "text": "When I got a Macbook many years ago, I was surprised how often little utility software like this cost money. I was just so used to the abundance of open source and freeware in the Windows&#x2F;Linux world.No judgement either way, I get that developers want to be compensated for their time. I just always found the difference in culture curious. I guess it&#x27;s because if you&#x27;re willing to spend the extra premium for Apple products, you&#x27;re probably also willing to spend a little extra premium on the software too.",
-          "time": 1776056906
+          "id": 47762713,
+          "by": "metafeather",
+          "text": "I&#x27;ve been using `git town`[1] for years to managed stacked PR&#x27;s alone with Github PR&#x27;s[2] and juniors I have introduced it to have really found it a helpful mental model when developing features.I hope the Gitub CLI will include syncing[3] &#x27;stacks&#x27; locally with upstream in a similar way.[1]: https:&#x2F;&#x2F;www.git-town.com&#x2F;stacked-changes.html[2]: https:&#x2F;&#x2F;github.com&#x2F;marketplace&#x2F;actions&#x2F;git-town-github-actio...[3]: https:&#x2F;&#x2F;www.git-town.com&#x2F;commands&#x2F;sync.html",
+          "time": 1776153950
         }
       ]
     },
     {
-      "id": 47737542,
-      "title": "Optimization of 32-bit Unsigned Division by Constants on 64-bit Targets",
-      "url": "https://arxiv.org/abs/2604.07902",
-      "score": 78,
-      "by": "mpweiher",
-      "time": 1775985270,
-      "descendants": 9,
+      "id": 47762864,
+      "title": "Backblaze has stopped backing up your data",
+      "url": "https://rareese.com/posts/backblaze/",
+      "score": 18,
+      "by": "rrreese",
+      "time": 1776155427,
+      "descendants": 7,
       "comments": [
         {
-          "id": 47748097,
-          "by": "ridiculous_fish",
-          "text": "This paper missed the state of the art!!!This concerns unsigned division by a 32 bit constant divisor. Compilers routinely optimize this to a high-multiply by a &quot;magic number&quot; but this number may be up to 33 bits (worst-case, divisor dependent, 7 is a problem child). So you may need a 32x33-bit high multiply.What compilers do today is some bit tricks to perform a 32x33 bit high multiply through a 32x32 multiply and then handling the last bit specially, through additions and bitshifts. That&#x27;s the &quot;GM Method&quot; in the paper; the juice to be squeezed out is the extra stuff to handle the 33rd bit.What the paper observes is that 32x33 high multiply can be performed via a 64x64 high multiply and then the extra stuff goes away. Well yes, of course.But amazingly in ALL of these worst case situations you can compute a different magic number, and perform a (saturating) increment of the dividend at runtime, and ONLY need a 32 bit high multiply.That is, these are the two algorithms for unsigned division by constants where the magic number overflows:- This paper: Promote to twice the bit width, followed by high multiply (32x64 =&gt; 64) and then bitshift- SOTA: Saturating increment of the dividend, then high multiply (32x32 =&gt; 32) and then bitshiftProbably the paper&#x27;s approach is a little better on wide multipliers, but they missed this well-known technique published 15 years ago (and before that, I merely rediscovered it):https:&#x2F;&#x2F;ridiculousfish.com&#x2F;blog&#x2F;posts&#x2F;labor-of-division-epis...",
-          "time": 1776059530
+          "id": 47763169,
+          "by": "benguild",
+          "text": "The fact that they’d exclude “.git” and other things without being transparent about it is scandalous",
+          "time": 1776158184
         },
         {
-          "id": 47747683,
-          "by": "foltik",
-          "text": "Compilers already optimize division of a 32 bit integer x by a constant d like:  c = 2^a &#x2F; d\n  so: d = 2^a &#x2F; c\n  so: x &#x2F; d = (x * c) &#x2F; 2^a\n\nAnd &#x2F;2^a is equivalent to &gt;&gt;a, so we have:  x &#x2F; d = (x * c) &gt;&gt; a\n\nWhich is just a multiply and shift, cheaper than integer division.Problem is, with some divisors like 7, 14, 21, ... the smallest c that works to produce an exact result is 33 bits. Awkward on 32 bit CPUs, it just barely doesn’t fit but you can account for that extra 1 bit manually with an extra sequence of sub, shift, add.What the paper points out is twofold:1. On 64 bit CPUs the extra sequence isn’t required, you can just do a full 64x64 bit multiply and 128 bit shift. Back to just a multiply and shift like the original optimization, and already faster than the workaround.2. Even better, the shift itself can be optimized away. A 64x64 bit multiply stores the 128 bit product in a pair of 64 bit registers, meaning you basically get &gt;&gt; 64 for free by just looking at the upper half register in the pair. That means if you pre-shift the constant to:  c’ = c &lt;&lt; (64 - a) \n\nNow (x * c’) &gt;&gt; 64 is equivalent to (x * c) &gt;&gt; a. And the result is just waiting for you in a 64 bit register, no shift needed.Just one multiply to divide a 32 bit integer by 7. Nice.",
-          "time": 1776055354
+          "id": 47763196,
+          "by": "patates",
+          "text": "I think this should not be attributed to malice, however unfortunate. I had also developed some sync app once and onedrive folders were indeed problematic, causing cyclic updates on access and random metadata changes for no explicit reason.Complete lack of communication (outside of release notes, which nobody really reads, as the article too states) is incompetence and indeed worrying.Just show a red status bar that says &quot;these folders will not be backed up anymore&quot;, why not?",
+          "time": 1776158377
         },
         {
-          "id": 47748329,
-          "by": "purplesyringa",
-          "text": "I must admit I&#x27;m surprised to see this -- Lemire offhandedly mentioned in the famous remainder blog post (https:&#x2F;&#x2F;lemire.me&#x2F;blog&#x2F;2019&#x2F;02&#x2F;08&#x2F;faster-remainders-when-the...) that 64-bit constants can be used for 32-bit division, and even provided a short example to compute the remainder that way (though not the quotient). Looking a bit more, it seems like libdivide didn&#x27;t integrate this optimization either.I guess everyone just assumed that this is so well-known now, that compilers have certainly integrated it, but no one actually bothered to submit a patch until now, when it was reinvented?",
-          "time": 1776061632
+          "id": 47763202,
+          "by": "netdevphoenix",
+          "text": "I use Backblaze as a cold storage service so this doesn&#x27;t affect me but it&#x27;s worth knowing about changes in the delivery of their other services as it might be become widespread",
+          "time": 1776158431
         },
         {
-          "id": 47747945,
-          "by": "gopalv",
-          "text": "The linked clang PR is also very readable.https:&#x2F;&#x2F;github.com&#x2F;llvm&#x2F;llvm-project&#x2F;pull&#x2F;181288&#x2F;filesAs the PR clearly points out, you can do this in a register but not inside vectors.I don&#x27;t think fastdiv has had an update in years, which what I&#x27;ve used because compilers can&#x27;t do &quot;this is a constant for the next loop of 1024&quot; like columnar sql needs.",
-          "time": 1776057979
+          "id": 47763052,
+          "by": "Terr_",
+          "text": "I feel that&#x27;s a systemic problem with all consumer online-backup software: They other use the barest excuse to not back things up. At best, it&#x27;s to optimize local resources for the average user, and at worst it&#x27;s to quietly renege on the &quot;unlimited&quot; capacity they promised when they took your money. (&quot;We have your My Documents. Oh, you didn&#x27;t manually add My Videos? That&#x27;s your fault.&quot;)Trying to audit—let alone change—the finer details is a pain even for power users, and there&#x27;s a non-zero risk the GUI is simply lying to everybody while undocumented rules override what you specified.When I finally switched my main boot to Linux, I found many of those offerings didn&#x27;t support it, so I wrote some systemd services around Restic + Backblaze B2. It&#x27;s been a real breath of fresh air: I can tell what&#x27;s going on, I can set my own snapshot retention rules, and it&#x27;s an order of magnitude cheaper.",
+          "time": 1776157191
         },
         {
-          "id": 47748356,
-          "by": "pkaye",
-          "text": "Look up the book Hackers Delight if you like there low level algorithms and bit manipulations",
-          "time": 1776061783
+          "id": 47763150,
+          "by": "o10449366",
+          "text": "I&#x27;ve recently been looking for online backup providers and Backblaze came highly recommended to me - but I think after reading this article I&#x27;ll look elsewhere because this kind of behavior seems like the first step on the path of enshittification.",
+          "time": 1776158003
         }
       ]
     },
     {
-      "id": 47744540,
-      "title": "A perfectable programming language",
-      "url": "https://alok.github.io/lean-pages/perfectable-lean/",
-      "score": 129,
-      "by": "yuppiemephisto",
-      "time": 1776028284,
-      "descendants": 44,
+      "id": 47762060,
+      "title": "The secrets of the Shinkansen",
+      "url": "https://www.worksinprogress.news/p/the-secret-behind-japans-railways",
+      "score": 67,
+      "by": "WillDaSilva",
+      "time": 1776148861,
+      "descendants": 51,
       "comments": [
         {
-          "id": 47749035,
-          "by": "kleiba2",
-          "text": "&gt;  because it&#x27;s perfectable. it&#x27;s not perfect, but it is perfectable. you can write down properties about Lean, in Lean.Homoiconicity anyone? Lisp is one of the oldest high-level programming languages, and it&#x27;s still around.",
-          "time": 1776066701
+          "id": 47762759,
+          "by": "Animats",
+          "text": "Japan&#x27;s railroad system has a big geographic advantage - the country is long and narrow. The railroad system is primarily a long end to end line with short crosswise branches.[1]\nThat&#x27;s an efficient structure. The branch lines don&#x27;t have to be fast. Many are still narrow gauge, at 3 ft 6 in.The US had to fill a huge area in the railroad era. That left a lot of underutilized track once the road network got good.[1] https:&#x2F;&#x2F;www.jrailpass.com&#x2F;pdf&#x2F;maps&#x2F;JRP_japan.pdf",
+          "time": 1776154296
         },
         {
-          "id": 47746948,
-          "by": "unexpectedtrap",
-          "text": "Unfortunately Lean’s distribution went from somewhat about 15 MiB in times of Lean 3 to more than 2,5 GiB when unpacked nowadays for no good reason. This is too much. Even v4.0.0-m1 was a 90 MB archive. Looks like that Lean’s authors do not care about this anymore.Lean 3 was the least bloated theorem prover among Lean, Coq and Agda, and Lean 4 is the most bloated among this Big Three. This is very sad.Personally, I stopped using Lean after the last update broke unification in a strange way again.",
-          "time": 1776048016
+          "id": 47762601,
+          "by": "l5870uoo9y",
+          "text": "It’s fascinating to read but I have a hard time imagining a public western railway provider could evolve into a train based mega corporation doing real estate and health services.",
+          "time": 1776153118
         },
         {
-          "id": 47746672,
-          "by": "solomonb",
-          "text": "i love lean4, best in class functional programming language. but i think its &quot;perfectability&quot; is kinda hamstrung by baking non-constructive axioms into the standard library. the kernel has to treat these as opaque constants that cannot be reduced.i tend to stick with agda for doing mathy programming. i kinda want lean4 to replace haskell at some point in the future as the workhorse production typed fp language.",
-          "time": 1776045645
+          "id": 47762624,
+          "by": "razorbeamz",
+          "text": "These mixed companies can be very confusing to tourists especially. I&#x27;m always answering questions from tourists who are confused why they can&#x27;t buy a ticket to where they want to go.",
+          "time": 1776153301
         },
         {
-          "id": 47747880,
-          "by": "dharmatech",
-          "text": "I&#x27;ve been messing around with a computer algebra simplifier in Lean:https:&#x2F;&#x2F;github.com&#x2F;dharmatech&#x2F;symbolism.leanLean is astonishingly expressive.",
-          "time": 1776057510
-        },
-        {
-          "id": 47749523,
-          "by": "mapcars",
-          "text": "XL is a very interesting modern iteration on extensible languages, unfortunately it seems abandoned.",
-          "time": 1776070925
+          "id": 47763056,
+          "by": "ekianjo",
+          "text": "&gt; At its most extreme, three separate commuter lines compete for the traffic between Osaka and the port city of Kobe, running in parallel, sometimes fewer than 500 meters apart.Sometimes fewer than 100 meters apart. Or connecting to each other&#x27;s with a bridge.",
+          "time": 1776157212
         }
       ]
     },
     {
-      "id": 47702887,
-      "title": "Most people can't juggle one ball",
-      "url": "https://www.lesswrong.com/posts/jTGbKKGqs5EdyYoRc/most-people-can-t-juggle-one-ball",
-      "score": 359,
-      "by": "surprisetalk",
-      "time": 1775738120,
+      "id": 47759709,
+      "title": "Lean proved this program correct; then I found a bug",
+      "url": "https://kirancodes.me/posts/log-who-watches-the-watchers.html",
+      "score": 245,
+      "by": "bumbledraven",
+      "time": 1776126308,
       "descendants": 119,
       "comments": [
         {
-          "id": 47746936,
-          "by": "sriram_malhar",
-          "text": "Many of you might know of Noisebridge, a beloved hackerspace in San Francisco. They had (have?) a juggling workshop every saturday called &quot;Juggling with Judy&quot;, taught by Judy Pinelli, founder of the famed Pickle Family Circus (and a huge influence on Cirque Du Soleil).I had no idea how famous or influential she was. She first taught us how to make our own juggling balls:  snip the ends of a balloon, fill with enough rice to feel comfortable in the hand, then wrap that with another balloon to seal the rice in, then snip the ends of the second balloon.Then she went through the usual sequence: throw a ball, er, balloon, from one hand to the next, then practice with two and so on. By the end of that 2 hour session, we had got the essentials.The remarkable thing about this workshop was that Judy was at an advanced stage of multiple sclerosis at that point. She was pretty much completely immobile from the neck down, and couldn&#x27;t even see our hands properly from her wheelchair. She could only see the arc of the ball, but that was sufficient information for her to tell us how we could improve. &quot;Pull your elbow in&quot;. &quot;Focus on the left hand, the right will follow&quot;.After the 2 hour workshop, she&#x27;d go to Golden Gate park to teach juggling. All for free. I feel extraordinarily privileged. She&#x27;s been my polestar in life.",
-          "time": 1776047884
+          "id": 47760024,
+          "by": "ctmnt",
+          "text": "This article’s framing and title are odd. The author, in fact, found no bugs or errors in the proven code. She says so at the end of the article:&gt; The two bugs that were found both sat outside the boundary of what the proofs cover. The denial-of-service was a missing specification. The heap overflow was a deeper issue in the trusted computing base, the C++ runtime that the entire proof edifice assumes is correct.Still an interesting and useful result to find a bug in the Lean runtime, but I’d argue that doesn’t justify the title. Or the claim that “the entire proof edifice” is somehow shaky.It’s important to note that this is the Lean runtime that has a bug, not the Lean kernel, which is the part that actually does the verification (aka proving). [1] So it’s not even immediately clear what this bug would really apply to, since obviously no one’s running any compiled Lean code in any kind of production hot path.[1] https:&#x2F;&#x2F;lean-lang.org&#x2F;doc&#x2F;reference&#x2F;latest&#x2F;Elaboration-and-C...",
+          "time": 1776129120
         },
         {
-          "id": 47742533,
-          "by": "vunderba",
-          "text": "Longtime juggler here.Outside of more complicated tricks like the claw and other specialized patterns, the most common juggling patterns (such as the cascade [1]) don’t rely as much on pure handeye coordination as they do on maintaining a consistent, even toss. The key is throwing each ball so it rises and falls in a predictable arc, so it lands approximately in the same spot where your other hand is waiting to catch it.When I teach complete beginners, I actually start with a set of special handkerchiefs. They fall more slowly than balls, which gives learners more time to react and makes it much easier to see and follow the path of each object through the air.[1] - https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Cascade_(juggling)",
-          "time": 1776016988
+          "id": 47759898,
+          "by": "porcoda",
+          "text": "I’ve had similar experiences with code I’ve proven correct, although my issues were of the more common variety than the overflow issue - subtle spec bugs.  (I think the post mentions the denial of service issue as related to this: a spec gap)If you have a spec that isn’t correct, you can certainly write code that conforms to that spec and write proofs to support it.  It just means you have verified a program that does something other than what you intended.  This is one of the harder parts of verification: clearly expressing your intention as a human.  As programs get more complex these get harder to write, which means it isn’t uncommon to have lean or rocq proofs for everything only to later find “nope, it has a bug that ultimately traces back to a subtle specification defect.”  Once you’ve gone through this a few times you quickly realize that tools like lean and rocq are tricky to use effectively.I kinda worry that the “proof assistants will fix ai correctness” will lead to a false sense of assurance if the specs that capture human intention don’t get scrutinized closely.  Otherwise we’ll likely have lots of proofs for code that isn’t the code the humans actually intended due to spec flaws.",
+          "time": 1776128043
         },
         {
-          "id": 47749776,
-          "by": "oneeyedpigeon",
-          "text": "&gt; DO NOT JUST PASS THE SECOND BALL BETWEEN YOUR HANDS. This is a common thing, as people are regularly taught itPeople are really regularly taught it? Who&#x27;s doing that teaching?I suspect a different cause: cartoons. Especially in older animation, juggling was typically presented in the &#x27;circle&#x27; style, which is probably where people tended to pick up the misconception. I guess that animation is a lot easier to produce.See:\nhttps:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kAPkX11Bfu8",
-          "time": 1776073278
+          "id": 47760799,
+          "by": "ajaystream",
+          "text": "The spec-completeness problem here is the same one that bites distributed systems verification: the proof holds inside an operating envelope (no adversarial inputs, trusted runtime, bounded sizes), and the interesting failures live at the boundary. TLA+ has the same property - you can prove liveness under a fairness assumption the deployment silently violates, and nothing in the proof tells you when reality drifted outside.What I&#x27;d actually want from the tooling is a machine-checkable statement of the envelope itself, propagated as a runtime guard rather than a compile-time comment. Then &quot;proof holds&quot; and &quot;we are still inside the proof&#x27;s domain&quot; are two separate, observable properties, and the unverified-parser &#x2F; unverified-runtime cases stop being invisible.",
+          "time": 1776136356
         },
         {
-          "id": 47749820,
-          "by": "jigglyblob",
-          "text": "Tim Kelly&#x27;s 3 ball juggling is still my favourite of all time. You won&#x27;t regret watching him. I&#x27;ve literally never seen anyone juggle this well. Always been such an inspiration: https:&#x2F;&#x2F;youtu.be&#x2F;q37vo62psGA?si=r_Kh4RWl7HTAu4Mq",
-          "time": 1776073658
+          "id": 47760269,
+          "by": "grg0",
+          "text": "Clickbait title, the proved part of the program had no bugs?As an aside, why can&#x27;t people just write factually? This isn&#x27;t a news site gamed for ad revenue. It&#x27;s also less effort. I felt this post was mostly an insulting waste of time. I come to HN to read interesting stuff.",
+          "time": 1776131082
         },
         {
-          "id": 47743101,
-          "by": "jamses",
-          "text": "I tried and failed to learn to juggle three balls many times, I&#x27;ve just got terrible coordination. But one day I stood over a bed and just threw them in the air and listened to the rhythm of the &quot;thuds&quot; as the missed balls hit the mattress. As soon as I&#x27;d got that down it was like a switch clicked and my hands knew &quot;when&quot; to be ready for the catch, rather than trying to follow the balls to catch them. I never managed four, so mileage may vary with this technique, but it was a very surprising lightbulb moment.",
-          "time": 1776020119
+          "id": 47760102,
+          "by": "mindcrime",
+          "text": "&quot;Beware of bugs in the above code; I have only proved it correct, not tried it.&quot; -- Donald Knuth",
+          "time": 1776129732
         }
       ]
     },
     {
-      "id": 47741527,
-      "title": "Ask HN: What Are You Working On? (April 2026)",
-      "url": "https://news.ycombinator.com/item?id=47741527",
-      "score": 223,
-      "by": "david927",
-      "time": 1776011083,
-      "descendants": 704,
+      "id": 47761997,
+      "title": "Distributed DuckDB Instance",
+      "url": "https://github.com/citguru/openduck",
+      "score": 48,
+      "by": "citguru",
+      "time": 1776148304,
+      "descendants": 9,
       "comments": [
         {
-          "id": 47749902,
-          "by": "fiskeben",
-          "text": "Currently I&#x27;m finalizing my static web hosting project for designers and other people who couldn&#x27;t be bothered to learn a cli, https:&#x2F;&#x2F;webtastic.site and trying to make simple games for iOS. My first game is Merge Mixology, https:&#x2F;&#x2F;apps.apple.com&#x2F;no&#x2F;app&#x2F;merge-mixology&#x2F;id6760284508?l=...",
-          "time": 1776074412
+          "id": 47763224,
+          "by": "arpinum",
+          "text": "I read the code. It&#x27;s a good case study of one-shot output from AI when you ask it to replicate a SaaS product. This is probably better than most because MotherDuck has been open about their techniques to build the product.Obviously not a production implementation.",
+          "time": 1776158599
         },
         {
-          "id": 47747939,
-          "by": "paulmooreparks",
-          "text": "I&#x27;m building Tela (https:&#x2F;&#x2F;github.com&#x2F;paulmooreparks&#x2F;tela), a self-hosted relay that tunnels TCP services through encrypted WireGuard connections. The key difference from Tailscale and similar tools is that it requires no TUN adapter, no root access, and no admin privileges on either end. It runs entirely in userspace.My initial motivation was wanting to RDP and SSH into my home workstation from a locked-down corporate laptop when I travel. I couldn&#x27;t install Tailscale on the laptop, and I didn&#x27;t want to pay for a cloud VM just to do SSH port forwarding. Now I use it to tie together half a dozen machines, both locally and on Hetzner &amp; Linode. I can SSH and RDP into remote machines, host a git repo on one machine and access it from the others, and (optionally) share files across all of them on a local mount.You run a hub (telahubd), register machines with a lightweight agent (telad), and connect from anywhere with the client (tela). All three are single Go binaries with no external dependencies. The hub never sees your traffic. It just relays opaque WireGuard ciphertext.All binaries run on Windows, Linux, and macOS. There is also a desktop GUI app, TelaVisor, that wraps the client and enables remote management of hubs and agents.It&#x27;s Apache 2.0-license and pre-1.0 release, but I&#x27;m polishing it for a stable 1.0 release in the next month or so.I&#x27;m also working on an enterprise-grade management portal that works with Tela, https:&#x2F;&#x2F;awansaya.net&#x2F;",
-          "time": 1776057958
+          "id": 47763145,
+          "by": "decide1000",
+          "text": "I built a distributed DuckDB setup using OpenRaft for state replication. Every node holds a full copy of the database. Writes go through Raft consensus, reads are local. It&#x27;s more like etcd-with-DuckDB than MotherDuck-lite.OpenDuck takes a different approach with query federation with a gateway that splits execution across local and remote workers. My use case requires every node to serve reads independently with zero network latency, and to keep running if other nodes go down.The PostgreSQL dependency for metadata feels heavy. Now you&#x27;re operating two database systems instead of one. In my setup DuckDB stores both the Raft log and the application data, so there&#x27;s a single storage engine to reason about.Not saying my approach is universally better. If you need to query across datasets that don&#x27;t fit on a single machine, OpenDuck&#x27;s architecture makes more sense. But if you want replicated state with strong consistency, Raft + DuckDB works very well.",
+          "time": 1776157941
         },
         {
-          "id": 47749871,
-          "by": "zby",
-          "text": "I am working on an llm wiki (as defined by Karpathy https:&#x2F;&#x2F;gist.github.com&#x2F;karpathy&#x2F;442a6bf555914893e9891c11519...)Looks like it is a crowded area now - my angle is to start with theory of what is important in a system like that, from first principles (like agent limited context, statelessness, use goals etc). Currently I use it to develop that theory - and you can read it at: https:&#x2F;&#x2F;zby.github.io&#x2F;commonplace&#x2F;. I also use it to keep an index of similar systems (that is systems with agent operated memory): https:&#x2F;&#x2F;zby.github.io&#x2F;commonplace&#x2F;agent-memory-systems&#x2F;The github repo is at: https:&#x2F;&#x2F;github.com&#x2F;zby&#x2F;commonplace . Work in progress.",
-          "time": 1776074135
+          "id": 47762437,
+          "by": "herpderperator",
+          "text": "Does this help with DuckDB concurrency? My main gripe with DuckDB is that you can&#x27;t write to it from multiple processes at the same time. If you open the database in write mode with one process, you cannot modify it at all from another process without the first process completely releasing it. In fact, you cannot even read from it from another process in this scenario.So if you typically use a file-backed DuckDB database in one process and want to quickly modify something in that database using the DuckDB CLI (like you might connect SequelPro or DBeaver to make changes to a DB while your main application is &#x27;using&#x27; it), then it complains that it&#x27;s locked by another process and doesn&#x27;t let you connect to it at all.This is unlike SQLite, which supports and handles this in a thread-safe manner out of the box. I know it&#x27;s DuckDB&#x27;s explicit design decision[0], but it would be amazing if DuckDB could behave more like SQLite when it comes to this sort of thing. DuckDB has incredible quality-of-life improvements with many extra types and functions supported, not to mention all the SQL dialect enhancements allowing you to type much more concise SQL (they call it &quot;Friendly SQL&quot;), which executes super efficiently too.[0] https:&#x2F;&#x2F;duckdb.org&#x2F;docs&#x2F;current&#x2F;connect&#x2F;concurrency",
+          "time": 1776151885
         },
         {
-          "id": 47749863,
-          "by": "piinecone",
-          "text": "Last month I released my first Steam game, an occasionally frustrating game about scoring great goals: https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;3802120&#x2F;Put_One_In_for_Jo....I built HeartRoutine to help me lower my LDL and ApoB. I recently started beta testing it on some friends, too, to see if anyone other than myself would find it helpful: https:&#x2F;&#x2F;www.heartroutine.com&#x2F;.I&#x27;ve started building the combat prototype for my next game, Today I Will Destroy You, inspired by my love of going-on-an-adventure-with-a-sword games and Sekiro-style combat.I&#x27;ve committed to keeping my personal website up to date: https:&#x2F;&#x2F;piinecone.com&#x2F;.",
-          "time": 1776074081
+          "id": 47762217,
+          "by": "nehalem",
+          "text": "I have a deep appreciation for DuckDB, but I am afraid the confluence of brilliant ideas makes it ever more complicated to adopt —- and DuckLake is another example for this trend.When I look at SQLite I see a clear message: a database in a file. I think DuckDb is that, too. But it’s also an analytics engine like Polars, works with other DB  engines, supports Parquet, comes with a UI, has two separate warehouse ideas which both deviate from DuckDB‘s core ideas. Yes, DuckLake and Motherduck are separate entities, but they are still part of the ecosystem.",
+          "time": 1776150232
         },
         {
-          "id": 47749877,
-          "by": "asimovDev",
-          "text": "Bought an e-scooter from Wilfa (under the E-way subbrand). Been reversing it slowly. End goal is to have an Apple Watch only app with stats and maybe some fun gimmicks like using wrist rotation and gestures for switching gears and such.So far I first sniffed the BT logs from my iPhone but couldn&#x27;t figure out how authorization works. Recently decided to decompile the android version and with some LLM help I made some progress. Been too busy to test it out but once I crack the authorization I can get started with writing my own Watch app",
-          "time": 1776074206
+          "id": 47761998,
+          "by": "citguru",
+          "text": "This is an attempt to replicate MotherDucks differential storage and implement hybrid query execution on DuckDB",
+          "time": 1776148304
         }
       ]
     }
