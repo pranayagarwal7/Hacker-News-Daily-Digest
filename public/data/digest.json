@@ -1,384 +1,377 @@
 {
-  "date": "2026-04-14",
-  "fetchedAt": "2026-04-14T09:27:29.357Z",
+  "date": "2026-04-15",
+  "fetchedAt": "2026-04-15T09:43:37.789Z",
   "posts": [
     {
-      "id": 47760529,
-      "title": "DaVinci Resolve – Photo",
-      "url": "https://www.blackmagicdesign.com/products/davinciresolve/photo",
-      "score": 542,
-      "by": "thebiblelover7",
-      "time": 1776133515,
-      "descendants": 129,
+      "id": 47774789,
+      "title": "Fixing a 20-year-old bug in Enlightenment E16",
+      "url": "https://iczelia.net/posts/e16-20-year-old-bug/",
+      "score": 131,
+      "by": "snoofydude",
+      "time": 1776228420,
+      "descendants": 38,
       "comments": [
         {
-          "id": 47761254,
-          "by": "arecsu",
-          "text": "This is incredible. There are soooo many features that Davinci already handles so damn well when it comes to color editing, that I only wish they existed in photo editors. To the point there were people posting videos on Youtube about hacky workflows to edit RAW photo files on Resolve and export each one as JPG files haha.Only Darktable seemed to push the technical capabilities of photo editing forward (AgX, parametric masks, tone equalizer, etc), while rest of &quot;industry standard&quot; software lagged behind for quite so long, stagnant. Even more so when it comes to &quot;creative&quot; ways of editing, which Video Editing software have adopted for years but photo editors didn&#x27;t (relight, actual LUT usage without complications, film emulation, halation, other aesthetic effects like VHS film damage, etc).There&#x27;s so much we can do. To me, it seems like these sort of conservative culture (photography) vs progressive (video editing). I&#x27;ve been into both worlds, and for some reason video editing software and professionals were much eager to try new stuff and celebrate new ways to shape visuals, compared to photographers.",
-          "time": 1776140950
+          "id": 47776367,
+          "by": "ZoomZoomZoom",
+          "text": "&gt; Sadly, the hang was deterministic:Huh, someone&#x27;s in it for the thrill of the hunt, I see...",
+          "time": 1776242901
         },
         {
-          "id": 47762973,
-          "by": "googie",
-          "text": "I wish they (authors of DaVinci Resolve and the Photo Editor) paid more attention to Linux platform. Theoretically DaVinci Resolve runs on Linux, but getting it run is a very bad experience on Ubuntu&#x2F;Kubuntu 24.04. I even paid for the DaVinci license, as I read somewhere that for Linux it&#x27;s necessary in order to have all codecs supported. It did not help. Fortunately there were no problems with refund.There are whole guides online how to walk around these issues and even then I could not get the audio working. Somehow it relies on some old ALSA API, which is no longer maintained&#x2F;supported on Ubuntu&#x2F;Kubuntu, or I&#x27;m just too stupid to make it work. AI assistants could not provide working solution for me either.I&#x27;ve moved back to Linux a year ago after around 10 years of Windows (and I used to use Linux Slackware for ~15 years beforehand). I am amazed how big progress the KDE made and whole Linux ecosystem. Gaming these days is just as easy as on Windows, which was my primary reason to switch to Windows. My printer just works now. Even music production is excellent on Linux now. There is plenty of great software options to choose from and they just work - as I would expect from the mature ecosystem.This all feels so good, given how Linux is not pushing trash into my computer (OS-bound spyware&#x2F;bloatware), has excellent, customizable UI. Full freedom. I do feel that I own my hardware.Yet I miss DaVinci Resolve. For now I use Kdenlive, which is nice for simple editing, but feels unfinished, or I just don&#x27;t know how to use it correctly.",
-          "time": 1776156542
+          "id": 47776707,
+          "by": "chriswarbo",
+          "text": "Whenever I try something else, I always seem to keep going back to E16. Back in the day, it worked well in Gnome 2.x; these days I tend to use it in XFCE, but it feels a bit less integrated.",
+          "time": 1776245348
         },
         {
-          "id": 47762055,
-          "by": "amatecha",
-          "text": "It took me a damn long time to find this information, so I&#x27;m pasting it here:&gt; It includes native RAW support for Canon, Fujifilm, Nikon, Sony and even iPhone ProRAW.I looked all over for a more technical page that just lists these kind of specs in bullet-point form, but apparently they refuse to communicate information about their product in this way?  The &quot;Tech Specs&quot; page only seems to show information about hardware products.   &#x2F;shrugWould be cool to have something I can use to edit my Fujifilm-shot photos without any sort of subscription.  Capture One Express (or whatever it&#x27;s called now) is super light on features, but processes Fujifilm .RAF&#x27;s very well (oh, or it used to, apparently it&#x27;s permanently discontinued now, great).  I&#x27;d love to use Lightroom but I refuse to pay for a subscription to use software, so... options are limited :\\",
-          "time": 1776148814
+          "id": 47776319,
+          "by": "wvh",
+          "text": "This is a flash from an almost forgotten past. I&#x27;m happy people are still using and even improving Enlightenment.I used to run Enlightenment in the late nineties and early 2000s, first by itself, then with Gnome bar. At some point Gnome turned hostile on power users and I switched to KDE, leaving also Enlightenment behind, as well as any extensive customization of my desktop. At that time, the ubiquitous themes.org also got in disarray, and I feel it was a bit an end of an era of design and theming experiments on the early Linux (and *BSD) desktop.",
+          "time": 1776242545
         },
         {
-          "id": 47763256,
-          "by": "agos",
-          "text": "if the camera profiles are good (or they support third party profiling) this could easily become my go to, but that&#x27;s a big if",
-          "time": 1776158802
-        },
-        {
-          "id": 47761226,
-          "by": "mikae1",
-          "text": "This was bound to happen. I&#x27;ve edited stills in Resolve for years thinking this day would come. Resolve has supported DNG raw files (as long as they&#x27;re not converted from funky sensors such as Fujifilm X-trans). But, it was always a bit of a hack.Kind of stoked to see this release even though I&#x27;ve transitioned to a 100% open source photo workflow on Linux now.IMO, most exciting developments in photo editing today happens in open source. But this is really something.",
-          "time": 1776140676
+          "id": 47775449,
+          "by": "unwind",
+          "text": "Fun post! Very happy to see a 20-something year old find and fix bugs in an X11 wm from before they were born. Gives me hope.There was some kind of editing snafu though, the loop header in the big (first) code block reads:    for (i = 0; i &lt; 10; i++, nuke_count++)\n\nBut the references to it in the text, and updated versions in the patches, show it as just    for (;;)\n\nThat was confusing me a bit.",
+          "time": 1776234762
         }
       ]
     },
     {
-      "id": 47760764,
-      "title": "A new spam policy for “back button hijacking”",
-      "url": "https://developers.google.com/search/blog/2026/04/back-button-hijacking",
-      "score": 334,
-      "by": "zdw",
-      "time": 1776135987,
-      "descendants": 202,
+      "id": 47739278,
+      "title": "My adventure in designing API keys",
+      "url": "https://vjay15.github.io/blog/apikeys/",
+      "score": 58,
+      "by": "vjay15",
+      "time": 1775999865,
+      "descendants": 38,
       "comments": [
         {
-          "id": 47762203,
-          "by": "firefoxd",
-          "text": "Ok, you can start with LinkedIn, I&#x27;ll wait...If you are wondering how it works. You get a link from LinkedIn, it&#x27;s from an email or just a post someone shared. You click on it, the URL loads, and you read the post. When you click the back button, you aren&#x27;t taken back to wherever you came from. Instead, your LinkedIn feed loads.How did it happen? When you landed on the first link, the URL is replaced with the homepage first (location.replace(...) doesn&#x27;t change the browser history). Then the browser history state is pushed to the original link. So it seems like you landed on the home page first then you clicked on a link. When you click the back button, you are taken back to the homepage where your feed entices you to stay longer on LinkedIn.",
-          "time": 1776150109
+          "id": 47776800,
+          "by": "amelius",
+          "text": "It&#x27;s a bit confusing that the &quot;Random hex&quot; example contains characters such as &quot;q&quot; and &quot;p&quot;.",
+          "time": 1776246111
         },
         {
-          "id": 47761535,
-          "by": "andreareina",
-          "text": "&gt; Notably, some instances of back button hijacking may originate from the site&#x27;s ... advertising platformI feel like anything loaded from a third party domain shouldn&#x27;t be allowed to fiddle with the history stack.",
-          "time": 1776143921
+          "id": 47775764,
+          "by": "bob1029",
+          "text": "I don&#x27;t understand the need for this level of engineering. It appears we are going for an opaque bearer token here. The checksum is pointless because an entire 512 bit token still fits in an x86 cache line. Comparing the whole sequence won&#x27;t show up in any profiler session you will ever care about.If you want aspects of the token to be inspectable by intermediaries, then you want json web tokens or a similar technology. You do not want to conflate these ideas. JWTs would solve the stated database concern. All you need to store in a JWT scheme are the private&#x2F;public keys. Explicit tracking of the session is not required.",
+          "time": 1776237994
         },
         {
-          "id": 47761026,
-          "by": "musicale",
-          "text": "The iron law of web encrapification: every web feature will (if possible) be employed to abuse the user, usually to push advertising.",
-          "time": 1776138515
+          "id": 47775920,
+          "by": "weitendorf",
+          "text": "Hey OP, sorry for the negativity, I think most of these commenters right now are pretty off-base. My company is building a lot of API infrastructure and I thought this was a great write up!",
+          "time": 1776239372
         },
         {
-          "id": 47761736,
-          "by": "p4bl0",
-          "text": "That&#x27;s cool if they can make it work.I don&#x27;t understand how Google&#x27;s indexing work anymore. I&#x27;ve had some website very well indexed for years and years which suddenly disappeared from the index with no explanation, even on the Search Console (&quot;visited, not indexed&quot;). Simple blog entries, lightweight pages, no JavaScript, no ads, no bad practices, https enabled, informative content that is linked from elsewhere including well indexed websites (some entries even performed well on Reddit).\nAt the same time, for the past few years I&#x27;ve found Google search to be a less and less reliable tool because the results are less often what I need.Anyway, let&#x27;s hope this new policy can improve things a little.",
-          "time": 1776145765
+          "id": 47776019,
+          "by": "randomint64",
+          "text": "While it&#x27;s true that API keys are basically prefix + base32Encode(ID + secret), you will want a few more things to make secure API keys: at least versioning and hashing metadata to avoid confused deputy attacks.Here is a detailed write-up on how to implement production API keys: https:&#x2F;&#x2F;kerkour.com&#x2F;api-keys",
+          "time": 1776240217
         },
         {
-          "id": 47761003,
-          "by": "al_borland",
-          "text": "Some Microsoft sites have been very guilty of this. They are the ones that stick in my head in recent memory.",
-          "time": 1776138327
+          "id": 47776687,
+          "by": "petterroea",
+          "text": "A bit over-engineered, but it was fun to read about observations on industry standard API keys. I agree it would be nice with more discussion around API keys and qualities one would want from them.",
+          "time": 1776245215
         }
       ]
     },
     {
-      "id": 47762901,
-      "title": "An AI Vibe Coding Horror Story",
-      "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story/",
-      "score": 63,
-      "by": "teichmann",
-      "time": 1776155745,
-      "descendants": 41,
+      "id": 47768133,
+      "title": "Claude Code Routines",
+      "url": "https://code.claude.com/docs/en/routines",
+      "score": 607,
+      "by": "matthieu_bl",
+      "time": 1776185673,
+      "descendants": 354,
       "comments": [
         {
-          "id": 47763075,
-          "by": "spaniard89277",
-          "text": "I did something similar to a local company here in Spain. Not medical, but a small insurance company. Believe it or not, yes, they vibecoded their CRM.I sent them an email and they threatened to sue me. I was a bit in shock from such dumb response, but I guess some people only learn the hard way, so I filed a report to the AEPD (Data protection agency in Spain) for starters, known to be brutal.I&#x27;ve also sent them a burofax demanding the removal of my data on their systems just last friday.",
-          "time": 1776157379
+          "id": 47769425,
+          "by": "joshstrange",
+          "text": "LLMs and LLM providers are massive black boxes. I get a lot of value from them and so I can put up with that to a certain extent, but these new &quot;products&quot;&#x2F;features that Anthropic are shipping are very unappealing to me. Not because I can&#x27;t see a use-case for them, but because I have 0 trust in them:- No trust that they won&#x27;t nerf the tool&#x2F;model behind the feature- No trust they won&#x27;t sunset the feature (the graveyard of LLM-features is vast and growing quickly while they throw stuff at the wall to see what sticks)- No trust in the company long-term. Both in them being around at all and them not rug-pulling. I don&#x27;t want to build on their &quot;platform&quot;. I&#x27;ll use their harness and their models but I don&#x27;t want more lock-in than that.If Anthropic goes &quot;bad&quot; I want to pick up and move to another harness and&#x2F;or model with minimal fuss. Buying in to things like this would make that much harder.I&#x27;m not going to build my business or my development flows on things I can&#x27;t replicate myself. Also, I imagine debugging any of this would be maddening. The value add is just not there IMHO.EDIT: Put another way, LLM companies are trying to climb the ladder to be a platform, I have zero interest in that, I was a &quot;dumb pipe&quot;, I want a commodity, I want a provider, not a platform. Claude Code is as far into the dragon&#x27;s lair that I want to venture and I&#x27;m only okay with that because I know I can jump to OpenCode&#x2F;Codex&#x2F;etc if&#x2F;when Anthropic &quot;goes bad&quot;.",
+          "time": 1776191549
         },
         {
-          "id": 47763198,
-          "by": "EdNutting",
-          "text": "Software engineering is looking more and more like it needs a professional body in each country, and accreditation and standards. Ie it needs to grow up and become like every other strand of engineering.Gone should be the days of “I taught myself so now I can [design software in a professional setting &#x2F; design a bridge in a professional setting].” I’m not advocating gatekeeping - if you want to build a small bridge at the end of your garden for personal use, go for it. If you want to build a bridge in your local town over a river, you’re gonna need professional accreditation. Same should be true for software engineering now.",
-          "time": 1776158392
+          "id": 47768821,
+          "by": "andai",
+          "text": "I&#x27;m a little confused on the ToS here. From what I gathered, running `claude -p &lt;prompt&gt;` on cron is fine, but putting it in my Telegram bot is a ToS violation (unless I use per-token billing) because it&#x27;s a 3rd party harness, right? (`claude -p` being a trivial workaround for the &quot;no 3rd party stuff on the subscription&quot; rule)This Routines feature notably works with the subscription, and it also has API callbacks. So if my Telegram bot calls that API... do I get my Anthropic account nuked or not?",
+          "time": 1776188878
         },
         {
-          "id": 47763069,
-          "by": "delis-thumbs-7e",
-          "text": "Meanwhile on Linkedin… Every sales bozo with zero technical understanding is screaming top of their virtual lungs that evrything must be done with AI and it is solution to every layoff, economic problem, everything.It is just a matter of time when something really really bad happens.",
-          "time": 1776157339
+          "id": 47770354,
+          "by": "comboy",
+          "text": "Unrelated, but Claude was performing so tragically last few days, maybe week(s), but days mostly, that I had to reluctantly switch. Reluctantly because I enjoy it. Even the most basic stuff, like most python scripts it has to rerun because of some syntax error.The new reality of coding took away one of the best things for me - that the computer always just does what it is told to do. If the results are wrong it means I&#x27;m wrong, I made a bug and I can debug it. Here.. I&#x27;m not a hater, it&#x27;s a powerful tool, but.. it&#x27;s different.",
+          "time": 1776195227
         },
         {
-          "id": 47763237,
-          "by": "aledevv",
-          "text": "&gt; All &quot;access control&quot; logic lived in the JavaScript on the client side, meaning the data was literally one command away from anyone who lookedThis is the top!This is a typical example of someone using Coding Agents without being a developer: AI that isn&#x27;t used knowingly can be a huge risk if you don&#x27;t know what you&#x27;re doing.AI used for professional purposes (not experiments) should NOT be used haphazardly.And this also opens up a serious liability issue: the developer has the perception of being exempt from responsibility and this also leads to enormous risks for the business.",
-          "time": 1776158677
+          "id": 47769149,
+          "by": "Eldodi",
+          "text": "Anthropic is really good at releasing features that are almost the same but not exactly the same as other features they released the week before",
+          "time": 1776190318
         },
         {
-          "id": 47763136,
-          "by": "BrissyCoder",
-          "text": "This reads like internet fiction to me. Very vague and short.",
-          "time": 1776157886
+          "id": 47768517,
+          "by": "minimaxir",
+          "text": "Given the alleged recent extreme reduction in Claude Code usage limits (https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47739260), how do these more autonomous tools work within that constraint? Are they effectively only usable with a 20x Max plan?EDIT: This comment is apparently [dead] and idk why.",
+          "time": 1776187598
         }
       ]
     },
     {
-      "id": 47762641,
-      "title": "Introspective Diffusion Language Models",
-      "url": "https://introspective-diffusion.github.io/",
-      "score": 25,
-      "by": "zagwdt",
-      "time": 1776153453,
-      "descendants": 6,
+      "id": 47775628,
+      "title": "Wacli – WhatsApp CLI: sync, search, send",
+      "url": "https://github.com/steipete/wacli",
+      "score": 85,
+      "by": "dinakars777",
+      "time": 1776236685,
+      "descendants": 67,
       "comments": [
         {
-          "id": 47762765,
-          "by": "andsoitis",
-          "text": "Is anyone here experimenting seriously with Diffusion for text generation? I’d love to learn about your experiences!",
-          "time": 1776154335
+          "id": 47776036,
+          "by": "joshwarwick15",
+          "text": "(Caveat I’m the founder of https:&#x2F;&#x2F;wassist.app - The WhatsApp Agent Platform)Please be very careful using this tool to automate your WhatsApp - if you send too many messages, too quickly, you are going to get banned.This is NOT an officially supported api by WhatsApp and the risk of ban is relatively high",
+          "time": 1776240337
+        },
+        {
+          "id": 47775804,
+          "by": "faangguyindia",
+          "text": "I just use telegram.Just yesterday I setup a bot which is easy via botfatherAnd also, setup an app (claude built it but I had to fiddle with it, it works like pagerduty) but uses cloudflate worker to push downtime&#x2F;errors (via fcm) in production (from graphana) via webhooks to &quot;full screen, by pass dnd, alerts, with loud music, this one: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=H0IQBWWabuU )I named the app &quot;Siren&quot;.It&#x27;s not straightforward to have durable hard to miss alerts about your production enviornment but good thing is this doesn&#x27;t cost a cent.Telegram group alerts are from my teammates (small team 3 members) via bot.And Siren is for only me as I am responsible for the backend with 10 microservices, centralized logging via graphana, alloy, loki, and for metrics Prometheus.It&#x27;s all working reasonably well for me, this makes your life so much better as you fix the issues before they turn into nightmare.",
+          "time": 1776238378
+        },
+        {
+          "id": 47775913,
+          "by": "zarzavat",
+          "text": "Beware that if this does not use a real web browser then it&#x27;s likely to get your whatsapp account suspended. Don&#x27;t use it with any account you care about, you will lose all your data.Hell, I got my whatsapp account suspended (appealed and reversed) just for using the official web client too soon after creating a new account.",
+          "time": 1776239320
+        },
+        {
+          "id": 47775894,
+          "by": "BoppreH",
+          "text": "I wish it mentioned how safe this is. Some years ago I got banned for just logging in with a third-party client, without sending any messages. Given how critical WhatsApp is for some people, and how permanent the bans are, that&#x27;s a big risk.",
+          "time": 1776239138
+        },
+        {
+          "id": 47775776,
+          "by": "recsv-heredoc",
+          "text": "This is such a sorely needed point of integration. Cool to see Peter still shipping tools. It’s such a pity meta refuses to play ball like Telegram.Either they’ll double-down and make this even harder -or- hopefully realise that WhatsApp is likely to be a really common control plane for AI systems in the next few years. Let’s hope the  Llama energy strikes and it’s the latter.How does WhatsMeow compare with Baileys?",
+          "time": 1776238095
         }
       ]
     },
     {
-      "id": 47755629,
-      "title": "Someone bought 30 WordPress plugins and planted a backdoor in all of them",
-      "url": "https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/",
-      "score": 935,
-      "by": "speckx",
-      "time": 1776102879,
-      "descendants": 264,
+      "id": 47775653,
+      "title": "My AI-Assisted Workflow",
+      "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
+      "score": 26,
+      "by": "maiobarbero",
+      "time": 1776236898,
+      "descendants": 16,
       "comments": [
         {
-          "id": 47763246,
-          "by": "RandomGerm4n",
-          "text": "This is probably a controversial opinion but this case is yet another example of why it should be prohibited to sell repositories and storefronts. If you want to take over someone else’s user base you should be forced to display a message to the users and actively ask them whether they trust the new owner as well. Simply passing the whole thing on to someone else in secret who could then compromise the WordPress plugin, a browser extension or something similar should not be allowed.",
-          "time": 1776158760
+          "id": 47776713,
+          "by": "Bossie",
+          "text": "My workflow is also highly inspired by Matt&#x27;s skills, but I&#x27;m leveraging Linear instead of Github.&#x2F;grill-me (back-and-forth alignment with the LLM) --&gt; &#x2F;write-a-prd (creates project under an initative in Linear) --&gt; &#x2F;prd-to-issues (creates issues at the project level).\nI&#x27;m making use of the blockedBy utility when registering the issues. They land in the &#x27;Ready for Agent&#x27; status.A scheduled project-orchestrator is then picking up issues with this status leveraging subagents. A HITL (Human in the loop) status is set on the ticket when anything needs my attention. I consider the code as the &#x27;what&#x27;, so I let the agent(s) update the issues with the HOW and WHY. All using Claude Code Max subscription.Some notes:- write-a-prd is knowledge compression and thus some important details occasionally get lost- The UX for the orchestrator flow is suboptimal. Waiting for this actually: https:&#x2F;&#x2F;github.com&#x2F;mattpocock&#x2F;sandcastle&#x2F;issues&#x2F;191#issuecom...- I might have to implement a simplify + review + security audit, call it a &#x27;check&#x27;, to fire at the end of the project. Could be in the form of an issue.",
+          "time": 1776245383
         },
         {
-          "id": 47756259,
-          "by": "chromacity",
-          "text": "This is a perfect illustration of what cracks me up about the hyperbolic reactions to Mythos. Yes, increased automation of cutting-edge vulnerability discovery will shake things up a bit. No, it&#x27;s nowhere near the top of what should be keeping you awake at night if you&#x27;re working in infosec.We&#x27;ve built our existing tech stacks and corporate governance structures for a different era. If you want to credit one specific development for making things dramatically worse, it&#x27;s cryptocurrencies, not AI. They&#x27;ve turned the cottage industry of malicious hacking into a multi-billion-dollar enterprise that&#x27;s attractive even to rogue nations such as North Korea. And with this much at stake, they can afford to simply buy your software dependencies, or to offer one of your employees some retirement money in exchange for making a &quot;mistake&quot;.We know how to write software with very few bugs (although we often choose not to). We have no good plan for keeping big enterprises secure in this reality. Autonomous LLM agents will be used by ransomware gangs and similar operations, but they don&#x27;t need FreeBSD exploit-writing capabilities for that.",
-          "time": 1776105864
+          "id": 47776263,
+          "by": "gbrindisi",
+          "text": "This is pretty much a spec driven workflow.I do similar, but my favorite step is the first: &#x2F;rubberduck to discuss the problem with the agent, who is instructed by the command to help me frame and validate it. Hands down the most impactful piece of my workflow, because it helps me achieve the right clarity and I can use it also for non coding tasks.After which is the usual: write PRDs, specs, tasks and then build and then verify the output.I started with one the spec frameworks and eventually simplify everything to the bone.I do feel it’s working great but someday I fear a lot of this might still be too much productivity theater.",
+          "time": 1776242119
         },
         {
-          "id": 47755991,
-          "by": "bradley13",
-          "text": "Whenever I look at a web project, it starts with &quot;npm install&quot; and literally dozens of libraries get downloaded.The project authors probably don&#x27;t even know what libraries their project requires, because many of them are transitive dependencies. There is zero chance that they have checked those libraries for supply chain attacks.",
-          "time": 1776104627
+          "id": 47776483,
+          "by": "zkmon",
+          "text": "Congrats! You just rediscovered something called water-fall model.",
+          "time": 1776243783
         },
         {
-          "id": 47756498,
-          "by": "toniantunovi",
-          "text": "The supply chain attack surface in WordPress plugins has always been particularly dangerous because the ecosystem encourages users to install many small single-purpose plugins from individual developers, most of whom aren&#x27;t security-focused organizations. Buying out an established plugin with a large install base is a clever approach because you inherit years of user trust that took the original developer a long time to build.The deeper structural issue is that plugin update notifications function as an implicit trust signal. Users see &quot;update available&quot; and click without questioning whether the author is still the same person. A package signing and transfer transparency system similar to what npm has been working toward would help here, but the WordPress ecosystem has historically moved slowly on security infrastructure.",
-          "time": 1776107054
+          "id": 47776362,
+          "by": "nDRDY",
+          "text": "Here&#x27;s mine: code to spec until I get stuck -&gt; search Google for the answer -&gt; scan the Gemini result instead of going to StackOverflow.",
+          "time": 1776242862
         },
         {
-          "id": 47756219,
-          "by": "spankalee",
-          "text": "I really wish that the FAIR package manager project had been successful, but they recently gave up after the WordPress drama died down.https:&#x2F;&#x2F;fair.pm&#x2F;FAIR has a very interesting architecture, inspired by atproto, that I think has the potential to mitigate some of the supply-chain attacks we&#x27;ve seen recently.In FAIR, there&#x27;s no central package repository. Anyone can run one, like an atproto PDS. Packages have DIDs, routable across all repositories. There are aggregators that provide search, front-ends, etc. And like Bluesky, there are &quot;labelers&quot;, separate from repositories and front-ends. So organizations like Socket, etc can label packages with their analysis in a first class way, visible to the whole ecosystem.So you could set up your installer to ban packages flagged by Socket, or ones that recently published by a new DID, etc. You could run your own labeler with AI security analysis on the packages you care about. A specific community could build their own lint rules and label based on that (like e18e in the npm ecosystem.Not perfect, but far better than centralized package managers that only get the features their owner decides to pay for.",
-          "time": 1776105660
+          "id": 47776437,
+          "by": "hansmayer",
+          "text": "No kids, don´t put yourself through this suffering. If you have to invest so much deliberate effort to sort of make it work - while you still handle the most tenuous and boring parts yourself, then what is the point? Lets keep the LLM vendors to their word - they promised intelligent machines that would just work so well to the point of causing mass unemployment. Why on earth do we have to work around the LLMs to make them work? What is the point? Where is my nation of datacenter PhDs or a PocketPhd, depending on whose CEOs misleading statement one quotes?",
+          "time": 1776243436
         }
       ]
     },
     {
-      "id": 47757495,
-      "title": "GitHub Stacked PRs",
-      "url": "https://github.github.com/gh-stack/",
-      "score": 708,
-      "by": "ezekg",
-      "time": 1776112609,
-      "descendants": 374,
+      "id": 47724571,
+      "title": "A communist Apple II and fourteen years of not knowing what you're testing",
+      "url": "https://llama.gs/blog/index.php/2026/04/10/friday-archaeology-a-communist-apple-ii-and-fourteen-years-of-not-knowing-what-youre-testing/",
+      "score": 166,
+      "by": "major4x",
+      "time": 1775860584,
+      "descendants": 52,
       "comments": [
         {
-          "id": 47757695,
-          "by": "adamwk",
-          "text": "As someone who used phabricator and mercurial, using GitHub and git again feels like going back to the stone ages. Hopefully this and jujutsu can recreate stacked-diff flow of phabricator.It’s not just nice for monorepos. It makes both reviewing and working on long-running feature projects so much nicer. It encourages smaller PRs or diffs so that reviews are quick and easy to do in between builds (whereas long pull requests take a big chunk of time).",
-          "time": 1776113713
+          "id": 47774415,
+          "by": "summa_tech",
+          "text": "This was a fascinating article, because I&#x27;ve seen so many results of the Eastern Bloc reverse-engineering efforts basically founder into obscurity. Many of these re-created (sometimes with minor variations, or quite novel and ingenious implementation choices) computers were made in small series, but could not compete against illegal imports, and in any case would only be briefly popular in their local university town.So it&#x27;s cool to see that Bulgaria managed to muster enough government interest to force a cohesive strategy for the whole country. It sounds like it paid off.Also, after googling for Правец, I have found out that I can in fact read Bulgarian, which was quite surprising to me.",
+          "time": 1776224163
         },
         {
-          "id": 47757981,
-          "by": "jenadine",
-          "text": "I might be missing something, but what I need is not &quot;stacked PR&quot; but a proper UI and interface to manage single commit:- merge some commits independently when partial work is ready.- mark some commit as reviewed.- UI to do interactive rebase and and squash and edit individual commits. (I can do that well from the command line, but not when using the GitHub interface, and somehow not everyone from my team is familiar with that)- ability to attach a comment to a specific commit, or to the commit message.- better way to visualize what change over time in each forced push&#x2F;revision (diff of diff)Git itself already has the concept of commit. Why put this &quot;stacked PR&quot; abstraction on top of it?Or is there a difference I don&#x27;t see?",
-          "time": 1776115313
+          "id": 47776017,
+          "by": "paulnsorensen",
+          "text": "Thank you for this. Very enjoyable read. It reminds me of a post I saw discussing how code review is similar to reviewing mathematical proofs -- you have to know it like you wrote it, and now with AI, this is less and less the case. I definitely miss the days when I knew something was bulletproof because I wrote it and tested it thoroughly.",
+          "time": 1776240210
         },
         {
-          "id": 47757617,
-          "by": "bsimpson",
-          "text": "Finally!I never understood the PR=branch model GitHub defaulted to.  Stacked commits (ala Phabricator&#x2F;Gerrit) always jived more with how my brain reasons about changes.Glad to see this option.  I guess I&#x27;ll have to install their CLI thing now.",
-          "time": 1776113280
+          "id": 47776113,
+          "by": "varjag",
+          "text": "Interesting point about the grassroots origin. When I read the accounts in early 1990s it was alleged that a whole factory of a minor computer manufacturer in the USA was bought and relocated to Pravets. Including the furniture, broom closets and trashcans. Though am not sure if computer designs were also allegedly in the deal.Also that Bulgaria invested into some semiconductor manufacturer in Singapore to maintain uninterrupted access to the components.",
+          "time": 1776240906
         },
         {
-          "id": 47758067,
-          "by": "akersten",
-          "text": "Does it fix the current UX issue with Squash &amp; Merge?Right now I manually do &quot;stacked PRs&quot; like this:main &lt;- PR A &lt;- PR B (PR B&#x27;s merge target branch is PR A) &lt;- PR C, etc.If PR B merges first, PR A can merge to main no problems. If PR A merges to main first, fixing PR B is a nightmare. The GitHub UI automatically changes the &quot;target&quot; branch of the PR to main, but instantly conflicts spawn from nowhere. Try to rebase it and you&#x27;re going to be manually looking at every non-conflicting change that ever happened on that branch, for no apparent reason (yes, the reason is that PR A merging to main created a new merge commit at the head of main, and git just can&#x27;t handle that or whatever).So I don&#x27;t really need a new UI for this, I need the tool to Just Work in a way that makes sense to anyone who wasn&#x27;t Linus in 1998 when the gospel of rebase was delivered from On High to us unwashed Gentry through his fingertips..",
-          "time": 1776115827
+          "id": 47775513,
+          "by": "grishka",
+          "text": "There was also a Soviet Apple II clone, called Агат (Agat). But iirc, for whatever reason, they couldn&#x27;t clone the 6502, so they built one out of logic ICs, and the thing was too slow to run Apple II software unmodified. Later there was an expansion card with a real imported 6502 that added full compatibility.The USSR did make their own Z80 and 8080 clones later though. There existed an IBM PC compatible built completely out of Soviet-made parts. A lot of fully localized ZX Spectrum clones as well, of varying degree of homebrewness. Those were very popular in the late 80s and early 90s from what I gather, but I&#x27;m too young to have used one myself.",
+          "time": 1776235407
         },
         {
-          "id": 47762713,
-          "by": "metafeather",
-          "text": "I&#x27;ve been using `git town`[1] for years to managed stacked PR&#x27;s alone with Github PR&#x27;s[2] and juniors I have introduced it to have really found it a helpful mental model when developing features.I hope the Gitub CLI will include syncing[3] &#x27;stacks&#x27; locally with upstream in a similar way.[1]: https:&#x2F;&#x2F;www.git-town.com&#x2F;stacked-changes.html[2]: https:&#x2F;&#x2F;github.com&#x2F;marketplace&#x2F;actions&#x2F;git-town-github-actio...[3]: https:&#x2F;&#x2F;www.git-town.com&#x2F;commands&#x2F;sync.html",
-          "time": 1776153950
+          "id": 47776456,
+          "by": "Angostura",
+          "text": "I seldom enjoy a piece of writing this much. Loved it. Kudos to the author",
+          "time": 1776243605
         }
       ]
     },
     {
-      "id": 47762864,
-      "title": "Backblaze has stopped backing up your data",
-      "url": "https://rareese.com/posts/backblaze/",
-      "score": 18,
-      "by": "rrreese",
-      "time": 1776155427,
-      "descendants": 7,
+      "id": 47736308,
+      "title": "Founders Need to Be Ruthless When Chasing Deals",
+      "url": "https://steveblank.com/2024/04/16/founders-need-to-be-ruthless-when-chasing-deals/",
+      "score": 45,
+      "by": "tie-in",
+      "time": 1775970577,
+      "descendants": 16,
       "comments": [
         {
-          "id": 47763169,
-          "by": "benguild",
-          "text": "The fact that they’d exclude “.git” and other things without being transparent about it is scandalous",
-          "time": 1776158184
+          "id": 47776059,
+          "by": "piker",
+          "text": "This is great advice (that we need to follow) but needs to be updated for 2026. The information value of providing (or receiving) a demo has dropped to roughly zero with vibe coding. Today, an apparently functional and useful product can be produced and demoed in minutes, but that demo provides absolutely zero information into the technical capabilities of the demoing team to follow through on promises with polish and at scale. It doesn&#x27;t reflect a studied architecture or edge case handling. It basically only shows a vision, which can be tailored to perfectly mirror the recipient&#x27;s expressed desire even though it&#x27;s absolute vaporware. This makes it even harder to sell to enterprise in 2026 when the scene is awash in such noise.",
+          "time": 1776240490
         },
         {
-          "id": 47763196,
-          "by": "patates",
-          "text": "I think this should not be attributed to malice, however unfortunate. I had also developed some sync app once and onedrive folders were indeed problematic, causing cyclic updates on access and random metadata changes for no explicit reason.Complete lack of communication (outside of release notes, which nobody really reads, as the article too states) is incompetence and indeed worrying.Just show a red status bar that says &quot;these folders will not be backed up anymore&quot;, why not?",
-          "time": 1776158377
+          "id": 47775948,
+          "by": "dzonga",
+          "text": "One book I can recommend is &quot;Gap Selling&quot;before I read that book and tried to sell some stuff I realized in org&#x27;s there&#x27; more than 1 buyer.in a typical b2b &#x2F; gvt deal - you&#x27;ve 4 buyers at least.",
+          "time": 1776239620
         },
         {
-          "id": 47763202,
-          "by": "netdevphoenix",
-          "text": "I use Backblaze as a cold storage service so this doesn&#x27;t affect me but it&#x27;s worth knowing about changes in the delivery of their other services as it might be become widespread",
-          "time": 1776158431
+          "id": 47776195,
+          "by": "neya",
+          "text": "As an aside, I love the website design. Very early 2000s vibe without costing readability (on desktop).",
+          "time": 1776241629
         },
         {
-          "id": 47763052,
-          "by": "Terr_",
-          "text": "I feel that&#x27;s a systemic problem with all consumer online-backup software: They other use the barest excuse to not back things up. At best, it&#x27;s to optimize local resources for the average user, and at worst it&#x27;s to quietly renege on the &quot;unlimited&quot; capacity they promised when they took your money. (&quot;We have your My Documents. Oh, you didn&#x27;t manually add My Videos? That&#x27;s your fault.&quot;)Trying to audit—let alone change—the finer details is a pain even for power users, and there&#x27;s a non-zero risk the GUI is simply lying to everybody while undocumented rules override what you specified.When I finally switched my main boot to Linux, I found many of those offerings didn&#x27;t support it, so I wrote some systemd services around Restic + Backblaze B2. It&#x27;s been a real breath of fresh air: I can tell what&#x27;s going on, I can set my own snapshot retention rules, and it&#x27;s an order of magnitude cheaper.",
-          "time": 1776157191
+          "id": 47776394,
+          "by": "firemelt",
+          "text": "I wish hackernews submissions is more like this",
+          "time": 1776243067
         },
         {
-          "id": 47763150,
-          "by": "o10449366",
-          "text": "I&#x27;ve recently been looking for online backup providers and Backblaze came highly recommended to me - but I think after reading this article I&#x27;ll look elsewhere because this kind of behavior seems like the first step on the path of enshittification.",
-          "time": 1776158003
+          "id": 47775853,
+          "by": "tonyedgecombe",
+          "text": "&gt;We’re excited. When can you come back and show us a prototype?”When you&#x27;ve put your hand in your pocket.",
+          "time": 1776238869
         }
       ]
     },
     {
-      "id": 47762060,
-      "title": "The secrets of the Shinkansen",
-      "url": "https://www.worksinprogress.news/p/the-secret-behind-japans-railways",
-      "score": 67,
-      "by": "WillDaSilva",
-      "time": 1776148861,
-      "descendants": 51,
+      "id": 47728662,
+      "title": "Picasso’s Guernica (Gigapixel)",
+      "url": "https://guernica.museoreinasofia.es/gigapixel/#3/63.11/-120.59",
+      "score": 133,
+      "by": "guigar",
+      "time": 1775896026,
+      "descendants": 36,
       "comments": [
         {
-          "id": 47762759,
-          "by": "Animats",
-          "text": "Japan&#x27;s railroad system has a big geographic advantage - the country is long and narrow. The railroad system is primarily a long end to end line with short crosswise branches.[1]\nThat&#x27;s an efficient structure. The branch lines don&#x27;t have to be fast. Many are still narrow gauge, at 3 ft 6 in.The US had to fill a huge area in the railroad era. That left a lot of underutilized track once the road network got good.[1] https:&#x2F;&#x2F;www.jrailpass.com&#x2F;pdf&#x2F;maps&#x2F;JRP_japan.pdf",
-          "time": 1776154296
+          "id": 47776225,
+          "by": "arc_light",
+          "text": "Guernica is literally in the news this week. The Basque government is demanding the painting be moved from Madrid to Bilbao for the 90th anniversary of the bombing, and the political fight that erupted has the exact same fault lines as the civil war that inspired it. A dispute about an anti-war painting that somehow re-opened a 90-year-old wound.\nWhat gets me about the painting itself is that there are no soldiers, no flags, just civilians and animals in chaos. In the end, ordinary people suffer the most from any war.",
+          "time": 1776241847
         },
         {
-          "id": 47762601,
-          "by": "l5870uoo9y",
-          "text": "It’s fascinating to read but I have a hard time imagining a public western railway provider could evolve into a train based mega corporation doing real estate and health services.",
-          "time": 1776153118
+          "id": 47774690,
+          "by": "habosa",
+          "text": "I went to Spain as a teenager and saw Guernica in person. It was the first painting to ever really have an effect on me. It&#x27;s stunning. A perfect example of how art can transmit a message between people across time and space, I just knew that I was feeling how Picasso wanted me to feel.If you have the chance to see this painting you should, no website can do it justice (although this is a very nice try).",
+          "time": 1776227361
         },
         {
-          "id": 47762624,
-          "by": "razorbeamz",
-          "text": "These mixed companies can be very confusing to tourists especially. I&#x27;m always answering questions from tourists who are confused why they can&#x27;t buy a ticket to where they want to go.",
-          "time": 1776153301
+          "id": 47775254,
+          "by": "Synaesthesia",
+          "text": "Guernica shocked the world. It was the start of aerial bombardment of civilians, something which we have sadly normalised since WW2. but which I regard as terrorism.Picasso also painted another great work titled &quot;Korea&quot; in the same vein.War is an abomination, something we should all fight against.",
+          "time": 1776233080
         },
         {
-          "id": 47763056,
-          "by": "ekianjo",
-          "text": "&gt; At its most extreme, three separate commuter lines compete for the traffic between Osaka and the port city of Kobe, running in parallel, sometimes fewer than 500 meters apart.Sometimes fewer than 100 meters apart. Or connecting to each other&#x27;s with a bridge.",
-          "time": 1776157212
+          "id": 47773102,
+          "by": "bigethan",
+          "text": "the way this displayed in the Reina Sofia is fantastic. it’s set in its own room that you approach from the side so you get this experience of turning a corner and boom there’s Guernica. Gave me chills.",
+          "time": 1776211779
+        },
+        {
+          "id": 47774729,
+          "by": "tzury",
+          "text": "Seems similar to operation night watch by the Rijksmuseum in Amsterdamhttps:&#x2F;&#x2F;www.rijksmuseum.nl&#x2F;en&#x2F;stories&#x2F;operation-night-watch&#x2F;...",
+          "time": 1776227798
         }
       ]
     },
     {
-      "id": 47759709,
-      "title": "Lean proved this program correct; then I found a bug",
-      "url": "https://kirancodes.me/posts/log-who-watches-the-watchers.html",
-      "score": 245,
-      "by": "bumbledraven",
-      "time": 1776126308,
-      "descendants": 119,
-      "comments": [
-        {
-          "id": 47760024,
-          "by": "ctmnt",
-          "text": "This article’s framing and title are odd. The author, in fact, found no bugs or errors in the proven code. She says so at the end of the article:&gt; The two bugs that were found both sat outside the boundary of what the proofs cover. The denial-of-service was a missing specification. The heap overflow was a deeper issue in the trusted computing base, the C++ runtime that the entire proof edifice assumes is correct.Still an interesting and useful result to find a bug in the Lean runtime, but I’d argue that doesn’t justify the title. Or the claim that “the entire proof edifice” is somehow shaky.It’s important to note that this is the Lean runtime that has a bug, not the Lean kernel, which is the part that actually does the verification (aka proving). [1] So it’s not even immediately clear what this bug would really apply to, since obviously no one’s running any compiled Lean code in any kind of production hot path.[1] https:&#x2F;&#x2F;lean-lang.org&#x2F;doc&#x2F;reference&#x2F;latest&#x2F;Elaboration-and-C...",
-          "time": 1776129120
-        },
-        {
-          "id": 47759898,
-          "by": "porcoda",
-          "text": "I’ve had similar experiences with code I’ve proven correct, although my issues were of the more common variety than the overflow issue - subtle spec bugs.  (I think the post mentions the denial of service issue as related to this: a spec gap)If you have a spec that isn’t correct, you can certainly write code that conforms to that spec and write proofs to support it.  It just means you have verified a program that does something other than what you intended.  This is one of the harder parts of verification: clearly expressing your intention as a human.  As programs get more complex these get harder to write, which means it isn’t uncommon to have lean or rocq proofs for everything only to later find “nope, it has a bug that ultimately traces back to a subtle specification defect.”  Once you’ve gone through this a few times you quickly realize that tools like lean and rocq are tricky to use effectively.I kinda worry that the “proof assistants will fix ai correctness” will lead to a false sense of assurance if the specs that capture human intention don’t get scrutinized closely.  Otherwise we’ll likely have lots of proofs for code that isn’t the code the humans actually intended due to spec flaws.",
-          "time": 1776128043
-        },
-        {
-          "id": 47760799,
-          "by": "ajaystream",
-          "text": "The spec-completeness problem here is the same one that bites distributed systems verification: the proof holds inside an operating envelope (no adversarial inputs, trusted runtime, bounded sizes), and the interesting failures live at the boundary. TLA+ has the same property - you can prove liveness under a fairness assumption the deployment silently violates, and nothing in the proof tells you when reality drifted outside.What I&#x27;d actually want from the tooling is a machine-checkable statement of the envelope itself, propagated as a runtime guard rather than a compile-time comment. Then &quot;proof holds&quot; and &quot;we are still inside the proof&#x27;s domain&quot; are two separate, observable properties, and the unverified-parser &#x2F; unverified-runtime cases stop being invisible.",
-          "time": 1776136356
-        },
-        {
-          "id": 47760269,
-          "by": "grg0",
-          "text": "Clickbait title, the proved part of the program had no bugs?As an aside, why can&#x27;t people just write factually? This isn&#x27;t a news site gamed for ad revenue. It&#x27;s also less effort. I felt this post was mostly an insulting waste of time. I come to HN to read interesting stuff.",
-          "time": 1776131082
-        },
-        {
-          "id": 47760102,
-          "by": "mindcrime",
-          "text": "&quot;Beware of bugs in the above code; I have only proved it correct, not tried it.&quot; -- Donald Knuth",
-          "time": 1776129732
-        }
-      ]
+      "id": 47775606,
+      "title": "MDalgorithms (AI Healthcare) – Hiring Growth Marketer – Remote – $80K-$140K",
+      "url": "https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/LVODKN7-growth-marketer-for-a-rapidly-growing-consumer-ai-healthcare-startup",
+      "score": 1,
+      "by": "odedharth93",
+      "time": 1776236418,
+      "descendants": 0,
+      "comments": []
     },
     {
-      "id": 47761997,
-      "title": "Distributed DuckDB Instance",
-      "url": "https://github.com/citguru/openduck",
-      "score": 48,
-      "by": "citguru",
-      "time": 1776148304,
+      "id": 47725897,
+      "title": "Installing OpenBSD on the Pomera DM250 Writerdeck",
+      "url": "https://jcs.org/2026/04/09/openbsd-dm250",
+      "score": 38,
+      "by": "djfergus",
+      "time": 1775868426,
       "descendants": 9,
       "comments": [
         {
-          "id": 47763224,
-          "by": "arpinum",
-          "text": "I read the code. It&#x27;s a good case study of one-shot output from AI when you ask it to replicate a SaaS product. This is probably better than most because MotherDuck has been open about their techniques to build the product.Obviously not a production implementation.",
-          "time": 1776158599
+          "id": 47774766,
+          "by": "stuxnet79",
+          "text": "Well this is interesting ...I have a DM250 that I bought a year ago that&#x27;s been collecting dust because I couldn&#x27;t get used to the UI&#x2F;UX. It was imported straight from Japan so I&#x27;m pretty sure it&#x27;s not the US model although I&#x27;ll have to confirm that.Customizing &#x2F; tinkering with it has been difficult because it&#x27;s a pretty niche product with not a ton of information online (at least on english websites).Skimming this tutorial it seems like installing OpenBSD is a high-risk &#x2F; high-reward type of thing. I&#x27;ll have to look into further to see if it&#x27;s worth it.",
+          "time": 1776228167
         },
         {
-          "id": 47763145,
-          "by": "decide1000",
-          "text": "I built a distributed DuckDB setup using OpenRaft for state replication. Every node holds a full copy of the database. Writes go through Raft consensus, reads are local. It&#x27;s more like etcd-with-DuckDB than MotherDuck-lite.OpenDuck takes a different approach with query federation with a gateway that splits execution across local and remote workers. My use case requires every node to serve reads independently with zero network latency, and to keep running if other nodes go down.The PostgreSQL dependency for metadata feels heavy. Now you&#x27;re operating two database systems instead of one. In my setup DuckDB stores both the Raft log and the application data, so there&#x27;s a single storage engine to reason about.Not saying my approach is universally better. If you need to query across datasets that don&#x27;t fit on a single machine, OpenDuck&#x27;s architecture makes more sense. But if you want replicated state with strong consistency, Raft + DuckDB works very well.",
-          "time": 1776157941
+          "id": 47775512,
+          "by": "ninjin",
+          "text": "Always fun to read jcs@&#x27;s write ups. I am seriously tempted to look into getting one of these as light, fanless alternatives to run OpenBSB on the move are few and far between. My current main laptop is not big at 11&quot;, but it clocks in at ~1.7kg and that makes you reluctant to carry it around everywhere.Main downsides with the DM250 seems to be that you need a USB-C dongle for audio (they are tiny though) and that you can not hook it up to an external screen for better ergonomics and presentations. Still, small, means compromises are necessary, and I do not think the external screen is a deal break if one would consider the DM250 as a daily commute driver.",
+          "time": 1776235390
         },
         {
-          "id": 47762437,
-          "by": "herpderperator",
-          "text": "Does this help with DuckDB concurrency? My main gripe with DuckDB is that you can&#x27;t write to it from multiple processes at the same time. If you open the database in write mode with one process, you cannot modify it at all from another process without the first process completely releasing it. In fact, you cannot even read from it from another process in this scenario.So if you typically use a file-backed DuckDB database in one process and want to quickly modify something in that database using the DuckDB CLI (like you might connect SequelPro or DBeaver to make changes to a DB while your main application is &#x27;using&#x27; it), then it complains that it&#x27;s locked by another process and doesn&#x27;t let you connect to it at all.This is unlike SQLite, which supports and handles this in a thread-safe manner out of the box. I know it&#x27;s DuckDB&#x27;s explicit design decision[0], but it would be amazing if DuckDB could behave more like SQLite when it comes to this sort of thing. DuckDB has incredible quality-of-life improvements with many extra types and functions supported, not to mention all the SQL dialect enhancements allowing you to type much more concise SQL (they call it &quot;Friendly SQL&quot;), which executes super efficiently too.[0] https:&#x2F;&#x2F;duckdb.org&#x2F;docs&#x2F;current&#x2F;connect&#x2F;concurrency",
-          "time": 1776151885
+          "id": 47774592,
+          "by": "skydhash",
+          "text": "I&#x27;m running OpenBSD as a daily driver and one of its nicer point is not the security angle, but how simple and hackable it is, while still fairly capable in terms of hardware support. Linux may be more convenient, but its subsystems are too complex and not prone to quick modifications.",
+          "time": 1776226284
         },
         {
-          "id": 47762217,
-          "by": "nehalem",
-          "text": "I have a deep appreciation for DuckDB, but I am afraid the confluence of brilliant ideas makes it ever more complicated to adopt —- and DuckLake is another example for this trend.When I look at SQLite I see a clear message: a database in a file. I think DuckDb is that, too. But it’s also an analytics engine like Polars, works with other DB  engines, supports Parquet, comes with a UI, has two separate warehouse ideas which both deviate from DuckDB‘s core ideas. Yes, DuckLake and Motherduck are separate entities, but they are still part of the ecosystem.",
-          "time": 1776150232
+          "id": 47774772,
+          "by": "technicalape",
+          "text": "Congrats @jcs, I saw you battling the US version :)",
+          "time": 1776228246
         },
         {
-          "id": 47761998,
-          "by": "citguru",
-          "text": "This is an attempt to replicate MotherDucks differential storage and implement hybrid query execution on DuckDB",
-          "time": 1776148304
+          "id": 47774343,
+          "by": "whalesalad",
+          "text": "Love the flying toaster screensaver, that was a pleasant surprise.",
+          "time": 1776223556
         }
       ]
     }
