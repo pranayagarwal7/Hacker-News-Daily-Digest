@@ -1,377 +1,396 @@
 {
-  "date": "2026-04-15",
-  "fetchedAt": "2026-04-15T09:43:37.789Z",
+  "date": "2026-04-16",
+  "fetchedAt": "2026-04-16T09:27:07.035Z",
   "posts": [
     {
-      "id": 47774789,
-      "title": "Fixing a 20-year-old bug in Enlightenment E16",
-      "url": "https://iczelia.net/posts/e16-20-year-old-bug/",
-      "score": 131,
-      "by": "snoofydude",
-      "time": 1776228420,
-      "descendants": 38,
+      "id": 47777894,
+      "title": "IPv6 traffic crosses the 50% mark",
+      "url": "https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197",
+      "score": 206,
+      "by": "Aaronmacaron",
+      "time": 1776254389,
+      "descendants": 109,
       "comments": [
         {
-          "id": 47776367,
-          "by": "ZoomZoomZoom",
-          "text": "&gt; Sadly, the hang was deterministic:Huh, someone&#x27;s in it for the thrill of the hunt, I see...",
-          "time": 1776242901
+          "id": 47789617,
+          "by": "rtdq",
+          "text": "And still, in the year of our lord 2026, GitHub does not support IPv6.https:&#x2F;&#x2F;github.com&#x2F;orgs&#x2F;community&#x2F;discussions&#x2F;10539",
+          "time": 1776322963
         },
         {
-          "id": 47776707,
-          "by": "chriswarbo",
-          "text": "Whenever I try something else, I always seem to keep going back to E16. Back in the day, it worked well in Gnome 2.x; these days I tend to use it in XFCE, but it feels a bit less integrated.",
-          "time": 1776245348
+          "id": 47790649,
+          "by": "zeristor",
+          "text": "My interest was piqued 20 years ago, then there was talk about Internet2 with all these amazing optimisations.Things have developed so much, a Internet2 is still going on I take it, however is more focussed on university research.As ever a killer strength is something that draws people to a new technology, I imagine there&#x27;s various demographics that benefit from use of ipv6.Further I imagine that there are some levels of criticality which when reached are more self sustaining (dare I say it the network effect?).I&#x27;ve been posting this graph over the years, and it really has slowed down hugely close to this 50%. This is a global ipv6 support, so some countries are racing ahead, others weirdly like Denmark have a stash of ipv4 addresses and seems content.France and Germany are at about 80%, but there&#x27;s the rest of the world of course.",
+          "time": 1776331400
         },
         {
-          "id": 47776319,
-          "by": "wvh",
-          "text": "This is a flash from an almost forgotten past. I&#x27;m happy people are still using and even improving Enlightenment.I used to run Enlightenment in the late nineties and early 2000s, first by itself, then with Gnome bar. At some point Gnome turned hostile on power users and I switched to KDE, leaving also Enlightenment behind, as well as any extensive customization of my desktop. At that time, the ubiquitous themes.org also got in disarray, and I feel it was a bit an end of an era of design and theming experiments on the early Linux (and *BSD) desktop.",
-          "time": 1776242545
+          "id": 47789519,
+          "by": "usui",
+          "text": "It has barely hit 50% and it&#x27;s already plateauing. This adoption rate is ridiculous despite basically all network interfaces supporting it. I thought I would see IPv6 take over in my lifetime as the default for platforms to build on but I can see I was wrong. Enterprise and commercial companies are literally going to hold back internet progress around 60 to 75 years because it&#x27;s in their best interest to ensure users can&#x27;t host services without them. Maybe even 75 years might be too optimistic? They are literally going to do everything in their power to avoid the transition, either being dragged out kicking and screaming or throwing their hands up and saying they can&#x27;t support IPv6 because it costs too much.Try going IPv6-only by disabling IPv4 on your computer as a test and notice that almost nothing works except Google. End users shouldn&#x27;t need to set up NAT64&#x2F;6to4 tunneling. It should be ISPs doing that to prepare for the transition.Also, notice how Android and iOS don&#x27;t support turning off IPv4.",
+          "time": 1776322175
         },
         {
-          "id": 47775449,
-          "by": "unwind",
-          "text": "Fun post! Very happy to see a 20-something year old find and fix bugs in an X11 wm from before they were born. Gives me hope.There was some kind of editing snafu though, the loop header in the big (first) code block reads:    for (i = 0; i &lt; 10; i++, nuke_count++)\n\nBut the references to it in the text, and updated versions in the patches, show it as just    for (;;)\n\nThat was confusing me a bit.",
-          "time": 1776234762
+          "id": 47790496,
+          "by": "p4bl0",
+          "text": "It amuses me to see that according to the map, France is best in class or close to be, while just a few weeks ago, my ISP in France stopped providing me IPv6 connectivity…The story is that at the beginning I had IPv6, and a shared dynamic IPv4 behind a CGNAT, I asked for a rollback to a full duplex static IPv4 and for three years I had both a static personal IPv4 and an IPv6. A few weeks ago my router went down and since it went back up, I no longer have an IPv6 address. I called my ISP and they explained that I could either have IPv6 or a static IPv4, but not both, and that it&#x27;s abnormal that I had both for so long… welp, it&#x27;s sad to see IPv6 but getting it back is not worth abandoning my static IPv4 and going back to a dynamic shared IPv4.",
+          "time": 1776330281
+        },
+        {
+          "id": 47789742,
+          "by": "zokier",
+          "text": "This google metric measures adoption in access networks, but at this point I feel more interesting metric is adoption in services.One such stat is here:&gt; adoption ranging from 71% among the top 100 to 32% in the long tailhttps:&#x2F;&#x2F;commoncrawl.org&#x2F;blog&#x2F;ipv6-adoption-across-the-top-10...Getting full coverage on AWS (&#x2F;GCP&#x2F;Azure) and few other key services (GitHub...) would be significant here imho.",
+          "time": 1776323992
         }
       ]
     },
     {
-      "id": 47739278,
-      "title": "My adventure in designing API keys",
-      "url": "https://vjay15.github.io/blog/apikeys/",
-      "score": 58,
-      "by": "vjay15",
-      "time": 1775999865,
-      "descendants": 38,
+      "id": 47788542,
+      "title": "Darkbloom – Private inference on idle Macs",
+      "url": "https://darkbloom.dev",
+      "score": 227,
+      "by": "twapi",
+      "time": 1776312399,
+      "descendants": 115,
       "comments": [
         {
-          "id": 47776800,
-          "by": "amelius",
-          "text": "It&#x27;s a bit confusing that the &quot;Random hex&quot; example contains characters such as &quot;q&quot; and &quot;p&quot;.",
-          "time": 1776246111
+          "id": 47789171,
+          "by": "tgma",
+          "text": "I installed this so you don&#x27;t have to. It did feel a bit quirky and not super polished. Fails to download the image model. The audio&#x2F;tts model fails to load.In 15 minutes of serving Gemma, I got precisely zero actual inference requests, and a bunch of health checks and two attestations.At the moment they don&#x27;t have enough sustained demand to justify the earning estimates.",
+          "time": 1776318849
         },
         {
-          "id": 47775764,
-          "by": "bob1029",
-          "text": "I don&#x27;t understand the need for this level of engineering. It appears we are going for an opaque bearer token here. The checksum is pointless because an entire 512 bit token still fits in an x86 cache line. Comparing the whole sequence won&#x27;t show up in any profiler session you will ever care about.If you want aspects of the token to be inspectable by intermediaries, then you want json web tokens or a similar technology. You do not want to conflate these ideas. JWTs would solve the stated database concern. All you need to store in a JWT scheme are the private&#x2F;public keys. Explicit tracking of the session is not required.",
-          "time": 1776237994
+          "id": 47788769,
+          "by": "kennywinker",
+          "text": "I have a hard time believing their numbers. If you can pay off a mac mini in 2-4 months, and make $1-2k profit every month after that, why wouldn’t their business model just be buying mac minis?",
+          "time": 1776315061
         },
         {
-          "id": 47775920,
-          "by": "weitendorf",
-          "text": "Hey OP, sorry for the negativity, I think most of these commenters right now are pretty off-base. My company is building a lot of API infrastructure and I thought this was a great write up!",
-          "time": 1776239372
+          "id": 47790114,
+          "by": "gleenn",
+          "text": "You have to install their MDM device management software on your computer. Basically that computer is theirs now. So don&#x27;t plan on just handing over your laptop temporarily unless you don&#x27;t mind some company completely owning your box. Still might be a validate use for people with slightly old laptops lying around, but beware trying to share this computer with your daily activities if you e.g. use a bank on a browser on this computer regularly. MDM means they can swap out your SSL certs level of computer access, please correct me if I&#x27;m wrong.",
+          "time": 1776326983
         },
         {
-          "id": 47776019,
-          "by": "randomint64",
-          "text": "While it&#x27;s true that API keys are basically prefix + base32Encode(ID + secret), you will want a few more things to make secure API keys: at least versioning and hashing metadata to avoid confused deputy attacks.Here is a detailed write-up on how to implement production API keys: https:&#x2F;&#x2F;kerkour.com&#x2F;api-keys",
-          "time": 1776240217
+          "id": 47790605,
+          "by": "miki123211",
+          "text": "&gt; Operators cannot observe inference data.Is there some actual cryptography behind this, or just fundamentally-breakable DRM and vibes?",
+          "time": 1776331073
         },
         {
-          "id": 47776687,
-          "by": "petterroea",
-          "text": "A bit over-engineered, but it was fun to read about observations on industry standard API keys. I agree it would be nice with more discussion around API keys and qualities one would want from them.",
-          "time": 1776245215
+          "id": 47788762,
+          "by": "nl",
+          "text": "They use the TEE to check that the model and code is untampered with. That&#x27;s a good, valid approach and should work (I&#x27;ve done similar things on AWS with their TEE)The key question here is how they avoid the outside computer being able to view the memory of the internal process:&gt; An in-process inference design that embeds the in-\nference engine directly in a hardened process, elimi-\nnating all inter-process communication channels that\ncould be observed, with optional hypervisor mem-\nory isolation that extends protection from software-\nenforced to hardware-enforced via ARM Stage 2 page\ntables at zero performance cost.[1]I was under the impression this wasn&#x27;t possible if you are using the GPU. I could be misled on this though.[1] https:&#x2F;&#x2F;github.com&#x2F;Layr-Labs&#x2F;d-inference&#x2F;blob&#x2F;master&#x2F;papers&#x2F;...",
+          "time": 1776314937
         }
       ]
     },
     {
-      "id": 47768133,
-      "title": "Claude Code Routines",
-      "url": "https://code.claude.com/docs/en/routines",
-      "score": 607,
-      "by": "matthieu_bl",
-      "time": 1776185673,
-      "descendants": 354,
+      "id": 47788424,
+      "title": "FSF trying to contact Google about spammer sending 10k+ mails from Gmail account",
+      "url": "https://daedal.io/@thomzane/116410863009847575",
+      "score": 141,
+      "by": "pabs3",
+      "time": 1776311078,
+      "descendants": 77,
       "comments": [
         {
-          "id": 47769425,
-          "by": "joshstrange",
-          "text": "LLMs and LLM providers are massive black boxes. I get a lot of value from them and so I can put up with that to a certain extent, but these new &quot;products&quot;&#x2F;features that Anthropic are shipping are very unappealing to me. Not because I can&#x27;t see a use-case for them, but because I have 0 trust in them:- No trust that they won&#x27;t nerf the tool&#x2F;model behind the feature- No trust they won&#x27;t sunset the feature (the graveyard of LLM-features is vast and growing quickly while they throw stuff at the wall to see what sticks)- No trust in the company long-term. Both in them being around at all and them not rug-pulling. I don&#x27;t want to build on their &quot;platform&quot;. I&#x27;ll use their harness and their models but I don&#x27;t want more lock-in than that.If Anthropic goes &quot;bad&quot; I want to pick up and move to another harness and&#x2F;or model with minimal fuss. Buying in to things like this would make that much harder.I&#x27;m not going to build my business or my development flows on things I can&#x27;t replicate myself. Also, I imagine debugging any of this would be maddening. The value add is just not there IMHO.EDIT: Put another way, LLM companies are trying to climb the ladder to be a platform, I have zero interest in that, I was a &quot;dumb pipe&quot;, I want a commodity, I want a provider, not a platform. Claude Code is as far into the dragon&#x27;s lair that I want to venture and I&#x27;m only okay with that because I know I can jump to OpenCode&#x2F;Codex&#x2F;etc if&#x2F;when Anthropic &quot;goes bad&quot;.",
-          "time": 1776191549
+          "id": 47790670,
+          "by": "anonymousiam",
+          "text": "Lately I&#x27;ve been using SpamCop.net to make spam reports.  It seems to work, and it&#x27;s free.  You are encouraged to donate, and they don&#x27;t ask for much.It&#x27;s not perfect though.  For some reason, it doesn&#x27;t find (or deliberately ignores) OVH hosts that are relaying spam.",
+          "time": 1776331505
         },
         {
-          "id": 47768821,
-          "by": "andai",
-          "text": "I&#x27;m a little confused on the ToS here. From what I gathered, running `claude -p &lt;prompt&gt;` on cron is fine, but putting it in my Telegram bot is a ToS violation (unless I use per-token billing) because it&#x27;s a 3rd party harness, right? (`claude -p` being a trivial workaround for the &quot;no 3rd party stuff on the subscription&quot; rule)This Routines feature notably works with the subscription, and it also has API callbacks. So if my Telegram bot calls that API... do I get my Anthropic account nuked or not?",
-          "time": 1776188878
+          "id": 47790575,
+          "by": "n3storm",
+          "text": "I have been observing this for the last 2-3 years (4 postfix servers sysadmin)Gmail cannot be whitelisted anymore: spam, phishing,... \nOn the other hand, if your users redirect twitter or linkedin notifications from their domain to a gmail account, Google claims you are sending too fast and is suspicious (and throttles or blocks ip).Hilarious.",
+          "time": 1776330858
         },
         {
-          "id": 47770354,
-          "by": "comboy",
-          "text": "Unrelated, but Claude was performing so tragically last few days, maybe week(s), but days mostly, that I had to reluctantly switch. Reluctantly because I enjoy it. Even the most basic stuff, like most python scripts it has to rerun because of some syntax error.The new reality of coding took away one of the best things for me - that the computer always just does what it is told to do. If the results are wrong it means I&#x27;m wrong, I made a bug and I can debug it. Here.. I&#x27;m not a hater, it&#x27;s a powerful tool, but.. it&#x27;s different.",
-          "time": 1776195227
+          "id": 47789272,
+          "by": "urban_winter",
+          "text": "Google suspend email accounts that get lots of spam reports. It happens a couple of times a year for salespeople in my company who use Gmass (a bulk email sending tool).I mention it only as a useful data point, and in the absence of anyone else on the thread mentioning that Google have robust email abuse monitoring.",
+          "time": 1776319768
         },
         {
-          "id": 47769149,
-          "by": "Eldodi",
-          "text": "Anthropic is really good at releasing features that are almost the same but not exactly the same as other features they released the week before",
-          "time": 1776190318
+          "id": 47790164,
+          "by": "monegator",
+          "text": "Unfortunately, the only thing that would work is to hire a bot service that would report the offending account en masse.",
+          "time": 1776327486
         },
         {
-          "id": 47768517,
-          "by": "minimaxir",
-          "text": "Given the alleged recent extreme reduction in Claude Code usage limits (https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47739260), how do these more autonomous tools work within that constraint? Are they effectively only usable with a 20x Max plan?EDIT: This comment is apparently [dead] and idk why.",
-          "time": 1776187598
+          "id": 47790137,
+          "by": "cpncrunch",
+          "text": "gmail, outlook and salesforce create about 90% of the spam that gets through blacklists. Salesforce is simple to fix: I just block anything from salesforce from our network, as it just seems to be 100% used by spammers. Gmail and outlook are the major problem, as there is no way of addressing their spam issue.",
+          "time": 1776327211
         }
       ]
     },
     {
-      "id": 47775628,
-      "title": "Wacli – WhatsApp CLI: sync, search, send",
-      "url": "https://github.com/steipete/wacli",
-      "score": 85,
-      "by": "dinakars777",
-      "time": 1776236685,
-      "descendants": 67,
-      "comments": [
-        {
-          "id": 47776036,
-          "by": "joshwarwick15",
-          "text": "(Caveat I’m the founder of https:&#x2F;&#x2F;wassist.app - The WhatsApp Agent Platform)Please be very careful using this tool to automate your WhatsApp - if you send too many messages, too quickly, you are going to get banned.This is NOT an officially supported api by WhatsApp and the risk of ban is relatively high",
-          "time": 1776240337
-        },
-        {
-          "id": 47775804,
-          "by": "faangguyindia",
-          "text": "I just use telegram.Just yesterday I setup a bot which is easy via botfatherAnd also, setup an app (claude built it but I had to fiddle with it, it works like pagerduty) but uses cloudflate worker to push downtime&#x2F;errors (via fcm) in production (from graphana) via webhooks to &quot;full screen, by pass dnd, alerts, with loud music, this one: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=H0IQBWWabuU )I named the app &quot;Siren&quot;.It&#x27;s not straightforward to have durable hard to miss alerts about your production enviornment but good thing is this doesn&#x27;t cost a cent.Telegram group alerts are from my teammates (small team 3 members) via bot.And Siren is for only me as I am responsible for the backend with 10 microservices, centralized logging via graphana, alloy, loki, and for metrics Prometheus.It&#x27;s all working reasonably well for me, this makes your life so much better as you fix the issues before they turn into nightmare.",
-          "time": 1776238378
-        },
-        {
-          "id": 47775913,
-          "by": "zarzavat",
-          "text": "Beware that if this does not use a real web browser then it&#x27;s likely to get your whatsapp account suspended. Don&#x27;t use it with any account you care about, you will lose all your data.Hell, I got my whatsapp account suspended (appealed and reversed) just for using the official web client too soon after creating a new account.",
-          "time": 1776239320
-        },
-        {
-          "id": 47775894,
-          "by": "BoppreH",
-          "text": "I wish it mentioned how safe this is. Some years ago I got banned for just logging in with a third-party client, without sending any messages. Given how critical WhatsApp is for some people, and how permanent the bans are, that&#x27;s a big risk.",
-          "time": 1776239138
-        },
-        {
-          "id": 47775776,
-          "by": "recsv-heredoc",
-          "text": "This is such a sorely needed point of integration. Cool to see Peter still shipping tools. It’s such a pity meta refuses to play ball like Telegram.Either they’ll double-down and make this even harder -or- hopefully realise that WhatsApp is likely to be a really common control plane for AI systems in the next few years. Let’s hope the  Llama energy strikes and it’s the latter.How does WhatsMeow compare with Baileys?",
-          "time": 1776238095
-        }
-      ]
-    },
-    {
-      "id": 47775653,
-      "title": "My AI-Assisted Workflow",
-      "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
-      "score": 26,
-      "by": "maiobarbero",
-      "time": 1776236898,
+      "id": 47788473,
+      "title": "RedSun: System user access on Win 11/10 and Server with the April 2026 Update",
+      "url": "https://github.com/Nightmare-Eclipse/RedSun",
+      "score": 71,
+      "by": "airhangerf15",
+      "time": 1776311661,
       "descendants": 16,
       "comments": [
         {
-          "id": 47776713,
-          "by": "Bossie",
-          "text": "My workflow is also highly inspired by Matt&#x27;s skills, but I&#x27;m leveraging Linear instead of Github.&#x2F;grill-me (back-and-forth alignment with the LLM) --&gt; &#x2F;write-a-prd (creates project under an initative in Linear) --&gt; &#x2F;prd-to-issues (creates issues at the project level).\nI&#x27;m making use of the blockedBy utility when registering the issues. They land in the &#x27;Ready for Agent&#x27; status.A scheduled project-orchestrator is then picking up issues with this status leveraging subagents. A HITL (Human in the loop) status is set on the ticket when anything needs my attention. I consider the code as the &#x27;what&#x27;, so I let the agent(s) update the issues with the HOW and WHY. All using Claude Code Max subscription.Some notes:- write-a-prd is knowledge compression and thus some important details occasionally get lost- The UX for the orchestrator flow is suboptimal. Waiting for this actually: https:&#x2F;&#x2F;github.com&#x2F;mattpocock&#x2F;sandcastle&#x2F;issues&#x2F;191#issuecom...- I might have to implement a simplify + review + security audit, call it a &#x27;check&#x27;, to fire at the end of the project. Could be in the form of an issue.",
-          "time": 1776245383
+          "id": 47789377,
+          "by": "egeozcan",
+          "text": "I wonder why Windows Defender has the privilege to alter the system files. Read them for analysis? Sure! Reset (as in, call some windows API to have it replaced with the original), why not? But being able to write sounds like a bad idea.However, I don&#x27;t know what I&#x27;m talking about so take it with a grain of salt!",
+          "time": 1776320821
         },
         {
-          "id": 47776263,
-          "by": "gbrindisi",
-          "text": "This is pretty much a spec driven workflow.I do similar, but my favorite step is the first: &#x2F;rubberduck to discuss the problem with the agent, who is instructed by the command to help me frame and validate it. Hands down the most impactful piece of my workflow, because it helps me achieve the right clarity and I can use it also for non coding tasks.After which is the usual: write PRDs, specs, tasks and then build and then verify the output.I started with one the spec frameworks and eventually simplify everything to the bone.I do feel it’s working great but someday I fear a lot of this might still be too much productivity theater.",
-          "time": 1776242119
+          "id": 47790390,
+          "by": "hathym",
+          "text": "cl &#x2F;std:c++17 &#x2F;EHsc &#x2F;W4 &#x2F;O2 &#x2F;DUNICODE &#x2F;D_UNICODE &#x2F;wd4005 &#x2F;Fe:RedSun.exe RedSun.cpp advapi32.lib ole32.lib user32.lib",
+          "time": 1776329374
         },
         {
-          "id": 47776483,
-          "by": "zkmon",
-          "text": "Congrats! You just rediscovered something called water-fall model.",
-          "time": 1776243783
+          "id": 47788971,
+          "by": "ranger_danger",
+          "text": "&gt; normally I would just drop the PoC code and let people figure it outLooks like that&#x27;s exactly what they did though?Or maybe they just meant that they don&#x27;t usually explain how it works?",
+          "time": 1776317170
         },
         {
-          "id": 47776362,
-          "by": "nDRDY",
-          "text": "Here&#x27;s mine: code to spec until I get stuck -&gt; search Google for the answer -&gt; scan the Gemini result instead of going to StackOverflow.",
-          "time": 1776242862
-        },
-        {
-          "id": 47776437,
-          "by": "hansmayer",
-          "text": "No kids, don´t put yourself through this suffering. If you have to invest so much deliberate effort to sort of make it work - while you still handle the most tenuous and boring parts yourself, then what is the point? Lets keep the LLM vendors to their word - they promised intelligent machines that would just work so well to the point of causing mass unemployment. Why on earth do we have to work around the LLMs to make them work? What is the point? Where is my nation of datacenter PhDs or a PocketPhd, depending on whose CEOs misleading statement one quotes?",
-          "time": 1776243436
+          "id": 47789392,
+          "by": "labelbabyjunior",
+          "text": "A local privilege escalation to root via an exploitable service?Doesn&#x27;t Linux have one of these CVEs...each week?",
+          "time": 1776321004
         }
       ]
     },
     {
-      "id": 47724571,
-      "title": "A communist Apple II and fourteen years of not knowing what you're testing",
-      "url": "https://llama.gs/blog/index.php/2026/04/10/friday-archaeology-a-communist-apple-ii-and-fourteen-years-of-not-knowing-what-youre-testing/",
-      "score": 166,
-      "by": "major4x",
-      "time": 1775860584,
-      "descendants": 52,
+      "id": 47747770,
+      "title": "The paper computer",
+      "url": "https://jsomers.net/blog/the-paper-computer",
+      "score": 141,
+      "by": "jsomers",
+      "time": 1776056268,
+      "descendants": 29,
       "comments": [
         {
-          "id": 47774415,
-          "by": "summa_tech",
-          "text": "This was a fascinating article, because I&#x27;ve seen so many results of the Eastern Bloc reverse-engineering efforts basically founder into obscurity. Many of these re-created (sometimes with minor variations, or quite novel and ingenious implementation choices) computers were made in small series, but could not compete against illegal imports, and in any case would only be briefly popular in their local university town.So it&#x27;s cool to see that Bulgaria managed to muster enough government interest to force a cohesive strategy for the whole country. It sounds like it paid off.Also, after googling for Правец, I have found out that I can in fact read Bulgarian, which was quite surprising to me.",
-          "time": 1776224163
+          "id": 47790668,
+          "by": "cjs_ac",
+          "text": "&gt; Now that we have actually good AI, I have this vision of a form of computing that doesn’t involve me using a computer so much. Imagine you had the day’s emails to go through. It would be nice if the ones that required a simple decision could be dispatched with a few pen-strokes: I could write down a date that would work for that meeting; check a box to accept that invitation; etc.This reminds me of those predictions from 1900 about the year 2000, when they thought we&#x27;d all live in enormous skyscrapers and get around by flying cars. Instead we moved out to suburbs because improved logistics systems meant we could buy things from suburban shopping centres rather than having to go into city centres. Revolution, not evolution.Surely the real advantage of an &#x27;actually good AI&#x27; would be getting the AI to do the work itself, rather than just allowing the work to be done in a format with which the human is more comfortable. The underlying problem is that there are too many things vying for our attention.",
+          "time": 1776331482
         },
         {
-          "id": 47776017,
-          "by": "paulnsorensen",
-          "text": "Thank you for this. Very enjoyable read. It reminds me of a post I saw discussing how code review is similar to reviewing mathematical proofs -- you have to know it like you wrote it, and now with AI, this is less and less the case. I definitely miss the days when I knew something was bulletproof because I wrote it and tested it thoroughly.",
-          "time": 1776240210
+          "id": 47788736,
+          "by": "pugio",
+          "text": "Paper Computing (great name!) is something I&#x27;ve been thinking about a lot to help my kids benefit from tech without exposing them to the brain melting addiction of screens. I sacrificed a few crazy nights of sleep to try to build a Paper Computer Agent prototype for a recent Gemini hackathon (only to disappointingly have submission issues right before the actual deadline) which my kids loved and keep asking me to set up permanently for them.It&#x27;s essentially a poor man&#x27;s hacked up DynamicLand - projector, camera, live agent. There are so many things you could do if you had a strong working baseline for this. My kids used it to create stories, learn how to draw various things, and watching safe videos they could hold in their hand.There&#x27;s something weirdly compelling and delightfully physical about holding a piece of paper that shows a live rocket launch, with the flames streaming down the page. It could also project targeted pieces of text, such as inline homework advice, or graphs next to data. It doesn&#x27;t take long to imagine any other number of fun use cases, and it feels a lot more freeing and inspiring than keeping everything bound to a screen.Github - https:&#x2F;&#x2F;github.com&#x2F;Pugio&#x2F;Orly (hacky minimal prototype that did the thing)Video Pitch - https:&#x2F;&#x2F;youtu.be&#x2F;-9l1x7GnmxU (filmed an hour before the deadline on an old phone with no sleep)",
+          "time": 1776314685
         },
         {
-          "id": 47776113,
-          "by": "varjag",
-          "text": "Interesting point about the grassroots origin. When I read the accounts in early 1990s it was alleged that a whole factory of a minor computer manufacturer in the USA was bought and relocated to Pravets. Including the furniture, broom closets and trashcans. Though am not sure if computer designs were also allegedly in the deal.Also that Bulgaria invested into some semiconductor manufacturer in Singapore to maintain uninterrupted access to the components.",
-          "time": 1776240906
+          "id": 47788549,
+          "by": "azhenley",
+          "text": "Reminds me of Paper Website from the Tiny Projects series, discussed back in 2021.https:&#x2F;&#x2F;daily.tinyprojects.dev&#x2F;paper_websitehttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=29550812",
+          "time": 1776312484
         },
         {
-          "id": 47775513,
-          "by": "grishka",
-          "text": "There was also a Soviet Apple II clone, called Агат (Agat). But iirc, for whatever reason, they couldn&#x27;t clone the 6502, so they built one out of logic ICs, and the thing was too slow to run Apple II software unmodified. Later there was an expansion card with a real imported 6502 that added full compatibility.The USSR did make their own Z80 and 8080 clones later though. There existed an IBM PC compatible built completely out of Soviet-made parts. A lot of fully localized ZX Spectrum clones as well, of varying degree of homebrewness. Those were very popular in the late 80s and early 90s from what I gather, but I&#x27;m too young to have used one myself.",
-          "time": 1776235407
+          "id": 47789384,
+          "by": "gobdovan",
+          "text": "Mandatory RealTalk&#x2F;Dynamicland mention [0] [1][0] https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=7wa3nm0qcfM\n[1] https:&#x2F;&#x2F;dynamicland.org&#x2F;",
+          "time": 1776320918
         },
         {
-          "id": 47776456,
-          "by": "Angostura",
-          "text": "I seldom enjoy a piece of writing this much. Loved it. Kudos to the author",
-          "time": 1776243605
+          "id": 47788634,
+          "by": "charlieboardman",
+          "text": "Receive email, render page with the email and a reply section and a unique ID, print it out physicallyHuman picks up all the sheets out of the printer, writes out replies with penHuman puts the stack of answered email sheets in a multi-page scannerScanner physically scans them, agent transcribes them and matches them back to the incoming emails via the unique ID on each sheet, sends repliesYou could adjust this flow for anything where human input is just one part of a larger sequence: just add print -&gt; write -&gt; scan into your flow where you&#x27;d normally have a human type. It&#x27;s kind of a rebirth of faxing",
+          "time": 1776313396
         }
       ]
     },
     {
-      "id": 47736308,
-      "title": "Founders Need to Be Ruthless When Chasing Deals",
-      "url": "https://steveblank.com/2024/04/16/founders-need-to-be-ruthless-when-chasing-deals/",
-      "score": 45,
-      "by": "tie-in",
-      "time": 1775970577,
-      "descendants": 16,
+      "id": 47769089,
+      "title": "Cybersecurity looks like proof of work now",
+      "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
+      "score": 397,
+      "by": "dbreunig",
+      "time": 1776190094,
+      "descendants": 145,
       "comments": [
         {
-          "id": 47776059,
-          "by": "piker",
-          "text": "This is great advice (that we need to follow) but needs to be updated for 2026. The information value of providing (or receiving) a demo has dropped to roughly zero with vibe coding. Today, an apparently functional and useful product can be produced and demoed in minutes, but that demo provides absolutely zero information into the technical capabilities of the demoing team to follow through on promises with polish and at scale. It doesn&#x27;t reflect a studied architecture or edge case handling. It basically only shows a vision, which can be tailored to perfectly mirror the recipient&#x27;s expressed desire even though it&#x27;s absolute vaporware. This makes it even harder to sell to enterprise in 2026 when the scene is awash in such noise.",
-          "time": 1776240490
+          "id": 47785275,
+          "by": "somesortofthing",
+          "text": "There&#x27;s still the question of access to the codebase. By all accounts, the best LLM cyber scanning approaches are really primitive - it&#x27;s just a bash script that goes through every single file in the codebase and, for each one and runs a &quot;find the vulns here&quot; prompt. The attacker usually has even less access than this - in the beginning, they have network tools, an undocumented API, and maybe some binaries.You can do a lot better efficiency-wise if you control the source end-to-end though - you already group logically related changes into PRs, so you can save on scanning by asking the LLM to only look over the files you&#x27;ve changed. If you&#x27;re touching security-relevant code, you can ask it for more per-file effort than the attacker might put into their own scanning. You can even do the big bulk scans an attacker might on a fixed schedule - each attacker has to run their own scan while you only need to run your one scan to find everything they would have. There&#x27;s a massive cost asymmetry between the &quot;hardening&quot; phase for the defender and the &quot;discovering exploits&quot; phase for the attacker.Exploitability also isn&#x27;t binary: even if the attacker is better-resourced than you, they need to find a whole chain of exploits in your system, while you only need to break the weakest link in that chain.If you boil security down to just a contest of who can burn more tokens, defenders get efficiency advantages only the best-resourced attackers can overcome. On net, public access to mythos-tier models will make software more secure.",
+          "time": 1776287443
         },
         {
-          "id": 47775948,
-          "by": "dzonga",
-          "text": "One book I can recommend is &quot;Gap Selling&quot;before I read that book and tried to sell some stuff I realized in org&#x27;s there&#x27; more than 1 buyer.in a typical b2b &#x2F; gvt deal - you&#x27;ve 4 buyers at least.",
-          "time": 1776239620
+          "id": 47785461,
+          "by": "j2kun",
+          "text": "The article heavily quotes the &quot;AI Security Institute&quot; as a third-party analysis. It was the first I heard of them, so I looked up their about page, and it appears to be primarily people from the AI industry (former Deepmind&#x2F;OpenAI staff, etc.), with no folks from the security industry mentioned. So while the security landscape is clearly evolving (cf. also Big Sleep and Project Zero), the conclusion of &quot;to harden a system we need to spend more tokens&quot; sounds like yet more AI boosting from a different angle. It raises the question of why no other alternatives (like formal verification) are mentioned in the article or the AISI report.I wouldn&#x27;t be surprised if NVIDIA picked up this talking point to sell more GPUs.",
+          "time": 1776288353
         },
         {
-          "id": 47776195,
-          "by": "neya",
-          "text": "As an aside, I love the website design. Very early 2000s vibe without costing readability (on desktop).",
-          "time": 1776241629
+          "id": 47785203,
+          "by": "nostrademons",
+          "text": "Relevant Tony Hoare quote: “There are two approaches to software design: make it so simple there are obviously no deficiencies, or make it so complex there are no obvious deficiencies”.",
+          "time": 1776287075
         },
         {
-          "id": 47776394,
-          "by": "firemelt",
-          "text": "I wish hackernews submissions is more like this",
-          "time": 1776243067
+          "id": 47785458,
+          "by": "jzelinskie",
+          "text": "Security has always been a game of just how much money your adversary is willing to commit. The conclusions drawn in lots of these articles are just already well understood systems design concepts, but for some reason people are acting like they are novel or that LLMs have changed anything besides the price.For example from this article:&gt; Karpathy: Classical software engineering would have you believe that dependencies are good (we’re building pyramids from bricks), but imo this has to be re-evaluated, and it’s why I’ve been so growingly averse to them, preferring to use LLMs to “yoink” functionality when it’s simple enough and possible.Anyone who&#x27;s heard of &quot;leftpad&quot; or is a Go programmer (&quot;A little copying is better than a little dependency&quot; is literally a &quot;Go Proverb&quot;) knows this.Another recent set of posts to HN had a company close-sourcing their code for security, but &quot;security through obscurity&quot; has been a well understand fallacy in open source circles for decades.",
+          "time": 1776288348
         },
         {
-          "id": 47775853,
-          "by": "tonyedgecombe",
-          "text": "&gt;We’re excited. When can you come back and show us a prototype?”When you&#x27;ve put your hand in your pocket.",
-          "time": 1776238869
+          "id": 47787695,
+          "by": "creatonez",
+          "text": "I mostly agree with the article.&gt; You don’t get points for being cleverNot sure about this framing, this can easily lead to the wrong conclusions. There is an arms race, yes, and defenders are going to need to spend a lot of GPU hours as a result. But it seems self-evident that the fundamentals of cybersecurity still matter a lot, and you still win by being clever. For the foreseeable future, security posture is still going to be a reflection of human systems. Human systems that are under enormous stress, but are still fundamentally human. You win by getting your security culture in order to produce (and continually reproduce) the most resilient defense that masters both the craft and the human element, not just by abandoning human systems in favor of brute forcing security problems away as your only strategy.Indeed, domains that are truly security critical will acquire this organizational discipline (what&#x27;s required is the same type of discipline that the nuclear industry acquires after a meltdown, or that the aviation industry acquires after plane crashes), but it will be a bumpy ride.This article from exactly 1 year ago is almost prophetic to exactly what&#x27;s going on right now and the subtle ways in which people are most likely to misunderstand the situation: https:&#x2F;&#x2F;knightcolumbia.org&#x2F;content&#x2F;ai-as-normal-technology",
+          "time": 1776304045
         }
       ]
     },
     {
-      "id": 47728662,
-      "title": "Picasso’s Guernica (Gigapixel)",
-      "url": "https://guernica.museoreinasofia.es/gigapixel/#3/63.11/-120.59",
-      "score": 133,
-      "by": "guigar",
-      "time": 1775896026,
-      "descendants": 36,
+      "id": 47788818,
+      "title": "Moving a large-scale metrics pipeline from StatsD to OpenTelemetry / Prometheus",
+      "url": "https://medium.com/airbnb-engineering/building-a-high-volume-metrics-pipeline-with-opentelemetry-and-vmagent-c714d6910b45",
+      "score": 31,
+      "by": "jmarbach",
+      "time": 1776315665,
+      "descendants": 8,
       "comments": [
         {
-          "id": 47776225,
-          "by": "arc_light",
-          "text": "Guernica is literally in the news this week. The Basque government is demanding the painting be moved from Madrid to Bilbao for the 90th anniversary of the bombing, and the political fight that erupted has the exact same fault lines as the civil war that inspired it. A dispute about an anti-war painting that somehow re-opened a 90-year-old wound.\nWhat gets me about the painting itself is that there are no soldiers, no flags, just civilians and animals in chaos. In the end, ordinary people suffer the most from any war.",
-          "time": 1776241847
+          "id": 47789313,
+          "by": "dig1",
+          "text": "&gt; The irony is that this may be a $0 revenue user for Grafana Labs.Why is that ironic? Since Mimir is open-source, $0 revenue users are expected. AFAIK, Grafana Labs relies heavily on go, typescript, and linux, without necessarily being their top financial contributor. They could have kept Mimir proprietary like Splunk, but whether that would have attracted the same level of adoption or community contribution is another matter.",
+          "time": 1776320160
         },
         {
-          "id": 47774690,
-          "by": "habosa",
-          "text": "I went to Spain as a teenager and saw Guernica in person. It was the first painting to ever really have an effect on me. It&#x27;s stunning. A perfect example of how art can transmit a message between people across time and space, I just knew that I was feeling how Picasso wanted me to feel.If you have the chance to see this painting you should, no website can do it justice (although this is a very nice try).",
-          "time": 1776227361
+          "id": 47789492,
+          "by": "codeduck",
+          "text": "&gt; given Prometheus’s widespread adoption and proven reliability in diverse environments.I have used Prometheus a lot.  Reliable is not a word I would associate with it.",
+          "time": 1776321934
         },
         {
-          "id": 47775254,
-          "by": "Synaesthesia",
-          "text": "Guernica shocked the world. It was the start of aerial bombardment of civilians, something which we have sadly normalised since WW2. but which I regard as terrorism.Picasso also painted another great work titled &quot;Korea&quot; in the same vein.War is an abomination, something we should all fight against.",
-          "time": 1776233080
+          "id": 47789420,
+          "by": "jameson",
+          "text": "Curious why the team choose Grafana Mirmir over VM cluster?",
+          "time": 1776321337
         },
         {
-          "id": 47773102,
-          "by": "bigethan",
-          "text": "the way this displayed in the Reina Sofia is fantastic. it’s set in its own room that you approach from the side so you get this experience of turning a corner and boom there’s Guernica. Gave me chills.",
-          "time": 1776211779
-        },
-        {
-          "id": 47774729,
-          "by": "tzury",
-          "text": "Seems similar to operation night watch by the Rijksmuseum in Amsterdamhttps:&#x2F;&#x2F;www.rijksmuseum.nl&#x2F;en&#x2F;stories&#x2F;operation-night-watch&#x2F;...",
-          "time": 1776227798
+          "id": 47789415,
+          "by": "awoimbee",
+          "text": "Directly emitting metrics using OTLP instead of having the OTel receiver scrape the metrics endpoint is interesting.\nI never made that move because the Prometheus metrics endpoint works and is so simple, and it&#x27;s what most projects (eg kubernetes) use.",
+          "time": 1776321310
         }
       ]
     },
     {
-      "id": 47775606,
-      "title": "MDalgorithms (AI Healthcare) – Hiring Growth Marketer – Remote – $80K-$140K",
-      "url": "https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/LVODKN7-growth-marketer-for-a-rapidly-growing-consumer-ai-healthcare-startup",
-      "score": 1,
-      "by": "odedharth93",
-      "time": 1776236418,
-      "descendants": 0,
-      "comments": []
-    },
-    {
-      "id": 47725897,
-      "title": "Installing OpenBSD on the Pomera DM250 Writerdeck",
-      "url": "https://jcs.org/2026/04/09/openbsd-dm250",
-      "score": 38,
-      "by": "djfergus",
-      "time": 1775868426,
-      "descendants": 9,
+      "id": 47788633,
+      "title": "A Look into NaviDial, Japan's Legacy Phone Service",
+      "url": "https://www.tokyodev.com/articles/a-look-into-navidial-japan-s-legacy-phone-service",
+      "score": 41,
+      "by": "pwim",
+      "time": 1776313376,
+      "descendants": 4,
       "comments": [
         {
-          "id": 47774766,
-          "by": "stuxnet79",
-          "text": "Well this is interesting ...I have a DM250 that I bought a year ago that&#x27;s been collecting dust because I couldn&#x27;t get used to the UI&#x2F;UX. It was imported straight from Japan so I&#x27;m pretty sure it&#x27;s not the US model although I&#x27;ll have to confirm that.Customizing &#x2F; tinkering with it has been difficult because it&#x27;s a pretty niche product with not a ton of information online (at least on english websites).Skimming this tutorial it seems like installing OpenBSD is a high-risk &#x2F; high-reward type of thing. I&#x27;ll have to look into further to see if it&#x27;s worth it.",
-          "time": 1776228167
+          "id": 47790621,
+          "by": "freetime2",
+          "text": "I ran into this recently with ANA (All Nippon Airways). [1] There’s no better way to kill customer loyalty than to make than make someone wait 30+ minutes holding on a charged phone call to make a basic change to a reservation that should be possible on the website (they also refuse to handle reservation-specific inquiries over email).[1] https:&#x2F;&#x2F;www.ana.co.jp&#x2F;en&#x2F;jp&#x2F;guide&#x2F;contact&#x2F;international&#x2F;inte...",
+          "time": 1776331215
         },
         {
-          "id": 47775512,
-          "by": "ninjin",
-          "text": "Always fun to read jcs@&#x27;s write ups. I am seriously tempted to look into getting one of these as light, fanless alternatives to run OpenBSB on the move are few and far between. My current main laptop is not big at 11&quot;, but it clocks in at ~1.7kg and that makes you reluctant to carry it around everywhere.Main downsides with the DM250 seems to be that you need a USB-C dongle for audio (they are tiny though) and that you can not hook it up to an external screen for better ergonomics and presentations. Still, small, means compromises are necessary, and I do not think the external screen is a deal break if one would consider the DM250 as a daily commute driver.",
-          "time": 1776235390
+          "id": 47789471,
+          "by": "rtpg",
+          "text": "Was kinda curious about the pricing and honestly the pricing[0] seems like one digit less than I expected. 10k JPY for the number, then 1k JPY per some of the various options (stuff like routing seems to be literally &quot;we set up a phone tree and at the end of the phone tree we just dial a number you give us&quot;)So it sounds like in the end you need to pay 10k JPY per queue + an extra bit of money to wire it all together. Maybe with Twilio you can set up something similarly fire-and-forget but &quot;I explain to Docomo once how to set up my phone tree&quot; sounds nicer than &quot;I set up a twilio... thingy&quot;.I&#x27;m sure somebody out there has at least considered being the layer over Twilio that just offers some of these straightforward services... but... toll-free numbers on Twilio cost 27 cents a minute in Japan. Sounds real close to that 33 yen.[1][0]: https:&#x2F;&#x2F;www.ntt.com&#x2F;business&#x2F;services&#x2F;voice-video&#x2F;freedial-n...[1]: https:&#x2F;&#x2F;www.twilio.com&#x2F;en-us&#x2F;voice&#x2F;pricing&#x2F;jp",
+          "time": 1776321712
         },
         {
-          "id": 47774592,
-          "by": "skydhash",
-          "text": "I&#x27;m running OpenBSD as a daily driver and one of its nicer point is not the security angle, but how simple and hackable it is, while still fairly capable in terms of hardware support. Linux may be more convenient, but its subsystems are too complex and not prone to quick modifications.",
-          "time": 1776226284
+          "id": 47789432,
+          "by": "jjmarr",
+          "text": "If the suicide prevention hotline cost $15&#x2F;hr in the USA people would freak out! But since it&#x27;s Japan it&#x27;s whatever.",
+          "time": 1776321458
         },
         {
-          "id": 47774772,
-          "by": "technicalape",
-          "text": "Congrats @jcs, I saw you battling the US version :)",
-          "time": 1776228246
+          "id": 47789465,
+          "by": "Jamesbeam",
+          "text": "Just wanted to leave a comment that I really enjoy reading the articles about how the Japanese solve or create infrastructure problems for their ageing conservative society posted on here the past few weeks.Also read a very interesting piece about the railway system the other day. \nThank you for providing a valuable perspective I wouldn’t get access to otherwise and also proposing possible solutions and practical advise for your fellow citizens. Keep up the good work.",
+          "time": 1776321682
+        }
+      ]
+    },
+    {
+      "id": 47738673,
+      "title": "Fast and Easy Levenshtein distance using a Trie (2011)",
+      "url": "https://stevehanov.ca/blog/fast-and-easy-levenshtein-distance-using-a-trie",
+      "score": 54,
+      "by": "sebg",
+      "time": 1775995243,
+      "descendants": 6,
+      "comments": [
+        {
+          "id": 47789532,
+          "by": "dvh",
+          "text": "I made myself plugin that shows new news in wikipedia&#x27;s current event page and I was using levenshtein originally (they often edit couple of words in article over span of few days so I compare each new article with previous ones for similarity) but after few days it became too slow (~20s) because O(m*n), so I switched to sorensen-dice instead which is O(m+n) and it&#x27;s much faster and works very similar way, even tho they do slightly different thing.",
+          "time": 1776322300
         },
         {
-          "id": 47774343,
-          "by": "whalesalad",
-          "text": "Love the flying toaster screensaver, that was a pleasant surprise.",
-          "time": 1776223556
+          "id": 47789717,
+          "by": "kelseydh",
+          "text": "I needed a fuzzy string matching algorithm for finding best name matches among a candidate list. Considered Normalized Levenshtein Distance but ended up using Jaro-Winkler.  I&#x27;m curious if anybody has good resources on when to use each fuzzy string matching algorithm and when.",
+          "time": 1776323802
+        },
+        {
+          "id": 47789987,
+          "by": "localhoster",
+          "text": "This article surface every once in a while, and I love it.\nWhat the author suggests is very clever.\nI have implemented an extended version of that in Go as an experiment.\nInstead of using a trie, I used a radix tree.\nFunctions the same, but it&#x27;s much more compressed (and faster).",
+          "time": 1776326006
+        },
+        {
+          "id": 47789387,
+          "by": "fergie",
+          "text": "Very cool and satisfying.",
+          "time": 1776320954
+        },
+        {
+          "id": 47789917,
+          "by": "gregman1",
+          "text": "2011",
+          "time": 1776325431
+        }
+      ]
+    },
+    {
+      "id": 47750486,
+      "title": "Too much discussion of the XOR swap trick",
+      "url": "https://heather.cafe/posts/too_much_xor_swap_trick/",
+      "score": 47,
+      "by": "CJefferson",
+      "time": 1776079342,
+      "descendants": 25,
+      "comments": [
+        {
+          "id": 47790199,
+          "by": "pjc50",
+          "text": "The fun bit is right at the start when the author notices that the compiler spots this and optimizes it away.We didn&#x27;t get into the deeper question of benchmarking it vs. a three-register swap, because I suspect the latter would be handled entirely by register renaming and end up being faster due to not requiring allocation of an ALU unit. Difficult to benchmark that because in order for it to make a difference, you&#x27;d need to surround it with other arithmetic instructions.A meta question is why this persists. It has the right qualities for a &quot;party trick&quot;: slightly esoteric piece of knowledge, not actually that hard to understand when you do know about it, but unintuitive enough that most people don&#x27;t spontaneously reinvent it.See also: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fast_inverse_square_root , which requires a bit more maths.The other classic use of XOR - cursor overdrawing - has also long since gone away. It used to be possible to easily draw a cursor on a monochrome display by XORing it in, then to move it you simply XOR it again, restoring the original image.",
+          "time": 1776327755
+        },
+        {
+          "id": 47790223,
+          "by": "danhau",
+          "text": "&gt; Are there other XOR tricks?Yes, error correction.You have some packets of data a, b, c. Add one additional packet z that is computed as z = a ^ b ^ c. Now whenever one of a, b or c gets corrupted or lost, it can be reconstructed by computing the XOR of all the others.So if b is lost: b = a ^ c ^ z. This works for any packet, but only one. If multiple are lost, this will fail.There are way better error correction algorithms, but I like the simplicity of this one.",
+          "time": 1776328002
+        },
+        {
+          "id": 47789548,
+          "by": "gobdovan",
+          "text": "The XOR trick is only cool in its undefined-behavior form:a^=b^=a^=b;Which allegedly saves you 0.5 seconds of typing in competitive programming competitions from 20 years ago and is known to work reliably (on MinGW under Windows XP).Bonus authenticity: use `a^=a` to zero a register in a single x86 instruction (and makes a real difference for compiler toolchains 30+ years old).For real now, a very useful application of XOR is its relation to the Nim game [0], which comes in very handy if you need to save your village from an ancient disgruntled Chinese emperor.[0] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Nim",
+          "time": 1776322422
+        },
+        {
+          "id": 47789289,
+          "by": "mmozeiko",
+          "text": "xor swap trick was useful in older simd (sse1&#x2F;sse2) when based on some condition you want to swap values or not:  tmp = (a ^ b) &amp; mask\n  a ^= tmp\n  b ^= tmp\n\nIf mask = 0xfff...fff then a&#x2F;b will be swapped, otherwise if mask = 0 then they&#x27;ll remain the same.",
+          "time": 1776319873
+        },
+        {
+          "id": 47790276,
+          "by": "fuglede_",
+          "text": "The XOR swap trick also features in the compilation&#x2F;synthesis of quantum algorithms, where the XOR instruction (in the form of a CNOT gate) is fundamental in many architectures, and where native swapping need not be available.One extension that I ran into, and which I think forms a nice problem is the following:Just like the XOR swap trick can be used to swap to variables (and let&#x27;s just say that they&#x27;re bools), it can be extended to implement any permutation of the variables: suppose that the permutation is written as a composition of  n transpositions (i.e., swaps of pairs), and that  is the minimal number of transpositions that let&#x27;s you do that. Each transposition can be implemented by 3 XORs, by the XOR swap trick for pairs, and so the full permutation can be implemented by 3n XORs. Now here&#x27;s the question: Is it possible to come up with a way of doing it with less than 3n, or can we find a permutation that has a shortcut through XOR-land (not allowing any other kinds of instructions)? In other words, is XOR-swapping XOR-optimal?I&#x27;m not going to spoil it, but only last year a paper was published in the quantum information literature that contains an answer [0]. I ended up making a little game where you get to play around with XOR-optimizing not only permutations, but general linear reversible circuits. [1][0] https:&#x2F;&#x2F;link.springer.com&#x2F;article&#x2F;10.1007&#x2F;s11128-025-04831-5[1] https:&#x2F;&#x2F;swapple.fuglede.dk",
+          "time": 1776328317
         }
       ]
     }
