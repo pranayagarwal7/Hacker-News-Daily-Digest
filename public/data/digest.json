@@ -1,396 +1,384 @@
 {
-  "date": "2026-04-16",
-  "fetchedAt": "2026-04-16T09:27:07.035Z",
+  "date": "2026-04-17",
+  "fetchedAt": "2026-04-17T09:26:35.239Z",
   "posts": [
     {
-      "id": 47777894,
-      "title": "IPv6 traffic crosses the 50% mark",
-      "url": "https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197",
-      "score": 206,
-      "by": "Aaronmacaron",
-      "time": 1776254389,
-      "descendants": 109,
-      "comments": [
-        {
-          "id": 47789617,
-          "by": "rtdq",
-          "text": "And still, in the year of our lord 2026, GitHub does not support IPv6.https:&#x2F;&#x2F;github.com&#x2F;orgs&#x2F;community&#x2F;discussions&#x2F;10539",
-          "time": 1776322963
-        },
-        {
-          "id": 47790649,
-          "by": "zeristor",
-          "text": "My interest was piqued 20 years ago, then there was talk about Internet2 with all these amazing optimisations.Things have developed so much, a Internet2 is still going on I take it, however is more focussed on university research.As ever a killer strength is something that draws people to a new technology, I imagine there&#x27;s various demographics that benefit from use of ipv6.Further I imagine that there are some levels of criticality which when reached are more self sustaining (dare I say it the network effect?).I&#x27;ve been posting this graph over the years, and it really has slowed down hugely close to this 50%. This is a global ipv6 support, so some countries are racing ahead, others weirdly like Denmark have a stash of ipv4 addresses and seems content.France and Germany are at about 80%, but there&#x27;s the rest of the world of course.",
-          "time": 1776331400
-        },
-        {
-          "id": 47789519,
-          "by": "usui",
-          "text": "It has barely hit 50% and it&#x27;s already plateauing. This adoption rate is ridiculous despite basically all network interfaces supporting it. I thought I would see IPv6 take over in my lifetime as the default for platforms to build on but I can see I was wrong. Enterprise and commercial companies are literally going to hold back internet progress around 60 to 75 years because it&#x27;s in their best interest to ensure users can&#x27;t host services without them. Maybe even 75 years might be too optimistic? They are literally going to do everything in their power to avoid the transition, either being dragged out kicking and screaming or throwing their hands up and saying they can&#x27;t support IPv6 because it costs too much.Try going IPv6-only by disabling IPv4 on your computer as a test and notice that almost nothing works except Google. End users shouldn&#x27;t need to set up NAT64&#x2F;6to4 tunneling. It should be ISPs doing that to prepare for the transition.Also, notice how Android and iOS don&#x27;t support turning off IPv4.",
-          "time": 1776322175
-        },
-        {
-          "id": 47790496,
-          "by": "p4bl0",
-          "text": "It amuses me to see that according to the map, France is best in class or close to be, while just a few weeks ago, my ISP in France stopped providing me IPv6 connectivity…The story is that at the beginning I had IPv6, and a shared dynamic IPv4 behind a CGNAT, I asked for a rollback to a full duplex static IPv4 and for three years I had both a static personal IPv4 and an IPv6. A few weeks ago my router went down and since it went back up, I no longer have an IPv6 address. I called my ISP and they explained that I could either have IPv6 or a static IPv4, but not both, and that it&#x27;s abnormal that I had both for so long… welp, it&#x27;s sad to see IPv6 but getting it back is not worth abandoning my static IPv4 and going back to a dynamic shared IPv4.",
-          "time": 1776330281
-        },
-        {
-          "id": 47789742,
-          "by": "zokier",
-          "text": "This google metric measures adoption in access networks, but at this point I feel more interesting metric is adoption in services.One such stat is here:&gt; adoption ranging from 71% among the top 100 to 32% in the long tailhttps:&#x2F;&#x2F;commoncrawl.org&#x2F;blog&#x2F;ipv6-adoption-across-the-top-10...Getting full coverage on AWS (&#x2F;GCP&#x2F;Azure) and few other key services (GitHub...) would be significant here imho.",
-          "time": 1776323992
-        }
-      ]
-    },
-    {
-      "id": 47788542,
-      "title": "Darkbloom – Private inference on idle Macs",
-      "url": "https://darkbloom.dev",
-      "score": 227,
-      "by": "twapi",
-      "time": 1776312399,
-      "descendants": 115,
-      "comments": [
-        {
-          "id": 47789171,
-          "by": "tgma",
-          "text": "I installed this so you don&#x27;t have to. It did feel a bit quirky and not super polished. Fails to download the image model. The audio&#x2F;tts model fails to load.In 15 minutes of serving Gemma, I got precisely zero actual inference requests, and a bunch of health checks and two attestations.At the moment they don&#x27;t have enough sustained demand to justify the earning estimates.",
-          "time": 1776318849
-        },
-        {
-          "id": 47788769,
-          "by": "kennywinker",
-          "text": "I have a hard time believing their numbers. If you can pay off a mac mini in 2-4 months, and make $1-2k profit every month after that, why wouldn’t their business model just be buying mac minis?",
-          "time": 1776315061
-        },
-        {
-          "id": 47790114,
-          "by": "gleenn",
-          "text": "You have to install their MDM device management software on your computer. Basically that computer is theirs now. So don&#x27;t plan on just handing over your laptop temporarily unless you don&#x27;t mind some company completely owning your box. Still might be a validate use for people with slightly old laptops lying around, but beware trying to share this computer with your daily activities if you e.g. use a bank on a browser on this computer regularly. MDM means they can swap out your SSL certs level of computer access, please correct me if I&#x27;m wrong.",
-          "time": 1776326983
-        },
-        {
-          "id": 47790605,
-          "by": "miki123211",
-          "text": "&gt; Operators cannot observe inference data.Is there some actual cryptography behind this, or just fundamentally-breakable DRM and vibes?",
-          "time": 1776331073
-        },
-        {
-          "id": 47788762,
-          "by": "nl",
-          "text": "They use the TEE to check that the model and code is untampered with. That&#x27;s a good, valid approach and should work (I&#x27;ve done similar things on AWS with their TEE)The key question here is how they avoid the outside computer being able to view the memory of the internal process:&gt; An in-process inference design that embeds the in-\nference engine directly in a hardened process, elimi-\nnating all inter-process communication channels that\ncould be observed, with optional hypervisor mem-\nory isolation that extends protection from software-\nenforced to hardware-enforced via ARM Stage 2 page\ntables at zero performance cost.[1]I was under the impression this wasn&#x27;t possible if you are using the GPU. I could be misled on this though.[1] https:&#x2F;&#x2F;github.com&#x2F;Layr-Labs&#x2F;d-inference&#x2F;blob&#x2F;master&#x2F;papers&#x2F;...",
-          "time": 1776314937
-        }
-      ]
-    },
-    {
-      "id": 47788424,
-      "title": "FSF trying to contact Google about spammer sending 10k+ mails from Gmail account",
-      "url": "https://daedal.io/@thomzane/116410863009847575",
-      "score": 141,
-      "by": "pabs3",
-      "time": 1776311078,
-      "descendants": 77,
-      "comments": [
-        {
-          "id": 47790670,
-          "by": "anonymousiam",
-          "text": "Lately I&#x27;ve been using SpamCop.net to make spam reports.  It seems to work, and it&#x27;s free.  You are encouraged to donate, and they don&#x27;t ask for much.It&#x27;s not perfect though.  For some reason, it doesn&#x27;t find (or deliberately ignores) OVH hosts that are relaying spam.",
-          "time": 1776331505
-        },
-        {
-          "id": 47790575,
-          "by": "n3storm",
-          "text": "I have been observing this for the last 2-3 years (4 postfix servers sysadmin)Gmail cannot be whitelisted anymore: spam, phishing,... \nOn the other hand, if your users redirect twitter or linkedin notifications from their domain to a gmail account, Google claims you are sending too fast and is suspicious (and throttles or blocks ip).Hilarious.",
-          "time": 1776330858
-        },
-        {
-          "id": 47789272,
-          "by": "urban_winter",
-          "text": "Google suspend email accounts that get lots of spam reports. It happens a couple of times a year for salespeople in my company who use Gmass (a bulk email sending tool).I mention it only as a useful data point, and in the absence of anyone else on the thread mentioning that Google have robust email abuse monitoring.",
-          "time": 1776319768
-        },
-        {
-          "id": 47790164,
-          "by": "monegator",
-          "text": "Unfortunately, the only thing that would work is to hire a bot service that would report the offending account en masse.",
-          "time": 1776327486
-        },
-        {
-          "id": 47790137,
-          "by": "cpncrunch",
-          "text": "gmail, outlook and salesforce create about 90% of the spam that gets through blacklists. Salesforce is simple to fix: I just block anything from salesforce from our network, as it just seems to be 100% used by spammers. Gmail and outlook are the major problem, as there is no way of addressing their spam issue.",
-          "time": 1776327211
-        }
-      ]
-    },
-    {
-      "id": 47788473,
-      "title": "RedSun: System user access on Win 11/10 and Server with the April 2026 Update",
-      "url": "https://github.com/Nightmare-Eclipse/RedSun",
-      "score": 71,
-      "by": "airhangerf15",
-      "time": 1776311661,
-      "descendants": 16,
-      "comments": [
-        {
-          "id": 47789377,
-          "by": "egeozcan",
-          "text": "I wonder why Windows Defender has the privilege to alter the system files. Read them for analysis? Sure! Reset (as in, call some windows API to have it replaced with the original), why not? But being able to write sounds like a bad idea.However, I don&#x27;t know what I&#x27;m talking about so take it with a grain of salt!",
-          "time": 1776320821
-        },
-        {
-          "id": 47790390,
-          "by": "hathym",
-          "text": "cl &#x2F;std:c++17 &#x2F;EHsc &#x2F;W4 &#x2F;O2 &#x2F;DUNICODE &#x2F;D_UNICODE &#x2F;wd4005 &#x2F;Fe:RedSun.exe RedSun.cpp advapi32.lib ole32.lib user32.lib",
-          "time": 1776329374
-        },
-        {
-          "id": 47788971,
-          "by": "ranger_danger",
-          "text": "&gt; normally I would just drop the PoC code and let people figure it outLooks like that&#x27;s exactly what they did though?Or maybe they just meant that they don&#x27;t usually explain how it works?",
-          "time": 1776317170
-        },
-        {
-          "id": 47789392,
-          "by": "labelbabyjunior",
-          "text": "A local privilege escalation to root via an exploitable service?Doesn&#x27;t Linux have one of these CVEs...each week?",
-          "time": 1776321004
-        }
-      ]
-    },
-    {
-      "id": 47747770,
-      "title": "The paper computer",
-      "url": "https://jsomers.net/blog/the-paper-computer",
-      "score": 141,
-      "by": "jsomers",
-      "time": 1776056268,
-      "descendants": 29,
-      "comments": [
-        {
-          "id": 47790668,
-          "by": "cjs_ac",
-          "text": "&gt; Now that we have actually good AI, I have this vision of a form of computing that doesn’t involve me using a computer so much. Imagine you had the day’s emails to go through. It would be nice if the ones that required a simple decision could be dispatched with a few pen-strokes: I could write down a date that would work for that meeting; check a box to accept that invitation; etc.This reminds me of those predictions from 1900 about the year 2000, when they thought we&#x27;d all live in enormous skyscrapers and get around by flying cars. Instead we moved out to suburbs because improved logistics systems meant we could buy things from suburban shopping centres rather than having to go into city centres. Revolution, not evolution.Surely the real advantage of an &#x27;actually good AI&#x27; would be getting the AI to do the work itself, rather than just allowing the work to be done in a format with which the human is more comfortable. The underlying problem is that there are too many things vying for our attention.",
-          "time": 1776331482
-        },
-        {
-          "id": 47788736,
-          "by": "pugio",
-          "text": "Paper Computing (great name!) is something I&#x27;ve been thinking about a lot to help my kids benefit from tech without exposing them to the brain melting addiction of screens. I sacrificed a few crazy nights of sleep to try to build a Paper Computer Agent prototype for a recent Gemini hackathon (only to disappointingly have submission issues right before the actual deadline) which my kids loved and keep asking me to set up permanently for them.It&#x27;s essentially a poor man&#x27;s hacked up DynamicLand - projector, camera, live agent. There are so many things you could do if you had a strong working baseline for this. My kids used it to create stories, learn how to draw various things, and watching safe videos they could hold in their hand.There&#x27;s something weirdly compelling and delightfully physical about holding a piece of paper that shows a live rocket launch, with the flames streaming down the page. It could also project targeted pieces of text, such as inline homework advice, or graphs next to data. It doesn&#x27;t take long to imagine any other number of fun use cases, and it feels a lot more freeing and inspiring than keeping everything bound to a screen.Github - https:&#x2F;&#x2F;github.com&#x2F;Pugio&#x2F;Orly (hacky minimal prototype that did the thing)Video Pitch - https:&#x2F;&#x2F;youtu.be&#x2F;-9l1x7GnmxU (filmed an hour before the deadline on an old phone with no sleep)",
-          "time": 1776314685
-        },
-        {
-          "id": 47788549,
-          "by": "azhenley",
-          "text": "Reminds me of Paper Website from the Tiny Projects series, discussed back in 2021.https:&#x2F;&#x2F;daily.tinyprojects.dev&#x2F;paper_websitehttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=29550812",
-          "time": 1776312484
-        },
-        {
-          "id": 47789384,
-          "by": "gobdovan",
-          "text": "Mandatory RealTalk&#x2F;Dynamicland mention [0] [1][0] https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=7wa3nm0qcfM\n[1] https:&#x2F;&#x2F;dynamicland.org&#x2F;",
-          "time": 1776320918
-        },
-        {
-          "id": 47788634,
-          "by": "charlieboardman",
-          "text": "Receive email, render page with the email and a reply section and a unique ID, print it out physicallyHuman picks up all the sheets out of the printer, writes out replies with penHuman puts the stack of answered email sheets in a multi-page scannerScanner physically scans them, agent transcribes them and matches them back to the incoming emails via the unique ID on each sheet, sends repliesYou could adjust this flow for anything where human input is just one part of a larger sequence: just add print -&gt; write -&gt; scan into your flow where you&#x27;d normally have a human type. It&#x27;s kind of a rebirth of faxing",
-          "time": 1776313396
-        }
-      ]
-    },
-    {
-      "id": 47769089,
-      "title": "Cybersecurity looks like proof of work now",
-      "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
-      "score": 397,
-      "by": "dbreunig",
-      "time": 1776190094,
-      "descendants": 145,
-      "comments": [
-        {
-          "id": 47785275,
-          "by": "somesortofthing",
-          "text": "There&#x27;s still the question of access to the codebase. By all accounts, the best LLM cyber scanning approaches are really primitive - it&#x27;s just a bash script that goes through every single file in the codebase and, for each one and runs a &quot;find the vulns here&quot; prompt. The attacker usually has even less access than this - in the beginning, they have network tools, an undocumented API, and maybe some binaries.You can do a lot better efficiency-wise if you control the source end-to-end though - you already group logically related changes into PRs, so you can save on scanning by asking the LLM to only look over the files you&#x27;ve changed. If you&#x27;re touching security-relevant code, you can ask it for more per-file effort than the attacker might put into their own scanning. You can even do the big bulk scans an attacker might on a fixed schedule - each attacker has to run their own scan while you only need to run your one scan to find everything they would have. There&#x27;s a massive cost asymmetry between the &quot;hardening&quot; phase for the defender and the &quot;discovering exploits&quot; phase for the attacker.Exploitability also isn&#x27;t binary: even if the attacker is better-resourced than you, they need to find a whole chain of exploits in your system, while you only need to break the weakest link in that chain.If you boil security down to just a contest of who can burn more tokens, defenders get efficiency advantages only the best-resourced attackers can overcome. On net, public access to mythos-tier models will make software more secure.",
-          "time": 1776287443
-        },
-        {
-          "id": 47785461,
-          "by": "j2kun",
-          "text": "The article heavily quotes the &quot;AI Security Institute&quot; as a third-party analysis. It was the first I heard of them, so I looked up their about page, and it appears to be primarily people from the AI industry (former Deepmind&#x2F;OpenAI staff, etc.), with no folks from the security industry mentioned. So while the security landscape is clearly evolving (cf. also Big Sleep and Project Zero), the conclusion of &quot;to harden a system we need to spend more tokens&quot; sounds like yet more AI boosting from a different angle. It raises the question of why no other alternatives (like formal verification) are mentioned in the article or the AISI report.I wouldn&#x27;t be surprised if NVIDIA picked up this talking point to sell more GPUs.",
-          "time": 1776288353
-        },
-        {
-          "id": 47785203,
-          "by": "nostrademons",
-          "text": "Relevant Tony Hoare quote: “There are two approaches to software design: make it so simple there are obviously no deficiencies, or make it so complex there are no obvious deficiencies”.",
-          "time": 1776287075
-        },
-        {
-          "id": 47785458,
-          "by": "jzelinskie",
-          "text": "Security has always been a game of just how much money your adversary is willing to commit. The conclusions drawn in lots of these articles are just already well understood systems design concepts, but for some reason people are acting like they are novel or that LLMs have changed anything besides the price.For example from this article:&gt; Karpathy: Classical software engineering would have you believe that dependencies are good (we’re building pyramids from bricks), but imo this has to be re-evaluated, and it’s why I’ve been so growingly averse to them, preferring to use LLMs to “yoink” functionality when it’s simple enough and possible.Anyone who&#x27;s heard of &quot;leftpad&quot; or is a Go programmer (&quot;A little copying is better than a little dependency&quot; is literally a &quot;Go Proverb&quot;) knows this.Another recent set of posts to HN had a company close-sourcing their code for security, but &quot;security through obscurity&quot; has been a well understand fallacy in open source circles for decades.",
-          "time": 1776288348
-        },
-        {
-          "id": 47787695,
-          "by": "creatonez",
-          "text": "I mostly agree with the article.&gt; You don’t get points for being cleverNot sure about this framing, this can easily lead to the wrong conclusions. There is an arms race, yes, and defenders are going to need to spend a lot of GPU hours as a result. But it seems self-evident that the fundamentals of cybersecurity still matter a lot, and you still win by being clever. For the foreseeable future, security posture is still going to be a reflection of human systems. Human systems that are under enormous stress, but are still fundamentally human. You win by getting your security culture in order to produce (and continually reproduce) the most resilient defense that masters both the craft and the human element, not just by abandoning human systems in favor of brute forcing security problems away as your only strategy.Indeed, domains that are truly security critical will acquire this organizational discipline (what&#x27;s required is the same type of discipline that the nuclear industry acquires after a meltdown, or that the aviation industry acquires after plane crashes), but it will be a bumpy ride.This article from exactly 1 year ago is almost prophetic to exactly what&#x27;s going on right now and the subtle ways in which people are most likely to misunderstand the situation: https:&#x2F;&#x2F;knightcolumbia.org&#x2F;content&#x2F;ai-as-normal-technology",
-          "time": 1776304045
-        }
-      ]
-    },
-    {
-      "id": 47788818,
-      "title": "Moving a large-scale metrics pipeline from StatsD to OpenTelemetry / Prometheus",
-      "url": "https://medium.com/airbnb-engineering/building-a-high-volume-metrics-pipeline-with-opentelemetry-and-vmagent-c714d6910b45",
-      "score": 31,
-      "by": "jmarbach",
-      "time": 1776315665,
-      "descendants": 8,
-      "comments": [
-        {
-          "id": 47789313,
-          "by": "dig1",
-          "text": "&gt; The irony is that this may be a $0 revenue user for Grafana Labs.Why is that ironic? Since Mimir is open-source, $0 revenue users are expected. AFAIK, Grafana Labs relies heavily on go, typescript, and linux, without necessarily being their top financial contributor. They could have kept Mimir proprietary like Splunk, but whether that would have attracted the same level of adoption or community contribution is another matter.",
-          "time": 1776320160
-        },
-        {
-          "id": 47789492,
-          "by": "codeduck",
-          "text": "&gt; given Prometheus’s widespread adoption and proven reliability in diverse environments.I have used Prometheus a lot.  Reliable is not a word I would associate with it.",
-          "time": 1776321934
-        },
-        {
-          "id": 47789420,
-          "by": "jameson",
-          "text": "Curious why the team choose Grafana Mirmir over VM cluster?",
-          "time": 1776321337
-        },
-        {
-          "id": 47789415,
-          "by": "awoimbee",
-          "text": "Directly emitting metrics using OTLP instead of having the OTel receiver scrape the metrics endpoint is interesting.\nI never made that move because the Prometheus metrics endpoint works and is so simple, and it&#x27;s what most projects (eg kubernetes) use.",
-          "time": 1776321310
-        }
-      ]
-    },
-    {
-      "id": 47788633,
-      "title": "A Look into NaviDial, Japan's Legacy Phone Service",
-      "url": "https://www.tokyodev.com/articles/a-look-into-navidial-japan-s-legacy-phone-service",
-      "score": 41,
-      "by": "pwim",
-      "time": 1776313376,
+      "id": 47803844,
+      "title": "Ada, Its Design, and the Language That Built the Languages",
+      "url": "https://www.iqiipi.com/the-quiet-colossus.html",
+      "score": 19,
+      "by": "mpweiher",
+      "time": 1776415898,
       "descendants": 4,
       "comments": [
         {
-          "id": 47790621,
-          "by": "freetime2",
-          "text": "I ran into this recently with ANA (All Nippon Airways). [1] There’s no better way to kill customer loyalty than to make than make someone wait 30+ minutes holding on a charged phone call to make a basic change to a reservation that should be possible on the website (they also refuse to handle reservation-specific inquiries over email).[1] https:&#x2F;&#x2F;www.ana.co.jp&#x2F;en&#x2F;jp&#x2F;guide&#x2F;contact&#x2F;international&#x2F;inte...",
-          "time": 1776331215
+          "id": 47804020,
+          "by": "timschmidt",
+          "text": "It&#x27;d be a neat trick to have a single unified language which could bridge the gap between software and hardware description languages.",
+          "time": 1776417819
         },
         {
-          "id": 47789471,
-          "by": "rtpg",
-          "text": "Was kinda curious about the pricing and honestly the pricing[0] seems like one digit less than I expected. 10k JPY for the number, then 1k JPY per some of the various options (stuff like routing seems to be literally &quot;we set up a phone tree and at the end of the phone tree we just dial a number you give us&quot;)So it sounds like in the end you need to pay 10k JPY per queue + an extra bit of money to wire it all together. Maybe with Twilio you can set up something similarly fire-and-forget but &quot;I explain to Docomo once how to set up my phone tree&quot; sounds nicer than &quot;I set up a twilio... thingy&quot;.I&#x27;m sure somebody out there has at least considered being the layer over Twilio that just offers some of these straightforward services... but... toll-free numbers on Twilio cost 27 cents a minute in Japan. Sounds real close to that 33 yen.[1][0]: https:&#x2F;&#x2F;www.ntt.com&#x2F;business&#x2F;services&#x2F;voice-video&#x2F;freedial-n...[1]: https:&#x2F;&#x2F;www.twilio.com&#x2F;en-us&#x2F;voice&#x2F;pricing&#x2F;jp",
-          "time": 1776321712
-        },
-        {
-          "id": 47789432,
-          "by": "jjmarr",
-          "text": "If the suicide prevention hotline cost $15&#x2F;hr in the USA people would freak out! But since it&#x27;s Japan it&#x27;s whatever.",
-          "time": 1776321458
-        },
-        {
-          "id": 47789465,
-          "by": "Jamesbeam",
-          "text": "Just wanted to leave a comment that I really enjoy reading the articles about how the Japanese solve or create infrastructure problems for their ageing conservative society posted on here the past few weeks.Also read a very interesting piece about the railway system the other day. \nThank you for providing a valuable perspective I wouldn’t get access to otherwise and also proposing possible solutions and practical advise for your fellow citizens. Keep up the good work.",
-          "time": 1776321682
+          "id": 47803908,
+          "by": "turtleyacht",
+          "text": "The next language ought to ensure memory-safe conditions across the network.",
+          "time": 1776416552
         }
       ]
     },
     {
-      "id": 47738673,
-      "title": "Fast and Easy Levenshtein distance using a Trie (2011)",
-      "url": "https://stevehanov.ca/blog/fast-and-easy-levenshtein-distance-using-a-trie",
-      "score": 54,
-      "by": "sebg",
-      "time": 1775995243,
-      "descendants": 6,
+      "id": 47793411,
+      "title": "Claude Opus 4.7",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "score": 1742,
+      "by": "meetpateltech",
+      "time": 1776349430,
+      "descendants": 1254,
       "comments": [
         {
-          "id": 47789532,
-          "by": "dvh",
-          "text": "I made myself plugin that shows new news in wikipedia&#x27;s current event page and I was using levenshtein originally (they often edit couple of words in article over span of few days so I compare each new article with previous ones for similarity) but after few days it became too slow (~20s) because O(m*n), so I switched to sorensen-dice instead which is O(m+n) and it&#x27;s much faster and works very similar way, even tho they do slightly different thing.",
-          "time": 1776322300
+          "id": 47794768,
+          "by": "simonw",
+          "text": "I&#x27;m finding the &quot;adaptive thinking&quot; thing very confusing, especially having written code against the previous thinking budget &#x2F; thinking effort &#x2F; etc modes: https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;build-with-claude&#x2F;adapti...Also notable: 4.7 now defaults to NOT including a human-readable reasoning token summary in the output, you have to add &quot;display&quot;: &quot;summarized&quot; to get that: https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;build-with-claude&#x2F;adapti...(Still trying to get a decent pelican out of this one but the new thinking stuff is tripping me up.)",
+          "time": 1776353516
         },
         {
-          "id": 47789717,
-          "by": "kelseydh",
-          "text": "I needed a fuzzy string matching algorithm for finding best name matches among a candidate list. Considered Normalized Levenshtein Distance but ended up using Jaro-Winkler.  I&#x27;m curious if anybody has good resources on when to use each fuzzy string matching algorithm and when.",
-          "time": 1776323802
+          "id": 47802834,
+          "by": "EmanuelB",
+          "text": "I can&#x27;t notice any difference to 4.6 from 3 weeks ago, except that this model burns way more tokens, and produces much longer plans. To me it seem like this model is just the same as 4.6 but with a bigger token budget on all effort levels. I guess this is one way how Anthropic plans to make their business profitable.During the past weeks of lobotomized opus, I tried a few different open weight models side by side with &quot;opus 4.6&quot; on the same issue. The open weights outperformed opus 4.6, and did it way faster and cheaper. I tried the same problem against Opus 4.7 today and it did manage to find one additional edge case that is not critical, but should be logged. So based on my experience, the open weight models managed to solve the exact problem I needed fixed, while Opus 4.7 seem to think a bit more freely at the bigger picture. However Opus 4.7 also consumed way more tokens at a higher price, so the price difference was 10-20x higher on Opus compared to the open weights models. I will use Opus for code review and minor final fixes, and let the open weights models do the heavy lifting from now on. I need a coding setup I can rely on, and clearly Anthropic is not reliable enough to rely on.Why pay 200$ to randomly get rug-pulled with no warning, when I can pay 20$ for 90% of the intelligence with reliable and higher performance?",
+          "time": 1776405328
         },
         {
-          "id": 47789987,
-          "by": "localhoster",
-          "text": "This article surface every once in a while, and I love it.\nWhat the author suggests is very clever.\nI have implemented an extended version of that in Go as an experiment.\nInstead of using a trie, I used a radix tree.\nFunctions the same, but it&#x27;s much more compressed (and faster).",
-          "time": 1776326006
+          "id": 47794908,
+          "by": "johnmlussier",
+          "text": "They&#x27;ve increased their cybersecurity usage filters to the point that Opus 4.7 refuses to work on any valid work, even after web fetching the program guidelines itself and acknowledging &quot;This is authorized research under the [Redacted] Bounty program, so the findings here are defensive research outputs, not malware. I&#x27;ll analyze and draft, not weaponize anything beyond what&#x27;s needed to prove the bug to [Redacted].I will immediately switch over to Codex if this continues to be an issue. I am new to security research, have been paid out on several bugs, but don&#x27;t have a CVE or public talk so they are ready to cut me out already.Edit: these changes are also retroactive to Opus 4.6. I am stuck using Sonnet until they approve me or make a change.",
+          "time": 1776353934
         },
         {
-          "id": 47789387,
-          "by": "fergie",
-          "text": "Very cool and satisfying.",
-          "time": 1776320954
+          "id": 47794755,
+          "by": "lanyard-textile",
+          "text": "This comment thread is a good learner for founders; look at how much anguish can be put to bed with just a little honest communication.1. Oops, we&#x27;re oversubscribed.2. Oops, adaptive reasoning landed poorly &#x2F; we have to do it for capacity reasons.3. Here&#x27;s how subscriptions work. Am I really writing this bullet point?As someone with a production application pinned on Opus 4.5, it is extremely difficult to tell apart what is code harness drama and what is a problem with the underlying model. It&#x27;s all just meshed together now without any further details on what&#x27;s affected.",
+          "time": 1776353476
         },
         {
-          "id": 47789917,
-          "by": "gregman1",
-          "text": "2011",
-          "time": 1776325431
+          "id": 47803755,
+          "by": "hirako2000",
+          "text": "I can understand the wishes to make LLMs even more self driven. After all that&#x27;s the idea of a lose prompt. No matter how short, LLM figures out what most users are expecting. Thanks to RLHL it accomplishes wonders.My desire though is to be able to steer the model exactly where I want. Assuming token cost isn&#x27;t an issue, it doesn&#x27;t remove the need for costly review. I would rather think first and polish up my ability to provide input.I do not want an LLM to deep think, in most cases. Why not letting me disable deep thinking altogether. That&#x27;s where engineers are likely heading: control.",
+          "time": 1776414890
         }
       ]
     },
     {
-      "id": 47750486,
-      "title": "Too much discussion of the XOR swap trick",
-      "url": "https://heather.cafe/posts/too_much_xor_swap_trick/",
-      "score": 47,
-      "by": "CJefferson",
-      "time": 1776079342,
+      "id": 47796469,
+      "title": "Codex for almost everything",
+      "url": "https://openai.com/index/codex-for-almost-everything/",
+      "score": 870,
+      "by": "mikeevans",
+      "time": 1776359539,
+      "descendants": 442,
+      "comments": [
+        {
+          "id": 47796658,
+          "by": "cjbarber",
+          "text": "My current expectation is that the Cowork&#x2F;Codex set of &quot;professional agents&quot; for non-technical users will be one of the most important and fastest growing product categories of all time, so far.i.e. agents for knowledge workers who are not software engineersA few thoughts and questions:1. I expect that this set of products will be extremely disruptive to many software businesses. It&#x27;s like when a new VP joins a company, they often rip and replace some of the software vendors with their personal favorites. Well, most software was designed for human users. Now, peoples&#x27; agents will use software for them. Agents have different needs for software than humans do. Some they&#x27;ll need more of, much they&#x27;ll no longer need at all. What will this result in? It feels like a much swifter and more significant version of Google taking excerpts&#x2F;summaries from webpages and putting it at the top of search results and taking away visits and ad revenue from sites.2. I&#x27;ve tried dozens of products in this space. For most, onboarding is confusing, then the user gets dropped into a blank space, usage limits are uncompetitive compared to the subsidized tokens offered by OpenAI&#x2F;Anthropic, etc. It&#x27;s a tough space to compete in, but also clearly going to be a massive market. I&#x27;m expecting big investment from Microsoft, Google etc in this segment.3. How will startups in this space compete against labs who can train models to fit their products?4. Eventually will the UI&#x2F;interface be generated&#x2F;personalized for the user, by the model? Presumably. Harnesses get eaten by model-generated harnesses?A few more thoughts collected here: https:&#x2F;&#x2F;chrisbarber.co&#x2F;professional-agents&#x2F;Products I&#x27;ve tried: ai browsers like dia, comet, claude for chrome, atlas, and dex; claw products like openclaw, kimi claw, klaus, viktor, duet, atris; automation things like tasklet and lindy; code agents like devin, claude code, cursor, codex; desktop automation tools like vercept, nox, liminary, logical, and raycast; and email products like shortwave, cora and jace. And of course, Claude Cowork, Codex cli and app, and Claude Code cli and app.Edit: Notes on trying the new Codex update1. The permissions workflow is very slick2. Background browser testing is nice and the shadow cursor is an interesting UI element. It did do some things in the foreground for me &#x2F; take control of focus, a few times, though.3. It would be nice if the apps had quick ways to demo their new features. My workflow was to ask an LLM to read the update page and ask it what new things I could test, and then to take those things and ask Codex to demo them to me, but it doesn&#x27;t quite understand it&#x27;s own new features well enough to invoke them (without quite a bit of steering)4. I cannot get it to show me the in app browser5. Generating image mockups of websites and then building them is nice",
+          "time": 1776360295
+        },
+        {
+          "id": 47804002,
+          "by": "ookblah",
+          "text": "pretty much you have to build for humans as the &quot;source&quot; of truth and then have a robust agentic surface if you want to survive as a company.  after using linear (for ex.) u can really see how it all fits together, i can be in cli, co-workers in slack, cowork, whatever and update tasks from anywhere).  i refuse to use shit where i have to context switch by going into an app now. posthog is another good example of where it&#x27;s going. the dirty detail now is that you HAVE to have the actual app so you can still manually look at data and do operations.",
+          "time": 1776417652
+        },
+        {
+          "id": 47796645,
+          "by": "daviding",
+          "text": "There seems a fair enthusiasm in the UI of these to hide code from coders. Like the prompt interaction is the true source and the actual code is some sort of annoying intermediate runtime inconvenience to cover up. I get that productivity can be improved with a lot of this for non developers, just not sure using &#x27;code&#x27; as the term is the right one or not.",
+          "time": 1776360234
+        },
+        {
+          "id": 47798076,
+          "by": "jampekka",
+          "text": "Lots of scepticism here, but I think this may really take off. After 25 years of heavy CLI use, lately I&#x27;ve found myself using codex (in terminal) for terminal tasks I&#x27;ve previously done using CLI commands.If someone manages to make a robust GUI version of this for normies, people will lap it up. People don&#x27;t want to juggle applications, we want computers to do what we want&#x2F;need them to do.",
+          "time": 1776366679
+        },
+        {
+          "id": 47803549,
+          "by": "ymolodtsov",
+          "text": "Tried it out. It&#x27;s a far more reasonable UI than Claude Desktop at this moment. Anthropic has to catch up and finally properly merge the three tabs they have.The killer feature of any of these assistants, if you&#x27;re a manager, is asking to review your email, Slack, Notion, etc several times a day to highlight the items where you need to engage right away. Of course, if your company allows the connectors to do so.Codex is pretty seamless right now and even after they cut on their 5-hr limits their $20 plan is still a little bit more generous.I&#x27;d still say that Claude models are superior and just offer good opinionated defaults.",
+          "time": 1776412797
+        }
+      ]
+    },
+    {
+      "id": 47803323,
+      "title": "FIM – Linux framebuffer image viewer",
+      "url": "https://www.nongnu.org/fbi-improved/",
+      "score": 32,
+      "by": "Mr_Minderbinder",
+      "time": 1776410446,
+      "descendants": 14,
+      "comments": [
+        {
+          "id": 47803752,
+          "by": "lrvick",
+          "text": "You can also use mplayer with &quot;-fp&quot; to play video on the frambuffer as well.I have gone weeks at a time without using a graphical desktop at all thanks to these tools.",
+          "time": 1776414812
+        },
+        {
+          "id": 47803938,
+          "by": "anthk",
+          "text": "I think this came with fbgs too; and fbpdf2 it&#x27;s a better fbpdf (no more slow GhostScript convertings), it just calls poppler&#x2F;MuPDF libraries.",
+          "time": 1776416928
+        },
+        {
+          "id": 47803494,
+          "by": "sylware",
+          "text": "Should it be DRM nowdays?",
+          "time": 1776412180
+        },
+        {
+          "id": 47803605,
+          "by": "mnkylikeskbd",
+          "text": "Related to this are the (rather poorly named) kitty terminals graphics protocol: https:&#x2F;&#x2F;sw.kovidgoyal.net&#x2F;kitty&#x2F;graphics-protocol&#x2F; Yeah it is playful and all, but telling your colleagues to use &quot;kitty&quot; doesn&#x27;t sound very professional. You might disagree with this, but that doesn&#x27;t change the overall perception and general take in corporate world.",
+          "time": 1776413453
+        }
+      ]
+    },
+    {
+      "id": 47755261,
+      "title": "A Python Interpreter Written in Python",
+      "url": "https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
+      "score": 59,
+      "by": "xk3",
+      "time": 1776101150,
+      "descendants": 15,
+      "comments": [
+        {
+          "id": 47803762,
+          "by": "blueybingo",
+          "text": "the article glosses over something worth pausing on: the `getattr` trick for dispatching instructions (replacing the big if-elif chain) is actaully a really elegant pattern that shows up in a lot of real interpreters and command dispatchers, not just toy ones -- worth studying that bit specifically if you&#x27;re building anything with extensible command sets.",
+          "time": 1776414976
+        },
+        {
+          "id": 47802838,
+          "by": "anitil",
+          "text": "Oooh it&#x27;s a bytecode interpreter! I was wondering how they&#x27;d fit a parser&#x2F;tokenizer in 500 lines unless the first was `import tokenizer, parser`. And it looks like 1500ish lines according to tokeiI think because python is a stack-based interpreter this is a really great way to get some exposure to how it works if you&#x27;re not too familiar with C. A nice project!",
+          "time": 1776405387
+        },
+        {
+          "id": 47802798,
+          "by": "tekknolagi",
+          "text": "See also https:&#x2F;&#x2F;github.com&#x2F;nedbat&#x2F;byterun and https:&#x2F;&#x2F;github.com&#x2F;rocky&#x2F;x-python",
+          "time": 1776404923
+        },
+        {
+          "id": 47803417,
+          "by": "woadwarrior01",
+          "text": "aka A Metacircular Interpreter",
+          "time": 1776411354
+        },
+        {
+          "id": 47803803,
+          "by": "andltsemi3",
+          "text": "&quot;Yaw dog I heard you liked python, so I put python in your python so you can interpret python while you interpret python&quot;",
+          "time": 1776415330
+        }
+      ]
+    },
+    {
+      "id": 47772725,
+      "title": "CadQuery is an open-source Python library for building 3D CAD models",
+      "url": "https://cadquery.github.io/",
+      "score": 137,
+      "by": "gregsadetsky",
+      "time": 1776208839,
       "descendants": 25,
       "comments": [
         {
-          "id": 47790199,
-          "by": "pjc50",
-          "text": "The fun bit is right at the start when the author notices that the compiler spots this and optimizes it away.We didn&#x27;t get into the deeper question of benchmarking it vs. a three-register swap, because I suspect the latter would be handled entirely by register renaming and end up being faster due to not requiring allocation of an ALU unit. Difficult to benchmark that because in order for it to make a difference, you&#x27;d need to surround it with other arithmetic instructions.A meta question is why this persists. It has the right qualities for a &quot;party trick&quot;: slightly esoteric piece of knowledge, not actually that hard to understand when you do know about it, but unintuitive enough that most people don&#x27;t spontaneously reinvent it.See also: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fast_inverse_square_root , which requires a bit more maths.The other classic use of XOR - cursor overdrawing - has also long since gone away. It used to be possible to easily draw a cursor on a monochrome display by XORing it in, then to move it you simply XOR it again, restoring the original image.",
-          "time": 1776327755
+          "id": 47804029,
+          "by": "fxff",
+          "text": "At the time of writing this there are 24 comments, of which 4 promote alternatives. I feel that recently the number of shameless plugs and check-out-my-SaaS&#x27;s surged drasticallyhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803846\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803475\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47802988\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803416",
+          "time": 1776417938
         },
         {
-          "id": 47790223,
-          "by": "danhau",
-          "text": "&gt; Are there other XOR tricks?Yes, error correction.You have some packets of data a, b, c. Add one additional packet z that is computed as z = a ^ b ^ c. Now whenever one of a, b or c gets corrupted or lost, it can be reconstructed by computing the XOR of all the others.So if b is lost: b = a ^ c ^ z. This works for any packet, but only one. If multiple are lost, this will fail.There are way better error correction algorithms, but I like the simplicity of this one.",
-          "time": 1776328002
+          "id": 47802173,
+          "by": "gcr",
+          "text": "Here&#x27;s an example!I recently used their sister library (build123d, same devs) to build a rotary slide rule bracelet for multiplying three-digit numbers. It was a great experience and wouldn&#x27;t generally be easy to do with Fusion 360. My bracelet gets quite a lot of comments when I wear it in public. :-)Here&#x27;s an IPython notebook with lots of pictures so you can see how the different operations come together: https:&#x2F;&#x2F;github.com&#x2F;gcr&#x2F;sliderule-bracelet&#x2F;blob&#x2F;main&#x2F;version-...build123d is quite different stylistically from cadquery, but this should give you the flavor of programming-oriented CAD at least.",
+          "time": 1776396351
         },
         {
-          "id": 47789548,
-          "by": "gobdovan",
-          "text": "The XOR trick is only cool in its undefined-behavior form:a^=b^=a^=b;Which allegedly saves you 0.5 seconds of typing in competitive programming competitions from 20 years ago and is known to work reliably (on MinGW under Windows XP).Bonus authenticity: use `a^=a` to zero a register in a single x86 instruction (and makes a real difference for compiler toolchains 30+ years old).For real now, a very useful application of XOR is its relation to the Nim game [0], which comes in very handy if you need to save your village from an ancient disgruntled Chinese emperor.[0] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Nim",
-          "time": 1776322422
+          "id": 47803846,
+          "by": "maouida",
+          "text": "CadQuery was an inspiration when I built FluidCAD. I wanted the workflow to be as close to traditional CAD as possible with more interactive UI.https:&#x2F;&#x2F;fluidcad.io",
+          "time": 1776415905
         },
         {
-          "id": 47789289,
-          "by": "mmozeiko",
-          "text": "xor swap trick was useful in older simd (sse1&#x2F;sse2) when based on some condition you want to swap values or not:  tmp = (a ^ b) &amp; mask\n  a ^= tmp\n  b ^= tmp\n\nIf mask = 0xfff...fff then a&#x2F;b will be swapped, otherwise if mask = 0 then they&#x27;ll remain the same.",
-          "time": 1776319873
+          "id": 47802049,
+          "by": "hgoel",
+          "text": "CadQuery and build123d have been very handy for prototyping stuff for 3d printing. AI still isn&#x27;t quite good enough to generate correct scripts, but AI autocomplete at least helps with putting together small snippets.My last project involved making a cosplay helmet. I modeled the shell in blender, it was a low poly design, so I exported it to an OBJ, then put together some Python to load the OBJ, give the triangles some configurable thickness etc. Then I used it to explore how to print the helmet in such a way that the outer surface would be too clean to tell it&#x27;s FDM printed, without needing to do any sanding.Initially I explored having cadquery put a number on the back of each triangle and I&#x27;d assemble it like a puzzle, but that didn&#x27;t work out. Eventually I figured out how to cut it up into parts that would also eliminate the need for painting and outer surfaces would be clean, and because it was in code, changing which part a triangle belonged to was a matter of moving the corresponding index into another list.I probably could&#x27;ve managed it all in blender too, but being much more comfortable with code, it was easier for me to play with normals and manually turning each piece into a solid.I also go for it for functional designs because, again, tweaking code is more comfortable to me than dealing with constraints and sketches and multiple planes in, say, FreeCAD.",
+          "time": 1776394937
         },
         {
-          "id": 47790276,
-          "by": "fuglede_",
-          "text": "The XOR swap trick also features in the compilation&#x2F;synthesis of quantum algorithms, where the XOR instruction (in the form of a CNOT gate) is fundamental in many architectures, and where native swapping need not be available.One extension that I ran into, and which I think forms a nice problem is the following:Just like the XOR swap trick can be used to swap to variables (and let&#x27;s just say that they&#x27;re bools), it can be extended to implement any permutation of the variables: suppose that the permutation is written as a composition of  n transpositions (i.e., swaps of pairs), and that  is the minimal number of transpositions that let&#x27;s you do that. Each transposition can be implemented by 3 XORs, by the XOR swap trick for pairs, and so the full permutation can be implemented by 3n XORs. Now here&#x27;s the question: Is it possible to come up with a way of doing it with less than 3n, or can we find a permutation that has a shortcut through XOR-land (not allowing any other kinds of instructions)? In other words, is XOR-swapping XOR-optimal?I&#x27;m not going to spoil it, but only last year a paper was published in the quantum information literature that contains an answer [0]. I ended up making a little game where you get to play around with XOR-optimizing not only permutations, but general linear reversible circuits. [1][0] https:&#x2F;&#x2F;link.springer.com&#x2F;article&#x2F;10.1007&#x2F;s11128-025-04831-5[1] https:&#x2F;&#x2F;swapple.fuglede.dk",
-          "time": 1776328317
+          "id": 47803475,
+          "by": "jetter",
+          "text": "If you like this, you should definitely check modelrift.com which allows to build awesome cad models thanks to OpenSCAD and smart AI assistant.Community built examples:\nhttps:&#x2F;&#x2F;modelrift.com&#x2F;models",
+          "time": 1776411986
+        }
+      ]
+    },
+    {
+      "id": 47759436,
+      "title": "30 Years of HPC: many hardware advances, little adoption of new languages",
+      "url": "https://chapel-lang.org/blog/posts/30years/",
+      "score": 49,
+      "by": "matt_d",
+      "time": 1776123958,
+      "descendants": 13,
+      "comments": [
+        {
+          "id": 47803489,
+          "by": "jandrewrogers",
+          "text": "I can easily explain this, having worked in this space. The new languages don’t actually solve any urgent problems.How people imagine scalable parallelism works and how it actually works doesn’t have a lot of overlap. The code is often boringly single-threaded because that is optimal for performance.The single biggest resource limit in most HPC code is memory bandwidth. If you are not addressing this then you are not addressing a real problem for most applications. For better or worse, C++ is really good at optimizing for memory bandwidth. Most of the suggested alternative languages are not.It is that simple. The new languages address irrelevant problems. It is really difficult to design a language that is more friendly to memory bandwidth than C++. And that is the resource you desperately need to optimize for in most cases.",
+          "time": 1776412153
+        },
+        {
+          "id": 47803715,
+          "by": "jpecar",
+          "text": "All these fancy HPC languages are all nice and dandy, but the hard reality I see on our cluster is that most of the work is done in Python, R and even Perl and awk. MPI barely reached us and people still prefer huge single machines to proper distributed computing. Yeah, bioinformatics is from another planet.",
+          "time": 1776414521
+        },
+        {
+          "id": 47803430,
+          "by": "riffraff",
+          "text": "Perhaps one issue lacking discussion in the article is how easy it is to find devs?I&#x27;ve never worked in HPC but it seems it should be relatively simple to find a C&#x2F;C++ dev that can pick up OpenMP, or one that already knows it, compared to hiring people who know Chapel.The &quot;scaling down&quot; factor (how easy or interesting it is to use tool X for small use) seems a disadvantage of HPC-only languages, which creates a barrier to entry and a reduction in available workforce.",
+          "time": 1776411495
+        },
+        {
+          "id": 47803609,
+          "by": "swiftcoder",
+          "text": "It&#x27;s interesting that none of the actor-based languages ever made it into this space. Feels like something with the design philosophy of Erlang would be pretty suitable to exploit millions of cores and a variety of interconnects...",
+          "time": 1776413495
+        }
+      ]
+    },
+    {
+      "id": 47801255,
+      "title": "Show HN: SPICE simulation → oscilloscope → verification with Claude Code",
+      "url": "https://lucasgerads.com/blog/lecroy-mcp-spice-demo/",
+      "score": 75,
+      "by": "_fizz_buzz_",
+      "time": 1776386267,
+      "descendants": 15,
+      "comments": [
+        {
+          "id": 47802093,
+          "by": "iterateoften",
+          "text": "Beware. I had Claude code with opus building boards and using spice simulations. It completely hallucinated the capabilities of the board and made some pretty crazy claims like I had just stumbled onto the secret hardware billion dollar project that every home needed.None of the boards worked and I had to just do the project in codex. Opus seemed too busy congratulating itself to realize it produced gibberish.",
+          "time": 1776395592
+        },
+        {
+          "id": 47803911,
+          "by": "walski",
+          "text": "&gt; SPICE (Simulation Program with Integrated Circuit Emphasis) is a general-purpose, open-source analog electronic circuit simulator. [1]1: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SPICE",
+          "time": 1776416624
+        },
+        {
+          "id": 47802265,
+          "by": "Scene_Cast2",
+          "text": "I&#x27;ve found that having LLMs work with mermaid diagrams makes describing and modifying circuits less annoying.",
+          "time": 1776397336
+        },
+        {
+          "id": 47802550,
+          "by": "andrewklofas",
+          "text": "Hit this exact wall six months back building Claude Code stuff for KiCad review[1]. First pass let Claude read .kicad_sch directly via grep&#x2F;read. It happily invented pin numbers that didn&#x27;t exist. Rewrote it with Python analyzers that spit out JSON, now Claude just reads the JSON, problem mostly went away.Curious how spicelib-mcp handles models that aren&#x27;t in the bundled library. Do you pass the .lib path as a tool arg, or does the server own a registry?[1] https:&#x2F;&#x2F;github.com&#x2F;aklofas&#x2F;kicad-happy",
+          "time": 1776401648
+        },
+        {
+          "id": 47803108,
+          "by": "kleene_op",
+          "text": "Really nice. My mother is an applied Physics teacher, and she told me they had a hard time at work figuring out how they could connect their teaching material to LLM in a relevant way. This should be useful to her.",
+          "time": 1776408160
+        }
+      ]
+    },
+    {
+      "id": 47800033,
+      "title": "Guy builds AI driven hardware hacker arm from duct tape, old cam and CNC machine",
+      "url": "https://github.com/gainsec/autoprober",
+      "score": 172,
+      "by": "scaredpelican",
+      "time": 1776376597,
+      "descendants": 37,
+      "comments": [
+        {
+          "id": 47800675,
+          "by": "Animats",
+          "text": "Interesting. Not clear what it really does. The hardware is an oscilloscope probe on a 3-axis CNC mechanism. That&#x27;s called a &quot;flying probe&quot;, and you can buy one.[1]Fine. But what does the AI do? It &quot;ingests the project&quot;, but what does that mean?\nFinding all the pins? That&#x27;s a start. Using a SPICE model to figure out what should be on each pin, and checking? Now that would be impressive. Probably something in between.The usual use for this sort of thing is that you probe a known-good board to find out what voltages and signals appear where, and then compare with newly manufactured boards. That&#x27;s a common production check.There&#x27;s potential here. If the AI has some concept of what the board under test is doing, and can diagnose problems, that&#x27;s quite useful.[1] https:&#x2F;&#x2F;huntron.com&#x2F;products&#x2F;access2.htm",
+          "time": 1776380834
+        },
+        {
+          "id": 47801098,
+          "by": "uSoldering",
+          "text": "It’s hard to imagine anyone wanting this to be real more than I do, but this is nowhere close to being ready to do actual work. Photographing real PCBs is hard, there is no fiducial maths, no actual probing is being done. It&#x27;s just photos of a photo being piped into an agent. If it actually did what it claims, no reasonable person would exclude it from the demo video.https:&#x2F;&#x2F;gainsec.com&#x2F;2026&#x2F;04&#x2F;16&#x2F;autoprober&#x2F;",
+          "time": 1776384821
+        },
+        {
+          "id": 47802953,
+          "by": "kuizu",
+          "text": "A similar concept, but with multiple probes at the same time, was published in this blog series as open source hard- and software:\nhttps:&#x2F;&#x2F;www.schutzwerk.com&#x2F;en&#x2F;blog&#x2F;proboter-01&#x2F;\nThey explain some of the use cases in this demo video https:&#x2F;&#x2F;youtu.be&#x2F;TYEjZA-xbGo?is=osWXCrBkLOi4JHxO",
+          "time": 1776406600
+        },
+        {
+          "id": 47800616,
+          "by": "Havoc",
+          "text": "Can&#x27;t say I fully understand it but this certainly smells like someone is getting hired off a single github repo as CV",
+          "time": 1776380418
+        },
+        {
+          "id": 47803711,
+          "by": "lrvick",
+          "text": "This looks super useful, but I wish authors could stop doing these silly &quot;source available&quot; plays.Instead of donating to a project one has to buy GPU time to convert it to FOSS.",
+          "time": 1776414469
+        }
+      ]
+    },
+    {
+      "id": 47797665,
+      "title": "Android CLI: Build Android apps 3x faster using any agent",
+      "url": "https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html",
+      "score": 232,
+      "by": "ingve",
+      "time": 1776364799,
+      "descendants": 86,
+      "comments": [
+        {
+          "id": 47804008,
+          "by": "hansmayer",
+          "text": "&gt; 3x fasterBecause the real bottleneck is really the velocity of development, right next to keeping the codebase small - right guys?",
+          "time": 1776417688
+        },
+        {
+          "id": 47802214,
+          "by": "anabis",
+          "text": "The install command shown for Windows is 404.`curl -fsSL https:&#x2F;&#x2F;dl.google.com&#x2F;android&#x2F;cli&#x2F;latest&#x2F;windows_x86_64&#x2F;inst... | bash`The URL shown for individual OSs work, but the script errors for me.`curl.exe -fsSL https:&#x2F;&#x2F;dl.google.com&#x2F;android&#x2F;cli&#x2F;latest&#x2F;windows_x86_64&#x2F;inst... -o &quot;%TEMP%\\i.cmd&quot; &amp;&amp; &quot;%TEMP%\\i.cmd&quot;`I manually downloaded the exe, but it say socket error.\nvibe coding is going strong!",
+          "time": 1776396759
+        },
+        {
+          "id": 47800405,
+          "by": "whstl",
+          "text": "I wish the same thing existed for Apple.Everything I do for macOS&#x2F;iOS is already without Xcode but it&#x27;s a pain in the ass to keep up with changes, and there are things I haven&#x27;t figured out yet (like AUv3).",
+          "time": 1776379050
+        },
+        {
+          "id": 47802089,
+          "by": "hemc4",
+          "text": "Wow. Thanks for this update. It streamlined a lot of tasks.Apart from this, next step will be to add suport for building android apps on the android phones itself. No desktop needed.Building on the laptop with agents and installing the build in the phone and testing doea not seem AI native. If everything can run on my android phone, development cycle will speed up.",
+          "time": 1776395503
+        },
+        {
+          "id": 47803200,
+          "by": "wiseowise",
+          "text": "Android Studio on its deathbed. Just release VSCode plugin and kill it for good, it has been a buggy, slow mess for the last 3 years or so.",
+          "time": 1776409085
         }
       ]
     }
