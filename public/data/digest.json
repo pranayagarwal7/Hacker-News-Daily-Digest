@@ -1,384 +1,360 @@
 {
-  "date": "2026-04-17",
-  "fetchedAt": "2026-04-17T09:26:35.239Z",
+  "date": "2026-04-18",
+  "fetchedAt": "2026-04-18T09:00:24.910Z",
   "posts": [
     {
-      "id": 47803844,
-      "title": "Ada, Its Design, and the Language That Built the Languages",
-      "url": "https://www.iqiipi.com/the-quiet-colossus.html",
-      "score": 19,
-      "by": "mpweiher",
-      "time": 1776415898,
-      "descendants": 4,
+      "id": 47813668,
+      "title": "Category Theory Illustrated – Orders",
+      "url": "https://abuseofnotation.github.io/category-theory-illustrated/04_order/",
+      "score": 46,
+      "by": "boris_m",
+      "time": 1776494447,
+      "descendants": 9,
       "comments": [
         {
-          "id": 47804020,
-          "by": "timschmidt",
-          "text": "It&#x27;d be a neat trick to have a single unified language which could bridge the gap between software and hardware description languages.",
-          "time": 1776417819
+          "id": 47814095,
+          "by": "dgan",
+          "text": "I think it is pretty obvious that at the challenge with all abstract mathematics in general and the category theory in particular isnt the fact that people dont understand what a &quot;linear order&quot; is, but the fact it is so distant from daily routine that it seems completely pointless. It&#x27;s like pouring water over pefectly smooth glass",
+          "time": 1776499259
         },
         {
-          "id": 47803908,
-          "by": "turtleyacht",
-          "text": "The next language ought to ensure memory-safe conditions across the network.",
-          "time": 1776416552
+          "id": 47814082,
+          "by": "arketyp",
+          "text": "There is a way to frame category theory such that it&#x27;s all just arrows -- by associating the identity arrow (which all objects have by definition) with the object itself. In a sense, the object is syntactic sugar.",
+          "time": 1776499151
+        },
+        {
+          "id": 47814213,
+          "by": "gobdovan",
+          "text": "Unless there&#x27;s some idiosyncratic meaning for the `=&gt;`, the Antisymmetry one basically says `Orange -&gt; Yellow =&gt; Yellow -&#x2F;&gt; Orange`. The diagram is not acurate. The prose is very imprecise. &quot;It also means that no ties are permitted - either I am better than my grandmother at soccer or she is better at it than me.&quot; NO. Antisymmetry doesn&#x27;t exclude `x = y`. Ties are permitted in the equality case. Antisymmetry for a non-strict order says that if both directions hold, the two elements must in fact be the same element. The author is describing strict comparison or total comparability intuition, not antisymmetry.",
+          "time": 1776500765
+        },
+        {
+          "id": 47814278,
+          "by": "somewhereoutth",
+          "text": "The first 90% of this is standard set theory.I&#x27;m unclear what the last 10% of &#x27;category theory&#x27; gives us.",
+          "time": 1776501706
         }
       ]
     },
     {
-      "id": 47793411,
-      "title": "Claude Opus 4.7",
-      "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "score": 1742,
+      "id": 47813566,
+      "title": "Amiga Graphics",
+      "url": "https://amiga.lychesis.net/",
+      "score": 37,
+      "by": "sph",
+      "time": 1776493204,
+      "descendants": 1,
+      "comments": [
+        {
+          "id": 47814293,
+          "by": "Rob_Polding",
+          "text": "This brought back some memories. So nice to see art from an era where you really needed talent to be able to produce it. Such a nice contrast to the AI slop which takes no talent to produce!",
+          "time": 1776501854
+        }
+      ]
+    },
+    {
+      "id": 47812341,
+      "title": "Show HN: I made a calculator that works over disjoint sets of intervals",
+      "url": "https://victorpoughon.github.io/interval-calculator/",
+      "score": 140,
+      "by": "fouronnes3",
+      "time": 1776474943,
+      "descendants": 22,
+      "comments": [
+        {
+          "id": 47812435,
+          "by": "fouronnes3",
+          "text": "Author here. Outward rounding to combat precision issues is what interval arithmetic is most known for (try 0.1+0.2 with &quot;full precision mode&quot; enabled), but that&#x27;s really a shame in my opinion. Outward rounding is cool, but the &quot;inclusion property&quot;, as it&#x27;s known in research papers, works at every scale! This is what enables things like:     50 * (10 + [-1, 1])\n    [450, 550]\n\nwhich is lovely, I think. Adding the union layer to it enables even cooler things, like the true inverse of the square function. Did you know it&#x27;s not sqrt? Try &#x27;sqinv(64)&#x27;.I made interval calculator actually mostly as a way to test my implementation of interval union arithmetic [0], which I needed for another project: a backwards updating spreadsheet [1][2].[0] https:&#x2F;&#x2F;github.com&#x2F;victorpoughon&#x2F;not-so-float[1] https:&#x2F;&#x2F;victorpoughon.github.io&#x2F;bidicalc&#x2F;[2] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46234734",
+          "time": 1776476112
+        },
+        {
+          "id": 47814275,
+          "by": "akst",
+          "text": "Very cool! I don&#x27;t entirely understand some of the operations, but for what I do understand its pretty neat.I wish in classes we were introduced to a notion of arithmetic on intervals as it comes up. Like in basic statistics with confidence intervals there&#x27;s ±, as well as in the quadratic equation. It found some what dissatisfying we couldn&#x27;t chain the resulting a series of operations and instead repeat the operations for the 2 seperate values of the ±. I get a teacher would rather not get hung up on this because they want to bring it back to the application generally, like solving a more complicated equation or hypothesis testing in basic stats. I just wish they hinted at the idea we can do arithmetic on these kinds of things more generally.I realise what you&#x27;ve got here is well beyond this, but seeing this was some level of validation that treating the interval as a piece of data with its own behaviour of certain operations does make some sense.",
+          "time": 1776501668
+        },
+        {
+          "id": 47813296,
+          "by": "iamwil",
+          "text": "This is great. You might be interested in Matt Keeter&#x27;s work on Implicit surfaces, and using interval math for its optimization:https:&#x2F;&#x2F;youtu.be&#x2F;UxGxsGnbyJ4?si=Oo6Lmc4ACaSr5Dk6&amp;t=1006",
+          "time": 1776488928
+        },
+        {
+          "id": 47813354,
+          "by": "memalign",
+          "text": "You might be interested in this graphing calculator I made using interval arithmetic:https:&#x2F;&#x2F;memalign.github.io&#x2F;m&#x2F;formulagraph&#x2F;index.htmlSome detail on how this works, including links to the relevant interval math code:https:&#x2F;&#x2F;memalign.github.io&#x2F;p&#x2F;formulagraph.html",
+          "time": 1776489672
+        },
+        {
+          "id": 47813477,
+          "by": "_Microft",
+          "text": "Very nice, thanks for sharing!\nMaybe show which upper or lower values are included in the intervals?\nA notation I am familiar with uses outward facing brackets if the value is not included in the interval. That always applies to infinity.Applied to the cases here:]-∞, -1] U [0.5, +∞[The excluded interval in between becomes ]-1, 0.5[ then.That’s how min (and analogously max) works, right?\nmin(A, B) = [lo(A,B), lo (hi(A), hi(B))].Edit: idea: copy a formula from the results section to the input field if the user clicks&#x2F;taps on it.",
+          "time": 1776491608
+        }
+      ]
+    },
+    {
+      "id": 47806725,
+      "title": "Claude Design",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "score": 1030,
       "by": "meetpateltech",
-      "time": 1776349430,
-      "descendants": 1254,
+      "time": 1776438249,
+      "descendants": 671,
       "comments": [
         {
-          "id": 47794768,
-          "by": "simonw",
-          "text": "I&#x27;m finding the &quot;adaptive thinking&quot; thing very confusing, especially having written code against the previous thinking budget &#x2F; thinking effort &#x2F; etc modes: https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;build-with-claude&#x2F;adapti...Also notable: 4.7 now defaults to NOT including a human-readable reasoning token summary in the output, you have to add &quot;display&quot;: &quot;summarized&quot; to get that: https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;build-with-claude&#x2F;adapti...(Still trying to get a decent pelican out of this one but the new thinking stuff is tripping me up.)",
-          "time": 1776353516
+          "id": 47807009,
+          "by": "ljm",
+          "text": "I reckon something like this has only been possible to develop because of how homogenous the internet has become in terms of design ever since the glass effect and drop-shadows took over in Web 2.0 and Twitter Bootstrap entered the scene.You&#x27;ll get a competent UI with little effort but nothing truly unique or mind-blowing.Impressive technology, but that old skool artisanal weirdness of yore only becomes more valuable and nostalgic.",
+          "time": 1776439796
         },
         {
-          "id": 47802834,
-          "by": "EmanuelB",
-          "text": "I can&#x27;t notice any difference to 4.6 from 3 weeks ago, except that this model burns way more tokens, and produces much longer plans. To me it seem like this model is just the same as 4.6 but with a bigger token budget on all effort levels. I guess this is one way how Anthropic plans to make their business profitable.During the past weeks of lobotomized opus, I tried a few different open weight models side by side with &quot;opus 4.6&quot; on the same issue. The open weights outperformed opus 4.6, and did it way faster and cheaper. I tried the same problem against Opus 4.7 today and it did manage to find one additional edge case that is not critical, but should be logged. So based on my experience, the open weight models managed to solve the exact problem I needed fixed, while Opus 4.7 seem to think a bit more freely at the bigger picture. However Opus 4.7 also consumed way more tokens at a higher price, so the price difference was 10-20x higher on Opus compared to the open weights models. I will use Opus for code review and minor final fixes, and let the open weights models do the heavy lifting from now on. I need a coding setup I can rely on, and clearly Anthropic is not reliable enough to rely on.Why pay 200$ to randomly get rug-pulled with no warning, when I can pay 20$ for 90% of the intelligence with reliable and higher performance?",
-          "time": 1776405328
+          "id": 47808004,
+          "by": "Growtika",
+          "text": "For my agency this won&#x27;t replace Figma or designers. It&#x27;s just a really useful tool to express yourself and communicate intent.Before these tools, when a client wanted a specific section built, we&#x27;d spend hours hunting references across the web. The output always ended up feeling like a mesh of 2-3 sites, never fully unique. Then we&#x27;d burn more time explaining the intent to the client&#x27;s designers and devs, usually with multiple rounds because words don&#x27;t convey layout well.Now we throw a quick mockup together in Claude or Lovable and send it. The designer gets the idea in 30 seconds instead of a 45-minute call, then pushes it further with their own taste and the client&#x27;s branding.It&#x27;s not replacing designers. Most clients don&#x27;t know what they want until they see it. These tools collapse that feedback loop from weeks to minutes, so the designer actually spends their time on the parts that need human taste, not on decoding a vague brief.",
+          "time": 1776445084
         },
         {
-          "id": 47794908,
-          "by": "johnmlussier",
-          "text": "They&#x27;ve increased their cybersecurity usage filters to the point that Opus 4.7 refuses to work on any valid work, even after web fetching the program guidelines itself and acknowledging &quot;This is authorized research under the [Redacted] Bounty program, so the findings here are defensive research outputs, not malware. I&#x27;ll analyze and draft, not weaponize anything beyond what&#x27;s needed to prove the bug to [Redacted].I will immediately switch over to Codex if this continues to be an issue. I am new to security research, have been paid out on several bugs, but don&#x27;t have a CVE or public talk so they are ready to cut me out already.Edit: these changes are also retroactive to Opus 4.6. I am stuck using Sonnet until they approve me or make a change.",
-          "time": 1776353934
+          "id": 47807224,
+          "by": "GenerWork",
+          "text": "If you look at Figmas stock price, it started falling right at 11 AM as this news was released.Anyways, this is 100% a shot at Figma, but also catching Lovable in the crossfire. If anybody from Anthropic is reading this, if you keep developing this with features in Figma and other design tools, you&#x27;ll have a major hit on your hands.",
+          "time": 1776440934
         },
         {
-          "id": 47794755,
-          "by": "lanyard-textile",
-          "text": "This comment thread is a good learner for founders; look at how much anguish can be put to bed with just a little honest communication.1. Oops, we&#x27;re oversubscribed.2. Oops, adaptive reasoning landed poorly &#x2F; we have to do it for capacity reasons.3. Here&#x27;s how subscriptions work. Am I really writing this bullet point?As someone with a production application pinned on Opus 4.5, it is extremely difficult to tell apart what is code harness drama and what is a problem with the underlying model. It&#x27;s all just meshed together now without any further details on what&#x27;s affected.",
-          "time": 1776353476
+          "id": 47808702,
+          "by": "pilgrim0",
+          "text": "On Notes on the Synthesis of Form, Alexander defines design as the rationalization of the forces that define a problem. You’ll won’t find a better definition. But people tend to think design is the synthesis and its results. This misunderstanding of the role of design and the designer is responsible for all the unfit designs we encounter on a daily basis. Anyone equipped with a synthesis tool and feeling empowered to quickly and cheaply generate forms will almost inevitably become blind to the very nature of the underlying problems they set to solve. They’ll be fitting the problem to the available forms. They’ll skip the understanding, the conversations, the conflicts and disagreements, and happily and wrongly assume a design problem can be solved hermetically, in isolation. They’ll think quality is a factor of aesthetics, when in truth, aesthetics is an effect; nevertheless these effects is all they’ll have control over, as it’s all the tool can do. The tool will hinder their ability to be rational; to see the inner structures; to find the hidden but essential semantics; to create the ontologies that’ll support not only the immediate synthesis, but that will sustain the evolution of the design over its lifetime. They’ll be denied the enlightenment that comes with gradual, slow construction; the only place and moment where innovative ideas reveal themselves. They’ll be impoverished and confuse output with agency. I feel sorry for anyone that will think using tools equals doing design, because of the truly marvelous human experiences that they’ll miss, and that could never be replaced by the shallow pride of empty achievement.",
+          "time": 1776448789
         },
         {
-          "id": 47803755,
-          "by": "hirako2000",
-          "text": "I can understand the wishes to make LLMs even more self driven. After all that&#x27;s the idea of a lose prompt. No matter how short, LLM figures out what most users are expecting. Thanks to RLHL it accomplishes wonders.My desire though is to be able to steer the model exactly where I want. Assuming token cost isn&#x27;t an issue, it doesn&#x27;t remove the need for costly review. I would rather think first and polish up my ability to provide input.I do not want an LLM to deep think, in most cases. Why not letting me disable deep thinking altogether. That&#x27;s where engineers are likely heading: control.",
-          "time": 1776414890
+          "id": 47807406,
+          "by": "martinald",
+          "text": "Interesting! I wrote this approach up (more or less - extract design system -&gt; make templates -&gt; export) some time ago and I&#x27;ve found it unbelievably powerful: https:&#x2F;&#x2F;martinalderson.com&#x2F;posts&#x2F;how-to-make-great-looking-c....I use it all day every day with Claude Code. I sometimes wonder past code if this has had the biggest impact on my day to day productivity, either having to make do with semi-bad looking reports or have a designer design them (which is slow).Sort of feel sorry for Figma in a way though, given all the &quot;partnerships&quot; (highlighting their MCPs) and case studies they&#x27;ve done with Anthropic and then they release this. I note there isn&#x27;t a testimonial from them this time.I&#x27;m surprised how poorly Figma have used &quot;AI&quot; in general - given they were the &quot;gold standard&quot; in taking emerging technologies (WASM etc) and making an incredible product. The Figma Make thing was incredibly underwhelming, I managed to extract the system prompt out and it&#x27;s basically just Gemini 3 Pro with a design prompt. Perhaps the original team has left?They are extremely exposed imo. While all the UI&#x2F;UX designers will continue using it for the forseeable, I strongly suspect a lot of their (A&#x2F;M)RR was coming from extra seats for PMs, developers, etc to view and export and do commenting on the files - not core designer usage. I think a lot of this just won&#x27;t happen on Figma as much.",
+          "time": 1776441850
         }
       ]
     },
     {
-      "id": 47796469,
-      "title": "Codex for almost everything",
-      "url": "https://openai.com/index/codex-for-almost-everything/",
-      "score": 870,
-      "by": "mikeevans",
-      "time": 1776359539,
-      "descendants": 442,
+      "id": 47807006,
+      "title": "Measuring Claude 4.7's tokenizer costs",
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "score": 602,
+      "by": "aray07",
+      "time": 1776439776,
+      "descendants": 428,
       "comments": [
         {
-          "id": 47796658,
-          "by": "cjbarber",
-          "text": "My current expectation is that the Cowork&#x2F;Codex set of &quot;professional agents&quot; for non-technical users will be one of the most important and fastest growing product categories of all time, so far.i.e. agents for knowledge workers who are not software engineersA few thoughts and questions:1. I expect that this set of products will be extremely disruptive to many software businesses. It&#x27;s like when a new VP joins a company, they often rip and replace some of the software vendors with their personal favorites. Well, most software was designed for human users. Now, peoples&#x27; agents will use software for them. Agents have different needs for software than humans do. Some they&#x27;ll need more of, much they&#x27;ll no longer need at all. What will this result in? It feels like a much swifter and more significant version of Google taking excerpts&#x2F;summaries from webpages and putting it at the top of search results and taking away visits and ad revenue from sites.2. I&#x27;ve tried dozens of products in this space. For most, onboarding is confusing, then the user gets dropped into a blank space, usage limits are uncompetitive compared to the subsidized tokens offered by OpenAI&#x2F;Anthropic, etc. It&#x27;s a tough space to compete in, but also clearly going to be a massive market. I&#x27;m expecting big investment from Microsoft, Google etc in this segment.3. How will startups in this space compete against labs who can train models to fit their products?4. Eventually will the UI&#x2F;interface be generated&#x2F;personalized for the user, by the model? Presumably. Harnesses get eaten by model-generated harnesses?A few more thoughts collected here: https:&#x2F;&#x2F;chrisbarber.co&#x2F;professional-agents&#x2F;Products I&#x27;ve tried: ai browsers like dia, comet, claude for chrome, atlas, and dex; claw products like openclaw, kimi claw, klaus, viktor, duet, atris; automation things like tasklet and lindy; code agents like devin, claude code, cursor, codex; desktop automation tools like vercept, nox, liminary, logical, and raycast; and email products like shortwave, cora and jace. And of course, Claude Cowork, Codex cli and app, and Claude Code cli and app.Edit: Notes on trying the new Codex update1. The permissions workflow is very slick2. Background browser testing is nice and the shadow cursor is an interesting UI element. It did do some things in the foreground for me &#x2F; take control of focus, a few times, though.3. It would be nice if the apps had quick ways to demo their new features. My workflow was to ask an LLM to read the update page and ask it what new things I could test, and then to take those things and ask Codex to demo them to me, but it doesn&#x27;t quite understand it&#x27;s own new features well enough to invoke them (without quite a bit of steering)4. I cannot get it to show me the in app browser5. Generating image mockups of websites and then building them is nice",
-          "time": 1776360295
+          "id": 47807499,
+          "by": "louiereederson",
+          "text": "LLMs exist on a logaritmhic performance&#x2F;cost frontier. It&#x27;s not really clear whether Opus 4.5+ represent a level shift on this frontier or just inhabits place on that curve which delivers higher performance, but at rapidly diminishing returns to inference cost.To me, it is hard to reject this hypothesis today. The fact that Anthropic is rapidly trying to increase price may betray the fact that their recent lead is at the cost of dramatically higher operating costs. Their gross margins in this past quarter will be an important data point on this.I think the tendency for graphs of model assessment to display the log of cost&#x2F;tokens  on the x axis (i.e. Artificial Analysis&#x27; site) has obscured this dynamic.",
+          "time": 1776442381
         },
         {
-          "id": 47804002,
-          "by": "ookblah",
-          "text": "pretty much you have to build for humans as the &quot;source&quot; of truth and then have a robust agentic surface if you want to survive as a company.  after using linear (for ex.) u can really see how it all fits together, i can be in cli, co-workers in slack, cowork, whatever and update tasks from anywhere).  i refuse to use shit where i have to context switch by going into an app now. posthog is another good example of where it&#x27;s going. the dirty detail now is that you HAVE to have the actual app so you can still manually look at data and do operations.",
-          "time": 1776417652
+          "id": 47810256,
+          "by": "tabbott",
+          "text": "I find it interesting that folks are so focused on cost for AI models. Human time spent redirecting AI coding agents towards better strategies and reviewing work, remains dramatically more expensive than the token cost for AI coding, for anything other than hobby work (where you&#x27;re not paying for the human labor). $200&#x2F;month is an expensive hobby, but it&#x27;s negligible as a business expense; SalesForce licenses cost far more.The key question is how well it a given model does the work, which is a lot harder to measure. But I think token costs are still an order of magnitude below the point where a US-based developer using AI for coding should be asking questions about price; at current price points, the cost&#x2F;benefit question is dominated by what makes the best use of your limited time as an engineer.",
+          "time": 1776457937
         },
         {
-          "id": 47796645,
-          "by": "daviding",
-          "text": "There seems a fair enthusiasm in the UI of these to hide code from coders. Like the prompt interaction is the true source and the actual code is some sort of annoying intermediate runtime inconvenience to cover up. I get that productivity can be improved with a lot of this for non developers, just not sure using &#x27;code&#x27; as the term is the right one or not.",
-          "time": 1776360234
+          "id": 47807766,
+          "by": "_pdp_",
+          "text": "IMHO there is a point where incremental model quality will hit diminishing returns.It is like comparing an 8K display to a 16K display because at normal viewing distance, the difference is imperceptible, but 16K comes at significant premium.The same applies to intelligence. Sure, some users might register a meaningful bump, but if 99% can&#x27;t tell the difference in their day-to-day work, does it matter?A 20-30% cost increase needs to deliver a proportional leap in perceivable value.",
+          "time": 1776443671
         },
         {
-          "id": 47798076,
-          "by": "jampekka",
-          "text": "Lots of scepticism here, but I think this may really take off. After 25 years of heavy CLI use, lately I&#x27;ve found myself using codex (in terminal) for terminal tasks I&#x27;ve previously done using CLI commands.If someone manages to make a robust GUI version of this for normies, people will lap it up. People don&#x27;t want to juggle applications, we want computers to do what we want&#x2F;need them to do.",
-          "time": 1776366679
+          "id": 47808371,
+          "by": "speedgoose",
+          "text": "The &quot;multiplier&quot; on Github Copilot went from 3 to 7.5. Nice to see that it is actually only 20-30% and Microsoft wanting to lose money slightly slower.https:&#x2F;&#x2F;docs.github.com&#x2F;fr&#x2F;copilot&#x2F;reference&#x2F;ai-models&#x2F;suppo...",
+          "time": 1776446865
         },
         {
-          "id": 47803549,
-          "by": "ymolodtsov",
-          "text": "Tried it out. It&#x27;s a far more reasonable UI than Claude Desktop at this moment. Anthropic has to catch up and finally properly merge the three tabs they have.The killer feature of any of these assistants, if you&#x27;re a manager, is asking to review your email, Slack, Notion, etc several times a day to highlight the items where you need to engage right away. Of course, if your company allows the connectors to do so.Codex is pretty seamless right now and even after they cut on their 5-hr limits their $20 plan is still a little bit more generous.I&#x27;d still say that Claude models are superior and just offer good opinionated defaults.",
-          "time": 1776412797
+          "id": 47807974,
+          "by": "namnnumbr",
+          "text": "The title is a misdirection. The token counts may be higher, but the cost-per-task may not be for a given intelligence level.  Need to wait to see Artificial Analysis&#x27; Intelligence Index run for this, or some other independent per-task cost analysis.The final calculation assumes that Opus 4.7 uses the exact same trajectory + reasoning output as Opus 4.6.\nI have not verified, but I assume it not to be the case, given that Opus 4.7 on Low thinking is strictly better than Opus 4.6 on Medium, etc., etc.",
+          "time": 1776444901
         }
       ]
     },
     {
-      "id": 47803323,
-      "title": "FIM – Linux framebuffer image viewer",
-      "url": "https://www.nongnu.org/fbi-improved/",
-      "score": 32,
-      "by": "Mr_Minderbinder",
-      "time": 1776410446,
-      "descendants": 14,
+      "id": 47788207,
+      "title": "The simple geometry behind any road",
+      "url": "https://sandboxspirit.com/blog/simple-geometry-of-roads/",
+      "score": 19,
+      "by": "azhenley",
+      "time": 1776308990,
+      "descendants": 3,
       "comments": [
         {
-          "id": 47803752,
-          "by": "lrvick",
-          "text": "You can also use mplayer with &quot;-fp&quot; to play video on the frambuffer as well.I have gone weeks at a time without using a graphical desktop at all thanks to these tools.",
-          "time": 1776414812
+          "id": 47814220,
+          "by": "jstanley",
+          "text": "You&#x27;re missing one very important type of curve: a clothoid (or &quot;Euler spiral&quot;) is a curve of continuously-varying radius, these are encountered on roads very frequently. And especially on race circuits.A clothoid is used to connect two lines the same way your fillet is, except instead of just 1 radius it has a radius configured for each end and smoothly changes in between.https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Euler_spiralThey are also used in railways, because on a railway you don&#x27;t have the freedom of moving the car&#x27;s position across the road, so a transition from a straight track to a constant radius would imply an instantaneous step change in centrifugal force, or infinite jerk. Using a clothoid to smooth the change between the straight track and the constant-radius turn means the lateral acceleration increases smoothly instead of instantaneously.",
+          "time": 1776500824
         },
         {
-          "id": 47803938,
-          "by": "anthk",
-          "text": "I think this came with fbgs too; and fbpdf2 it&#x27;s a better fbpdf (no more slow GhostScript convertings), it just calls poppler&#x2F;MuPDF libraries.",
-          "time": 1776416928
+          "id": 47814277,
+          "by": "red_admiral",
+          "text": "And then you have various types of hairpin bend where you actually vary the width of the lanes with the radius: https:&#x2F;&#x2F;www.google.com&#x2F;maps&#x2F;@46.8360535,9.6369913,68m",
+          "time": 1776501693
         },
         {
-          "id": 47803494,
-          "by": "sylware",
-          "text": "Should it be DRM nowdays?",
-          "time": 1776412180
-        },
-        {
-          "id": 47803605,
-          "by": "mnkylikeskbd",
-          "text": "Related to this are the (rather poorly named) kitty terminals graphics protocol: https:&#x2F;&#x2F;sw.kovidgoyal.net&#x2F;kitty&#x2F;graphics-protocol&#x2F; Yeah it is playful and all, but telling your colleagues to use &quot;kitty&quot; doesn&#x27;t sound very professional. You might disagree with this, but that doesn&#x27;t change the overall perception and general take in corporate world.",
-          "time": 1776413453
+          "id": 47814265,
+          "by": "dilberx",
+          "text": "many are yet to catchup",
+          "time": 1776501600
         }
       ]
     },
     {
-      "id": 47755261,
-      "title": "A Python Interpreter Written in Python",
-      "url": "https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
-      "score": 59,
-      "by": "xk3",
-      "time": 1776101150,
-      "descendants": 15,
+      "id": 47778938,
+      "title": "Towards trust in Emacs",
+      "url": "https://eshelyaron.com/posts/2026-04-15-towards-trust-in-emacs.html",
+      "score": 99,
+      "by": "eshelyaron",
+      "time": 1776260955,
+      "descendants": 11,
       "comments": [
         {
-          "id": 47803762,
-          "by": "blueybingo",
-          "text": "the article glosses over something worth pausing on: the `getattr` trick for dispatching instructions (replacing the big if-elif chain) is actaully a really elegant pattern that shows up in a lot of real interpreters and command dispatchers, not just toy ones -- worth studying that bit specifically if you&#x27;re building anything with extensible command sets.",
-          "time": 1776414976
+          "id": 47813194,
+          "by": "accelbred",
+          "text": "The one problem I have with the trusted files thing is that I have no way to trust non-file-visiting buffers. Why is *scratch* untrusted!? *scratch* should always be trusted, without me having to configure anything, ideally. Though a setting to automatically trust non-file-visiting buffers would be nice.\nI just ended up stopping using the scratch buffer because of that issue.",
+          "time": 1776487376
         },
         {
-          "id": 47802838,
-          "by": "anitil",
-          "text": "Oooh it&#x27;s a bytecode interpreter! I was wondering how they&#x27;d fit a parser&#x2F;tokenizer in 500 lines unless the first was `import tokenizer, parser`. And it looks like 1500ish lines according to tokeiI think because python is a stack-based interpreter this is a really great way to get some exposure to how it works if you&#x27;re not too familiar with C. A nice project!",
-          "time": 1776405387
+          "id": 47813400,
+          "by": "quotemstr",
+          "text": "The trust model of Emacs makes no sense. It&#x27;s overly conservative, hurts the development experience, encourages blanket permission granting, and worst of all, sins against logic and lisp themselves.Macro expansion is data transformation. Form in, form out. Most macros are pure functions of their inputs. Even the ones that aren&#x27;t seldom have effects that would allow exploitation. That&#x27;s because a well-written macro does not have side-effects during expansion time, but instead generates code that when itself evaluated, has the desired effect.Yes, in general, for arbitrary values of &quot;macro&quot; and &quot;form&quot;, using a macro to expand a form leads to arbitrary code execution. This much is true. But the risk only manifests when both the macro and its input form are untrusted.The vast majority of macros are dumb pure functions and do not perform dangerous actions on untrusted input. It is safe to use these macros to expand untrusted forms. Doing os would make flymake, find-function, and other features work correctly in most cases. To blanket-prohibit expansion even by macros doing obviously safe transformations is to misunderstand the issue.At a minimum, it must be possible to define a macro and mark it safe for expanding untrusted code. Yes, it&#x27;s prudent to have a whitelist and not a blacklist. Right now, we don&#x27;t even have a whitelist. All macros on any untrusted form are deemed unsafe. That&#x27;s too conservative.Beyond that, it would be safe to run the macro-expander itself in an environment without access to mutating global operations. Since almost all macros are intrinsically safe to expand, we&#x27;d have far fewer situations in which people had subpar development experiences from overly conservative security mitigations.In addition, after I&#x27;ve eval-buffered a buffer, then Emacs should perform macro expansions in this buffer, at least until I revert it from disk. If I have evaled a malicous buffer, I have already accepted its malice into my Emacs and expanding macros for find-function can do no more harm.",
+          "time": 1776490442
         },
         {
-          "id": 47802798,
-          "by": "tekknolagi",
-          "text": "See also https:&#x2F;&#x2F;github.com&#x2F;nedbat&#x2F;byterun and https:&#x2F;&#x2F;github.com&#x2F;rocky&#x2F;x-python",
-          "time": 1776404923
-        },
-        {
-          "id": 47803417,
-          "by": "woadwarrior01",
-          "text": "aka A Metacircular Interpreter",
-          "time": 1776411354
-        },
-        {
-          "id": 47803803,
-          "by": "andltsemi3",
-          "text": "&quot;Yaw dog I heard you liked python, so I put python in your python so you can interpret python while you interpret python&quot;",
-          "time": 1776415330
+          "id": 47813979,
+          "by": "shevy-java",
+          "text": "&quot;Up to version 30, it didn’t differentiate between trusted and untrusted files, and in effect treated all files as trusted.&quot;Age verification aaaaaand Trusted Computing now! \\o&#x2F;(Just kidding - have to point at the question of what trust is exactly. Because I can not accept the &quot;trusted files&quot; claim; I don&#x27;t think anyone can ever trust anything, unless there is some really objective criterium that is unchangeable. But if something is unchangeable, can it be useful for anything? Yes, you can ensure that a calculator would correctly put a given input into the correct output, or a function to do so, but in real calculation this is not the only factor to be guaranteed, not even in quantum computing. What if you manage to influence the calculation process via light&#x2F;laser information or any other means? I can&#x27;t accept the term &quot;trusted&quot; here, because it implies one could and should trust something; that is a similar problem to the term AI - I never could accept that &quot;AI&quot; has anything to do with real intelligence with the given hardware, it is just a simulation of intelligence; pattern matching and recognition only makes it more likely to produce useful results, but that does not imply intelligence at all. It lack true understanding - that is why it has to sniff for data, to improve the mapping of generated output. One can see this on many AI-centric videos on youtube, the AI is often hallucinating and creating videos that are not possible, e. g. suddenly a leg appearing in motion that is twisted in the opposite direction. That shows that the AI does not understand what it is doing. Any human could realise that this is physically just not possible. I see this on cheaper AI videos even more, e. g. chuck norris videos where chuck would kick everyone yet the motions are totally wrong and detached from the &quot;real&quot; scene.)",
+          "time": 1776497995
         }
       ]
     },
     {
-      "id": 47772725,
-      "title": "CadQuery is an open-source Python library for building 3D CAD models",
-      "url": "https://cadquery.github.io/",
-      "score": 137,
-      "by": "gregsadetsky",
-      "time": 1776208839,
-      "descendants": 25,
+      "id": 47808913,
+      "title": "All 12 moonwalkers had \"lunar hay fever\" from dust smelling like gunpowder (2018)",
+      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon",
+      "score": 325,
+      "by": "cybermango",
+      "time": 1776449821,
+      "descendants": 190,
       "comments": [
         {
-          "id": 47804029,
-          "by": "fxff",
-          "text": "At the time of writing this there are 24 comments, of which 4 promote alternatives. I feel that recently the number of shameless plugs and check-out-my-SaaS&#x27;s surged drasticallyhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803846\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803475\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47802988\nhttps:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47803416",
-          "time": 1776417938
+          "id": 47809790,
+          "by": "corysama",
+          "text": "I recall an article from a long time ago that basically said “astronauts report” the moon smells like spent gunpowder and outer space smell like… I think it was ozone.What they were actually reporting was the smell of the airlocks after they returned from their excursions. The moon has no atmosphere, so it has been accumulating dust from billions of years of asteroid impacts that have never come in contact with oxygen. Many of the chemicals in the dust are oxidative and so when it is exposed to air for the first time it rapidly oxidizes just like gunpowder!And I think the outer space report was from space walks, and the explanation was that the first time the airlock itself was exposed to hard vacuum, the surfaces of the airlock would have a reaction that left a scent of ozone.",
+          "time": 1776455103
         },
         {
-          "id": 47802173,
-          "by": "gcr",
-          "text": "Here&#x27;s an example!I recently used their sister library (build123d, same devs) to build a rotary slide rule bracelet for multiplying three-digit numbers. It was a great experience and wouldn&#x27;t generally be easy to do with Fusion 360. My bracelet gets quite a lot of comments when I wear it in public. :-)Here&#x27;s an IPython notebook with lots of pictures so you can see how the different operations come together: https:&#x2F;&#x2F;github.com&#x2F;gcr&#x2F;sliderule-bracelet&#x2F;blob&#x2F;main&#x2F;version-...build123d is quite different stylistically from cadquery, but this should give you the flavor of programming-oriented CAD at least.",
-          "time": 1776396351
+          "id": 47809377,
+          "by": "krunck",
+          "text": "Mars has toxic levels of perchlorates in the regolith. That will require that humans never come in contact with the regolith or things that touched it. Those space suits that dock to vehicles seem like a necessity.https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Perchlorate#On_Mars",
+          "time": 1776452599
         },
         {
-          "id": 47803846,
-          "by": "maouida",
-          "text": "CadQuery was an inspiration when I built FluidCAD. I wanted the workflow to be as close to traditional CAD as possible with more interactive UI.https:&#x2F;&#x2F;fluidcad.io",
-          "time": 1776415905
+          "id": 47809667,
+          "by": "ortusdux",
+          "text": "This is a big perk of the newer lunar rover design, wherein the suits stay outside the vehicle - https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Space_Exploration_Vehicle#Spec...There has been some great research into laser or solar sintering of regolith, and one of my first questions was if the resulting material is safe for humans.https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41598-023-42008-1",
+          "time": 1776454243
         },
         {
-          "id": 47802049,
-          "by": "hgoel",
-          "text": "CadQuery and build123d have been very handy for prototyping stuff for 3d printing. AI still isn&#x27;t quite good enough to generate correct scripts, but AI autocomplete at least helps with putting together small snippets.My last project involved making a cosplay helmet. I modeled the shell in blender, it was a low poly design, so I exported it to an OBJ, then put together some Python to load the OBJ, give the triangles some configurable thickness etc. Then I used it to explore how to print the helmet in such a way that the outer surface would be too clean to tell it&#x27;s FDM printed, without needing to do any sanding.Initially I explored having cadquery put a number on the back of each triangle and I&#x27;d assemble it like a puzzle, but that didn&#x27;t work out. Eventually I figured out how to cut it up into parts that would also eliminate the need for painting and outer surfaces would be clean, and because it was in code, changing which part a triangle belonged to was a matter of moving the corresponding index into another list.I probably could&#x27;ve managed it all in blender too, but being much more comfortable with code, it was easier for me to play with normals and manually turning each piece into a solid.I also go for it for functional designs because, again, tweaking code is more comfortable to me than dealing with constraints and sketches and multiple planes in, say, FreeCAD.",
-          "time": 1776394937
+          "id": 47811048,
+          "by": "mncharity",
+          "text": "&gt; &quot;I think one of the most aggravating, restricting facets of lunar surface exploration is the dust and its adherence to everything no matter what kind of material, whether it be skin, suit material, metal, no matter what it be and its restrictive, friction-like action to everything it gets on [...] the simple large-tolerance mechanical devices on the Rover began to show the effect of dust as the EVAs went on. By the middle or the end of the third EVA, simple things like bag locks and the lock which held the pallet on the Rover began not only to malfunction but to not function at all. They effectively froze. We tried to dust them and bang the dust off and clean them, and there was just no way. The effect of dust on mirrors, cameras, and checklists is phenomenal. You have to live with it but you&#x27;re continually fighting the dust problem both outside and inside the spacecraft. Once you get inside the spacecraft, as much as you dust yourself, you start taking off the suits and you have dust on your hands and your face and you&#x27;re walking in it. You can be as careful in cleaning up as you want to, but it just sort of inhabits every nook and cranny in the spacecraft and every pore in your skin [...]&quot; Eugene Cernan, Apollo 17 debrief[1]An interactive microscope of regolith.[2] Like tiny broken glass, hard as rock, and sticking to everything like static-charged packing peanuts.An old tech memo and paper.[3][4][1] https:&#x2F;&#x2F;an.rsl.wustl.edu&#x2F;apollo&#x2F;data&#x2F;A17&#x2F;resources&#x2F;a17-techd... page &quot;27-28&quot; 258, 50 in pdf. Lots of other mentions of dust.\n[2] interactive microscope of regolith https:&#x2F;&#x2F;virtualmicroscope.org&#x2F;sites&#x2F;default&#x2F;files&#x2F;html5Asset...\n[3] The Effects of Lunar Dust on EVA Systems During the Apollo Missions https:&#x2F;&#x2F;ntrs.nasa.gov&#x2F;api&#x2F;citations&#x2F;20050160460&#x2F;downloads&#x2F;20...\n[4] IMPACT OF DUST ON LUNAR EXPLORATION https:&#x2F;&#x2F;adsabs.harvard.edu&#x2F;pdf&#x2F;2007ESASP.643..239S",
+          "time": 1776462973
         },
         {
-          "id": 47803475,
-          "by": "jetter",
-          "text": "If you like this, you should definitely check modelrift.com which allows to build awesome cad models thanks to OpenSCAD and smart AI assistant.Community built examples:\nhttps:&#x2F;&#x2F;modelrift.com&#x2F;models",
-          "time": 1776411986
+          "id": 47811920,
+          "by": "consumer451",
+          "text": "As a huge space nerd, I would like to point out that space, and other planetary bodies appear to really suck.It seems to be under-reported that the Earth is pretty nice.",
+          "time": 1776470588
         }
       ]
     },
     {
-      "id": 47759436,
-      "title": "30 Years of HPC: many hardware advances, little adoption of new languages",
-      "url": "https://chapel-lang.org/blog/posts/30years/",
-      "score": 49,
-      "by": "matt_d",
-      "time": 1776123958,
+      "id": 47807583,
+      "title": "Spending 3 months coding by hand",
+      "url": "https://miguelconner.substack.com/p/im-coding-by-hand",
+      "score": 202,
+      "by": "evakhoury",
+      "time": 1776442793,
+      "descendants": 201,
+      "comments": [
+        {
+          "id": 47811531,
+          "by": "apricot",
+          "text": "I am this very term teaching 18-year-old students 6502 assembly programming using an emulated Apple II Plus. They&#x27;ve had intro to Python, data structures, and OO programming courses using a modern programming environment.Now, they are programming a chip from the seventies using an editor&#x2F;assembler that was written in 1983 and has a line editor, not a full-screen one.We had a total of 10 hours of class + lab where I taught them about assembly language and told them about the registers, instructions, and addressing modes of the chip, memory map and monitor routines of the Apple, and after that we went and wrote a few programs together, mostly using the low-resolution graphics mode (40x40): a drawing program, a bouncing ball, culminating in hand-rolled sprites with simple collision detection.Their assignment is to write a simple program (I suggested a low-res game like Snake or Tetris but they can do whatever they want provided they tell me about it and I okay it), demo their program, and then explain to the class how it works.At first they hated the line editor. But then a very interesting thing happened. They started thinking about their code before writing it. Planning. Discussing things in advance. Everything we told them they should do before coding in previous classes, but they didn&#x27;t do because a powerful editor was right there so why not use it?...And then they started to get used to the line editor. They told me they didn&#x27;t need to really see the code on the screen, it was in their head.They will of course go back to modern tools after class is finished, but I think it&#x27;s good for them to have this kind of experience.",
+          "time": 1776467061
+        },
+        {
+          "id": 47811182,
+          "by": "AstroBen",
+          "text": "I wish more was being invested in AI autocomplete workflows. That was a nice middle-ground.But yeah my hunch is &quot;the old way&quot; - although not sure we can even call it that - is likely still on par with an &quot;agentic&quot; workflow if you view it through a wider lens. You retain much better knowledge of the codebase. You improve your understanding over coding concepts (active recall is far stronger than passive recognition).",
+          "time": 1776464169
+        },
+        {
+          "id": 47813654,
+          "by": "sph",
+          "text": "This title is the most depressing thing I have read on this site",
+          "time": 1776494309
+        },
+        {
+          "id": 47812405,
+          "by": "temporallobe",
+          "text": "The very first few years of my career I spent writing code (mostly Perl) in vi (not even vim) on a SPARC running Solaris. I bought myself the O’Riley Perl Cookbook and that was pretty much my sole guide apart from the few internet forums that were available at the time. Search engines were still primitive, so getting help when you got stuck was far more difficult. But it forced me to deeply learn a lot of things -  Perl syntax (we had no syntax highlighting, intellisense, etc.)  terminal tools, and especially vi keystrokes. Looking back, there was far less distraction and “noise”, though I admit that could have been the fact that it was the beginning of my career and expectations were lower. I miss those times because now everything feels insanely more layered and complex.",
+          "time": 1776475691
+        },
+        {
+          "id": 47811124,
+          "by": "phaser",
+          "text": "Here’s how i do it: I create a lot of stuff using AI to the max, but I also spend the necessary of time on reviewing that the AI is producing code that passes my cognitive load standards. this involves some tokens spent on grooming code and documenting well. Most of this is effortless thanks to an AGENTS.md based on this: https:&#x2F;&#x2F;github.com&#x2F;zakirullin&#x2F;cognitive-load&#x2F;blob&#x2F;main&#x2F;READM... but i have a good sense of catching when things are getting weird and i steer back.Then, when credits run out. It’s show time! The code is neatly organized, abstractions make sense, comments are helpful so I have a solid ground to do some good old organic human coding. I make sure that when i’m approaching limits I’m asking the AI to set the stage.I used to get frustrated when credits ran out because the AI was making something I would need to study to comprehend. Now I’m eager to the next “brain time hand-out”It sounds weird but it’s a form of teamwork. I have the means to pay for a larger plan but i’d rather keep my brain active.",
+          "time": 1776463698
+        }
+      ]
+    },
+    {
+      "id": 47760135,
+      "title": "Rewriting Every Syscall in a Linux Binary at Load Time",
+      "url": "https://amitlimaye1.substack.com/p/rewriting-every-syscall-in-a-linux",
+      "score": 38,
+      "by": "riteshnoronha16",
+      "time": 1776129966,
       "descendants": 13,
       "comments": [
         {
-          "id": 47803489,
-          "by": "jandrewrogers",
-          "text": "I can easily explain this, having worked in this space. The new languages don’t actually solve any urgent problems.How people imagine scalable parallelism works and how it actually works doesn’t have a lot of overlap. The code is often boringly single-threaded because that is optimal for performance.The single biggest resource limit in most HPC code is memory bandwidth. If you are not addressing this then you are not addressing a real problem for most applications. For better or worse, C++ is really good at optimizing for memory bandwidth. Most of the suggested alternative languages are not.It is that simple. The new languages address irrelevant problems. It is really difficult to design a language that is more friendly to memory bandwidth than C++. And that is the resource you desperately need to optimize for in most cases.",
-          "time": 1776412153
+          "id": 47813923,
+          "by": "jmillikin",
+          "text": "This might be a very dumb question, but if the process is being run under KVM to catch `int 0x03` then couldn&#x27;t you also use KVM to catch `syscall` and execute the original binary as-is? I don&#x27;t understand what value the instruction rewriting is providing here.",
+          "time": 1776497461
         },
         {
-          "id": 47803715,
-          "by": "jpecar",
-          "text": "All these fancy HPC languages are all nice and dandy, but the hard reality I see on our cluster is that most of the work is done in Python, R and even Perl and awk. MPI barely reached us and people still prefer huge single machines to proper distributed computing. Yeah, bioinformatics is from another planet.",
-          "time": 1776414521
+          "id": 47814288,
+          "by": "xelaboi",
+          "text": "You either have a writing style that is uncannily similar to what an LLM generates, or this article was substantially written by an LLM. I don&#x27;t know what it is about the style, but I just find it a bit exhausting, like an overfit on &quot;engaging writing&quot; that strips away sincerity.",
+          "time": 1776501801
         },
         {
-          "id": 47803430,
-          "by": "riffraff",
-          "text": "Perhaps one issue lacking discussion in the article is how easy it is to find devs?I&#x27;ve never worked in HPC but it seems it should be relatively simple to find a C&#x2F;C++ dev that can pick up OpenMP, or one that already knows it, compared to hiring people who know Chapel.The &quot;scaling down&quot; factor (how easy or interesting it is to use tool X for small use) seems a disadvantage of HPC-only languages, which creates a barrier to entry and a reduction in available workforce.",
-          "time": 1776411495
+          "id": 47813766,
+          "by": "coppsilgold",
+          "text": "You mentioned SECCOMP_RET_TRACE, but there is also SECCOMP_RET_TRAP[1] which appears to perform better. There is also KVM. Both of these are options for gVisor: &lt;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;gvisor&gt;[1] &lt;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;gvisor&#x2F;blob&#x2F;master&#x2F;pkg&#x2F;sentry&#x2F;plat...&gt;",
+          "time": 1776495789
         },
         {
-          "id": 47803609,
-          "by": "swiftcoder",
-          "text": "It&#x27;s interesting that none of the actor-based languages ever made it into this space. Feels like something with the design philosophy of Erlang would be pretty suitable to exploit millions of cores and a variety of interconnects...",
-          "time": 1776413495
-        }
-      ]
-    },
-    {
-      "id": 47801255,
-      "title": "Show HN: SPICE simulation → oscilloscope → verification with Claude Code",
-      "url": "https://lucasgerads.com/blog/lecroy-mcp-spice-demo/",
-      "score": 75,
-      "by": "_fizz_buzz_",
-      "time": 1776386267,
-      "descendants": 15,
-      "comments": [
-        {
-          "id": 47802093,
-          "by": "iterateoften",
-          "text": "Beware. I had Claude code with opus building boards and using spice simulations. It completely hallucinated the capabilities of the board and made some pretty crazy claims like I had just stumbled onto the secret hardware billion dollar project that every home needed.None of the boards worked and I had to just do the project in codex. Opus seemed too busy congratulating itself to realize it produced gibberish.",
-          "time": 1776395592
+          "id": 47814010,
+          "by": "ozgrakkurt",
+          "text": "Really informative writing thank you.How secure does this make a binary? For example would you be able to run\nuntrusted binary code inside a browser using a method like this?Then can websites just use C++ instead of javascript for example?",
+          "time": 1776498330
         },
         {
-          "id": 47803911,
-          "by": "walski",
-          "text": "&gt; SPICE (Simulation Program with Integrated Circuit Emphasis) is a general-purpose, open-source analog electronic circuit simulator. [1]1: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SPICE",
-          "time": 1776416624
-        },
-        {
-          "id": 47802265,
-          "by": "Scene_Cast2",
-          "text": "I&#x27;ve found that having LLMs work with mermaid diagrams makes describing and modifying circuits less annoying.",
-          "time": 1776397336
-        },
-        {
-          "id": 47802550,
-          "by": "andrewklofas",
-          "text": "Hit this exact wall six months back building Claude Code stuff for KiCad review[1]. First pass let Claude read .kicad_sch directly via grep&#x2F;read. It happily invented pin numbers that didn&#x27;t exist. Rewrote it with Python analyzers that spit out JSON, now Claude just reads the JSON, problem mostly went away.Curious how spicelib-mcp handles models that aren&#x27;t in the bundled library. Do you pass the .lib path as a tool arg, or does the server own a registry?[1] https:&#x2F;&#x2F;github.com&#x2F;aklofas&#x2F;kicad-happy",
-          "time": 1776401648
-        },
-        {
-          "id": 47803108,
-          "by": "kleene_op",
-          "text": "Really nice. My mother is an applied Physics teacher, and she told me they had a hard time at work figuring out how they could connect their teaching material to LLM in a relevant way. This should be useful to her.",
-          "time": 1776408160
-        }
-      ]
-    },
-    {
-      "id": 47800033,
-      "title": "Guy builds AI driven hardware hacker arm from duct tape, old cam and CNC machine",
-      "url": "https://github.com/gainsec/autoprober",
-      "score": 172,
-      "by": "scaredpelican",
-      "time": 1776376597,
-      "descendants": 37,
-      "comments": [
-        {
-          "id": 47800675,
-          "by": "Animats",
-          "text": "Interesting. Not clear what it really does. The hardware is an oscilloscope probe on a 3-axis CNC mechanism. That&#x27;s called a &quot;flying probe&quot;, and you can buy one.[1]Fine. But what does the AI do? It &quot;ingests the project&quot;, but what does that mean?\nFinding all the pins? That&#x27;s a start. Using a SPICE model to figure out what should be on each pin, and checking? Now that would be impressive. Probably something in between.The usual use for this sort of thing is that you probe a known-good board to find out what voltages and signals appear where, and then compare with newly manufactured boards. That&#x27;s a common production check.There&#x27;s potential here. If the AI has some concept of what the board under test is doing, and can diagnose problems, that&#x27;s quite useful.[1] https:&#x2F;&#x2F;huntron.com&#x2F;products&#x2F;access2.htm",
-          "time": 1776380834
-        },
-        {
-          "id": 47801098,
-          "by": "uSoldering",
-          "text": "It’s hard to imagine anyone wanting this to be real more than I do, but this is nowhere close to being ready to do actual work. Photographing real PCBs is hard, there is no fiducial maths, no actual probing is being done. It&#x27;s just photos of a photo being piped into an agent. If it actually did what it claims, no reasonable person would exclude it from the demo video.https:&#x2F;&#x2F;gainsec.com&#x2F;2026&#x2F;04&#x2F;16&#x2F;autoprober&#x2F;",
-          "time": 1776384821
-        },
-        {
-          "id": 47802953,
-          "by": "kuizu",
-          "text": "A similar concept, but with multiple probes at the same time, was published in this blog series as open source hard- and software:\nhttps:&#x2F;&#x2F;www.schutzwerk.com&#x2F;en&#x2F;blog&#x2F;proboter-01&#x2F;\nThey explain some of the use cases in this demo video https:&#x2F;&#x2F;youtu.be&#x2F;TYEjZA-xbGo?is=osWXCrBkLOi4JHxO",
-          "time": 1776406600
-        },
-        {
-          "id": 47800616,
-          "by": "Havoc",
-          "text": "Can&#x27;t say I fully understand it but this certainly smells like someone is getting hired off a single github repo as CV",
-          "time": 1776380418
-        },
-        {
-          "id": 47803711,
-          "by": "lrvick",
-          "text": "This looks super useful, but I wish authors could stop doing these silly &quot;source available&quot; plays.Instead of donating to a project one has to buy GPU time to convert it to FOSS.",
-          "time": 1776414469
-        }
-      ]
-    },
-    {
-      "id": 47797665,
-      "title": "Android CLI: Build Android apps 3x faster using any agent",
-      "url": "https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html",
-      "score": 232,
-      "by": "ingve",
-      "time": 1776364799,
-      "descendants": 86,
-      "comments": [
-        {
-          "id": 47804008,
-          "by": "hansmayer",
-          "text": "&gt; 3x fasterBecause the real bottleneck is really the velocity of development, right next to keeping the codebase small - right guys?",
-          "time": 1776417688
-        },
-        {
-          "id": 47802214,
-          "by": "anabis",
-          "text": "The install command shown for Windows is 404.`curl -fsSL https:&#x2F;&#x2F;dl.google.com&#x2F;android&#x2F;cli&#x2F;latest&#x2F;windows_x86_64&#x2F;inst... | bash`The URL shown for individual OSs work, but the script errors for me.`curl.exe -fsSL https:&#x2F;&#x2F;dl.google.com&#x2F;android&#x2F;cli&#x2F;latest&#x2F;windows_x86_64&#x2F;inst... -o &quot;%TEMP%\\i.cmd&quot; &amp;&amp; &quot;%TEMP%\\i.cmd&quot;`I manually downloaded the exe, but it say socket error.\nvibe coding is going strong!",
-          "time": 1776396759
-        },
-        {
-          "id": 47800405,
-          "by": "whstl",
-          "text": "I wish the same thing existed for Apple.Everything I do for macOS&#x2F;iOS is already without Xcode but it&#x27;s a pain in the ass to keep up with changes, and there are things I haven&#x27;t figured out yet (like AUv3).",
-          "time": 1776379050
-        },
-        {
-          "id": 47802089,
-          "by": "hemc4",
-          "text": "Wow. Thanks for this update. It streamlined a lot of tasks.Apart from this, next step will be to add suport for building android apps on the android phones itself. No desktop needed.Building on the laptop with agents and installing the build in the phone and testing doea not seem AI native. If everything can run on my android phone, development cycle will speed up.",
-          "time": 1776395503
-        },
-        {
-          "id": 47803200,
-          "by": "wiseowise",
-          "text": "Android Studio on its deathbed. Just release VSCode plugin and kill it for good, it has been a buggy, slow mess for the last 3 years or so.",
-          "time": 1776409085
+          "id": 47814113,
+          "by": "JSR_FDED",
+          "text": "Love the detailed write up, thanks!This is the kind of foundation that I would feel comfortable running agents on. It’s not the whole solution of course (yes agent, you’re allowed to delete this email but not that email can’t be solved at this level)… let me know when you tackle that next :-)",
+          "time": 1776499471
         }
       ]
     }
