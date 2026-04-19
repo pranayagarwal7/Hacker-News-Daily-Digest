@@ -2,7 +2,7 @@
 
 A web app that fetches the top 10 Hacker News posts every morning, commits a clean JSON digest to the repo, and lets you read summaries and ask Gemini questions about today's tech news.
 
-**Live demo:** [https://hn-digest.app](https://hacker-news-daily-digest-m9gt4gzp5-pranayagarwal7s-projects.vercel.app/)
+**Live demo:** [https://hacker-news-daily-digest.vercel.app](https://hacker-news-daily-digest.vercel.app/)
 
 ![HN Daily Digest screenshot](docs/screenshot.png)
 **NOTE:** This is the platform's interface. It updates daily at 8:00 AM UTC
