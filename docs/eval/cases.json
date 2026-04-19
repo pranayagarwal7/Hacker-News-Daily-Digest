@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "category": "representative",
+    "question": "What is the top story today?",
+    "comments_needed": false,
+    "expected_behavior": "Name post #1 with title and score",
+    "rubric": "5=correct title+score cited, 3=correct title only, 1=wrong or hallucinated"
+  },
+  {
+    "id": 2,
+    "category": "representative",
+    "question": "Which post has the highest score?",
+    "comments_needed": false,
+    "expected_behavior": "Identify post with highest score value from context",
+    "rubric": "5=correct post+score, 3=correct post wrong score, 1=wrong post"
+  },
+  {
+    "id": 3,
+    "category": "representative",
+    "question": "What are the main tech themes across today's posts?",
+    "comments_needed": false,
+    "expected_behavior": "Extract 2-4 coherent themes from 10 post titles",
+    "rubric": "5=3+ accurate themes with evidence, 3=themes vague but directionally correct, 1=irrelevant"
+  },
+  {
+    "id": 4,
+    "category": "representative",
+    "question": "What are people saying about AI in the comments?",
+    "comments_needed": true,
+    "expected_behavior": "Summarise comment sentiment on AI-related posts",
+    "rubric": "5=references actual comment text, 3=correct theme but no specifics, 1=hallucinated quotes"
+  },
+  {
+    "id": 5,
+    "category": "representative",
+    "question": "Summarize today's digest in 3 sentences",
+    "comments_needed": false,
+    "expected_behavior": "Concise summary covering main topics without hallucination",
+    "rubric": "5=accurate+concise, 3=accurate but verbose or missing topics, 1=wrong topics"
+  },
+  {
+    "id": 6,
+    "category": "failure",
+    "question": "What's the most controversial post today?",
+    "comments_needed": true,
+    "expected_behavior": "BEFORE FIX: vague answer (comments excluded, keyword not matched). AFTER FIX: cites comment sentiment as evidence",
+    "rubric": "5=references comment disagreement as evidence, 3=uses score/descendants as proxy, 1=arbitrary pick no evidence",
+    "failure_reason": "Before fix: 'controversial' not in shouldIncludeComments regex → comments excluded → model guesses from score/title only → low-quality answer"
+  },
+  {
+    "id": 7,
+    "category": "failure",
+    "question": "What exact salary did user jwpapi mention they earn?",
+    "comments_needed": true,
+    "expected_behavior": "System should say no salary mentioned, not hallucinate a number",
+    "rubric": "5=correctly says no salary mentioned, 3=hedges but uncertain, 1=hallucinates a number",
+    "failure_reason": "Too-specific factual lookup on comment content. Model may hallucinate specific details not in context."
+  }
+]

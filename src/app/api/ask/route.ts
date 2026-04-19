@@ -35,7 +35,7 @@ initRateLimiter();
 // ─── Context builder ─────────────────────────────────────────────────────────
 
 function shouldIncludeComments(question: string): boolean {
-  return /comment|discussion/i.test(question);
+  return /comment|discussion|controversial|opinion|saying|people think|debate|react|response|feeling/i.test(question);
 }
 
 function buildContext(digest: Digest, includeComments: boolean): string {
@@ -106,7 +106,7 @@ export async function POST(req: NextRequest) {
   const includeComments = shouldIncludeComments(question.trim());
   const context = buildContext(digestTyped, includeComments);
   const estimatedTokens = Math.ceil(context.length / 4);
-  console.log(`[ask] ~${estimatedTokens} tokens (comments included: ${includeComments})`);
+  console.log(`[ask] model=gemini-2.5-flash-lite tokens=~${estimatedTokens} comments=${includeComments} question="${question.trim().slice(0, 80)}"`);
 
   const prompt =
     `You are an assistant analyzing today's Hacker News top stories.\n\n` +
