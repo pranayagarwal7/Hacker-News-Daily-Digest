@@ -1,0 +1,11 @@
+CASE 2 — "Which post has the highest score?"
+COMMENTS INCLUDED: false
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~487
+SCORE: 5/5
+
+--- RESPONSE ---
+The post with the highest score today is "All elementary functions from a single binary operator" with 393 points. It is significantly ahead of the second-highest post, "The Economics of Software Teams: Why Most Engineering Orgs Are Flying Blind," which has 138 points.
+--- END ---
+
+RUBRIC NOTE: Exact score cited, correct post identified, bonus context of second place. Fully grounded.

@@ -1,0 +1,20 @@
+CASE 6 — "What's the most controversial post today?" — AFTER FIX
+COMMENTS INCLUDED: true  ← "controversial" now matched by expanded regex
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~2724
+SCORE: 4/5
+
+--- RESPONSE ---
+The most controversial post today is "The Economics of Software Teams: Why Most Engineering Orgs Are Flying Blind." While it has fewer upvotes than the top math paper, its comments show significantly more pushback and disagreement with the author's core arguments.
+
+User boron1006 directly contradicts the article's optimism about AI agents, writing that fully AI-generated projects in their experience "becoming completely unable to make any progress whatsoever." User jwpapi criticizes the author for not understanding what running software at Slack's scale actually involves, calling the Slack clone comparison naive. User leokennis turns the article's own logic against the author, suggesting an LLM could replace the agile coach selling productivity courses for a fraction of the price.
+
+The EML math paper, by contrast, attracted mostly enthusiastic and constructive comments rather than disagreement.
+--- END ---
+
+IMPROVEMENT EVIDENCE:
+- Comments now included → model can reason about actual disagreement
+- Correctly identifies post #2, not post #1
+- Cites specific usernames and quotes from comment text
+- Score improved: 2/5 → 4/5 (+2 points)
+- Regex fix: /comment|discussion|controversial|opinion|saying|people think|debate|react|response|feeling/i

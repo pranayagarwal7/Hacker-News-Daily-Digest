@@ -1,0 +1,15 @@
+CASE 4 — "What are people saying about AI in the comments?"
+COMMENTS INCLUDED: true (keyword "saying" matched after regex fix)
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~2724
+SCORE: 4/5
+
+--- RESPONSE ---
+The most substantive AI discussion appears in the comments on "The Economics of Software Teams." Commenters are largely skeptical of the article's optimistic framing around AI-generated code. User boron1006 directly challenges the claim that more agents solve productivity problems, writing that on two fully AI-generated projects the agents "becoming completely unable to make any progress whatsoever, and whatever progress they do make is wrong." User leokennis sarcastically suggests that if AI can replace software teams, it can also replace the agile coaches selling productivity workshops.
+
+In the top story about the EML binary operator, user eugene3306 used the paper as a benchmark to test several LLMs — ChatGPT succeeded on the first try, Gemini succeeded, Opus needed a hint, and DeepSeek failed to parse the PDF at all. This is a rare data point on comparative LLM capability from an actual community test.
+
+Overall tone: cautious skepticism toward AI replacing engineers, with interest in AI as a tool for specific well-defined tasks.
+--- END ---
+
+RUBRIC NOTE: References actual comment text and usernames. Captures real sentiment. Minor miss on one AI-adjacent comment in post #1. Score 4/5.

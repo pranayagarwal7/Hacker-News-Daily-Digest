@@ -1,0 +1,11 @@
+CASE 5 — "Summarize today's digest in 3 sentences"
+COMMENTS INCLUDED: false
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~487
+SCORE: 5/5
+
+--- RESPONSE ---
+Today's top story is a mathematical breakthrough paper proposing a single binary operator that can compute all elementary functions, generating significant discussion among developers and mathematicians. The second-most prominent thread debates the economics of software engineering teams, with commenters skeptical of claims that AI agents can replace human developers at scale. The remaining posts span open source tooling releases, developer infrastructure improvements, and several discussions touching on the state of the tech industry in 2026.
+--- END ---
+
+RUBRIC NOTE: Accurate, concise, covers top 3 stories. All claims traceable to post titles in digest. No hallucination. 5/5.

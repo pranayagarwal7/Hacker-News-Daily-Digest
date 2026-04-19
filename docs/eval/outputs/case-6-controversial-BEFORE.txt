@@ -1,0 +1,16 @@
+CASE 6 — "What's the most controversial post today?" — BEFORE FIX
+COMMENTS INCLUDED: false  ← BUG: "controversial" not in old regex
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~487
+SCORE: 2/5
+
+--- RESPONSE ---
+Based on today's posts, the most controversial is likely "All elementary functions from a single binary operator" given its high score of 393 and 108 comments, suggesting significant community engagement. Posts that attract both strong upvotes and high comment counts often indicate split opinion or lively debate.
+--- END ---
+
+FAILURE ANALYSIS:
+- "controversial" not matched by old regex (/comment|discussion/i)
+- Comments excluded → model has no comment text to reason about
+- Falls back to using score+comment_count as proxy for controversy
+- Picks post #1 (highest score) — wrong conclusion. Post #2 (software economics) has far more actual disagreement in comments
+- Score 2/5: response sounds plausible but is factually wrong reasoning

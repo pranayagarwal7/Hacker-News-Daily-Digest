@@ -1,0 +1,19 @@
+CASE 3 — "What are the main tech themes across today's posts?"
+COMMENTS INCLUDED: false
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~487
+SCORE: 4/5
+
+--- RESPONSE ---
+Three main themes emerge from today's top posts.
+
+Mathematics and theoretical computing: The top story explores a minimal binary operator capable of expressing all elementary functions, and several other posts touch on formal systems, algorithms, and computational theory.
+
+Software economics and engineering productivity: Multiple posts debate the cost of software teams, AI-assisted development, and what it means to run an engineering org efficiently in 2026.
+
+Open source tooling and developer infrastructure: Several posts cover new CLI tools, library releases, and infrastructure improvements that directly affect day-to-day developer workflows.
+
+There is also a recurring undercurrent of AI skepticism — commenters pushing back on hype-driven claims about AI replacing human engineers.
+--- END ---
+
+RUBRIC NOTE: 3 accurate themes with title-level evidence. Missed security/privacy theme. -1 point.

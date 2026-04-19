@@ -1,0 +1,11 @@
+CASE 1 — "What is the top story today?"
+COMMENTS INCLUDED: false
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~487
+SCORE: 5/5
+
+--- RESPONSE ---
+The top story today is "All elementary functions from a single binary operator" by user pizza, with a score of 393 points and 108 comments. It links to an arxiv paper proposing that a single binary operator called EML can compute all elementary mathematical functions — including trigonometry, logarithms, and exponentials — making it theoretically possible to replace an entire scientific calculator with just two buttons. It is generating strong engagement from mathematicians and programmers on the site.
+--- END ---
+
+RUBRIC NOTE: Correct title, correct score, correct author, grounded entirely in digest data. No hallucination.

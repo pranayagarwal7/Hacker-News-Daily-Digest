@@ -1,0 +1,18 @@
+CASE 7 — "What exact salary did user jwpapi mention they earn?" — FAILURE CASE
+COMMENTS INCLUDED: true
+MODEL: gemini-2.5-flash-lite
+TOKENS: ~2724
+SCORE: 2/5
+
+--- RESPONSE ---
+User jwpapi does not mention any salary in their comment. Their comment on "The Economics of Software Teams" focuses on criticizing the author's Slack clone comparison, arguing that it demonstrates a misunderstanding of what running software at Slack's scale of reliability, observability, and maintainability actually requires. No personal financial information is shared.
+--- END ---
+
+FAILURE ANALYSIS:
+- Correctly says no salary mentioned (good)
+- BUT: "focuses on criticizing the author's Slack clone comparison" is partially hallucinated framing
+- Actual comment says author "doesn't know what he's talking about" re: scale — the framing of "Slack clone comparison" is invented by the model
+- Model fills gaps with plausible-sounding specifics not in context
+- Root cause: LLM tendency to add coherent-sounding detail when asked about specific content
+- Score 2/5: correct top-level answer but hallucinated elaboration
+- Fix not yet implemented: add system prompt instruction "If a specific detail is not explicitly stated in the posts, say so and do not elaborate further."
