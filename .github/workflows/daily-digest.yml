@@ -2,7 +2,8 @@ name: Daily HN Digest
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 8am UTC daily
+    - cron: '0 8 * * *'   # 8am UTC
+    - cron: '0 20 * * *'  # 8pm UTC
   workflow_dispatch:       # manual trigger from Actions tab
 
 jobs:
@@ -28,5 +29,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/digest.json
-          git diff --staged --quiet || git commit -m "chore: daily digest $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "chore: digest $(date -u +%Y-%m-%d\ %H:%M) UTC"
           git push
